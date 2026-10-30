@@ -17,6 +17,7 @@ import argparse
 import base64
 import json
 import pathlib
+import re
 import subprocess
 import sys
 import tempfile
@@ -38,6 +39,7 @@ ap.add_argument("--moteur", choices=["elevenlabs", "piper", "kokoro"], default="
 ap.add_argument("--voix-id", default=ELEVEN_VOICE)
 ap.add_argument("--stabilite", type=float, default=0.5)
 ap.add_argument("--style", type=float, default=0.2)
+ap.add_argument("--par-phrase", action="store_true", help="ElevenLabs : une requête par phrase, pauses entre phrases")
 ap.add_argument("--speed", type=float, default=1.0)
 ap.add_argument("--voice", default=VOICE)
 # Pauses un peu plus longues que Kokoro par défaut : « pauses courtes après les phrases-clés »
@@ -118,9 +120,9 @@ def piper_phonemes():
     return np.concatenate(morceaux[:-1]), sr, phs
 
 
-def elevenlabs_phonemes():
+def elevenlabs_appel(texte, avant="", apres=""):
     corps = {
-        "text": text,
+        "text": texte,
         "model_id": ELEVEN_MODEL,
         "voice_settings": {
             "stability": args.stabilite,
@@ -130,6 +132,11 @@ def elevenlabs_phonemes():
             "speed": args.speed,
         },
     }
+    # Phrases voisines : l'intonation reste continue quand on génère phrase par phrase
+    if avant:
+        corps["previous_text"] = avant
+    if apres:
+        corps["next_text"] = apres
     url = (f"https://api.elevenlabs.io/v1/text-to-speech/{args.voix_id}/with-timestamps"
            "?output_format=mp3_44100_128")
     # curl passe par le proxy de l'environnement, qui ajoute la clé
@@ -151,6 +158,24 @@ def elevenlabs_phonemes():
     phs = [Ph(c, a, b) for c, a, b in zip(al["characters"], al["character_start_times_seconds"],
                                           al["character_end_times_seconds"])]
     return audio, sr, phs
+
+
+def elevenlabs_phonemes():
+    if not args.par_phrase:
+        return elevenlabs_appel(text)
+    # Une requête par phrase, puis `--pause-phrase` secondes de silence entre les phrases
+    phrases = [p for p in re.split(r"(?<=[.!?…])\s+", text) if p]
+    morceaux, phs, t0, sr = [], [], 0.0, 44100
+    for i, phrase in enumerate(phrases):
+        audio, sr, ph = elevenlabs_appel(phrase, " ".join(phrases[:i]), " ".join(phrases[i + 1:]))
+        phs += [Ph(p.phoneme, p.start + t0, p.end + t0) for p in ph]
+        morceaux.append(audio)
+        t0 += len(audio) / sr
+        if i < len(phrases) - 1:
+            morceaux.append(np.zeros(int(args.pause_phrase * sr), dtype=np.float32))
+            t0 += args.pause_phrase
+            phs.append(Ph(" ", t0, t0))
+    return np.concatenate(morceaux), sr, phs
 
 
 moteurs = {"elevenlabs": elevenlabs_phonemes, "piper": piper_phonemes, "kokoro": kokoro_phonemes}

@@ -1,4 +1,4 @@
-<!-- Vidéo 2 · 20,7–25 s · la vraie fiche L20 « Grand bowl complet au quinoa » glisse depuis le bas,
+<!-- Vidéo 2 · 22,1–25,85 s · la vraie fiche L20 « Grand bowl complet au quinoa » glisse depuis le bas,
      zoom sur « Le conseil » puis sur « Variante ». Caméra : origine 0 0, la zone visée vient
      au point (540, 900) du cadre. -->
 <template>
@@ -40,12 +40,12 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    // « Chaque recette a sa fiche » (20,88 s)
+    // « Chaque recette a sa fiche » (22,16 s)
     tl.fromTo("#f-feuille", { y: 1100, rotation: 4 }, { y: 0, rotation: -1.5, duration: 0.55, ease: "power3.out" }, 0.05);
-    // « un conseil » (22,83 s) : la case « Le conseil » (28,9 % ; 70,8 %) au centre
-    tl.fromTo("#f-camera", { scale: 1, x: 0, y: 0 }, { scale: 2, x: -228, y: -1443, duration: 0.55, ease: "power3.inOut" }, 1.95);
-    // « une variante » (23,82 s) : glissement vers la case « Variante » (71 % ; 70,8 %)
-    tl.to("#f-camera", { x: -851, duration: 0.5, ease: "power3.inOut" }, 3.0);
+    // « un conseil » (23,98 s) : la case « Le conseil » (28,9 % ; 70,8 %) au centre
+    tl.fromTo("#f-camera", { scale: 1, x: 0, y: 0 }, { scale: 2, x: -228, y: -1443, duration: 0.55, ease: "power3.inOut" }, 1.8);
+    // « une variante » (24,71 s) : glissement vers la case « Variante » (71 % ; 70,8 %)
+    tl.to("#f-camera", { x: -851, duration: 0.5, ease: "power3.inOut" }, 2.55);
     window.__timelines["v2-recette"] = tl;
   </script>
 </template>

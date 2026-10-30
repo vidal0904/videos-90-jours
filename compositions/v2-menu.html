@@ -1,4 +1,4 @@
-<!-- Vidéo 2 · 0–7,7 s · le vrai menu de la semaine 1 en grand, zoom rapide,
+<!-- Vidéo 2 · 0–9,25 s · le vrai menu de la semaine 1 en grand, zoom rapide,
      surligneur terracotta sur la ligne « Lundi » puis sur la colonne « Déjeuner ».
      Positions du surligneur en % de la page (menu-s1-p94.png, 1413 × 2000). -->
 <template>
@@ -76,11 +76,11 @@
     // Image 0 : la page et le titre sont déjà là (vignette). Zoom rapide sur le tableau.
     tl.fromTo("#m-camera", { scale: 1 }, { scale: 1.12, duration: 0.6, ease: "power3.inOut" }, 0.15);
     tl.fromTo("#m-titre", { scale: 1.08 }, { scale: 1, duration: 0.5, ease: "power3.out" }, 0);
-    // Petit-déjeuner, déjeuner, dîner, collation (4,34 → 6,3 s) : la ligne « Lundi »
-    tl.fromTo("#m-ligne", { scaleX: 0 }, { scaleX: 1, duration: 1.9, ease: "none" }, 4.3);
-    // « tout est prévu » (6,5 s) : la colonne « Déjeuner » se remplit vers le bas
-    tl.fromTo("#m-colonne", { scaleY: 0 }, { scaleY: 1, duration: 0.9, ease: "power2.out" }, 6.45);
-    tl.to("#m-titre", { opacity: 0, y: -24, duration: 0.3, ease: "power2.in" }, 7.35);
+    // Petit-déjeuner, déjeuner, dîner, collation (4,41 → 7,3 s) : la ligne « Lundi »
+    tl.fromTo("#m-ligne", { scaleX: 0 }, { scaleX: 1, duration: 2.8, ease: "none" }, 4.4);
+    // « tout est prévu » (7,8 s) : la colonne « Déjeuner » se remplit vers le bas
+    tl.fromTo("#m-colonne", { scaleY: 0 }, { scaleY: 1, duration: 0.9, ease: "power2.out" }, 7.75);
+    tl.to("#m-titre", { opacity: 0, y: -24, duration: 0.3, ease: "power2.in" }, 8.9);
     window.__timelines["v2-menu"] = tl;
   </script>
 </template>

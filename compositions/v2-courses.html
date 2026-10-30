@@ -1,4 +1,4 @@
-<!-- Vidéo 2 · 16,1–20,7 s · la page se tourne : menu → liste de courses (vraies pages),
+<!-- Vidéo 2 · 17,55–22,1 s · la page se tourne : menu → liste de courses (vraies pages),
      zoom sur Protéines et Légumes, les cases se cochent une à une.
      Cases en % de la page (courses-s1-p95.png, 1413 × 2000). -->
 <template>
@@ -69,14 +69,14 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    // La page se tourne sur « Et la liste de courses ? » (16,27 s)
+    // La page se tourne sur « Et la liste de courses ? » (17,62 s)
     tl.fromTo("#c-menu", { rotationY: 0, transformPerspective: 1800, transformOrigin: "left center" }, { rotationY: -90, duration: 0.32, ease: "power2.in" }, 0.1);
     tl.fromTo("#c-liste", { rotationY: 90, transformPerspective: 1800, transformOrigin: "left center" }, { rotationY: 0, duration: 0.36, ease: "power2.out" }, 0.42);
     // Zoom sur Protéines + Légumes : le point (35 %, 24,7 %) de la page vient au centre
     tl.fromTo("#c-camera", { scale: 1, x: 0, y: 0 }, { scale: 2.2, x: -404, y: -695, duration: 0.6, ease: "power3.inOut" }, 0.95);
-    // « Elle est déjà calculée, avec les quantités » : une case toutes les 0,22 s
+    // « Elle est déjà calculée, avec les quantités » (19,38 s) : une case toutes les 0,22 s
     document.querySelectorAll(".c-coche").forEach((c, i) => {
-      tl.fromTo(c, { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.18, ease: "back.out(2.5)" }, 1.65 + i * 0.22);
+      tl.fromTo(c, { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.18, ease: "back.out(2.5)" }, 1.75 + i * 0.22);
     });
     window.__timelines["v2-courses"] = tl;
   </script>

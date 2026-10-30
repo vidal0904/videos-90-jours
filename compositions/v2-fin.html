@@ -1,4 +1,4 @@
-<!-- Vidéo 2 · 29,6–35 s · « Lien en bio » au-dessus de la couverture (composant page-pdf).
+<!-- Vidéo 2 · 30,3–35 s · « Lien en bio » au-dessus de la couverture (composant page-pdf).
      Les 0,7 dernières secondes reprennent l'image 0 (menu + titre) : boucle. -->
 <template>
   <link rel="stylesheet" href="assets/design/tokens.css" />
@@ -57,7 +57,7 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#fin2-lien", { opacity: 0, y: 32 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.5);
     // Boucle : fondu vers l'image 0 de la vidéo
-    tl.fromTo("#fin2-boucle", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 4.7);
+    tl.fromTo("#fin2-boucle", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.inOut" }, 4.05);
     window.__timelines["v2-fin"] = tl;
   </script>
 </template>

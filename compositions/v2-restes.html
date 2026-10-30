@@ -1,4 +1,4 @@
-<!-- Vidéo 2 · 7,7–16,1 s · gros plan sur deux étiquettes « restes » du menu,
+<!-- Vidéo 2 · 9,25–17,55 s · gros plan sur deux étiquettes « restes » du menu,
      puis le grand chiffre 7 → 4 (« quatre recettes à cuisiner au lieu de sept », BRIEF §4). -->
 <template>
   <link rel="stylesheet" href="assets/design/tokens.css" />
@@ -18,6 +18,11 @@
       overflow: hidden;
       background: #fff;
       box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    /* L'image et les anneaux bougent ensemble : les anneaux restent sur leurs étiquettes */
+    #r-plan {
+      position: absolute;
+      inset: 0;
     }
     #r-img {
       position: absolute;
@@ -61,9 +66,11 @@
   </style>
   <div id="root" data-composition-id="v2-restes" data-width="1080" data-height="1920">
     <div id="r-vue" data-layout-allow-overflow>
-      <img id="r-img" src="capture/pages/menu-s1-p94.png" alt="Menu : plats « restes » le lendemain" />
+      <div id="r-plan">
+        <img id="r-img" src="capture/pages/menu-s1-p94.png" alt="Menu : plats « restes » le lendemain" />
       <span id="r-anneau-1" class="r-anneau"></span>
       <span id="r-anneau-2" class="r-anneau"></span>
+      </div>
     </div>
     <div id="r-chiffres" data-layout-allow-overlap>
       <div id="r-chiffre" class="chiffre">7</div>
@@ -76,19 +83,19 @@
     const chiffre = document.getElementById("r-chiffre");
     const compte = { n: 7 };
     tl.fromTo("#r-vue", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }, 0.05);
-    tl.fromTo("#r-img", { x: 30, y: 20 }, { x: -20, y: -10, duration: 4.8, ease: "sine.inOut" }, 0.05);
-    // « une pour aujourd'hui » (10,0 s) puis « une pour demain » (11,2 s)
-    tl.fromTo("#r-anneau-1", { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 2.3);
-    tl.fromTo("#r-anneau-2", { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 3.5);
-    // « Résultat » (12,65 s) : le recadrage sort, le 7 entre
-    tl.to("#r-vue", { opacity: 0, y: -40, duration: 0.3, ease: "power2.in" }, 4.85);
-    tl.fromTo("#r-chiffre", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 5.0);
-    // « quatre recettes » (13,56 s) : 7 → 4, le chiffre passe en terracotta
-    tl.fromTo(compte, { n: 7 }, { n: 4, duration: 0.6, ease: "power2.inOut", onUpdate: () => (chiffre.textContent = Math.round(compte.n)) }, 5.8);
-    tl.fromTo("#r-chiffre", { color: "#FBF8F2" }, { color: "#C2643F", duration: 0.3, ease: "none", immediateRender: false }, 6.1);
-    tl.fromTo("#r-libelle", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 6.2);
-    // « au lieu de sept » (14,84 s), un peu avant pour qu'on ait le temps de le lire
-    tl.fromTo("#r-au-lieu", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 6.75);
+    tl.fromTo("#r-plan", { x: 30, y: 20 }, { x: -20, y: -10, duration: 4.5, ease: "sine.inOut" }, 0.05);
+    // « une pour aujourd'hui » (11,35 s) puis « une pour demain » (12,39 s)
+    tl.fromTo("#r-anneau-1", { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 2.1);
+    tl.fromTo("#r-anneau-2", { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 3.14);
+    // « Résultat » (13,87 s) : le recadrage sort, le 7 entre
+    tl.to("#r-vue", { opacity: 0, y: -40, duration: 0.3, ease: "power2.in" }, 4.5);
+    tl.fromTo("#r-chiffre", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 4.65);
+    // « quatre recettes » (14,73 s) : 7 → 4, le chiffre passe en terracotta
+    tl.fromTo(compte, { n: 7 }, { n: 4, duration: 0.6, ease: "power2.inOut", onUpdate: () => (chiffre.textContent = Math.round(compte.n)) }, 5.45);
+    tl.fromTo("#r-chiffre", { color: "#FBF8F2" }, { color: "#C2643F", duration: 0.3, ease: "none", immediateRender: false }, 5.75);
+    tl.fromTo("#r-libelle", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 5.85);
+    // « au lieu de sept » (16,06 s), un peu avant pour qu'on ait le temps de le lire
+    tl.fromTo("#r-au-lieu", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 6.5);
     window.__timelines["v2-restes"] = tl;
   </script>
 </template>

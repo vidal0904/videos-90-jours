@@ -2,427 +2,427 @@
  {
   "id": "w0",
   "text": "Voilà",
-  "start": 0.197,
-  "end": 0.453
+  "start": 0.0,
+  "end": 0.302
  },
  {
   "id": "w1",
   "text": "exactement",
-  "start": 0.522,
-  "end": 1.033
+  "start": 0.383,
+  "end": 0.94
  },
  {
   "id": "w2",
   "text": "ce",
-  "start": 1.057,
-  "end": 1.138
+  "start": 0.964,
+  "end": 1.033
  },
  {
   "id": "w3",
   "text": "que",
-  "start": 1.161,
-  "end": 1.231
+  "start": 1.08,
+  "end": 1.173
  },
  {
   "id": "w4",
   "text": "tu",
-  "start": 1.254,
-  "end": 1.37
+  "start": 1.207,
+  "end": 1.289
  },
  {
   "id": "w5",
   "text": "manges",
-  "start": 1.393,
-  "end": 1.614
+  "start": 1.347,
+  "end": 1.602
  },
  {
   "id": "w6",
   "text": "cette",
   "start": 1.637,
-  "end": 1.788
+  "end": 1.858
  },
  {
   "id": "w7",
   "text": "semaine.",
-  "start": 1.811,
-  "end": 2.264
+  "start": 1.881,
+  "end": 2.206
  },
  {
   "id": "w8",
   "text": "Petit-déjeuner,",
-  "start": 2.943,
-  "end": 3.593
+  "start": 3.011,
+  "end": 3.835
  },
  {
   "id": "w9",
   "text": "déjeuner,",
-  "start": 3.651,
-  "end": 3.999
+  "start": 4.056,
+  "end": 4.648
  },
  {
   "id": "w10",
   "text": "dîner,",
-  "start": 4.046,
-  "end": 4.243
+  "start": 4.892,
+  "end": 5.333
  },
  {
   "id": "w11",
   "text": "collation :",
-  "start": 4.313,
-  "end": 4.823
+  "start": 5.542,
+  "end": 6.099
  },
  {
   "id": "w12",
   "text": "tout",
-  "start": 5.125,
-  "end": 5.311
+  "start": 6.401,
+  "end": 6.575
  },
  {
   "id": "w13",
   "text": "est",
-  "start": 5.346,
-  "end": 5.381
+  "start": 6.633,
+  "end": 6.703
  },
  {
   "id": "w14",
   "text": "prévu.",
-  "start": 5.416,
-  "end": 5.845
+  "start": 6.726,
+  "end": 7.074
  },
  {
   "id": "w15",
   "text": "Les",
-  "start": 6.512,
-  "end": 6.617
+  "start": 7.927,
+  "end": 8.09
  },
  {
   "id": "w16",
   "text": "plats",
-  "start": 6.675,
-  "end": 6.802
+  "start": 8.124,
+  "end": 8.322
  },
  {
   "id": "w17",
   "text": "se",
-  "start": 6.837,
-  "end": 6.942
+  "start": 8.345,
+  "end": 8.415
  },
  {
   "id": "w18",
   "text": "préparent",
-  "start": 6.965,
-  "end": 7.429
+  "start": 8.449,
+  "end": 8.833
  },
  {
   "id": "w19",
   "text": "en",
-  "start": 7.522,
-  "end": 7.557
+  "start": 8.902,
+  "end": 9.007
  },
  {
   "id": "w20",
   "text": "deux",
-  "start": 7.743,
-  "end": 7.894
+  "start": 9.088,
+  "end": 9.239
  },
  {
   "id": "w21",
   "text": "portions,",
-  "start": 7.94,
-  "end": 8.405
+  "start": 9.262,
+  "end": 9.703
  },
  {
   "id": "w22",
   "text": "une",
-  "start": 8.614,
-  "end": 8.706
+  "start": 9.947,
+  "end": 10.086
  },
  {
   "id": "w23",
   "text": "pour",
-  "start": 8.764,
-  "end": 8.904
+  "start": 10.11,
+  "end": 10.249
  },
  {
   "id": "w24",
   "text": "aujourd'hui,",
-  "start": 8.962,
-  "end": 9.473
+  "start": 10.272,
+  "end": 10.771
  },
  {
   "id": "w25",
   "text": "une",
-  "start": 9.809,
-  "end": 9.914
+  "start": 10.992,
+  "end": 11.143
  },
  {
   "id": "w26",
   "text": "pour",
-  "start": 10.042,
-  "end": 10.169
+  "start": 11.166,
+  "end": 11.282
  },
  {
   "id": "w27",
   "text": "demain.",
-  "start": 10.216,
-  "end": 10.483
+  "start": 11.329,
+  "end": 11.619
  },
  {
   "id": "w28",
   "text": "Résultat :",
-  "start": 11.254,
-  "end": 11.881
+  "start": 12.47,
+  "end": 13.109
  },
  {
   "id": "w29",
   "text": "quatre",
-  "start": 12.16,
-  "end": 12.45
+  "start": 13.329,
+  "end": 13.631
  },
  {
   "id": "w30",
   "text": "recettes",
-  "start": 12.508,
-  "end": 12.856
+  "start": 13.677,
+  "end": 14.026
  },
  {
   "id": "w31",
   "text": "à",
-  "start": 12.891,
-  "end": 12.914
+  "start": 14.084,
+  "end": 14.13
  },
  {
   "id": "w32",
   "text": "cuisiner",
-  "start": 12.961,
-  "end": 13.379
+  "start": 14.2,
+  "end": 14.618
  },
  {
   "id": "w33",
   "text": "au",
-  "start": 13.437,
-  "end": 13.46
+  "start": 14.664,
+  "end": 14.792
  },
  {
   "id": "w34",
   "text": "lieu",
-  "start": 13.495,
-  "end": 13.646
+  "start": 14.838,
+  "end": 14.955
  },
  {
   "id": "w35",
   "text": "de",
-  "start": 13.692,
-  "end": 13.82
+  "start": 14.989,
+  "end": 15.071
  },
  {
   "id": "w36",
   "text": "sept.",
-  "start": 13.855,
-  "end": 14.203
+  "start": 15.117,
+  "end": 15.431
  },
  {
   "id": "w37",
   "text": "Et",
-  "start": 14.87,
-  "end": 14.963
+  "start": 16.225,
+  "end": 16.376
  },
  {
   "id": "w38",
   "text": "la",
-  "start": 14.986,
-  "end": 15.114
+  "start": 16.411,
+  "end": 16.469
  },
  {
   "id": "w39",
   "text": "liste",
-  "start": 15.16,
-  "end": 15.427
+  "start": 16.527,
+  "end": 16.736
  },
  {
   "id": "w40",
   "text": "de",
-  "start": 15.52,
-  "end": 15.613
+  "start": 16.794,
+  "end": 16.864
  },
  {
   "id": "w41",
   "text": "courses ?",
-  "start": 15.648,
-  "end": 16.031
+  "start": 16.91,
+  "end": 17.189
  },
  {
   "id": "w42",
   "text": "Elle",
-  "start": 16.861,
-  "end": 17.0
+  "start": 17.982,
+  "end": 18.179
  },
  {
   "id": "w43",
   "text": "est",
-  "start": 17.047,
-  "end": 17.081
+  "start": 18.203,
+  "end": 18.272
  },
  {
   "id": "w44",
   "text": "déjà",
-  "start": 17.105,
-  "end": 17.325
+  "start": 18.295,
+  "end": 18.528
  },
  {
   "id": "w45",
   "text": "calculée,",
-  "start": 17.36,
-  "end": 17.801
+  "start": 18.562,
+  "end": 18.992
  },
  {
   "id": "w46",
   "text": "avec",
-  "start": 17.894,
-  "end": 18.057
+  "start": 19.073,
+  "end": 19.306
  },
  {
   "id": "w47",
   "text": "les",
-  "start": 18.103,
-  "end": 18.196
+  "start": 19.364,
+  "end": 19.433
  },
  {
   "id": "w48",
   "text": "quantités.",
-  "start": 18.219,
-  "end": 18.707
+  "start": 19.456,
+  "end": 19.886
  },
  {
   "id": "w49",
   "text": "Chaque",
-  "start": 19.478,
-  "end": 19.757
+  "start": 20.761,
+  "end": 21.098
  },
  {
   "id": "w50",
   "text": "recette",
-  "start": 19.803,
-  "end": 20.105
+  "start": 21.121,
+  "end": 21.423
  },
  {
   "id": "w51",
   "text": "a",
-  "start": 20.14,
-  "end": 20.175
+  "start": 21.446,
+  "end": 21.469
  },
  {
   "id": "w52",
   "text": "sa",
-  "start": 20.198,
-  "end": 20.349
+  "start": 21.504,
+  "end": 21.597
  },
  {
   "id": "w53",
   "text": "fiche,",
-  "start": 20.442,
-  "end": 20.825
+  "start": 21.667,
+  "end": 22.026
  },
  {
   "id": "w54",
   "text": "avec",
-  "start": 21.057,
-  "end": 21.266
+  "start": 22.177,
+  "end": 22.421
  },
  {
   "id": "w55",
   "text": "un",
-  "start": 21.313,
-  "end": 21.394
+  "start": 22.491,
+  "end": 22.537
  },
  {
   "id": "w56",
   "text": "conseil",
-  "start": 21.429,
-  "end": 22.009
+  "start": 22.584,
+  "end": 22.99
  },
  {
   "id": "w57",
   "text": "et",
-  "start": 22.207,
-  "end": 22.253
+  "start": 23.071,
+  "end": 23.153
  },
  {
   "id": "w58",
   "text": "une",
-  "start": 22.288,
-  "end": 22.369
+  "start": 23.176,
+  "end": 23.269
  },
  {
   "id": "w59",
   "text": "variante.",
-  "start": 22.416,
-  "end": 22.973
+  "start": 23.315,
+  "end": 23.768
  },
  {
   "id": "w60",
   "text": "12",
-  "start": 23.837,
-  "end": 24.128
+  "start": 24.562,
+  "end": 24.864
  },
  {
   "id": "w61",
   "text": "semaines",
-  "start": 24.186,
-  "end": 24.569
+  "start": 24.887,
+  "end": 25.212
  },
  {
   "id": "w62",
   "text": "comme",
-  "start": 24.604,
-  "end": 24.754
+  "start": 25.235,
+  "end": 25.41
  },
  {
   "id": "w63",
   "text": "ça,",
-  "start": 24.789,
-  "end": 25.068
+  "start": 25.444,
+  "end": 25.677
  },
  {
   "id": "w64",
   "text": "70",
-  "start": 25.428,
-  "end": 25.869
+  "start": 25.839,
+  "end": 26.466
  },
  {
   "id": "w65",
   "text": "recettes.",
-  "start": 25.915,
-  "end": 26.426
+  "start": 26.489,
+  "end": 26.942
  },
  {
   "id": "w66",
   "text": "Tu",
-  "start": 26.896,
-  "end": 26.989
+  "start": 27.62,
+  "end": 27.783
  },
  {
   "id": "w67",
   "text": "n'as",
-  "start": 27.024,
-  "end": 27.082
+  "start": 27.841,
+  "end": 27.945
  },
  {
   "id": "w68",
   "text": "plus",
-  "start": 27.14,
-  "end": 27.279
+  "start": 27.968,
+  "end": 28.108
  },
  {
   "id": "w69",
   "text": "qu'à",
-  "start": 27.302,
-  "end": 27.418
+  "start": 28.131,
+  "end": 28.259
  },
  {
   "id": "w70",
   "text": "suivre.",
-  "start": 27.453,
-  "end": 27.941
+  "start": 28.282,
+  "end": 28.63
  }
 ]
