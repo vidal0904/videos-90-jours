@@ -1,4 +1,4 @@
-<!-- Vidéo 1 · 18,6–22,45 s · menu, courses, journal de la semaine 1 en éventail (vraies pages),
+<!-- Vidéo 1 · 18,25–22,35 s · menu, courses, journal de la semaine 1 en éventail (vraies pages),
      puis zoom lisible sur le menu sur « déjà prêts ». -->
 <template>
   <link rel="stylesheet" href="assets/design/tokens.css" />
@@ -86,21 +86,21 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    // Chaque page glisse sur son mot : « menu » 18,84 · « liste » 19,56 · « journal » 20,74
+    // Chaque page glisse sur son mot : « menu » 18,59 · « liste » 19,45 · « journal » 20,63
     const cartes = [
-      ["#evt-menu", -225, 40, -7, 0.2],
-      ["#evt-courses", 0, 0, 0, 0.9],
-      ["#evt-journal", 225, 40, 7, 2.1],
+      ["#evt-menu", -225, 40, -7, 0.3],
+      ["#evt-courses", 0, 0, 0, 1.15],
+      ["#evt-journal", 225, 40, 7, 2.35],
     ];
     cartes.forEach(([id, x, y, r, t]) => {
       tl.fromTo(id, { opacity: 0, x: x * 0.4, y: 260, rotation: 0 }, { opacity: 1, x, y, rotation: r, duration: 0.5, ease: "power3.out" }, t);
     });
     // Zoom lent de l'ensemble
-    tl.fromTo("#evt-groupe", { scale: 1 }, { scale: 1.06, duration: 2.85, ease: "sine.inOut" }, 0);
-    // « déjà prêts » (21,52 s) : l'éventail s'efface, le menu passe en gros plan
-    tl.to("#evt-groupe", { opacity: 0, scale: 1.25, duration: 0.3, ease: "power2.in" }, 2.85);
-    tl.fromTo("#evt-zoom", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 2.9);
-    tl.fromTo("#evt-zoom img", { y: 0 }, { y: -40, duration: 0.95, ease: "none" }, 2.9);
+    tl.fromTo("#evt-groupe", { scale: 1 }, { scale: 1.06, duration: 3.15, ease: "sine.inOut" }, 0);
+    // « déjà prêts » (21,44 s) : l'éventail s'efface, le menu passe en gros plan
+    tl.to("#evt-groupe", { opacity: 0, scale: 1.25, duration: 0.3, ease: "power2.in" }, 3.15);
+    tl.fromTo("#evt-zoom", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 3.2);
+    tl.fromTo("#evt-zoom img", { y: 0 }, { y: -40, duration: 0.9, ease: "none" }, 3.2);
     window.__timelines["v1-eventail"] = tl;
   </script>
 </template>

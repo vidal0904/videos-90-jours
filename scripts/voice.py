@@ -1,19 +1,25 @@
-"""French voiceover with word timings, offline.
+"""French voiceover with word timings.
 
-    python3 -I scripts/voice.py assets/voice/<name>.txt [--moteur piper|kokoro] [--speed 1.0]
+    python3 -I scripts/voice.py assets/voice/<name>.txt [--moteur elevenlabs|piper|kokoro] [--speed 1.0]
 
-Voix retenue pour la série : Piper « siwis » medium (féminine, fr-FR), `--moteur piper`.
+Voix retenue pour la série : ElevenLabs « Claire – Warm, Pretty and Charming » (fr-FR),
+modèle eleven_multilingual_v2. La clé est ajoutée par le proxy de l'environnement
+(secret réseau sur api.elevenlabs.io, en-tête xi-api-key) : elle n'apparaît jamais ici.
+Piper « siwis » et Kokoro restent disponibles hors ligne.
 
 Writes assets/voice/<name>.wav and assets/voice/<name>.words.json
 ([{id, text, start, end}], seconds), the shape the captions build expects.
-Timings come from the model's own phoneme durations (Piper: alignment output patched
-in memory; Kokoro: a `duration` output, see export-timed-model.py), so they match the
-audio exactly.
+Timings come from the engine itself (ElevenLabs: per-character alignment of the
+with-timestamps endpoint; Piper: alignment output patched in memory; Kokoro: a
+`duration` output, see export-timed-model.py), so they match the audio exactly.
 """
 import argparse
+import base64
 import json
 import pathlib
+import subprocess
 import sys
+import tempfile
 
 import numpy as np
 import soundfile as sf
@@ -23,10 +29,15 @@ MODEL = CACHE / "models/kokoro-v1.0-timed.onnx"
 VOICES = CACHE / "voices/voices-v1.0.bin"
 VOICE = "ff_siwis"  # the only French voice in Kokoro: female, fr-FR
 PIPER = pathlib.Path.home() / ".cache/piper/voice-fr-siwis-medium/fr-siwis-medium.onnx"
+ELEVEN_VOICE = "6vTyAgAT8PncODBcLjRf"  # Claire – Warm, Pretty and Charming (bibliothèque, fr-FR)
+ELEVEN_MODEL = "eleven_multilingual_v2"
 
 ap = argparse.ArgumentParser()
 ap.add_argument("script")
-ap.add_argument("--moteur", choices=["piper", "kokoro"], default="piper")
+ap.add_argument("--moteur", choices=["elevenlabs", "piper", "kokoro"], default="elevenlabs")
+ap.add_argument("--voix-id", default=ELEVEN_VOICE)
+ap.add_argument("--stabilite", type=float, default=0.5)
+ap.add_argument("--style", type=float, default=0.2)
 ap.add_argument("--speed", type=float, default=1.0)
 ap.add_argument("--voice", default=VOICE)
 # Pauses un peu plus longues que Kokoro par défaut : « pauses courtes après les phrases-clés »
@@ -107,7 +118,43 @@ def piper_phonemes():
     return np.concatenate(morceaux[:-1]), sr, phs
 
 
-audio, sr, phonemes = piper_phonemes() if args.moteur == "piper" else kokoro_phonemes()
+def elevenlabs_phonemes():
+    corps = {
+        "text": text,
+        "model_id": ELEVEN_MODEL,
+        "voice_settings": {
+            "stability": args.stabilite,
+            "similarity_boost": 0.75,
+            "style": args.style,
+            "use_speaker_boost": True,
+            "speed": args.speed,
+        },
+    }
+    url = (f"https://api.elevenlabs.io/v1/text-to-speech/{args.voix_id}/with-timestamps"
+           "?output_format=mp3_44100_128")
+    # curl passe par le proxy de l'environnement, qui ajoute la clé
+    r = subprocess.run(
+        ["curl", "-sS", "--fail-with-body", "-X", "POST", url, "-H", "Content-Type: application/json",
+         "--data-binary", "@-"],
+        input=json.dumps(corps).encode(), capture_output=True,
+    )
+    if r.returncode:
+        sys.exit(f"ElevenLabs : {r.stdout.decode()[:400]} {r.stderr.decode()[:200]}")
+    rep = json.loads(r.stdout)
+    with tempfile.TemporaryDirectory() as tmp:
+        mp3, wav = pathlib.Path(tmp, "v.mp3"), pathlib.Path(tmp, "v.wav")
+        mp3.write_bytes(base64.b64decode(rep["audio_base64"]))
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", mp3, "-ar", "44100", "-ac", "1", wav], check=True)
+        audio, sr = sf.read(wav, dtype="float32")
+    al = rep["alignment"]
+    # Un « phonème » par caractère : les espaces séparent les mots, comme pour les autres moteurs
+    phs = [Ph(c, a, b) for c, a, b in zip(al["characters"], al["character_start_times_seconds"],
+                                          al["character_end_times_seconds"])]
+    return audio, sr, phs
+
+
+moteurs = {"elevenlabs": elevenlabs_phonemes, "piper": piper_phonemes, "kokoro": kokoro_phonemes}
+audio, sr, phonemes = moteurs[args.moteur]()
 
 # Phonemes come back as one stream; spaces separate the spoken words
 spoken, current = [], []

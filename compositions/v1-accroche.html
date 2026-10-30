@@ -1,4 +1,4 @@
-<!-- Vidéo 1 · 0–2,3 s · accroche : la question est lisible en filigrane dès l'image 0
+<!-- Vidéo 1 · 0–1,8 s · accroche : la question est lisible en filigrane dès l'image 0
      (vignette + boucle), chaque mot tombe en plein sur sa syllabe dans la voix. -->
 <template>
   <link rel="stylesheet" href="assets/design/tokens.css" />
@@ -32,10 +32,10 @@
       <span data-hf-id="hf-o9rb" class="acc-mot"><em data-hf-id="hf-f9gw">lundis&#8239;?</em></span>
     </p>
     <p data-hf-id="hf-voe9" id="acc-texte" class="acc-texte titre" data-layout-allow-overlap>
-      <span data-hf-id="hf-n3ri" class="acc-mot" data-t="0.02">Tu</span><span data-hf-id="hf-mslu" class="acc-mot" data-t="0.17">recommences</span>
-      <span data-hf-id="hf-tyrd" class="acc-mot" data-t="0.69">ton</span><span data-hf-id="hf-rwby" class="acc-mot" data-t="0.86">régime</span>
-      <span data-hf-id="hf-6u88" class="acc-mot" data-t="1.30">tous</span><span data-hf-id="hf-5k1e" class="acc-mot" data-t="1.42">les</span>
-      <span data-hf-id="hf-qpf1" class="acc-mot" data-t="1.56"><em data-hf-id="hf-gzgo">lundis&#8239;?</em></span>
+      <span data-hf-id="hf-n3ri" class="acc-mot" data-t="0.00">Tu</span><span data-hf-id="hf-mslu" class="acc-mot" data-t="0.21">recommences</span>
+      <span data-hf-id="hf-tyrd" class="acc-mot" data-t="0.60">ton</span><span data-hf-id="hf-rwby" class="acc-mot" data-t="0.72">régime</span>
+      <span data-hf-id="hf-6u88" class="acc-mot" data-t="1.05">tous</span><span data-hf-id="hf-5k1e" class="acc-mot" data-t="1.22">les</span>
+      <span data-hf-id="hf-qpf1" class="acc-mot" data-t="1.34"><em data-hf-id="hf-gzgo">lundis&#8239;?</em></span>
     </p>
   </div>
   <script>
@@ -50,8 +50,8 @@
         t,
       );
     });
-    tl.to("#acc-filigrane", { opacity: 0, duration: 0.3 }, 1.6);
-    tl.to("#acc-texte", { scale: 1.03, duration: 0.5, ease: "sine.inOut" }, 1.8);
+    tl.to("#acc-filigrane", { opacity: 0, duration: 0.3 }, 1.35);
+    tl.to("#acc-texte", { scale: 1.03, duration: 0.4, ease: "sine.inOut" }, 1.4);
     window.__timelines["v1-accroche"] = tl;
   </script>
 </template>

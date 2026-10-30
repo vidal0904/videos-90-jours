@@ -1,4 +1,4 @@
-<!-- Vidéo 1 · 14,25–18,6 s · texte au-dessus de la couverture (la feuille est le composant page-pdf). -->
+<!-- Vidéo 1 · 13,65–18,25 s · texte au-dessus de la couverture (la feuille est le composant page-pdf). -->
 <template>
   <link rel="stylesheet" href="assets/design/tokens.css" />
   <style>
@@ -27,8 +27,8 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    // Sur « quatre-vingt-dix jours » (15,99 s)
-    tl.fromTo("#couv-sous-titre", { opacity: 0, y: 32 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 1.7);
+    // Sur « quatre-vingt-dix jours » (15,72 s)
+    tl.fromTo("#couv-sous-titre", { opacity: 0, y: 32 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.0);
     window.__timelines["v1-couverture"] = tl;
   </script>
 </template>
