@@ -1,0 +1,87 @@
+<!-- Vidéo 1 · 2,3–6,25 s · le calendrier défile, les lundis sont barrés un par un. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #lun-cal {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 430px;
+    }
+    .lun-tete, .lun-ligne {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .lun-j {
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 34px;
+      color: var(--sauge);
+    }
+    .lun-j.lundi { color: var(--creme); }
+    .lun-case {
+      position: relative;
+      height: 116px;
+      border-radius: 16px;
+      border: 2px solid rgba(143, 166, 138, 0.35);
+      background: rgba(251, 248, 242, 0.04);
+    }
+    .lun-case.lundi {
+      border-color: rgba(251, 248, 242, 0.55);
+      background: rgba(251, 248, 242, 0.1);
+    }
+    .lun-case.vide {
+      border-style: dashed;
+      background: none;
+      opacity: 0.4;
+    }
+    .lun-num {
+      position: absolute;
+      left: 14px;
+      top: 10px;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 28px;
+      color: rgba(251, 248, 242, 0.7);
+    }
+    .lun-trait {
+      position: absolute;
+      left: 12%;
+      top: 50%;
+      width: 76%;
+      height: 9px;
+      margin-top: -4px;
+      border-radius: 9px;
+      background: var(--terracotta);
+      transform-origin: left center;
+    }
+  </style>
+  <div data-hf-id="hf-b78k" id="root" data-composition-id="v1-lundis" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-omwe" id="lun-cal" data-layout-allow-overflow>
+        <div data-hf-id="hf-eao2" class="lun-tete"><span data-hf-id="hf-xjq5" class="lun-j lundi">L</span><span data-hf-id="hf-y4ga" class="lun-j">M</span><span data-hf-id="hf-bx72" class="lun-j">M</span><span data-hf-id="hf-03zf" class="lun-j">J</span><span data-hf-id="hf-vcb3" class="lun-j">V</span><span data-hf-id="hf-xbu8" class="lun-j">S</span><span data-hf-id="hf-0wlh" class="lun-j">D</span></div>
+        <div data-hf-id="hf-w6vx" class="lun-ligne"><div data-hf-id="hf-ydpu" class="lun-case lundi"><span data-hf-id="hf-vnmc" class="lun-num">1</span><span data-hf-id="hf-0hms" id="lun-trait-0" class="lun-trait"></span></div><div data-hf-id="hf-9moe" class="lun-case"><span data-hf-id="hf-ugp9" class="lun-num">2</span></div><div data-hf-id="hf-69zm" class="lun-case"><span data-hf-id="hf-uv0a" class="lun-num">3</span></div><div data-hf-id="hf-6oan" class="lun-case"><span data-hf-id="hf-wujf" class="lun-num">4</span></div><div data-hf-id="hf-72lo" class="lun-case"><span data-hf-id="hf-x8ug" class="lun-num">5</span></div><div data-hf-id="hf-7gwp" class="lun-case"><span data-hf-id="hf-w1xd" class="lun-num">6</span></div><div data-hf-id="hf-7v7q" class="lun-case"><span data-hf-id="hf-wg8e" class="lun-num">7</span></div></div>
+        <div data-hf-id="hf-2ktt" class="lun-ligne"><div data-hf-id="hf-7a9i" class="lun-case lundi"><span data-hf-id="hf-yfrj" class="lun-num">8</span><span data-hf-id="hf-19al" id="lun-trait-1" class="lun-trait"></span></div><div data-hf-id="hf-89ir" class="lun-case"><span data-hf-id="hf-yu2k" class="lun-num">9</span></div><div data-hf-id="hf-8nts" class="lun-case"><span data-hf-id="hf-dlrg" class="lun-num">10</span></div><div data-hf-id="hf-2p8d" class="lun-case"><span data-hf-id="hf-d7gf" class="lun-num">11</span></div><div data-hf-id="hf-33je" class="lun-case"><span data-hf-id="hf-ct5e" class="lun-num">12</span></div><div data-hf-id="hf-27pi" class="lun-case"><span data-hf-id="hf-ceud" class="lun-num">13</span></div><div data-hf-id="hf-1teh" class="lun-case"><span data-hf-id="hf-f6zk" class="lun-num">14</span></div></div>
+        <div data-hf-id="hf-3rqw" class="lun-ligne"><div data-hf-id="hf-7okj" class="lun-case lundi"><span data-hf-id="hf-esoj" class="lun-num">15</span><span data-hf-id="hf-57em" id="lun-trait-2" class="lun-trait"></span></div><div data-hf-id="hf-30bk" class="lun-case"><span data-hf-id="hf-eedi" class="lun-num">16</span></div><div data-hf-id="hf-2m0j" class="lun-case"><span data-hf-id="hf-e02h" class="lun-num">17</span></div><div data-hf-id="hf-0mhe" class="lun-case"><span data-hf-id="hf-afb8" class="lun-num">18</span></div><div data-hf-id="hf-086d" class="lun-case"><span data-hf-id="hf-a107" class="lun-num">19</span></div><div data-hf-id="hf-1f3g" class="lun-case"><span data-hf-id="hf-wzk7" class="lun-num">20</span></div><div data-hf-id="hf-10sf" class="lun-case"><span data-hf-id="hf-xdv8" class="lun-num">21</span></div></div>
+        <div data-hf-id="hf-3dfv" class="lun-ligne"><div data-hf-id="hf-82vk" class="lun-case lundi"><span data-hf-id="hf-w6y5" class="lun-num">22</span><span data-hf-id="hf-bd4f" id="lun-trait-3" class="lun-trait"></span></div><div data-hf-id="hf-z19a" class="lun-case"><span data-hf-id="hf-wl96" class="lun-num">23</span></div><div data-hf-id="hf-ymy9" class="lun-case"><span data-hf-id="hf-yksb" class="lun-num">24</span></div><div data-hf-id="hf-7nfh" class="lun-case"><span data-hf-id="hf-yz3c" class="lun-num">25</span></div><div data-hf-id="hf-81qi" class="lun-case"><span data-hf-id="hf-xs69" class="lun-num">26</span></div><div data-hf-id="hf-8g1j" class="lun-case"><span data-hf-id="hf-y6ha" class="lun-num">27</span></div><div data-hf-id="hf-8uck" class="lun-case"><span data-hf-id="hf-060f" class="lun-num">28</span></div></div>
+        <div data-hf-id="hf-1dwq" class="lun-ligne"><div data-hf-id="hf-5aqd" class="lun-case lundi"><span data-hf-id="hf-0kbg" class="lun-num">29</span><span data-hf-id="hf-fb8g" id="lun-trait-4" class="lun-trait"></span></div><div data-hf-id="hf-98nl" class="lun-case"><span data-hf-id="hf-f532" class="lun-num">30</span></div><div data-hf-id="hf-9mym" class="lun-case"><span data-hf-id="hf-eqs1" class="lun-num">31</span></div><div data-hf-id="hf-d9ao" class="lun-case vide"></div><div data-hf-id="hf-1rmw" class="lun-case vide"></div><div data-hf-id="hf-0kpt" class="lun-case vide"></div><div data-hf-id="hf-0z0u" class="lun-case vide"></div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#lun-cal", { opacity: 0, y: 140 }, { opacity: 1, y: 60, duration: 0.4, ease: "power3.out" }, 0);
+    // Défilement lent vers le haut pendant toute la scène
+    tl.fromTo("#lun-cal", { y: 60 }, { y: -40, duration: 3.55, ease: "none", immediateRender: false }, 0.4);
+    // Un lundi barré toutes les 0,6 s
+    for (let r = 0; r < 5; r++) {
+      tl.fromTo(`#lun-trait-${r}`, { scaleX: 0, rotation: -22 }, { scaleX: 1, rotation: -22, duration: 0.22, ease: "power2.out" }, 0.45 + r * 0.6);
+    }
+    window.__timelines["v1-lundis"] = tl;
+  </script>
+</template>

@@ -1,0 +1,80 @@
+[
+ {
+  "id": "w0",
+  "text": "90",
+  "start": 0.062,
+  "end": 0.687
+ },
+ {
+  "id": "w1",
+  "text": "jours",
+  "start": 0.787,
+  "end": 1.112
+ },
+ {
+  "id": "w2",
+  "text": "pour",
+  "start": 1.187,
+  "end": 1.312
+ },
+ {
+  "id": "w3",
+  "text": "reprendre",
+  "start": 1.362,
+  "end": 1.787
+ },
+ {
+  "id": "w4",
+  "text": "le",
+  "start": 1.812,
+  "end": 1.912
+ },
+ {
+  "id": "w5",
+  "text": "contrôle",
+  "start": 1.962,
+  "end": 2.337
+ },
+ {
+  "id": "w6",
+  "text": "de",
+  "start": 2.362,
+  "end": 2.437
+ },
+ {
+  "id": "w7",
+  "text": "son",
+  "start": 2.487,
+  "end": 2.587
+ },
+ {
+  "id": "w8",
+  "text": "poids.",
+  "start": 2.662,
+  "end": 3.037
+ },
+ {
+  "id": "w9",
+  "text": "Avance",
+  "start": 3.262,
+  "end": 3.587
+ },
+ {
+  "id": "w10",
+  "text": "étape",
+  "start": 3.637,
+  "end": 3.912
+ },
+ {
+  "id": "w11",
+  "text": "par",
+  "start": 3.962,
+  "end": 4.087
+ },
+ {
+  "id": "w12",
+  "text": "étape.",
+  "start": 4.112,
+  "end": 4.672
+ }
+]

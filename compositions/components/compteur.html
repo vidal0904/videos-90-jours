@@ -1,0 +1,77 @@
+<!--
+  « Compteur de chiffre » : un grand chiffre Lora qui monte de 0 à `valeur` en 0,8 s,
+  avec son libellé en Inter. Le chiffre est l'accent terracotta de l'écran.
+  N'afficher que des chiffres du BRIEF (316, 70, 30, 23, 15, 13, 12, 90…).
+-->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #compteur-bloc {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: var(--haut, 640px);
+      text-align: center;
+    }
+    #compteur-chiffre {
+      color: var(--couleur, var(--terracotta));
+    }
+    #compteur-libelle {
+      margin-top: 24px;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 1.15;
+      color: var(--creme);
+    }
+  </style>
+  <div data-hf-id="hf-b5cw"
+    id="root"
+    data-composition-id="compteur"
+    data-width="1080"
+    data-height="1920"
+    data-composition-variables='[
+      {"id":"valeur","type":"number","label":"Chiffre (du BRIEF uniquement)","default":70,"min":0,"max":1000},
+      {"id":"libelle","type":"string","label":"Libellé","default":"recettes détaillées"},
+      {"id":"couleur","type":"color","label":"Couleur du chiffre","default":"#C2643F"},
+      {"id":"haut","type":"string","label":"Position verticale (haut)","default":"640px"},
+      {"id":"debut","type":"number","label":"Début du comptage (s)","default":0.2,"min":0,"max":10,"step":0.1}
+    ]'
+  >
+    <div data-hf-id="hf-wozp" id="compteur-bloc">
+      <div data-hf-id="hf-gaxo" id="compteur-chiffre" class="chiffre">0</div>
+      <div data-hf-id="hf-8qk1" id="compteur-libelle" data-var-text="libelle">recettes détaillées</div>
+    </div>
+  </div>
+  <script>
+    const v = (window.__hyperframes && window.__hyperframes.getVariables()) || {};
+    const valeur = v.valeur ?? 70;
+    const debut = v.debut ?? 0.2;
+    const chiffre = document.getElementById("compteur-chiffre");
+    const compte = { n: 0 };
+
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(
+      "#compteur-bloc",
+      { opacity: 0, y: 32 },
+      { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" },
+      debut,
+    );
+    tl.fromTo(
+      compte,
+      { n: 0 },
+      {
+        n: valeur,
+        duration: 0.8,
+        ease: "power2.out",
+        onUpdate: () => (chiffre.textContent = Math.round(compte.n)),
+      },
+      debut,
+    );
+    window.__timelines["compteur"] = tl;
+  </script>
+</template>

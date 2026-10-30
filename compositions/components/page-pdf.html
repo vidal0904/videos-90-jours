@@ -1,0 +1,79 @@
+<!--
+  « Page du PDF » : une vraie page du guide présentée comme une feuille posée.
+  Ombre douce, rotation légère (±2°), entrée glissée + fondu, zoom lent 100 → 108 %.
+  Pour un zoom ciblé (menu, liste de courses) : régler origineX / origineY sur la zone
+  et zoomFin plus haut (ex. 1.6).
+-->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #page-camera {
+      position: absolute;
+      inset: 0;
+      transform-origin: var(--origineX, 50%) var(--origineY, 45%);
+    }
+    #page-feuille {
+      position: absolute;
+      left: calc(50% - var(--largeur, 600px) / 2);
+      top: var(--haut, 560px);
+      width: var(--largeur, 600px);
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      background: var(--creme);
+      /* liseré crème : la feuille reste lisible même quand la page est vert forêt */
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+      overflow: hidden;
+    }
+    #page-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <div data-hf-id="hf-jfof"
+    id="root"
+    data-composition-id="page-pdf"
+    data-width="1080"
+    data-height="1920"
+    data-composition-variables='[
+      {"id":"src","type":"string","label":"Image de la page","default":"assets/design/placeholder-page.svg"},
+      {"id":"largeur","type":"string","label":"Largeur de la feuille","default":"600px"},
+      {"id":"haut","type":"string","label":"Position verticale (haut)","default":"560px"},
+      {"id":"rotation","type":"number","label":"Rotation finale (°)","default":-2,"min":-2,"max":2,"step":0.5},
+      {"id":"zoomFin","type":"number","label":"Zoom final","default":1.08,"min":1,"max":2,"step":0.01},
+      {"id":"origineX","type":"string","label":"Zone de zoom X","default":"50%"},
+      {"id":"origineY","type":"string","label":"Zone de zoom Y","default":"45%"},
+      {"id":"duree","type":"number","label":"Durée du zoom (s)","default":5,"min":1,"max":45}
+    ]'
+  >
+    <div data-hf-id="hf-bxro" id="page-camera">
+      <div data-hf-id="hf-w2sd" id="page-feuille">
+        <img data-hf-id="hf-d1wl" id="page-image" src="assets/design/placeholder-page.svg" data-var-src="src" alt="" />
+      </div>
+    </div>
+  </div>
+  <script>
+    const v = (window.__hyperframes && window.__hyperframes.getVariables()) || {};
+    const rotation = v.rotation ?? -2;
+    const zoomFin = v.zoomFin ?? 1.08;
+    const duree = v.duree ?? 5;
+
+    const tl = gsap.timeline({ paused: true });
+    // Entrée : glissement vertical court + fondu (DESIGN.md › Motion)
+    tl.fromTo(
+      "#page-feuille",
+      { opacity: 0, y: 40, rotation: rotation + 1.5 },
+      { opacity: 1, y: 0, rotation: rotation, duration: 0.5, ease: "power3.out" },
+      0,
+    );
+    // Ken Burns : toute la feuille avance vers la zone origineX / origineY
+    tl.fromTo("#page-camera", { scale: 1 }, { scale: zoomFin, duration: duree, ease: "sine.inOut" }, 0);
+    window.__timelines["page-pdf"] = tl;
+  </script>
+</template>

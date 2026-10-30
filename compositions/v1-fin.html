@@ -1,0 +1,126 @@
+<!-- Vidéo 1 · 25,45–30 s · retour au calendrier : un seul lundi coché en vert, « Lien en bio ».
+     Les 0,8 dernières secondes ramènent la question en filigrane : même image que l'image 0 (boucle). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #fin-cal {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 430px;
+    }
+    .fin-tete, .fin-ligne {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .fin-j {
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 34px;
+      color: var(--sauge);
+    }
+    .fin-j.lundi { color: var(--creme); }
+    .fin-case {
+      position: relative;
+      height: 116px;
+      border-radius: 16px;
+      border: 2px solid rgba(143, 166, 138, 0.35);
+      background: rgba(251, 248, 242, 0.04);
+    }
+    .fin-case.lundi {
+      border-color: rgba(251, 248, 242, 0.55);
+      background: rgba(251, 248, 242, 0.1);
+    }
+    .fin-case.vide {
+      border-style: dashed;
+      background: none;
+      opacity: 0.4;
+    }
+    .fin-num {
+      position: absolute;
+      left: 14px;
+      top: 10px;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 28px;
+      color: rgba(251, 248, 242, 0.7);
+    }
+    .fin-coche {
+      position: absolute;
+      inset: 14px;
+      border-radius: 50%;
+      background: var(--sauge);
+    }
+    .fin-coche svg {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: var(--creme);
+      stroke-width: 2.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .fin-coche path {
+      stroke-dasharray: 20;
+    }
+    #fin-lien {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 260px;
+      text-align: center;
+      font-size: 104px;
+      color: var(--creme);
+    }
+    #fin-filigrane {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 470px;
+      text-align: center;
+      font-size: 132px;
+      color: var(--creme);
+    }
+    #fin-filigrane span {
+      display: inline-block;
+      margin: 0 0.12em;
+    }
+  </style>
+  <div data-hf-id="hf-cx3m" id="root" data-composition-id="v1-fin" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-atxw" id="fin-cal" data-layout-allow-overflow>
+        <div data-hf-id="hf-yoy8" class="fin-tete"><span data-hf-id="hf-vwpz" class="fin-j lundi">L</span><span data-hf-id="hf-5ubs" class="fin-j">M</span><span data-hf-id="hf-vwow" class="fin-j">M</span><span data-hf-id="hf-326l" class="fin-j">J</span><span data-hf-id="hf-e6rd" class="fin-j">V</span><span data-hf-id="hf-czua" class="fin-j">S</span><span data-hf-id="hf-8mgz" class="fin-j">D</span></div>
+        <div data-hf-id="hf-59q7" class="fin-ligne"><div data-hf-id="hf-jfr0" class="fin-case lundi"><span data-hf-id="hf-b3jm" class="fin-num">1</span><span data-hf-id="hf-d0n9" id="fin-coche" class="fin-coche" data-layout-allow-occlusion><svg data-hf-id="hf-ulu9" viewBox="0 0 24 24"><path data-hf-id="hf-m19h" d="M6 12.5l4 4 8-9"/></svg></span></div><div data-hf-id="hf-5j7w" class="fin-case"><span data-hf-id="hf-bhun" class="fin-num">2</span></div><div data-hf-id="hf-sof8" class="fin-case"><span data-hf-id="hf-bw5o" class="fin-num">3</span></div><div data-hf-id="hf-rhi5" class="fin-case"><span data-hf-id="hf-cagp" class="fin-num">4</span></div><div data-hf-id="hf-rvt6" class="fin-case"><span data-hf-id="hf-corq" class="fin-num">5</span></div><div data-hf-id="hf-tvcb" class="fin-case"><span data-hf-id="hf-d32r" class="fin-num">6</span></div><div data-hf-id="hf-u9nc" class="fin-case"><span data-hf-id="hf-dhds" class="fin-num">7</span></div></div>
+        <div data-hf-id="hf-x6yn" class="fin-ligne"><div data-hf-id="hf-beno" class="fin-case lundi"><span data-hf-id="hf-7isd" class="fin-num">8</span></div><div data-hf-id="hf-t2q9" class="fin-case"><span data-hf-id="hf-7x3e" class="fin-num">9</span></div><div data-hf-id="hf-th1a" class="fin-case"><span data-hf-id="hf-ymqu" class="fin-num">10</span></div><div data-hf-id="hf-vgkf" class="fin-case"><span data-hf-id="hf-y8ft" class="fin-num">11</span></div><div data-hf-id="hf-vuvg" class="fin-case"><span data-hf-id="hf-zfcw" class="fin-num">12</span></div><div data-hf-id="hf-awos" class="fin-case"><span data-hf-id="hf-z11v" class="fin-num">13</span></div><div data-hf-id="hf-aidr" class="fin-case"><span data-hf-id="hf-x1iq" class="fin-num">14</span></div></div>
+        <div data-hf-id="hf-wsnm" class="fin-ligne"><div data-hf-id="hf-a7ql" class="fin-case lundi"><span data-hf-id="hf-wn7p" class="fin-num">15</span></div><div data-hf-id="hf-a42q" class="fin-case"><span data-hf-id="hf-xu4s" class="fin-num">16</span></div><div data-hf-id="hf-9prp" class="fin-case"><span data-hf-id="hf-xftr" class="fin-num">17</span></div><div data-hf-id="hf-chww" class="fin-case"><span data-hf-id="hf-vgam" class="fin-num">18</span></div><div data-hf-id="hf-c3lv" class="fin-case"><span data-hf-id="hf-v1zl" class="fin-num">19</span></div><div data-hf-id="hf-bpau" class="fin-case"><span data-hf-id="hf-l5a5" class="fin-num">20</span></div><div data-hf-id="hf-bazt" class="fin-case"><span data-hf-id="hf-ljl6" class="fin-num">21</span></div></div>
+        <div data-hf-id="hf-wecl" class="fin-ligne"><div data-hf-id="hf-am1m" class="fin-case lundi"><span data-hf-id="hf-lxw7" class="fin-num">22</span></div><div data-hf-id="hf-7q8k" class="fin-case"><span data-hf-id="hf-mc78" class="fin-num">23</span></div><div data-hf-id="hf-7bxj" class="fin-case"><span data-hf-id="hf-mqi9" class="fin-num">24</span></div><div data-hf-id="hf-ycgn" class="fin-case"><span data-hf-id="hf-n4ta" class="fin-num">25</span></div><div data-hf-id="hf-yqro" class="fin-case"><span data-hf-id="hf-nj4b" class="fin-num">26</span></div><div data-hf-id="hf-xjul" class="fin-case"><span data-hf-id="hf-nxfc" class="fin-num">27</span></div><div data-hf-id="hf-xy5m" class="fin-case"><span data-hf-id="hf-obqd" class="fin-num">28</span></div></div>
+        <div data-hf-id="hf-z6hs" class="fin-ligne"><div data-hf-id="hf-clkr" class="fin-case lundi"><span data-hf-id="hf-oq1e" class="fin-num">29</span></div><div data-hf-id="hf-zxor" class="fin-case"><span data-hf-id="hf-kdmc" class="fin-num">30</span></div><div data-hf-id="hf-0bzs" class="fin-case"><span data-hf-id="hf-jzbb" class="fin-num">31</span></div><div data-hf-id="hf-x4u6" class="fin-case vide"></div><div data-hf-id="hf-nwde" class="fin-case vide"></div><div data-hf-id="hf-oaof" class="fin-case vide"></div><div data-hf-id="hf-oozg" class="fin-case vide"></div></div>
+    </div>
+    <p data-hf-id="hf-b5w2" id="fin-lien" class="titre">Lien en <em data-hf-id="hf-h487">bio</em></p>
+    <p data-hf-id="hf-5zmd" id="fin-filigrane" class="titre" aria-hidden="true" data-layout-allow-overlap>
+      <span data-hf-id="hf-v5im">Tu</span><span data-hf-id="hf-872o">recommences</span>
+      <span data-hf-id="hf-byiy">ton</span><span data-hf-id="hf-x9l6">régime</span>
+      <span data-hf-id="hf-b0s4">tous</span><span data-hf-id="hf-g6wv">les</span>
+      <span data-hf-id="hf-uckh"><em data-hf-id="hf-f9gw">lundis&#8239;?</em></span>
+    </p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fin-cal", { opacity: 0, y: 120 }, { opacity: 1, y: 40, duration: 0.45, ease: "power3.out" }, 0);
+    // Cette fois, un seul lundi… coché
+    tl.fromTo("#fin-coche", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(2)" }, 0.7);
+    tl.fromTo("#fin-coche path", { strokeDashoffset: 20 }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, 0.85);
+    // « Lien en bio » sur « le lien » (25,8 s)
+    tl.fromTo("#fin-lien", { opacity: 0, y: 32 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.3);
+    // Boucle : tout s'efface, la question revient en filigrane comme à l'image 0
+    tl.to(["#fin-cal", "#fin-lien"], { opacity: 0, duration: 0.45, ease: "power2.in" }, 3.65);
+    tl.fromTo("#fin-filigrane", { opacity: 0 }, { opacity: 0.24, duration: 0.4, ease: "power2.out" }, 3.95);
+    window.__timelines["v1-fin"] = tl;
+  </script>
+</template>

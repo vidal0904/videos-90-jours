@@ -1,0 +1,57 @@
+<!-- Vidéo 1 · 0–2,3 s · accroche : la question est lisible en filigrane dès l'image 0
+     (vignette + boucle), chaque mot tombe en plein sur sa syllabe dans la voix. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .acc-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 470px;
+      text-align: center;
+      font-size: 132px;
+      color: var(--creme);
+    }
+    #acc-filigrane {
+      opacity: 0.24;
+    }
+    .acc-mot {
+      display: inline-block;
+      margin: 0 0.12em;
+    }
+  </style>
+  <div data-hf-id="hf-ael5" id="root" data-composition-id="v1-accroche" data-width="1080" data-height="1920">
+    <p data-hf-id="hf-4f83" id="acc-filigrane" class="acc-texte titre" aria-hidden="true" data-layout-allow-overlap>
+      <span data-hf-id="hf-5zzo" class="acc-mot">Tu</span><span data-hf-id="hf-q1pe" class="acc-mot">recommences</span>
+      <span data-hf-id="hf-opsk" class="acc-mot">ton</span><span data-hf-id="hf-eo1k" class="acc-mot">régime</span>
+      <span data-hf-id="hf-hhdu" class="acc-mot">tous</span><span data-hf-id="hf-khh9" class="acc-mot">les</span>
+      <span data-hf-id="hf-o9rb" class="acc-mot"><em data-hf-id="hf-f9gw">lundis&#8239;?</em></span>
+    </p>
+    <p data-hf-id="hf-voe9" id="acc-texte" class="acc-texte titre" data-layout-allow-overlap>
+      <span data-hf-id="hf-n3ri" class="acc-mot" data-t="0.02">Tu</span><span data-hf-id="hf-mslu" class="acc-mot" data-t="0.17">recommences</span>
+      <span data-hf-id="hf-tyrd" class="acc-mot" data-t="0.69">ton</span><span data-hf-id="hf-rwby" class="acc-mot" data-t="0.86">régime</span>
+      <span data-hf-id="hf-6u88" class="acc-mot" data-t="1.30">tous</span><span data-hf-id="hf-5k1e" class="acc-mot" data-t="1.42">les</span>
+      <span data-hf-id="hf-qpf1" class="acc-mot" data-t="1.56"><em data-hf-id="hf-gzgo">lundis&#8239;?</em></span>
+    </p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Chaque mot tombe sur son mot dans la voix (horaires de assets/voice/video-01.words.json)
+    document.querySelectorAll("#acc-texte .acc-mot").forEach((m, i) => {
+      const t = Math.max(0, parseFloat(m.dataset.t) - 0.08);
+      tl.fromTo(
+        m,
+        { y: -90, opacity: 0, rotation: i % 2 ? 2 : -2 },
+        { y: 0, opacity: 1, rotation: 0, duration: 0.3, ease: "power3.out" },
+        t,
+      );
+    });
+    tl.to("#acc-filigrane", { opacity: 0, duration: 0.3 }, 1.6);
+    tl.to("#acc-texte", { scale: 1.03, duration: 0.5, ease: "sine.inOut" }, 1.8);
+    window.__timelines["v1-accroche"] = tl;
+  </script>
+</template>

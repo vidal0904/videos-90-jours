@@ -1,0 +1,33 @@
+<!-- Mention santé discrète en bas de la zone sûre, sur toute la durée (BRIEF › règle 8). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #mention-texte {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 1474px;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 4px 18px 6px;
+      border-radius: 999px;
+      /* pastille vert forêt : lisible aussi au-dessus des pages blanches */
+      background: rgba(30, 59, 44, 0.85);
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 500;
+      font-size: 28px;
+      color: rgba(251, 248, 242, 0.72);
+    }
+  </style>
+  <div data-hf-id="hf-ixix" id="root" data-composition-id="mention-sante" data-width="1080" data-height="1920">
+    <p data-hf-id="hf-fua5" id="mention-texte">Informations générales, ne remplace pas un avis médical.</p>
+  </div>
+  <script>
+    window.__timelines["mention-sante"] = gsap.timeline({ paused: true });
+  </script>
+</template>

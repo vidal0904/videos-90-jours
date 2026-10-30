@@ -1,0 +1,52 @@
+<!-- Vidéo 2 · 25–29,6 s · « 12 semaines » et « 70 recettes » (BRIEF §2), compteurs 0 → N en 0,8 s. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .k-bloc {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+    }
+    #k-semaines { top: 300px; }
+    #k-recettes { top: 790px; }
+    .k-chiffre {
+      font-size: 250px;
+    }
+    #k-semaines .k-chiffre { color: var(--creme); }
+    #k-recettes .k-chiffre { color: var(--terracotta); }
+    .k-libelle {
+      margin-top: 6px;
+      font-family: var(--font-titre);
+      font-style: italic;
+      font-weight: 600;
+      font-size: 76px;
+      color: var(--dore);
+    }
+  </style>
+  <div id="root" data-composition-id="v2-compteurs" data-width="1080" data-height="1920">
+    <div id="k-semaines" class="k-bloc">
+      <div id="k-n-semaines" class="k-chiffre chiffre" data-valeur="12">0</div>
+      <div class="k-libelle">semaines</div>
+    </div>
+    <div id="k-recettes" class="k-bloc">
+      <div id="k-n-recettes" class="k-chiffre chiffre" data-valeur="70">0</div>
+      <div class="k-libelle">recettes</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « Douze semaines » (25,24 s) puis « soixante-dix recettes » (26,83 s)
+    [["#k-semaines", "#k-n-semaines", 0.15], ["#k-recettes", "#k-n-recettes", 1.75]].forEach(([bloc, n, t]) => {
+      const el = document.querySelector(n);
+      const compte = { v: 0 };
+      tl.fromTo(bloc, { opacity: 0, y: 32 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, t);
+      tl.fromTo(compte, { v: 0 }, { v: Number(el.dataset.valeur), duration: 0.8, ease: "power2.out", onUpdate: () => (el.textContent = Math.round(compte.v)) }, t);
+    });
+    window.__timelines["v2-compteurs"] = tl;
+  </script>
+</template>

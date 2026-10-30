@@ -1,0 +1,34 @@
+<!-- Vidéo 1 · 14,25–18,6 s · texte au-dessus de la couverture (la feuille est le composant page-pdf). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #couv-sous-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 268px;
+      text-align: center;
+      font-size: 64px;
+      color: var(--creme);
+    }
+  </style>
+  <div data-hf-id="hf-ygb6"
+    id="root"
+    data-composition-id="v1-couverture"
+    data-width="1080"
+    data-height="1920"
+    data-composition-variables='[{"id":"sousTitre","type":"string","label":"Sous-titre","default":"1 semaine à la fois"}]'
+  >
+    <p data-hf-id="hf-a6fx" id="couv-sous-titre" class="titre"><em data-hf-id="hf-c513">90 jours</em> · <span data-hf-id="hf-zu1m" data-var-text="sousTitre">1 semaine à la fois</span></p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Sur « quatre-vingt-dix jours » (15,99 s)
+    tl.fromTo("#couv-sous-titre", { opacity: 0, y: 32 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 1.7);
+    window.__timelines["v1-couverture"] = tl;
+  </script>
+</template>

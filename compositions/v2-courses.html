@@ -1,0 +1,83 @@
+<!-- Vidéo 2 · 16,1–20,7 s · la page se tourne : menu → liste de courses (vraies pages),
+     zoom sur Protéines et Légumes, les cases se cochent une à une.
+     Cases en % de la page (courses-s1-p95.png, 1413 × 2000). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #c-camera {
+      position: absolute;
+      inset: 0;
+      transform-origin: 0 0;
+    }
+    .c-feuille {
+      position: absolute;
+      left: 170px;
+      top: 430px;
+      width: 740px;
+      aspect-ratio: 1413 / 2000;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page);
+    }
+    .c-feuille img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .c-coche {
+      position: absolute;
+      width: 2.4%;
+      aspect-ratio: 1;
+      border-radius: 22%;
+      background: var(--vert-foret);
+    }
+    .c-coche svg {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: var(--creme);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+  <div id="root" data-composition-id="v2-courses" data-width="1080" data-height="1920">
+    <div id="c-camera" data-layout-allow-overflow data-layout-allow-overlap>
+      <div id="c-menu" class="c-feuille"><img src="capture/pages/menu-s1-p94.png" alt="" /></div>
+      <div id="c-liste" class="c-feuille">
+        <img src="capture/pages/courses-s1-p95.png" alt="Liste de courses de la semaine 1" />
+        <span id="c-coche-0" class="c-coche" style="left: 6.80%; top: 16.05%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-1" class="c-coche" style="left: 6.80%; top: 17.70%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-2" class="c-coche" style="left: 6.80%; top: 19.40%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-3" class="c-coche" style="left: 6.80%; top: 21.05%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-4" class="c-coche" style="left: 6.80%; top: 22.70%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-5" class="c-coche" style="left: 6.80%; top: 24.35%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-6" class="c-coche" style="left: 6.80%; top: 26.00%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-7" class="c-coche" style="left: 36.30%; top: 16.05%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-8" class="c-coche" style="left: 36.30%; top: 17.70%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-9" class="c-coche" style="left: 36.30%; top: 19.35%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-10" class="c-coche" style="left: 36.30%; top: 21.05%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+        <span id="c-coche-11" class="c-coche" style="left: 36.30%; top: 22.65%"><svg viewBox="0 0 24 24"><path d="M6 12.5l4 4 8-9" /></svg></span>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // La page se tourne sur « Et la liste de courses ? » (16,27 s)
+    tl.fromTo("#c-menu", { rotationY: 0, transformPerspective: 1800, transformOrigin: "left center" }, { rotationY: -90, duration: 0.32, ease: "power2.in" }, 0.1);
+    tl.fromTo("#c-liste", { rotationY: 90, transformPerspective: 1800, transformOrigin: "left center" }, { rotationY: 0, duration: 0.36, ease: "power2.out" }, 0.42);
+    // Zoom sur Protéines + Légumes : le point (35 %, 24,7 %) de la page vient au centre
+    tl.fromTo("#c-camera", { scale: 1, x: 0, y: 0 }, { scale: 2.2, x: -404, y: -695, duration: 0.6, ease: "power3.inOut" }, 0.95);
+    // « Elle est déjà calculée, avec les quantités » : une case toutes les 0,22 s
+    document.querySelectorAll(".c-coche").forEach((c, i) => {
+      tl.fromTo(c, { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.18, ease: "back.out(2.5)" }, 1.65 + i * 0.22);
+    });
+    window.__timelines["v2-courses"] = tl;
+  </script>
+</template>

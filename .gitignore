@@ -1,0 +1,6 @@
+node_modules/
+.hyperframes/
+essais-voix/
+# Rendus : on ne garde que les versions finales
+renders/*
+!renders/*-final.mp4

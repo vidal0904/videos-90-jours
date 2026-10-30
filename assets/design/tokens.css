@@ -1,0 +1,36 @@
+/* Design system « 90 jours » — source : DESIGN.md. Lié par chaque scène. */
+@font-face { font-family: "Lora"; font-style: normal; font-weight: 600; src: url("../fonts/Lora-600.woff2") format("woff2"); }
+@font-face { font-family: "Lora"; font-style: italic; font-weight: 600; src: url("../fonts/Lora-600-italic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400 900; src: url("../fonts/Inter-variable.woff2") format("woff2"); }
+
+:root {
+  /* Couleurs (reprises du PDF) */
+  --vert-foret: #1e3b2c;
+  --vert-foret-2: #2c5240;
+  --sauge: #8fa68a;
+  --sauge-claire: #eef2ea;
+  --terracotta: #c2643f;      /* un seul accent par écran */
+  --terracotta-clair: #f7e7dc;
+  --sable: #f6f1e7;
+  --creme: #fbf8f2;
+  --dore: #e3cfa6;            /* italiques sur fond vert */
+  --encre: #23271f;
+
+  /* Typo */
+  --font-titre: "Lora", Georgia, serif;
+  --font-texte: "Inter", sans-serif;
+
+  /* Zones sûres 1080×1920 : texte entre y=220 et y=1520, 80 px des bords */
+  --safe-top: 220px;
+  --safe-bottom: 1520px;
+  --safe-x: 80px;
+
+  /* Pages du PDF */
+  --ombre-page: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.titre { font-family: var(--font-titre); font-weight: 600; line-height: 1.12; letter-spacing: -0.01em; }
+.titre em { font-style: italic; color: var(--dore); }
+.sur-creme .titre em { color: var(--terracotta); }
+.texte { font-family: var(--font-texte); font-weight: 500; }
+.chiffre { font-family: var(--font-titre); font-weight: 600; font-size: 280px; line-height: 1; font-variant-numeric: lining-nums tabular-nums; }

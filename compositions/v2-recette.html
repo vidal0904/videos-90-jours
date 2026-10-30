@@ -1,0 +1,51 @@
+<!-- Vidéo 2 · 20,7–25 s · la vraie fiche L20 « Grand bowl complet au quinoa » glisse depuis le bas,
+     zoom sur « Le conseil » puis sur « Variante ». Caméra : origine 0 0, la zone visée vient
+     au point (540, 900) du cadre. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #f-camera {
+      position: absolute;
+      inset: 0;
+      transform-origin: 0 0;
+    }
+    #f-feuille {
+      position: absolute;
+      left: 170px;
+      top: 430px;
+      width: 740px;
+      aspect-ratio: 1413 / 2000;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page);
+    }
+    #f-feuille img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <div id="root" data-composition-id="v2-recette" data-width="1080" data-height="1920">
+    <div id="f-camera" data-layout-allow-overflow>
+      <div id="f-feuille">
+        <img src="capture/pages/recette-l20-bowl-quinoa-p243.png" alt="Fiche recette L20, grand bowl complet au quinoa" />
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « Chaque recette a sa fiche » (20,88 s)
+    tl.fromTo("#f-feuille", { y: 1100, rotation: 4 }, { y: 0, rotation: -1.5, duration: 0.55, ease: "power3.out" }, 0.05);
+    // « un conseil » (22,83 s) : la case « Le conseil » (28,9 % ; 70,8 %) au centre
+    tl.fromTo("#f-camera", { scale: 1, x: 0, y: 0 }, { scale: 2, x: -228, y: -1443, duration: 0.55, ease: "power3.inOut" }, 1.95);
+    // « une variante » (23,82 s) : glissement vers la case « Variante » (71 % ; 70,8 %)
+    tl.to("#f-camera", { x: -851, duration: 0.5, ease: "power3.inOut" }, 3.0);
+    window.__timelines["v2-recette"] = tl;
+  </script>
+</template>

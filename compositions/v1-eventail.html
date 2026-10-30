@@ -1,0 +1,106 @@
+<!-- Vidéo 1 · 18,6–22,45 s · menu, courses, journal de la semaine 1 en éventail (vraies pages),
+     puis zoom lisible sur le menu sur « déjà prêts ». -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #evt-groupe {
+      position: absolute;
+      inset: 0;
+    }
+    .evt-carte {
+      position: absolute;
+      left: calc(50% - 180px);
+      top: 520px;
+      width: 360px;
+    }
+    .evt-feuille {
+      width: 100%;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--creme);
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .evt-feuille img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .evt-etiquette {
+      position: absolute;
+      left: 50%;
+      top: -34px;
+      transform: translateX(-50%);
+      padding: 10px 26px 12px;
+      border-radius: 999px;
+      background: var(--sauge-claire);
+      color: var(--vert-foret);
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 38px;
+      white-space: nowrap;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+    /* Zoom : un recadrage net du haut du menu (Lundi → Mercredi), lisible sur téléphone */
+    #evt-zoom {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 560px;
+      height: 640px;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    #evt-zoom img {
+      position: absolute;
+      width: 2120px;
+      left: -150px;
+      top: -400px;
+    }
+  </style>
+  <div data-hf-id="hf-d8df" id="root" data-composition-id="v1-eventail" data-width="1080" data-height="1920">
+    <div data-hf-id="hf-bzrs" id="evt-groupe" data-layout-allow-overlap data-layout-allow-overflow>
+      <div data-hf-id="hf-z1pg" id="evt-menu" class="evt-carte">
+        <div data-hf-id="hf-xr5y" class="evt-feuille"><img data-hf-id="hf-dk27" src="capture/pages/menu-s1-p94.png" alt="Menu de la semaine 1" /></div>
+        <span data-hf-id="hf-eygs" class="evt-etiquette">Menu</span>
+      </div>
+      <div data-hf-id="hf-0cdx" id="evt-courses" class="evt-carte">
+        <div data-hf-id="hf-ypca" class="evt-feuille"><img data-hf-id="hf-klsc" src="capture/pages/courses-s1-p95.png" alt="Liste de courses de la semaine 1" /></div>
+        <span data-hf-id="hf-0yrr" class="evt-etiquette">Courses</span>
+      </div>
+      <div data-hf-id="hf-79q6" id="evt-journal" class="evt-carte">
+        <div data-hf-id="hf-z3nb" class="evt-feuille"><img data-hf-id="hf-nn8j" src="capture/pages/journal-s1-p96.png" alt="Journal de la semaine 1" /></div>
+        <span data-hf-id="hf-hr8a" class="evt-etiquette">Journal</span>
+      </div>
+    </div>
+    <div data-hf-id="hf-2deh" id="evt-zoom" data-layout-allow-overflow>
+      <img data-hf-id="hf-kyde" src="capture/pages/menu-s1-p94.png" alt="Menu de la semaine 1, lundi à mercredi" />
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Chaque page glisse sur son mot : « menu » 18,84 · « liste » 19,56 · « journal » 20,74
+    const cartes = [
+      ["#evt-menu", -225, 40, -7, 0.2],
+      ["#evt-courses", 0, 0, 0, 0.9],
+      ["#evt-journal", 225, 40, 7, 2.1],
+    ];
+    cartes.forEach(([id, x, y, r, t]) => {
+      tl.fromTo(id, { opacity: 0, x: x * 0.4, y: 260, rotation: 0 }, { opacity: 1, x, y, rotation: r, duration: 0.5, ease: "power3.out" }, t);
+    });
+    // Zoom lent de l'ensemble
+    tl.fromTo("#evt-groupe", { scale: 1 }, { scale: 1.06, duration: 2.85, ease: "sine.inOut" }, 0);
+    // « déjà prêts » (21,52 s) : l'éventail s'efface, le menu passe en gros plan
+    tl.to("#evt-groupe", { opacity: 0, scale: 1.25, duration: 0.3, ease: "power2.in" }, 2.85);
+    tl.fromTo("#evt-zoom", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 2.9);
+    tl.fromTo("#evt-zoom img", { y: 0 }, { y: -40, duration: 0.95, ease: "none" }, 2.9);
+    window.__timelines["v1-eventail"] = tl;
+  </script>
+</template>

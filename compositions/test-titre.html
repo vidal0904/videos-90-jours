@@ -1,0 +1,47 @@
+<!-- Rendu test : titre du guide au-dessus de la couverture. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #titre-bloc {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      color: var(--creme);
+    }
+    #titre-90 {
+      font-size: 148px;
+    }
+    #titre-suite {
+      margin-top: 8px;
+      font-size: 64px;
+    }
+  </style>
+  <div data-hf-id="hf-ujh7"
+    id="root"
+    data-composition-id="test-titre"
+    data-width="1080"
+    data-height="1920"
+    data-composition-variables='[
+      {"id":"titreAccent","type":"string","label":"Titre — mots-clés (italique doré)","default":"90 jours"},
+      {"id":"titreSuite","type":"string","label":"Titre — suite","default":"pour reprendre le contrôle de son poids"}
+    ]'
+  >
+    <div data-hf-id="hf-4l5c" id="titre-bloc">
+      <div data-hf-id="hf-bitw" id="titre-90" class="titre"><em data-hf-id="hf-oqtj" data-var-text="titreAccent">90 jours</em></div>
+      <div data-hf-id="hf-cczl" id="titre-suite" class="titre" data-var-text="titreSuite">pour reprendre le contrôle de son poids</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « 90 jours » est déjà là à l'image 0 (vignette), il se pose doucement
+    tl.fromTo("#titre-90", { scale: 1.06 }, { scale: 1, duration: 0.6, ease: "power3.out" }, 0);
+    tl.fromTo("#titre-suite", { opacity: 0, y: 32 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.75);
+    window.__timelines["test-titre"] = tl;
+  </script>
+</template>

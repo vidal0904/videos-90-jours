@@ -1,0 +1,27 @@
+<!-- Vidéo 1 · mention santé discrète en bas de la zone sûre, sur toute la durée (BRIEF › règle 8). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #mention-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 1474px;
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 500;
+      font-size: 28px;
+      color: rgba(251, 248, 242, 0.72);
+    }
+  </style>
+  <div data-hf-id="hf-ixix" id="root" data-composition-id="v1-mention" data-width="1080" data-height="1920">
+    <p data-hf-id="hf-fua5" id="mention-texte">Informations générales, ne remplace pas un avis médical.</p>
+  </div>
+  <script>
+    window.__timelines["v1-mention"] = gsap.timeline({ paused: true });
+  </script>
+</template>
