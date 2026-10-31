@@ -1,0 +1,52 @@
+<!-- Vidéo 9 · 0–3,1 s · horloge à 11:00 qui vibre + « Faim à 11 h tous les jours ? Regarde ton petit-déj. »
+     (image 0 = dernière image : boucle sans couture, voir v9-fin) -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .acc9-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 84px;
+      color: var(--creme);
+    }
+    .acc9-horloge {
+      position: absolute;
+      left: calc(50% - 210px);
+      top: 700px;
+      width: 420px;
+      height: 420px;
+    }
+    .acc9-horloge svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+  </style>
+  <div id="root" data-composition-id="v9-accroche" data-width="1080" data-height="1920">
+    <p class="acc9-texte titre">Faim à 11&#8239;h<br />tous les jours&#8239;?<br /><em>Regarde ton petit-déj.</em></p>
+    <div id="acc9-horloge" class="acc9-horloge">
+      <svg viewBox="-210 -210 420 420" aria-hidden="true">
+        <circle r="200" fill="#FBF8F2" />
+        <g stroke="#1E3B2C" stroke-width="6" stroke-linecap="round"><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(0)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(30)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(60)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(90)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(120)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(150)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(180)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(210)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(240)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(270)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(300)" /><line x1="0" y1="-178" x2="0" y2="-156" transform="rotate(330)" /></g>
+        <line x1="0" y1="0" x2="0" y2="-100" stroke="#1E3B2C" stroke-width="15" stroke-linecap="round" transform="rotate(330)" />
+        <line x1="0" y1="0" x2="0" y2="-155" stroke="#C2643F" stroke-width="9" stroke-linecap="round" />
+        <circle r="14" fill="#1E3B2C" />
+      </svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // L'horloge vibre comme un réveil (deux salves), puis tout sort avant la comparaison
+    tl.fromTo("#acc9-horloge", { rotation: 0 }, { rotation: 4, duration: 0.05, yoyo: true, repeat: 9, ease: "none" }, 0.5);
+    tl.fromTo("#acc9-horloge", { rotation: 0 }, { rotation: -4, duration: 0.05, yoyo: true, repeat: 9, ease: "none", immediateRender: false }, 1.6);
+    tl.to(["#acc9-horloge", ".acc9-texte"], { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, 2.8);
+    window.__timelines["v9-accroche"] = tl;
+  </script>
+</template>

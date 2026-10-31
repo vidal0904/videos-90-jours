@@ -1,0 +1,134 @@
+<!-- Vidéo 9 · 3,1–14,15 s · écran coupé en deux : à gauche jus + viennoiserie, à droite œufs + fruit + avoine
+     (BRIEF §4 : un petit-déjeuner avec des protéines aide souvent à attendre le déjeuner). L'horloge défile
+     de 08:00 à 11:00 ; la jauge de satiété de gauche descend vite, celle de droite reste haute (illustratif). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #cmp-heure {
+      position: absolute;
+      left: calc(50% - 170px);
+      top: 220px;
+      width: 340px;
+      height: 130px;
+      border-radius: 30px;
+      background: var(--creme);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 84px;
+      font-variant-numeric: tabular-nums;
+      color: var(--vert-foret);
+    }
+    #cmp-separateur {
+      position: absolute;
+      left: 539px;
+      top: 400px;
+      width: 2px;
+      height: 880px;
+      background: rgba(251, 248, 242, 0.25);
+    }
+    .cmp-cote {
+      position: absolute;
+      top: 400px;
+      width: 440px;
+      height: 880px;
+      text-align: center;
+    }
+    #cmp-gauche { left: 80px; }
+    #cmp-droite { left: 560px; }
+    .cmp-titre {
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.2;
+      color: var(--creme);
+    }
+    .cmp-icones {
+      margin-top: 22px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    .cmp-icone {
+      width: 116px;
+      height: 116px;
+      fill: none;
+      stroke: var(--creme);
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .cmp-jauge {
+      position: relative;
+      margin: 40px auto 0;
+      width: 130px;
+      height: 520px;
+      border-radius: 40px;
+      background: rgba(251, 248, 242, 0.12);
+      overflow: hidden;
+    }
+    .cmp-niveau {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      background: var(--sauge);
+      transform-origin: center bottom;
+    }
+    .cmp-legende {
+      margin-top: 18px;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 34px;
+      color: rgba(251, 248, 242, 0.75);
+    }
+  </style>
+  <div id="root" data-composition-id="v9-comparaison" data-width="1080" data-height="1920">
+    <div id="cmp-heure">08:00</div>
+    <span id="cmp-separateur"></span>
+    <div id="cmp-gauche" class="cmp-cote">
+      <p class="cmp-titre">Jus + viennoiserie</p>
+      <div class="cmp-icones"><svg id="cmpg-jus" class="cmp-icone" data-t="2.2" viewBox="0 0 100 100" aria-hidden="true"><path d="M28 20 h44 l-6 70 h-32 z"/><line x1="31" y1="40" x2="69" y2="40"/><path d="M58 20 l10 -14 h10"/></svg><svg id="cmpg-viennoiserie" class="cmp-icone" data-t="3.25" viewBox="0 0 100 100" aria-hidden="true"><path d="M12 64 Q50 10 88 64 Q70 54 50 56 Q30 54 12 64 Z"/><path d="M34 40 l6 16 M50 32 v22 M66 40 l-6 16"/></svg></div>
+      <div class="cmp-jauge"><span id="cmp-niveau-g" class="cmp-niveau"></span></div>
+      <p class="cmp-legende">Satiété</p>
+    </div>
+    <div id="cmp-droite" class="cmp-cote">
+      <p class="cmp-titre">Œufs + fruit + avoine</p>
+      <div class="cmp-icones"><svg id="cmpd-oeufs" class="cmp-icone" data-t="6.65" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 12 C32 12 22 44 22 60 C22 78 35 90 50 90 C65 90 78 78 78 60 C78 44 68 12 50 12 Z"/><circle cx="50" cy="62" r="13"/></svg><svg id="cmpd-fruit" class="cmp-icone" data-t="7.2" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 30 C30 18 14 34 16 56 C18 78 34 92 50 84 C66 92 82 78 84 56 C86 34 70 18 50 30 Z"/><path d="M50 30 Q50 18 58 10"/><path d="M52 22 Q64 14 72 20 Q62 28 52 22 Z"/></svg><svg id="cmpd-avoine" class="cmp-icone" data-t="8.0" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 46 h80 a40 40 0 0 1 -80 0 z"/><circle cx="34" cy="38" r="3"/><circle cx="48" cy="34" r="3"/><circle cx="62" cy="38" r="3"/><circle cx="56" cy="30" r="3"/><circle cx="40" cy="30" r="3"/></svg></div>
+      <div class="cmp-jauge"><span id="cmp-niveau-d" class="cmp-niveau"></span></div>
+      <p class="cmp-legende">Satiété</p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const heure = document.getElementById("cmp-heure");
+    const h = { m: 480 };
+    const affiche = () => {
+      const m = Math.round(h.m);
+      heure.textContent = `${String(Math.floor(m / 60)).padStart(2, "0")}:${String(m % 60).padStart(2, "0")}`;
+    };
+    tl.fromTo("#cmp-heure", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 0.05);
+    tl.fromTo("#cmp-separateur", { scaleY: 0 }, { scaleY: 1, duration: 0.4, ease: "power2.out" }, 0.1);
+    // La moitié gauche s'installe dès « Regarde ton petit-déjeuner », ses icônes sur « jus » (5,54 s) et
+    // « viennoiserie » (6,42 s) ; à droite sur « Des œufs… » (9,48 s)
+    tl.fromTo("#cmp-gauche", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 0.45);
+    tl.fromTo("#cmp-droite", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 6.3);
+    document.querySelectorAll(".cmp-icone").forEach((ic) => {
+      tl.fromTo(ic, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, parseFloat(ic.dataset.t));
+    });
+    // « ça rassasie rarement longtemps » (7,31 s) : 08:00 → 11:00 ; jauge gauche qui chute, droite qui tient
+    tl.fromTo(h, { m: 480 }, { m: 660, duration: 6.2, ease: "none", onUpdate: affiche }, 4.2);
+    tl.fromTo("#cmp-niveau-g", { scaleY: 1 }, { scaleY: 0.14, duration: 3.0, ease: "power2.in" }, 4.3);
+    tl.fromTo("#cmp-niveau-g", { backgroundColor: "#8FA68A" }, { backgroundColor: "#C2643F", duration: 0.35, ease: "none", immediateRender: false }, 6.85);
+    tl.fromTo("#cmp-niveau-d", { scaleY: 1 }, { scaleY: 0.78, duration: 4.0, ease: "sine.inOut" }, 6.6);
+    window.__timelines["v9-comparaison"] = tl;
+  </script>
+</template>

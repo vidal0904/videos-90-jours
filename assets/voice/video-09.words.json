@@ -1,0 +1,344 @@
+[
+ {
+  "id": "w0",
+  "text": "Faim",
+  "start": 0.0,
+  "end": 0.302
+ },
+ {
+  "id": "w1",
+  "text": "à",
+  "start": 0.383,
+  "end": 0.453
+ },
+ {
+  "id": "w2",
+  "text": "11 h",
+  "start": 0.604,
+  "end": 1.068
+ },
+ {
+  "id": "w3",
+  "text": "tous",
+  "start": 1.126,
+  "end": 1.289
+ },
+ {
+  "id": "w4",
+  "text": "les",
+  "start": 1.312,
+  "end": 1.405
+ },
+ {
+  "id": "w5",
+  "text": "jours ?",
+  "start": 1.44,
+  "end": 1.718
+ },
+ {
+  "id": "w6",
+  "text": "Regarde",
+  "start": 2.447,
+  "end": 2.865
+ },
+ {
+  "id": "w7",
+  "text": "ton",
+  "start": 2.9,
+  "end": 3.027
+ },
+ {
+  "id": "w8",
+  "text": "petit-déjeuner.",
+  "start": 3.062,
+  "end": 3.724
+ },
+ {
+  "id": "w9",
+  "text": "Un",
+  "start": 4.615,
+  "end": 4.778
+ },
+ {
+  "id": "w10",
+  "text": "jus",
+  "start": 4.836,
+  "end": 4.963
+ },
+ {
+  "id": "w11",
+  "text": "de",
+  "start": 4.998,
+  "end": 5.056
+ },
+ {
+  "id": "w12",
+  "text": "fruit",
+  "start": 5.114,
+  "end": 5.404
+ },
+ {
+  "id": "w13",
+  "text": "et",
+  "start": 5.474,
+  "end": 5.579
+ },
+ {
+  "id": "w14",
+  "text": "une",
+  "start": 5.613,
+  "end": 5.683
+ },
+ {
+  "id": "w15",
+  "text": "viennoiserie,",
+  "start": 5.718,
+  "end": 6.333
+ },
+ {
+  "id": "w16",
+  "text": "ça",
+  "start": 6.612,
+  "end": 6.728
+ },
+ {
+  "id": "w17",
+  "text": "rassasie",
+  "start": 6.786,
+  "end": 7.181
+ },
+ {
+  "id": "w18",
+  "text": "rarement",
+  "start": 7.227,
+  "end": 7.564
+ },
+ {
+  "id": "w19",
+  "text": "longtemps.",
+  "start": 7.587,
+  "end": 7.947
+ },
+ {
+  "id": "w20",
+  "text": "Des",
+  "start": 8.78,
+  "end": 9.012
+ },
+ {
+  "id": "w21",
+  "text": "œufs,",
+  "start": 9.128,
+  "end": 9.291
+ },
+ {
+  "id": "w22",
+  "text": "un",
+  "start": 9.546,
+  "end": 9.662
+ },
+ {
+  "id": "w23",
+  "text": "fruit",
+  "start": 9.72,
+  "end": 10.022
+ },
+ {
+  "id": "w24",
+  "text": "et",
+  "start": 10.092,
+  "end": 10.243
+ },
+ {
+  "id": "w25",
+  "text": "des",
+  "start": 10.289,
+  "end": 10.382
+ },
+ {
+  "id": "w26",
+  "text": "flocons",
+  "start": 10.405,
+  "end": 10.707
+ },
+ {
+  "id": "w27",
+  "text": "d'avoine,",
+  "start": 10.73,
+  "end": 11.172
+ },
+ {
+  "id": "w28",
+  "text": "c'est",
+  "start": 11.439,
+  "end": 11.624
+ },
+ {
+  "id": "w29",
+  "text": "souvent",
+  "start": 11.648,
+  "end": 11.915
+ },
+ {
+  "id": "w30",
+  "text": "une",
+  "start": 11.95,
+  "end": 12.031
+ },
+ {
+  "id": "w31",
+  "text": "autre",
+  "start": 12.054,
+  "end": 12.217
+ },
+ {
+  "id": "w32",
+  "text": "histoire.",
+  "start": 12.24,
+  "end": 12.739
+ },
+ {
+  "id": "w33",
+  "text": "La",
+  "start": 13.549,
+  "end": 13.688
+ },
+ {
+  "id": "w34",
+  "text": "différence :",
+  "start": 13.735,
+  "end": 14.315
+ },
+ {
+  "id": "w35",
+  "text": "les",
+  "start": 14.594,
+  "end": 14.722
+ },
+ {
+  "id": "w36",
+  "text": "protéines",
+  "start": 14.756,
+  "end": 15.302
+ },
+ {
+  "id": "w37",
+  "text": "et",
+  "start": 15.36,
+  "end": 15.511
+ },
+ {
+  "id": "w38",
+  "text": "les",
+  "start": 15.558,
+  "end": 15.65
+ },
+ {
+  "id": "w39",
+  "text": "fibres.",
+  "start": 15.685,
+  "end": 16.045
+ },
+ {
+  "id": "w40",
+  "text": "Dans",
+  "start": 16.879,
+  "end": 17.065
+ },
+ {
+  "id": "w41",
+  "text": "mon",
+  "start": 17.088,
+  "end": 17.192
+ },
+ {
+  "id": "w42",
+  "text": "guide,",
+  "start": 17.239,
+  "end": 17.529
+ },
+ {
+  "id": "w43",
+  "text": "tu",
+  "start": 17.715,
+  "end": 17.843
+ },
+ {
+  "id": "w44",
+  "text": "as",
+  "start": 17.924,
+  "end": 17.97
+ },
+ {
+  "id": "w45",
+  "text": "20",
+  "start": 18.028,
+  "end": 18.191
+ },
+ {
+  "id": "w46",
+  "text": "idées",
+  "start": 18.249,
+  "end": 18.446
+ },
+ {
+  "id": "w47",
+  "text": "de",
+  "start": 18.47,
+  "end": 18.528
+ },
+ {
+  "id": "w48",
+  "text": "petits-déjeuners,",
+  "start": 18.562,
+  "end": 19.398
+ },
+ {
+  "id": "w49",
+  "text": "du",
+  "start": 19.584,
+  "end": 19.723
+ },
+ {
+  "id": "w50",
+  "text": "bol",
+  "start": 19.781,
+  "end": 19.944
+ },
+ {
+  "id": "w51",
+  "text": "en",
+  "start": 19.99,
+  "end": 20.037
+ },
+ {
+  "id": "w52",
+  "text": "2 minutes",
+  "start": 20.083,
+  "end": 20.559
+ },
+ {
+  "id": "w53",
+  "text": "aux",
+  "start": 20.583,
+  "end": 20.687
+ },
+ {
+  "id": "w54",
+  "text": "pancakes",
+  "start": 20.722,
+  "end": 21.128
+ },
+ {
+  "id": "w55",
+  "text": "du",
+  "start": 21.163,
+  "end": 21.233
+ },
+ {
+  "id": "w56",
+  "text": "week-end.",
+  "start": 21.268,
+  "end": 21.651
+ }
+]

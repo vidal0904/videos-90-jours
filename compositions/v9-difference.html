@@ -1,0 +1,48 @@
+<!-- Vidéo 9 · 14,15–17,5 s · « La différence : les protéines et les fibres. » en pastilles sauge. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #dif-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 420px;
+      text-align: center;
+      font-size: 96px;
+      color: var(--creme);
+    }
+    .dif-pastille {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 30px 70px 36px;
+      border-radius: 999px;
+      background: var(--sauge);
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 84px;
+      color: var(--vert-foret);
+    }
+    #dif-proteines { top: 690px; }
+    #dif-fibres { top: 900px; }
+  </style>
+  <div id="root" data-composition-id="v9-difference" data-width="1080" data-height="1920">
+    <p id="dif-titre" class="titre">La <em>différence</em></p>
+    <span id="dif-proteines" class="dif-pastille">protéines</span>
+    <span id="dif-fibres" class="dif-pastille">fibres</span>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#dif-titre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.1);
+    // « les protéines » (15,46 s) · « les fibres » (16,39 s)
+    tl.fromTo("#dif-proteines", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 1.25);
+    tl.fromTo("#dif-fibres", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 2.18);
+    window.__timelines["v9-difference"] = tl;
+  </script>
+</template>
