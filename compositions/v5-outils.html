@@ -1,0 +1,104 @@
+<!-- Vidéo 5 · 18,5 s · « 13 outils à imprimer » (BRIEF §2) + vraies pages.
+     Généré par scripts/v5-scenes.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .v5-compteur {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 220px;
+      text-align: center;
+    }
+    .v5-chiffre {
+      font-size: 250px;
+      color: var(--terracotta);
+    }
+    .v5-libelle {
+      margin-top: 4px;
+      font-size: 70px;
+      color: var(--creme);
+    }
+    .v5-sous {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 590px;
+      text-align: center;
+      font-size: 56px;
+    }
+    .v5-sous b {
+      font-weight: 600;
+    }
+    .v5-feuille {
+      position: absolute;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .v5-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 6px;
+    }
+    .v5-etiquette {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -30px;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 6px 18px 8px;
+      border-radius: 999px;
+      background: var(--sauge-claire);
+      color: var(--vert-foret);
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 30px;
+    }
+  </style>
+  <div id="root" data-composition-id="v5-outils" data-width="1080" data-height="1920">
+    <div class="v5-compteur">
+      <div id="v5-outils-n" class="v5-chiffre chiffre" data-valeur="13" data-t="0.1">0</div>
+      <div class="v5-libelle titre">outils à imprimer</div>
+    </div>
+    <div data-layout-allow-overlap>
+    <div id="v5-outils-p0" class="v5-feuille" data-t="1.45" data-rot="-3" style="left: 270px; top: 600px; width: 250px"><img src="capture/pages/outil-01-calendrier-p295.png" alt="Calendrier des 90 jours" /></div>
+    <div id="v5-outils-p1" class="v5-feuille" data-t="2.2" data-rot="2" style="left: 560px; top: 610px; width: 250px"><img src="capture/pages/outil-04-tracker-m1-p298.png" alt="Tracker d'habitudes" /></div>
+    <div id="v5-outils-p2" class="v5-feuille" data-t="3.55" data-rot="2" style="left: 270px; top: 970px; width: 250px"><img src="capture/pages/outil-07-defi-30-jours-p305.png" alt="Défi motivation 30 jours" /></div>
+    <div id="v5-outils-p3" class="v5-feuille" data-t="4.25" data-rot="-2" style="left: 560px; top: 980px; width: 250px"><img src="capture/pages/outil-certificat-p315.png" alt="Certificat de parcours" /></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Compteur 0 → N en 0,8 s sur le chiffre dans la voix
+    const n = document.getElementById("v5-outils-n");
+    const c = { v: 0 };
+    const t0 = parseFloat(n.dataset.t);
+    tl.fromTo(".v5-compteur", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, Math.max(0, t0 - 0.1));
+    tl.fromTo(c, { v: 0 }, { v: Number(n.dataset.valeur), duration: 0.8, ease: "power2.out", onUpdate: () => (n.textContent = Math.round(c.v)) }, t0);
+    // Sous-titre éventuel (« dont 30 végétariennes ») avec son propre petit compteur
+    const sous = document.querySelector(".v5-sous");
+    if (sous) {
+      const ts = parseFloat(sous.dataset.t);
+      tl.fromTo(sous, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, ts);
+      const b = sous.querySelector("b");
+      const cb = { v: 0 };
+      tl.fromTo(cb, { v: 0 }, { v: Number(b.textContent), duration: 0.6, ease: "power2.out", onUpdate: () => (b.textContent = Math.round(cb.v)) }, ts);
+    }
+    // Chaque vraie page sort par le bas et se pose sur son mot ; certaines repartent
+    document.querySelectorAll(".v5-feuille").forEach((f) => {
+      const t = parseFloat(f.dataset.t);
+      const r = parseFloat(f.dataset.rot);
+      tl.fromTo(f, { opacity: 0, y: 260, rotation: 0 }, { opacity: 1, y: 0, rotation: r, duration: 0.45, ease: "power3.out" }, t);
+      if (f.dataset.sortie) tl.to(f, { opacity: 0, y: -40, scale: 0.9, duration: 0.3, ease: "power2.in" }, parseFloat(f.dataset.sortie));
+    });
+    window.__timelines["v5-outils"] = tl;
+  </script>
+</template>

@@ -1,0 +1,404 @@
+[
+ {
+  "id": "w0",
+  "text": "Voilà",
+  "start": 0.0,
+  "end": 0.313
+ },
+ {
+  "id": "w1",
+  "text": "ce",
+  "start": 0.348,
+  "end": 0.43
+ },
+ {
+  "id": "w2",
+  "text": "qu'il",
+  "start": 0.476,
+  "end": 0.615
+ },
+ {
+  "id": "w3",
+  "text": "y",
+  "start": 0.65,
+  "end": 0.673
+ },
+ {
+  "id": "w4",
+  "text": "a",
+  "start": 0.708,
+  "end": 0.731
+ },
+ {
+  "id": "w5",
+  "text": "vraiment",
+  "start": 0.789,
+  "end": 1.184
+ },
+ {
+  "id": "w6",
+  "text": "dans",
+  "start": 1.207,
+  "end": 1.312
+ },
+ {
+  "id": "w7",
+  "text": "mon",
+  "start": 1.335,
+  "end": 1.416
+ },
+ {
+  "id": "w8",
+  "text": "guide.",
+  "start": 1.451,
+  "end": 1.765
+ },
+ {
+  "id": "w9",
+  "text": "316",
+  "start": 2.55,
+  "end": 3.398
+ },
+ {
+  "id": "w10",
+  "text": "pages.",
+  "start": 3.432,
+  "end": 3.781
+ },
+ {
+  "id": "w11",
+  "text": "15",
+  "start": 4.683,
+  "end": 4.938
+ },
+ {
+  "id": "w12",
+  "text": "chapitres",
+  "start": 4.962,
+  "end": 5.438
+ },
+ {
+  "id": "w13",
+  "text": "pour",
+  "start": 5.658,
+  "end": 5.832
+ },
+ {
+  "id": "w14",
+  "text": "comprendre",
+  "start": 5.879,
+  "end": 6.308
+ },
+ {
+  "id": "w15",
+  "text": "et",
+  "start": 6.378,
+  "end": 6.494
+ },
+ {
+  "id": "w16",
+  "text": "s'organiser.",
+  "start": 6.529,
+  "end": 7.121
+ },
+ {
+  "id": "w17",
+  "text": "Un",
+  "start": 8.116,
+  "end": 8.232
+ },
+ {
+  "id": "w18",
+  "text": "programme",
+  "start": 8.279,
+  "end": 8.615
+ },
+ {
+  "id": "w19",
+  "text": "de",
+  "start": 8.638,
+  "end": 8.696
+ },
+ {
+  "id": "w20",
+  "text": "12",
+  "start": 8.755,
+  "end": 8.94
+ },
+ {
+  "id": "w21",
+  "text": "semaines,",
+  "start": 8.964,
+  "end": 9.405
+ },
+ {
+  "id": "w22",
+  "text": "avec",
+  "start": 9.579,
+  "end": 9.857
+ },
+ {
+  "id": "w23",
+  "text": "chaque",
+  "start": 9.916,
+  "end": 10.136
+ },
+ {
+  "id": "w24",
+  "text": "semaine",
+  "start": 10.159,
+  "end": 10.508
+ },
+ {
+  "id": "w25",
+  "text": "un",
+  "start": 10.577,
+  "end": 10.693
+ },
+ {
+  "id": "w26",
+  "text": "menu,",
+  "start": 10.74,
+  "end": 11.088
+ },
+ {
+  "id": "w27",
+  "text": "une",
+  "start": 11.367,
+  "end": 11.518
+ },
+ {
+  "id": "w28",
+  "text": "liste",
+  "start": 11.541,
+  "end": 11.773
+ },
+ {
+  "id": "w29",
+  "text": "de",
+  "start": 11.831,
+  "end": 11.901
+ },
+ {
+  "id": "w30",
+  "text": "courses,",
+  "start": 11.947,
+  "end": 12.296
+ },
+ {
+  "id": "w31",
+  "text": "un",
+  "start": 12.447,
+  "end": 12.528
+ },
+ {
+  "id": "w32",
+  "text": "journal",
+  "start": 12.597,
+  "end": 13.015
+ },
+ {
+  "id": "w33",
+  "text": "et",
+  "start": 13.143,
+  "end": 13.294
+ },
+ {
+  "id": "w34",
+  "text": "un",
+  "start": 13.375,
+  "end": 13.433
+ },
+ {
+  "id": "w35",
+  "text": "bilan.",
+  "start": 13.468,
+  "end": 13.724
+ },
+ {
+  "id": "w36",
+  "text": "70",
+  "start": 14.567,
+  "end": 15.287
+ },
+ {
+  "id": "w37",
+  "text": "recettes,",
+  "start": 15.333,
+  "end": 15.751
+ },
+ {
+  "id": "w38",
+  "text": "dont",
+  "start": 15.821,
+  "end": 15.972
+ },
+ {
+  "id": "w39",
+  "text": "30",
+  "start": 16.007,
+  "end": 16.262
+ },
+ {
+  "id": "w40",
+  "text": "végétariennes.",
+  "start": 16.285,
+  "end": 16.889
+ },
+ {
+  "id": "w41",
+  "text": "13",
+  "start": 17.721,
+  "end": 18.069
+ },
+ {
+  "id": "w42",
+  "text": "outils",
+  "start": 18.093,
+  "end": 18.336
+ },
+ {
+  "id": "w43",
+  "text": "à",
+  "start": 18.383,
+  "end": 18.406
+ },
+ {
+  "id": "w44",
+  "text": "imprimer :",
+  "start": 18.429,
+  "end": 18.812
+ },
+ {
+  "id": "w45",
+  "text": "calendrier,",
+  "start": 19.103,
+  "end": 19.776
+ },
+ {
+  "id": "w46",
+  "text": "tracker,",
+  "start": 19.846,
+  "end": 20.38
+ },
+ {
+  "id": "w47",
+  "text": "planner,",
+  "start": 20.565,
+  "end": 21.041
+ },
+ {
+  "id": "w48",
+  "text": "défi",
+  "start": 21.192,
+  "end": 21.471
+ },
+ {
+  "id": "w49",
+  "text": "de",
+  "start": 21.517,
+  "end": 21.576
+ },
+ {
+  "id": "w50",
+  "text": "30",
+  "start": 21.622,
+  "end": 21.843
+ },
+ {
+  "id": "w51",
+  "text": "jours.",
+  "start": 21.866,
+  "end": 22.179
+ },
+ {
+  "id": "w52",
+  "text": "Et",
+  "start": 22.919,
+  "end": 23.07
+ },
+ {
+  "id": "w53",
+  "text": "un",
+  "start": 23.151,
+  "end": 23.209
+ },
+ {
+  "id": "w54",
+  "text": "plan",
+  "start": 23.256,
+  "end": 23.418
+ },
+ {
+  "id": "w55",
+  "text": "pour",
+  "start": 23.465,
+  "end": 23.592
+ },
+ {
+  "id": "w56",
+  "text": "après",
+  "start": 23.627,
+  "end": 23.825
+ },
+ {
+  "id": "w57",
+  "text": "les",
+  "start": 23.848,
+  "end": 23.929
+ },
+ {
+  "id": "w58",
+  "text": "90",
+  "start": 23.976,
+  "end": 24.568
+ },
+ {
+  "id": "w59",
+  "text": "jours.",
+  "start": 24.591,
+  "end": 24.858
+ },
+ {
+  "id": "w60",
+  "text": "Tout",
+  "start": 25.702,
+  "end": 25.923
+ },
+ {
+  "id": "w61",
+  "text": "est",
+  "start": 25.969,
+  "end": 26.039
+ },
+ {
+  "id": "w62",
+  "text": "dans",
+  "start": 26.062,
+  "end": 26.19
+ },
+ {
+  "id": "w63",
+  "text": "le",
+  "start": 26.213,
+  "end": 26.271
+ },
+ {
+  "id": "w64",
+  "text": "lien",
+  "start": 26.317,
+  "end": 26.561
+ },
+ {
+  "id": "w65",
+  "text": "en",
+  "start": 26.642,
+  "end": 26.77
+ },
+ {
+  "id": "w66",
+  "text": "bio.",
+  "start": 26.817,
+  "end": 27.072
+ }
+]

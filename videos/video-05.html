@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <link rel="stylesheet" href="assets/design/tokens.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--vert-foret);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vidéo 5 — « Ce que tu reçois exactement » (offre, chiffres du BRIEF §2) · 30 s -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="30" data-width="1080" data-height="1920">
+      <div
+        id="fond-vert"
+        data-composition-id="fond-vert"
+        data-composition-src="compositions/components/fond-vert.html"
+        data-start="0"
+        data-duration="30"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 1"
+      ></div>
+      <div
+        id="v5-ouverture"
+        data-composition-id="v5-ouverture"
+        data-composition-src="compositions/v5-ouverture.html"
+        data-start="0"
+        data-duration="5.45"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 2"
+      ></div>
+      <div
+        id="v5-chapitres"
+        data-composition-id="v5-chapitres"
+        data-composition-src="compositions/v5-chapitres.html"
+        data-start="5.45"
+        data-duration="3.45"
+        data-track-index="2"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 3"
+      ></div>
+      <div
+        id="v5-semaines"
+        data-composition-id="v5-semaines"
+        data-composition-src="compositions/v5-semaines.html"
+        data-start="8.9"
+        data-duration="6.45"
+        data-track-index="3"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 4"
+      ></div>
+      <div
+        id="v5-recettes"
+        data-composition-id="v5-recettes"
+        data-composition-src="compositions/v5-recettes.html"
+        data-start="15.35"
+        data-duration="3.15"
+        data-track-index="4"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 5"
+      ></div>
+      <div
+        id="v5-outils"
+        data-composition-id="v5-outils"
+        data-composition-src="compositions/v5-outils.html"
+        data-start="18.5"
+        data-duration="5.2"
+        data-track-index="5"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 6"
+      ></div>
+      <div
+        id="v5-fin"
+        data-composition-id="v5-fin"
+        data-composition-src="compositions/v5-fin.html"
+        data-start="23.7"
+        data-duration="6.3"
+        data-track-index="6"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 7"
+      ></div>
+      <div
+        id="mention-sante"
+        data-composition-id="mention-sante"
+        data-composition-src="compositions/mention-sante.html"
+        data-start="0"
+        data-duration="30"
+        data-track-index="7"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 8"
+      ></div>
+      <div
+        id="sous-titres-video-05"
+        data-composition-id="sous-titres-video-05"
+        data-composition-src="compositions/v5-sous-titres.html"
+        data-start="0"
+        data-duration="30"
+        data-track-index="8"
+        data-track-kind="captions"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 9"
+      ></div>
+      <audio id="voix" class="clip" src="assets/voice/video-05.final.wav" data-start="0.9" data-track-index="9" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/music/nappe-05.wav" data-start="0" data-track-index="10" data-volume="1"></audio>
+      <audio id="sfx-ouverture" class="clip" src="assets/sfx/whoosh.mp3" data-start="0.7" data-track-index="11" data-volume="0.4"></audio>
+      <audio id="sfx-316" class="clip" src="assets/sfx/pop.mp3" data-start="4.1" data-track-index="12" data-volume="0.3"></audio>
+      <audio id="sfx-15" class="clip" src="assets/sfx/pop.mp3" data-start="6.3" data-track-index="13" data-volume="0.3"></audio>
+      <audio id="sfx-12" class="clip" src="assets/sfx/pop.mp3" data-start="10.4" data-track-index="14" data-volume="0.3"></audio>
+      <audio id="sfx-menu" class="clip" src="assets/sfx/click-soft.mp3" data-start="11.6" data-track-index="15" data-volume="0.4"></audio>
+      <audio id="sfx-courses" class="clip" src="assets/sfx/click-soft.mp3" data-start="12.8" data-track-index="16" data-volume="0.4"></audio>
+      <audio id="sfx-journal" class="clip" src="assets/sfx/click-soft.mp3" data-start="13.45" data-track-index="17" data-volume="0.4"></audio>
+      <audio id="sfx-bilan" class="clip" src="assets/sfx/click-soft.mp3" data-start="14.3" data-track-index="18" data-volume="0.4"></audio>
+      <audio id="sfx-70" class="clip" src="assets/sfx/pop.mp3" data-start="16.25" data-track-index="19" data-volume="0.3"></audio>
+      <audio id="sfx-13" class="clip" src="assets/sfx/pop.mp3" data-start="19.4" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sfx-lien" class="clip" src="assets/sfx/chime.mp3" data-start="26.6" data-track-index="21" data-volume="0.3"></audio>
+    </div>
+    <script>
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

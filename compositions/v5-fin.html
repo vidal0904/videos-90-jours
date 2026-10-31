@@ -1,0 +1,68 @@
+<!-- Vidéo 5 · 23,7–30 s · « + un plan pour l'après » (plan des mois 4 à 12, BRIEF §3), la couverture,
+     « Lien en bio ». Pas de prix (à confirmer avant de l'afficher). Les 0,6 dernières secondes
+     reprennent exactement l'image 0 (couverture fermée + « Ce qu'il y a vraiment dedans. »). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .fin5-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    #fin5-plan {
+      top: 260px;
+      font-size: 84px;
+    }
+    #fin5-lien {
+      top: 300px;
+      font-size: 104px;
+    }
+    #fin5-acc {
+      top: 300px;
+      font-size: 86px;
+    }
+    #fin5-feuille {
+      position: absolute;
+      left: 280px;
+      top: 560px;
+      width: 520px;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    #fin5-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+  <div id="root" data-composition-id="v5-fin" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+      <p id="fin5-plan" class="fin5-texte titre">+ un plan<br /><em>pour l'après</em></p>
+      <p id="fin5-lien" class="fin5-texte titre">Lien en <em>bio</em></p>
+      <p id="fin5-acc" class="fin5-texte titre">Ce qu'il y a <em>vraiment</em> dedans.</p>
+    </div>
+    <div id="fin5-feuille"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « Et un plan pour après les quatre-vingt-dix jours » (23,82 s)
+    tl.fromTo("#fin5-plan", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.1);
+    // La couverture revient à sa place de l'image 0
+    tl.fromTo("#fin5-feuille", { opacity: 0, y: 80, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 0.6);
+    // « Tout est dans le lien en bio » (26,6 s)
+    tl.to("#fin5-plan", { opacity: 0, y: -24, duration: 0.3, ease: "power2.in" }, 2.6);
+    tl.fromTo("#fin5-lien", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.85);
+    // Boucle : la phrase d'accroche revient → même image que l'image 0
+    tl.to("#fin5-lien", { opacity: 0, duration: 0.3, ease: "power2.in" }, 5.6);
+    tl.fromTo("#fin5-acc", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 5.75);
+    window.__timelines["v5-fin"] = tl;
+  </script>
+</template>

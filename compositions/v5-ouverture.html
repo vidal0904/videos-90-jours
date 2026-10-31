@@ -1,0 +1,89 @@
+<!-- Vidéo 5 · 0–5,45 s · « unboxing » : la couverture (fermée à l'image 0) s'ouvre comme un livre
+     sur le sommaire ; puis « 316 pages » (BRIEF §2) et le sommaire se range sous le compteur.
+     La couverture fermée est à la même place que dans v5-fin : la vidéo boucle sans couture. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #ouv-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 300px;
+      text-align: center;
+      font-size: 86px;
+      color: var(--creme);
+    }
+    .ouv-feuille {
+      position: absolute;
+      left: 280px;
+      top: 560px;
+      width: 520px;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .ouv-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    #ouv-sommaire {
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    #ouv-couverture {
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+      backface-visibility: hidden;
+    }
+    #ouv-compteur {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 220px;
+      text-align: center;
+    }
+    #ouv-n {
+      font-size: 250px;
+      color: var(--terracotta);
+    }
+    #ouv-libelle {
+      margin-top: 4px;
+      font-size: 70px;
+      color: var(--creme);
+    }
+  </style>
+  <div id="root" data-composition-id="v5-ouverture" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+      <div id="ouv-sommaire" class="ouv-feuille"><img src="capture/pages/sommaire-p4.png" alt="Sommaire du guide" /></div>
+      <div id="ouv-couverture" class="ouv-feuille"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
+    </div>
+    <p id="ouv-texte" class="titre">Ce qu'il y a <em>vraiment</em> dedans.</p>
+    <div id="ouv-compteur">
+      <div id="ouv-n" class="chiffre">0</div>
+      <div id="ouv-libelle" class="titre">pages</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // La couverture pivote autour de son bord gauche, comme un livre qu'on ouvre
+    tl.fromTo(
+      "#ouv-couverture",
+      { rotationY: 0, transformPerspective: 2200, transformOrigin: "left center" },
+      { rotationY: -165, duration: 1.0, ease: "power2.inOut" },
+      0.7,
+    );
+    tl.fromTo("#ouv-sommaire", { scale: 0.98 }, { scale: 1, duration: 1.0, ease: "power2.out" }, 0.7);
+    // « trois cent seize pages » (3,45 s) : le texte laisse la place au compteur, le sommaire se range dessous
+    tl.to("#ouv-texte", { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, 2.9);
+    tl.fromTo("#ouv-compteur", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 3.15);
+    const n = document.getElementById("ouv-n");
+    const c = { v: 0 };
+    tl.fromTo(c, { v: 0 }, { v: 316, duration: 0.8, ease: "power2.out", onUpdate: () => (n.textContent = Math.round(c.v)) }, 3.3);
+    tl.to("#ouv-sommaire", { x: 0, y: 60, scale: 0.72, rotation: -2, duration: 0.5, ease: "power3.inOut" }, 3.2);
+    window.__timelines["v5-ouverture"] = tl;
+  </script>
+</template>
