@@ -1,5 +1,6 @@
 <!-- Vidéo 4 · 18,1–22 s · « 70 recettes construites comme ça », couverture, « Lien en bio ».
-     Boucle : l'assiette revient pleine et se vide, avant de repartir sur l'accroche. -->
+     Boucle sans couture : l'assiette revient pleine et se vide, puis la calculatrice et la phrase
+     reviennent dessus — la dernière image est identique à l'image 0 (v4-accroche). -->
 <template>
   <link rel="stylesheet" href="assets/design/tokens.css" />
   <style>
@@ -40,10 +41,10 @@
       font-size: 84px;
       color: var(--creme);
     }
+    /* Fond transparent : le fond vert animé reste visible, comme à l'image 0 */
     #fin4-boucle {
       position: absolute;
       inset: 0;
-      background: var(--vert-foret);
     }
     #fin4-plat {
       position: absolute;
@@ -55,6 +56,49 @@
     #fin4-plat svg {
       width: 100%;
       height: 100%;
+    }
+    #fin4-acc {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 222px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    #fin4-calc {
+      position: absolute;
+      left: calc(50% - 190px);
+      top: 581px;
+      width: 380px;
+      padding: 34px;
+      border-radius: 44px;
+      background: var(--vert-foret-2);
+      box-shadow: 0 0 0 3px rgba(251, 248, 242, 0.18), 0 30px 60px rgba(0, 0, 0, 0.3);
+    }
+    #fin4-calc-ecran {
+      height: 110px;
+      border-radius: 18px;
+      background: var(--sauge-claire);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 26px;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 52px;
+      color: var(--encre);
+    }
+    #fin4-calc-touches {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .fin4-calc-touche {
+      aspect-ratio: 1;
+      border-radius: 14px;
+      background: rgba(251, 248, 242, 0.22);
     }
   </style>
   <div id="root" data-composition-id="v4-fin" data-width="1080" data-height="1920">
@@ -74,6 +118,28 @@
         <circle id="fin4-graisses" cx="88" cy="18" r="7" fill="#B8945A" />
       </svg>
       </div>
+      <p id="fin4-acc" class="titre">Arrête de compter les calories.<br /><em>Fais juste ça.</em></p>
+      <div id="fin4-calc">
+        <div id="fin4-calc-ecran">kcal</div>
+        <div id="fin4-calc-touches">
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+          <span class="fin4-calc-touche"></span>
+        </div>
+      </div>
     </div>
   </div>
   <script>
@@ -84,12 +150,15 @@
     tl.fromTo("#fin4-feuille img", { scale: 1 }, { scale: 1.06, duration: 2.8, ease: "sine.inOut" }, 0.3);
     tl.fromTo("#fin4-lien", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.2);
     // Boucle : l'assiette pleine revient puis se vide (parts en sens inverse)
-    tl.fromTo("#fin4-boucle", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.inOut" }, 2.95);
+    tl.to(["#fin4-titre", "#fin4-feuille", "#fin4-lien"], { opacity: 0, duration: 0.3, ease: "power2.in" }, 2.5);
+    tl.fromTo("#fin4-boucle", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.inOut" }, 2.55);
     ["#fin4-feculents", "#fin4-proteines", "#fin4-legumes"].forEach((p, i) => {
       const L = parseFloat(document.querySelector(p).dataset.longueur);
-      tl.fromTo(p, { strokeDashoffset: 0 }, { strokeDashoffset: L, duration: 0.3, ease: "power2.in", immediateRender: false }, 3.3 + i * 0.12);
+      tl.fromTo(p, { strokeDashoffset: 0 }, { strokeDashoffset: L, duration: 0.28, ease: "power2.in", immediateRender: false }, 2.95 + i * 0.1);
     });
-    tl.to("#fin4-graisses", { scale: 0, transformOrigin: "50% 50%", duration: 0.2 }, 3.3);
+    tl.to("#fin4-graisses", { scale: 0, transformOrigin: "50% 50%", duration: 0.2 }, 2.95);
+    // La calculatrice et la phrase reviennent sur l'assiette vide → même image que l'image 0
+    tl.fromTo(["#fin4-calc", "#fin4-acc"], { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 3.45);
     window.__timelines["v4-fin"] = tl;
   </script>
 </template>

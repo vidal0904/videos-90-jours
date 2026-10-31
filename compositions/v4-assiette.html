@@ -86,7 +86,8 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     // « Regarde ton assiette » (1,70 s) : l'assiette vide arrive
-    tl.fromTo("#ass-plat", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.4)" }, 0);
+    // (l'assiette vide est déjà à l'écran depuis l'image 0, sous la calculatrice)
+    tl.fromTo("#ass-plat", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "none" }, 0);
     tl.fromTo("#ass-joints", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 1.0);
     // Une part = un balayage ; moitié (2,88 s) · un quart protéines (4,1 s) · un quart féculents (8,4 s)
     const parts = [["#ass-legumes", "#ass-pct-legumes", 1.05], ["#ass-proteines", "#ass-pct-proteines", 2.4], ["#ass-feculents", "#ass-pct-feculents", 6.65]];
