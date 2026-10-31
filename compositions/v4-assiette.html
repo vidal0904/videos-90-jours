@@ -1,0 +1,109 @@
+<!-- Vidéo 4 · 1,75–16 s · l'assiette équilibrée (BRIEF §4, p. 197) : ½ légumes, ¼ protéines,
+     ¼ féculents, un peu de bonnes graisses. Chaque part se remplit sur son mot ; les exemples
+     d'aliments apparaissent autour quand la voix les nomme. Dessin : scripts/v4-assiette.py. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #ass-plat {
+      position: absolute;
+      left: calc(50% - 300px);
+      top: 530px;
+      width: 600px;
+      height: 600px;
+    }
+    #ass-plat svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+    .ass-pct {
+      position: absolute;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 46px;
+      color: #fff;
+    }
+    #ass-pct-legumes { left: 27%; top: 51%; color: var(--vert-foret); }
+    #ass-pct-proteines { left: 66%; top: 36%; }
+    #ass-pct-feculents { left: 66%; top: 66%; color: #5a4a2a; }
+    .ass-mot {
+      position: absolute;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 42px;
+      color: var(--creme);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .ass-mot i {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+    }
+    #ass-graisses-txt {
+      position: absolute;
+      left: 90px;
+      top: 222px;
+      font-size: 54px;
+      color: var(--creme);
+    }
+  </style>
+  <div id="root" data-composition-id="v4-assiette" data-width="1080" data-height="1920">
+    <div id="ass-plat" data-layout-allow-overlap>
+      <svg id="ass-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="#fff" stroke="#D7DBD1" stroke-width="1" />
+        <circle id="ass-proteines" class="ass-part" cx="50" cy="50" r="21" fill="none" stroke="#C2643F" stroke-width="42" stroke-dasharray="32.99 131.95" transform="rotate(-90 50 50)" data-longueur="32.99" />
+        <circle id="ass-feculents" class="ass-part" cx="50" cy="50" r="21" fill="none" stroke="#E3CFA6" stroke-width="42" stroke-dasharray="32.99 131.95" transform="rotate(0 50 50)" data-longueur="32.99" />
+        <circle id="ass-legumes" class="ass-part" cx="50" cy="50" r="21" fill="none" stroke="#8FA68A" stroke-width="42" stroke-dasharray="65.97 131.95" transform="rotate(90 50 50)" data-longueur="65.97" />
+        <g id="ass-joints" stroke="#fff" stroke-width="1.6">
+          <line x1="50" y1="50" x2="50" y2="7" /><line x1="50" y1="50" x2="93" y2="50" /><line x1="50" y1="50" x2="50" y2="93" />
+        </g>
+        <circle id="ass-graisses" cx="88" cy="18" r="7" fill="#B8945A" />
+      </svg>
+      <span id="ass-pct-legumes" class="ass-pct">50&#8239;%</span>
+      <span id="ass-pct-proteines" class="ass-pct">25&#8239;%</span>
+      <span id="ass-pct-feculents" class="ass-pct">25&#8239;%</span>
+    </div>
+    <p id="ass-graisses-txt" class="titre"><em>+ bonnes graisses</em></p>
+    <span class="ass-mot" data-t="3.83" style="left: 600px; top: 300px"><i style="background: #C2643F"></i>œufs</span>
+    <span class="ass-mot" data-t="4.25" style="left: 800px; top: 360px"><i style="background: #C2643F"></i>poisson</span>
+    <span class="ass-mot" data-t="4.83" style="left: 590px; top: 420px"><i style="background: #C2643F"></i>poulet</span>
+    <span class="ass-mot" data-t="5.34" style="left: 840px; top: 460px"><i style="background: #C2643F"></i>tofu</span>
+    <span class="ass-mot" data-t="6.02" style="left: 700px; top: 250px"><i style="background: #C2643F"></i>lentilles</span>
+    <span class="ass-mot" data-t="8.2" style="left: 610px; top: 1170px"><i style="background: #E3CFA6"></i>riz complet</span>
+    <span class="ass-mot" data-t="8.89" style="left: 520px; top: 1250px"><i style="background: #E3CFA6"></i>pommes de terre</span>
+    <span class="ass-mot" data-t="9.79" style="left: 700px; top: 1100px"><i style="background: #E3CFA6"></i>pain complet</span>
+    <span class="ass-mot" data-t="11.8" style="left: 90px; top: 330px"><i style="background: #B8945A"></i>huile d'olive</span>
+    <span class="ass-mot" data-t="12.61" style="left: 140px; top: 405px"><i style="background: #B8945A"></i>avocat</span>
+    <span class="ass-mot" data-t="13.15" style="left: 90px; top: 478px"><i style="background: #B8945A"></i>quelques noix</span>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « Regarde ton assiette » (1,70 s) : l'assiette vide arrive
+    tl.fromTo("#ass-plat", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.4)" }, 0);
+    tl.fromTo("#ass-joints", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 1.0);
+    // Une part = un balayage ; moitié (2,88 s) · un quart protéines (4,1 s) · un quart féculents (8,4 s)
+    const parts = [["#ass-legumes", "#ass-pct-legumes", 1.05], ["#ass-proteines", "#ass-pct-proteines", 2.4], ["#ass-feculents", "#ass-pct-feculents", 6.65]];
+    parts.forEach(([p, pct, t]) => {
+      const L = parseFloat(document.querySelector(p).dataset.longueur);
+      tl.fromTo(p, { strokeDashoffset: L }, { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" }, t);
+      tl.fromTo(pct, { opacity: 0, scale: 0.6, xPercent: -50, yPercent: -50 }, { opacity: 1, scale: 1, xPercent: -50, yPercent: -50, duration: 0.3, ease: "back.out(2)" }, t + 0.55);
+    });
+    // « un peu de bonnes graisses » (12,78 s) : le point doré
+    tl.fromTo("#ass-graisses", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.35, ease: "back.out(2.5)" }, 10.95);
+    tl.fromTo("#ass-graisses-txt", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 11.0);
+    // Les aliments apparaissent sur leur mot puis flottent doucement
+    document.querySelectorAll(".ass-mot").forEach((m, i) => {
+      const t = parseFloat(m.dataset.t);
+      tl.fromTo(m, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, t - 0.05);
+      tl.fromTo(m, { x: 0 }, { x: i % 2 ? 10 : -10, y: -12, duration: Math.max(0.5, 14.2 - t), ease: "sine.inOut", immediateRender: false }, t + 0.25);
+    });
+    window.__timelines["v4-assiette"] = tl;
+  </script>
+</template>

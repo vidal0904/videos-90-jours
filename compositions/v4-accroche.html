@@ -1,0 +1,93 @@
+<!-- Vidéo 4 · 0–2,45 s (le texte reste lisible pendant que l'assiette arrive) · « Arrête de compter les calories. Fais juste ça. »
+     Une calculatrice (abstraite, sans chiffre) éclate en petits carrés sur « calories ». -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #acc4-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 260px;
+      text-align: center;
+      font-size: 84px;
+      color: var(--creme);
+    }
+    #calc {
+      position: absolute;
+      left: calc(50% - 190px);
+      top: 640px;
+      width: 380px;
+      padding: 34px;
+      border-radius: 44px;
+      background: var(--vert-foret-2);
+      box-shadow: 0 0 0 3px rgba(251, 248, 242, 0.18), 0 30px 60px rgba(0, 0, 0, 0.3);
+    }
+    #calc-ecran {
+      height: 110px;
+      border-radius: 18px;
+      background: var(--sauge-claire);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 26px;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 52px;
+      color: var(--encre);
+    }
+    #calc-touches {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .calc-touche {
+      aspect-ratio: 1;
+      border-radius: 14px;
+      background: rgba(251, 248, 242, 0.22);
+    }
+  </style>
+  <div id="root" data-composition-id="v4-accroche" data-width="1080" data-height="1920">
+    <p id="acc4-texte" class="titre">Arrête de compter les calories.<br /><em>Fais juste ça.</em></p>
+    <div id="calc" data-layout-allow-overflow>
+      <div id="calc-ecran">kcal</div>
+      <div id="calc-touches">
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+          <span class="calc-touche"></span>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Image 0 : phrase + calculatrice déjà là (vignette)
+    tl.fromTo("#acc4-texte", { scale: 1.05 }, { scale: 1, duration: 0.5, ease: "power3.out" }, 0);
+    // « calories » (1,12 s) : la calculatrice éclate en carrés (directions fixes, pas de hasard)
+    const morceaux = [document.getElementById("calc-ecran"), ...document.querySelectorAll(".calc-touche")];
+    morceaux.forEach((m, i) => {
+      const a = i * 2.399; // angle d'or : éclats répartis autour du centre
+      const d = 260 + (i % 4) * 70;
+      tl.to(m, { x: Math.cos(a) * d, y: Math.sin(a) * d, rotation: ((i % 5) - 2) * 40, opacity: 0, duration: 0.6, ease: "power2.out" }, 1.05 + (i % 3) * 0.03);
+    });
+    tl.to("#calc", { backgroundColor: "rgba(44, 82, 64, 0)", boxShadow: "0 0 0 0 rgba(0,0,0,0)", duration: 0.25 }, 1.05);
+    tl.to("#acc4-texte", { opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }, 2.15);
+    window.__timelines["v4-accroche"] = tl;
+  </script>
+</template>

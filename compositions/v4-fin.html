@@ -1,0 +1,95 @@
+<!-- Vidéo 4 · 18,1–22 s · « 70 recettes construites comme ça », couverture, « Lien en bio ».
+     Boucle : l'assiette revient pleine et se vide, avant de repartir sur l'accroche. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #fin4-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 250px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    #fin4-feuille {
+      position: absolute;
+      left: calc(50% - 210px);
+      top: 560px;
+      width: 420px;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    #fin4-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    #fin4-lien {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 1190px;
+      text-align: center;
+      font-size: 84px;
+      color: var(--creme);
+    }
+    #fin4-boucle {
+      position: absolute;
+      inset: 0;
+      background: var(--vert-foret);
+    }
+    #fin4-plat {
+      position: absolute;
+      left: calc(50% - 300px);
+      top: 530px;
+      width: 600px;
+      height: 600px;
+    }
+    #fin4-plat svg {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <div id="root" data-composition-id="v4-fin" data-width="1080" data-height="1920">
+    <p id="fin4-titre" class="titre"><em>70 recettes</em><br />construites comme ça</p>
+    <div id="fin4-feuille"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
+    <p id="fin4-lien" class="titre">Lien en bio</p>
+    <div id="fin4-boucle" aria-hidden="true" data-layout-allow-overlap>
+      <div id="fin4-plat">
+      <svg id="fin4-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="48" fill="#fff" stroke="#D7DBD1" stroke-width="1" />
+        <circle id="fin4-proteines" class="fin4-part" cx="50" cy="50" r="21" fill="none" stroke="#C2643F" stroke-width="42" stroke-dasharray="32.99 131.95" transform="rotate(-90 50 50)" data-longueur="32.99" />
+        <circle id="fin4-feculents" class="fin4-part" cx="50" cy="50" r="21" fill="none" stroke="#E3CFA6" stroke-width="42" stroke-dasharray="32.99 131.95" transform="rotate(0 50 50)" data-longueur="32.99" />
+        <circle id="fin4-legumes" class="fin4-part" cx="50" cy="50" r="21" fill="none" stroke="#8FA68A" stroke-width="42" stroke-dasharray="65.97 131.95" transform="rotate(90 50 50)" data-longueur="65.97" />
+        <g id="fin4-joints" stroke="#fff" stroke-width="1.6">
+          <line x1="50" y1="50" x2="50" y2="7" /><line x1="50" y1="50" x2="93" y2="50" /><line x1="50" y1="50" x2="50" y2="93" />
+        </g>
+        <circle id="fin4-graisses" cx="88" cy="18" r="7" fill="#B8945A" />
+      </svg>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « soixante-dix recettes » (18,14 s)
+    tl.fromTo("#fin4-titre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.05);
+    tl.fromTo("#fin4-feuille", { opacity: 0, y: 50, rotation: 0 }, { opacity: 1, y: 0, rotation: -2, duration: 0.5, ease: "power3.out" }, 0.3);
+    tl.fromTo("#fin4-feuille img", { scale: 1 }, { scale: 1.06, duration: 2.8, ease: "sine.inOut" }, 0.3);
+    tl.fromTo("#fin4-lien", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.2);
+    // Boucle : l'assiette pleine revient puis se vide (parts en sens inverse)
+    tl.fromTo("#fin4-boucle", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.inOut" }, 2.95);
+    ["#fin4-feculents", "#fin4-proteines", "#fin4-legumes"].forEach((p, i) => {
+      const L = parseFloat(document.querySelector(p).dataset.longueur);
+      tl.fromTo(p, { strokeDashoffset: 0 }, { strokeDashoffset: L, duration: 0.3, ease: "power2.in", immediateRender: false }, 3.3 + i * 0.12);
+    });
+    tl.to("#fin4-graisses", { scale: 0, transformOrigin: "50% 50%", duration: 0.2 }, 3.3);
+    window.__timelines["v4-fin"] = tl;
+  </script>
+</template>

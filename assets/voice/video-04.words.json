@@ -1,0 +1,356 @@
+[
+ {
+  "id": "w0",
+  "text": "Arrête",
+  "start": 0.0,
+  "end": 0.313
+ },
+ {
+  "id": "w1",
+  "text": "de",
+  "start": 0.337,
+  "end": 0.406
+ },
+ {
+  "id": "w2",
+  "text": "compter",
+  "start": 0.453,
+  "end": 0.697
+ },
+ {
+  "id": "w3",
+  "text": "les",
+  "start": 0.72,
+  "end": 0.801
+ },
+ {
+  "id": "w4",
+  "text": "calories.",
+  "start": 0.824,
+  "end": 1.207
+ },
+ {
+  "id": "w5",
+  "text": "Regarde",
+  "start": 1.405,
+  "end": 1.718
+ },
+ {
+  "id": "w6",
+  "text": "ton",
+  "start": 1.741,
+  "end": 1.846
+ },
+ {
+  "id": "w7",
+  "text": "assiette.",
+  "start": 1.904,
+  "end": 2.276
+ },
+ {
+  "id": "w8",
+  "text": "La",
+  "start": 2.438,
+  "end": 2.531
+ },
+ {
+  "id": "w9",
+  "text": "moitié :",
+  "start": 2.577,
+  "end": 2.914
+ },
+ {
+  "id": "w10",
+  "text": "des",
+  "start": 3.111,
+  "end": 3.228
+ },
+ {
+  "id": "w11",
+  "text": "légumes.",
+  "start": 3.251,
+  "end": 3.634
+ },
+ {
+  "id": "w12",
+  "text": "Un",
+  "start": 3.808,
+  "end": 3.959
+ },
+ {
+  "id": "w13",
+  "text": "quart :",
+  "start": 4.005,
+  "end": 4.284
+ },
+ {
+  "id": "w14",
+  "text": "des",
+  "start": 4.458,
+  "end": 4.574
+ },
+ {
+  "id": "w15",
+  "text": "protéines,",
+  "start": 4.598,
+  "end": 5.12
+ },
+ {
+  "id": "w16",
+  "text": "œufs,",
+  "start": 5.283,
+  "end": 5.538
+ },
+ {
+  "id": "w17",
+  "text": "poisson,",
+  "start": 5.7,
+  "end": 6.107
+ },
+ {
+  "id": "w18",
+  "text": "poulet,",
+  "start": 6.281,
+  "end": 6.653
+ },
+ {
+  "id": "w19",
+  "text": "tofu,",
+  "start": 6.792,
+  "end": 7.221
+ },
+ {
+  "id": "w20",
+  "text": "lentilles.",
+  "start": 7.465,
+  "end": 7.976
+ },
+ {
+  "id": "w21",
+  "text": "Un",
+  "start": 8.115,
+  "end": 8.266
+ },
+ {
+  "id": "w22",
+  "text": "quart :",
+  "start": 8.313,
+  "end": 8.626
+ },
+ {
+  "id": "w23",
+  "text": "des",
+  "start": 8.835,
+  "end": 8.951
+ },
+ {
+  "id": "w24",
+  "text": "féculents,",
+  "start": 8.986,
+  "end": 9.427
+ },
+ {
+  "id": "w25",
+  "text": "riz",
+  "start": 9.648,
+  "end": 9.787
+ },
+ {
+  "id": "w26",
+  "text": "complet,",
+  "start": 9.822,
+  "end": 10.194
+ },
+ {
+  "id": "w27",
+  "text": "pommes",
+  "start": 10.344,
+  "end": 10.577
+ },
+ {
+  "id": "w28",
+  "text": "de",
+  "start": 10.6,
+  "end": 10.681
+ },
+ {
+  "id": "w29",
+  "text": "terre,",
+  "start": 10.728,
+  "end": 11.041
+ },
+ {
+  "id": "w30",
+  "text": "pain",
+  "start": 11.238,
+  "end": 11.389
+ },
+ {
+  "id": "w31",
+  "text": "complet.",
+  "start": 11.436,
+  "end": 11.773
+ },
+ {
+  "id": "w32",
+  "text": "Et",
+  "start": 11.97,
+  "end": 12.086
+ },
+ {
+  "id": "w33",
+  "text": "un",
+  "start": 12.132,
+  "end": 12.19
+ },
+ {
+  "id": "w34",
+  "text": "peu",
+  "start": 12.237,
+  "end": 12.341
+ },
+ {
+  "id": "w35",
+  "text": "de",
+  "start": 12.376,
+  "end": 12.434
+ },
+ {
+  "id": "w36",
+  "text": "bonnes",
+  "start": 12.48,
+  "end": 12.666
+ },
+ {
+  "id": "w37",
+  "text": "graisses :",
+  "start": 12.689,
+  "end": 13.015
+ },
+ {
+  "id": "w38",
+  "text": "huile",
+  "start": 13.247,
+  "end": 13.456
+ },
+ {
+  "id": "w39",
+  "text": "d'olive,",
+  "start": 13.479,
+  "end": 13.932
+ },
+ {
+  "id": "w40",
+  "text": "avocat,",
+  "start": 14.059,
+  "end": 14.524
+ },
+ {
+  "id": "w41",
+  "text": "quelques",
+  "start": 14.675,
+  "end": 14.965
+ },
+ {
+  "id": "w42",
+  "text": "noix.",
+  "start": 14.988,
+  "end": 15.128
+ },
+ {
+  "id": "w43",
+  "text": "C'est",
+  "start": 15.29,
+  "end": 15.464
+ },
+ {
+  "id": "w44",
+  "text": "tout.",
+  "start": 15.487,
+  "end": 15.638
+ },
+ {
+  "id": "w45",
+  "text": "Cette",
+  "start": 15.801,
+  "end": 15.998
+ },
+ {
+  "id": "w46",
+  "text": "méthode",
+  "start": 16.033,
+  "end": 16.347
+ },
+ {
+  "id": "w47",
+  "text": "est",
+  "start": 16.37,
+  "end": 16.439
+ },
+ {
+  "id": "w48",
+  "text": "au",
+  "start": 16.498,
+  "end": 16.544
+ },
+ {
+  "id": "w49",
+  "text": "cœur",
+  "start": 16.59,
+  "end": 16.788
+ },
+ {
+  "id": "w50",
+  "text": "de",
+  "start": 16.834,
+  "end": 16.892
+ },
+ {
+  "id": "w51",
+  "text": "mon",
+  "start": 16.939,
+  "end": 17.043
+ },
+ {
+  "id": "w52",
+  "text": "guide,",
+  "start": 17.09,
+  "end": 17.357
+ },
+ {
+  "id": "w53",
+  "text": "avec",
+  "start": 17.554,
+  "end": 17.798
+ },
+ {
+  "id": "w54",
+  "text": "70",
+  "start": 17.844,
+  "end": 18.344
+ },
+ {
+  "id": "w55",
+  "text": "recettes",
+  "start": 18.367,
+  "end": 18.68
+ },
+ {
+  "id": "w56",
+  "text": "construites",
+  "start": 18.703,
+  "end": 19.133
+ },
+ {
+  "id": "w57",
+  "text": "comme",
+  "start": 19.156,
+  "end": 19.307
+ },
+ {
+  "id": "w58",
+  "text": "ça.",
+  "start": 19.33,
+  "end": 19.493
+ }
+]
