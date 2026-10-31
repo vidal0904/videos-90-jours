@@ -1,0 +1,52 @@
+<!-- Vidéo 8 · 11,3–17 s · trois lignes barrées doucement en terracotta, chacune sur son verbe :
+     « saute » (11,68 s), « punis » (14,41 s), « recommence » (15,68 s). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .bar {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    .bar-txt {
+      position: relative;
+      display: inline-block;
+      font-family: var(--font-titre);
+      font-style: italic;
+      font-weight: 600;
+      font-size: 90px;
+      color: var(--encre);
+    }
+    .bar-trait {
+      position: absolute;
+      left: -4%;
+      top: 55%;
+      width: 108%;
+      height: 7px;
+      border-radius: 7px;
+      background: var(--terracotta);
+      transform-origin: left center;
+    }
+  </style>
+  <div id="root" data-composition-id="v8-barres" data-width="1080" data-height="1920">
+    <p id="bar-0" class="bar" data-entree="0.35" data-barre="1.45" style="top: 600px"><span class="bar-txt">sauter un repas<i class="bar-trait"></i></span></p>
+    <p id="bar-1" class="bar" data-entree="2.75" data-barre="3.35" style="top: 800px"><span class="bar-txt">me punir<i class="bar-trait"></i></span></p>
+    <p id="bar-2" class="bar" data-entree="4.15" data-barre="4.85" style="top: 1000px"><span class="bar-txt">recommencer lundi<i class="bar-trait"></i></span></p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    document.querySelectorAll(".bar").forEach((b) => {
+      const e = parseFloat(b.dataset.entree);
+      const t = parseFloat(b.dataset.barre);
+      tl.fromTo(b, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.6, ease: "sine.out" }, e);
+      tl.fromTo(b.querySelector(".bar-trait"), { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "sine.inOut" }, t);
+      tl.to(b.querySelector(".bar-txt"), { opacity: 0.45, duration: 0.6, ease: "sine.out" }, t + 0.5);
+    });
+    window.__timelines["v8-barres"] = tl;
+  </script>
+</template>

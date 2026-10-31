@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <link rel="stylesheet" href="assets/design/tokens.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--creme);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vidéo 8 — « Tu as craqué hier ? » (émotion, déculpabilisation ; règle du repas suivant) · 25 s -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="25" data-width="1080" data-height="1920">
+      <div
+        id="fond-creme"
+        data-composition-id="fond-creme"
+        data-composition-src="compositions/components/fond-creme.html"
+        data-start="0"
+        data-duration="25"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 1"
+      ></div>
+      <div
+        id="v8-accroche"
+        data-composition-id="v8-accroche"
+        data-composition-src="compositions/v8-accroche.html"
+        data-start="0"
+        data-duration="2.5"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 2"
+      ></div>
+      <div
+        id="v8-phrases"
+        data-composition-id="v8-phrases"
+        data-composition-src="compositions/v8-phrases.html"
+        data-start="2.5"
+        data-duration="8.8"
+        data-track-index="2"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 3"
+      ></div>
+      <div
+        id="v8-barres"
+        data-composition-id="v8-barres"
+        data-composition-src="compositions/v8-barres.html"
+        data-start="11.3"
+        data-duration="5.7"
+        data-track-index="3"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 4"
+      ></div>
+      <div
+        id="v8-repas-suivant"
+        data-composition-id="v8-repas-suivant"
+        data-composition-src="compositions/v8-repas-suivant.html"
+        data-start="17.0"
+        data-duration="5.4"
+        data-track-index="4"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 5"
+      ></div>
+      <div
+        id="v8-fin"
+        data-composition-id="v8-fin"
+        data-composition-src="compositions/v8-fin.html"
+        data-start="22.4"
+        data-duration="2.6"
+        data-track-index="5"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 6"
+      ></div>
+      <div
+        id="mention-sante"
+        data-composition-id="mention-sante"
+        data-composition-src="compositions/mention-sante.html"
+        data-start="0"
+        data-duration="25"
+        data-track-index="6"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 7"
+      ></div>
+      <div
+        id="sous-titres-video-08"
+        data-composition-id="sous-titres-video-08"
+        data-composition-src="compositions/v8-sous-titres.html"
+        data-start="0"
+        data-duration="25"
+        data-track-index="7"
+        data-track-kind="captions"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 8"
+      ></div>
+      <audio id="voix" class="clip" src="assets/voice/video-08.final.wav" data-start="0.8" data-track-index="8" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/music/piano-08.wav" data-start="0" data-track-index="9" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

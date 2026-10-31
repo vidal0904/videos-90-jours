@@ -1,0 +1,83 @@
+<!-- Vidéo 8 · 22,4–25 s · le certificat de parcours (p. 315) flouté en fond (image floutée une fois :
+     assets/design/certificat-flou.jpg), couverture discrète, « Lien en bio » ; retour à l'accroche (boucle). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .acc8 {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 640px;
+      text-align: center;
+      font-family: var(--font-titre);
+      font-style: italic;
+      font-weight: 600;
+      font-size: 96px;
+      line-height: 1.2;
+      color: var(--encre);
+    }
+    .acc8 span {
+      color: var(--vert-foret-2);
+    }
+    #fin8-fond {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #fin8-lien {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 380px;
+      text-align: center;
+      font-size: 100px;
+      color: var(--vert-foret);
+    }
+    #fin8-lien em {
+      color: var(--vert-foret-2);
+    }
+    #fin8-couv {
+      position: absolute;
+      left: calc(50% - 160px);
+      top: 640px;
+      width: 320px;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: var(--ombre-page);
+    }
+    #fin8-couv img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    /* Fond transparent : le fond crème animé reste visible, comme à l'image 0 */
+    #fin8-boucle {
+      position: absolute;
+      inset: 0;
+    }
+  </style>
+  <div id="root" data-composition-id="v8-fin" data-width="1080" data-height="1920">
+    <img id="fin8-fond" src="assets/design/certificat-flou.jpg" alt="" />
+    <p id="fin8-lien" class="titre">Lien en <em>bio</em></p>
+    <div id="fin8-couv"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
+    <div id="fin8-boucle" aria-hidden="true" data-layout-allow-overlap>
+      <p id="fin8-acc" class="acc8">Tu as craqué<br />hier soir&#8239;?<br /><span>Écoute ça.</span></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fin8-fond", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.out" }, 0);
+    tl.fromTo("#fin8-couv", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "sine.out" }, 0.25);
+    tl.fromTo("#fin8-lien", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "sine.out" }, 0.45);
+    // Boucle : retour à l'écran crème de l'accroche
+    tl.to(["#fin8-fond", "#fin8-couv", "#fin8-lien"], { opacity: 0, duration: 0.45, ease: "sine.inOut" }, 2.0);
+    tl.fromTo("#fin8-boucle", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "sine.inOut" }, 2.1);
+    window.__timelines["v8-fin"] = tl;
+  </script>
+</template>

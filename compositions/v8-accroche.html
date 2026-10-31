@@ -1,0 +1,34 @@
+<!-- Vidéo 8 · 0–2,5 s · écran crème, Lora italique : « Tu as craqué hier soir ? Écoute ça. » (image 0 = dernière image) -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .acc8 {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 640px;
+      text-align: center;
+      font-family: var(--font-titre);
+      font-style: italic;
+      font-weight: 600;
+      font-size: 96px;
+      line-height: 1.2;
+      color: var(--encre);
+    }
+    .acc8 span {
+      color: var(--vert-foret-2);
+    }
+  </style>
+  <div id="root" data-composition-id="v8-accroche" data-width="1080" data-height="1920">
+    <p id="acc8-texte" class="acc8">Tu as craqué<br />hier soir&#8239;?<br /><span>Écoute ça.</span></p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.to("#acc8-texte", { opacity: 0, y: -20, duration: 0.4, ease: "sine.in" }, 2.05);
+    window.__timelines["v8-accroche"] = tl;
+  </script>
+</template>

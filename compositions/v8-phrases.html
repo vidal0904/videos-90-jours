@@ -1,0 +1,42 @@
+<!-- Vidéo 8 · 2,5–11,3 s · phrases du script, une à la fois, centrées, beaucoup d'air (rythme lent). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .phr {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 700px;
+      text-align: center;
+      font-size: 92px;
+      color: var(--encre);
+    }
+    .phr em {
+      color: var(--vert-foret-2);
+    }
+  </style>
+  <div id="root" data-composition-id="v8-phrases" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+      <p id="phr-1" class="phr titre">Ce n'est pas grave.</p>
+      <p id="phr-2" class="phr titre">Un repas.</p>
+      <p id="phr-3" class="phr titre">Ce qui compte,<br /><em>c'est ce que tu fais ensuite.</em></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « Ce n'est pas grave » (2,64 s) · « Un repas » (4,35 s) · « Ce qui compte » (8,61 s)
+    const doux = (id, entree, sortie) => {
+      tl.fromTo(id, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.7, ease: "sine.out" }, entree);
+      if (sortie) tl.to(id, { opacity: 0, duration: 0.5, ease: "sine.in" }, sortie);
+    };
+    doux("#phr-1", 0.1, 1.45);
+    doux("#phr-2", 1.85, 5.6);
+    doux("#phr-3", 6.1, null);
+    tl.fromTo("#phr-3 em", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "sine.out" }, 7.0);
+    window.__timelines["v8-phrases"] = tl;
+  </script>
+</template>
