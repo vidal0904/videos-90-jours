@@ -1,0 +1,175 @@
+<!-- Vidéo 7 · 0–27,6 s · chronomètre « 90:00 » + accroche, puis les 6 étapes du batch cooking
+     (p. 199 du guide) ; le chronomètre descend pendant chaque étape : 90 → 75 → 60 → 40 → 25 → 10 → 0.
+     data-t = instant du numéro dans la voix ; fins = minutes restantes à la fin de chaque étape. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .chr-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 250px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .chr-bloc {
+      position: absolute;
+      left: calc(50% - 300px);
+      top: 640px;
+      width: 600px;
+      height: 300px;
+      border-radius: 60px;
+      background: var(--creme);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    }
+    .chr-temps {
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 190px;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
+      color: var(--vert-foret);
+    }
+    .chr-carte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 560px;
+      height: 640px;
+      border-radius: 40px;
+      background: rgba(251, 248, 242, 0.08);
+      border: 2px solid rgba(251, 248, 242, 0.2);
+      text-align: center;
+    }
+    .chr-icone {
+      display: block;
+      width: 230px;
+      height: 230px;
+      margin: 70px auto 30px;
+      fill: none;
+      stroke: var(--creme);
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .chr-etape {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      font-family: var(--font-titre);
+      font-weight: 600;
+      font-size: 72px;
+      color: var(--creme);
+    }
+    .chr-num {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: var(--creme);
+      color: var(--vert-foret);
+      font-size: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .chr-detail {
+      margin-top: 22px;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 48px;
+      color: var(--dore);
+    }
+    .chr-points {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    .chr-points i {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: rgba(251, 248, 242, 0.25);
+    }
+    .chr-points i.plein {
+      background: var(--terracotta);
+    }
+  </style>
+  <div id="root" data-composition-id="v7-chrono" data-width="1080" data-height="1920">
+    <p id="chr-texte" class="chr-texte titre">Ma semaine de repas<br />en <em>90 minutes</em>,<br />le dimanche.</p>
+    <div id="chr-cartes" data-layout-allow-overlap>
+    <div id="chr-carte-1" class="chr-carte" data-t="5.3">
+      <svg class="chr-icone" viewBox="0 0 100 100" aria-hidden="true"><rect x="10" y="18" width="80" height="68" rx="7"/><line x1="10" y1="34" x2="90" y2="34"/><circle cx="24" cy="26" r="3"/><circle cx="36" cy="26" r="3"/><rect x="22" y="44" width="56" height="32" rx="4"/></svg>
+      <p class="chr-etape"><span class="chr-num">1</span>Allume le four</p>
+      <p class="chr-detail">Patates douces, légumes à rôtir</p>
+      <p class="chr-points"><i class="plein"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></p>
+    </div>
+    <div id="chr-carte-2" class="chr-carte" data-t="9.47">
+      <svg class="chr-icone" viewBox="0 0 100 100" aria-hidden="true"><path d="M18 46 h64 v24 a14 14 0 0 1 -14 14 h-36 a14 14 0 0 1 -14 -14 z"/><line x1="12" y1="46" x2="88" y2="46"/><line x1="82" y1="54" x2="94" y2="54"/><line x1="6" y1="54" x2="18" y2="54"/><path d="M38 34 q-4 -8 0 -16 M50 34 q-4 -8 0 -16 M62 34 q-4 -8 0 -16"/></svg>
+      <p class="chr-etape"><span class="chr-num">2</span>Lance les céréales</p>
+      <p class="chr-detail">Riz, quinoa ou lentilles</p>
+      <p class="chr-points"><i class="plein"></i><i class="plein"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></p>
+    </div>
+    <div id="chr-carte-3" class="chr-carte" data-t="12.98">
+      <svg class="chr-icone" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 12 C32 12 22 44 22 60 C22 78 35 90 50 90 C65 90 78 78 78 60 C78 44 68 12 50 12 Z"/><circle cx="50" cy="62" r="13"/></svg>
+      <p class="chr-etape"><span class="chr-num">3</span>Cuis tes protéines</p>
+      <p class="chr-detail">Poulet, 6 œufs durs, un chili</p>
+      <p class="chr-points"><i class="plein"></i><i class="plein"></i><i class="plein"></i><i class=""></i><i class=""></i><i class=""></i></p>
+    </div>
+    <div id="chr-carte-4" class="chr-carte" data-t="17.57">
+      <svg class="chr-icone" viewBox="0 0 100 100" aria-hidden="true"><path d="M14 74 L66 22 Q78 12 84 22 Q86 28 80 34 L34 80 Z"/><line x1="34" y1="80" x2="16" y2="94"/><line x1="12" y1="86" x2="24" y2="98"/></svg>
+      <p class="chr-etape"><span class="chr-num">4</span>Lave et coupe</p>
+      <p class="chr-detail">tes crudités</p>
+      <p class="chr-points"><i class="plein"></i><i class="plein"></i><i class="plein"></i><i class="plein"></i><i class=""></i><i class=""></i></p>
+    </div>
+    <div id="chr-carte-5" class="chr-carte" data-t="20.43">
+      <svg class="chr-icone" viewBox="0 0 100 100" aria-hidden="true"><rect x="30" y="10" width="40" height="12" rx="3"/><path d="M26 24 h48 v56 a10 10 0 0 1 -10 10 h-28 a10 10 0 0 1 -10 -10 z"/><rect x="34" y="46" width="32" height="18" rx="3"/></svg>
+      <p class="chr-etape"><span class="chr-num">5</span>Deux sauces</p>
+      <p class="chr-detail">Yaourt citron · vinaigrette</p>
+      <p class="chr-points"><i class="plein"></i><i class="plein"></i><i class="plein"></i><i class="plein"></i><i class="plein"></i><i class=""></i></p>
+    </div>
+    <div id="chr-carte-6" class="chr-carte" data-t="24.55">
+      <svg class="chr-icone" viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="30" width="76" height="14" rx="5"/><rect x="16" y="44" width="68" height="42" rx="8"/><line x1="34" y1="64" x2="66" y2="64"/></svg>
+      <p class="chr-etape"><span class="chr-num">6</span>Range en portions</p>
+      <p class="chr-detail">avec la date</p>
+      <p class="chr-points"><i class="plein"></i><i class="plein"></i><i class="plein"></i><i class="plein"></i><i class="plein"></i><i class="plein"></i></p>
+    </div>
+    </div>
+    <div id="chr-bloc" class="chr-bloc"><span id="chr-temps" class="chr-temps">90:00</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const temps = document.getElementById("chr-temps");
+    const reste = { s: 5400 };
+    const affiche = () => {
+      const s = Math.max(0, Math.round(reste.s));
+      temps.textContent = `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+    };
+    // Image 0 : « 90:00 » et l'accroche sont là. Le chrono démarre (quelques secondes qui défilent)
+    tl.fromTo(reste, { s: 5400 }, { s: 5394, duration: 4, ease: "none", onUpdate: affiche }, 1.0);
+    tl.to("#chr-texte", { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, 4.8);
+    // « Un » (5,3 s) : le chrono monte en haut, réduit
+    tl.to("#chr-bloc", { y: -440, scale: 0.55, duration: 0.5, ease: "power3.inOut" }, 4.9);
+    // Chaque carte arrive sur son numéro ; le chrono descend jusqu'à la valeur de fin d'étape
+    const fins = [75, 60, 40, 25, 10, 0];
+    const cartes = [...document.querySelectorAll(".chr-carte")];
+    cartes.forEach((c, i) => {
+      const t = parseFloat(c.dataset.t);
+      const suivant = i < cartes.length - 1 ? parseFloat(cartes[i + 1].dataset.t) : 27.3;
+      tl.fromTo(c, { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t - 0.15);
+      tl.fromTo(c.querySelector(".chr-icone"), { scale: 0.6, rotation: -8 }, { scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2)" }, t - 0.05);
+      if (i < cartes.length - 1) tl.to(c, { opacity: 0, x: -120, duration: 0.3, ease: "power2.in" }, suivant - 0.35);
+      tl.to(reste, { s: fins[i] * 60, duration: Math.max(0.5, suivant - t - 0.4), ease: "power1.inOut", onUpdate: affiche }, t);
+    });
+    window.__timelines["v7-chrono"] = tl;
+  </script>
+</template>

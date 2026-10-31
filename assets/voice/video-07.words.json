@@ -1,0 +1,446 @@
+[
+ {
+  "id": "w0",
+  "text": "90",
+  "start": 0.0,
+  "end": 0.65
+ },
+ {
+  "id": "w1",
+  "text": "minutes",
+  "start": 0.673,
+  "end": 0.952
+ },
+ {
+  "id": "w2",
+  "text": "le",
+  "start": 0.975,
+  "end": 1.022
+ },
+ {
+  "id": "w3",
+  "text": "dimanche,",
+  "start": 1.068,
+  "end": 1.544
+ },
+ {
+  "id": "w4",
+  "text": "et",
+  "start": 1.8,
+  "end": 1.939
+ },
+ {
+  "id": "w5",
+  "text": "ta",
+  "start": 1.962,
+  "end": 2.043
+ },
+ {
+  "id": "w6",
+  "text": "semaine",
+  "start": 2.101,
+  "end": 2.415
+ },
+ {
+  "id": "w7",
+  "text": "est",
+  "start": 2.438,
+  "end": 2.508
+ },
+ {
+  "id": "w8",
+  "text": "à",
+  "start": 2.577,
+  "end": 2.601
+ },
+ {
+  "id": "w9",
+  "text": "moitié",
+  "start": 2.647,
+  "end": 2.902
+ },
+ {
+  "id": "w10",
+  "text": "prête.",
+  "start": 2.949,
+  "end": 3.332
+ },
+ {
+  "id": "w11",
+  "text": "Un :",
+  "start": 4.305,
+  "end": 4.502
+ },
+ {
+  "id": "w12",
+  "text": "allume",
+  "start": 4.816,
+  "end": 5.106
+ },
+ {
+  "id": "w13",
+  "text": "le",
+  "start": 5.129,
+  "end": 5.199
+ },
+ {
+  "id": "w14",
+  "text": "four,",
+  "start": 5.257,
+  "end": 5.559
+ },
+ {
+  "id": "w15",
+  "text": "patates",
+  "start": 5.698,
+  "end": 6.07
+ },
+ {
+  "id": "w16",
+  "text": "douces",
+  "start": 6.093,
+  "end": 6.372
+ },
+ {
+  "id": "w17",
+  "text": "et",
+  "start": 6.499,
+  "end": 6.627
+ },
+ {
+  "id": "w18",
+  "text": "légumes",
+  "start": 6.673,
+  "end": 7.022
+ },
+ {
+  "id": "w19",
+  "text": "à",
+  "start": 7.091,
+  "end": 7.149
+ },
+ {
+  "id": "w20",
+  "text": "rôtir.",
+  "start": 7.231,
+  "end": 7.684
+ },
+ {
+  "id": "w21",
+  "text": "Deux :",
+  "start": 8.47,
+  "end": 8.749
+ },
+ {
+  "id": "w22",
+  "text": "lance",
+  "start": 9.05,
+  "end": 9.271
+ },
+ {
+  "id": "w23",
+  "text": "le",
+  "start": 9.306,
+  "end": 9.364
+ },
+ {
+  "id": "w24",
+  "text": "riz,",
+  "start": 9.422,
+  "end": 9.631
+ },
+ {
+  "id": "w25",
+  "text": "le",
+  "start": 9.863,
+  "end": 9.956
+ },
+ {
+  "id": "w26",
+  "text": "quinoa",
+  "start": 10.003,
+  "end": 10.444
+ },
+ {
+  "id": "w27",
+  "text": "ou",
+  "start": 10.56,
+  "end": 10.676
+ },
+ {
+  "id": "w28",
+  "text": "les",
+  "start": 10.734,
+  "end": 10.827
+ },
+ {
+  "id": "w29",
+  "text": "lentilles.",
+  "start": 10.85,
+  "end": 11.291
+ },
+ {
+  "id": "w30",
+  "text": "Trois :",
+  "start": 11.985,
+  "end": 12.38
+ },
+ {
+  "id": "w31",
+  "text": "cuis",
+  "start": 12.658,
+  "end": 12.867
+ },
+ {
+  "id": "w32",
+  "text": "tes",
+  "start": 12.891,
+  "end": 12.983
+ },
+ {
+  "id": "w33",
+  "text": "protéines,",
+  "start": 13.007,
+  "end": 13.552
+ },
+ {
+  "id": "w34",
+  "text": "poulet,",
+  "start": 13.75,
+  "end": 14.168
+ },
+ {
+  "id": "w35",
+  "text": "six",
+  "start": 14.423,
+  "end": 14.667
+ },
+ {
+  "id": "w36",
+  "text": "œufs",
+  "start": 14.713,
+  "end": 14.829
+ },
+ {
+  "id": "w37",
+  "text": "durs,",
+  "start": 14.853,
+  "end": 15.201
+ },
+ {
+  "id": "w38",
+  "text": "un",
+  "start": 15.375,
+  "end": 15.503
+ },
+ {
+  "id": "w39",
+  "text": "chili.",
+  "start": 15.549,
+  "end": 15.886
+ },
+ {
+  "id": "w40",
+  "text": "Quatre :",
+  "start": 16.568,
+  "end": 17.009
+ },
+ {
+  "id": "w41",
+  "text": "lave",
+  "start": 17.276,
+  "end": 17.625
+ },
+ {
+  "id": "w42",
+  "text": "et",
+  "start": 17.671,
+  "end": 17.775
+ },
+ {
+  "id": "w43",
+  "text": "coupe",
+  "start": 17.833,
+  "end": 18.031
+ },
+ {
+  "id": "w44",
+  "text": "tes",
+  "start": 18.054,
+  "end": 18.147
+ },
+ {
+  "id": "w45",
+  "text": "crudités.",
+  "start": 18.17,
+  "end": 18.669
+ },
+ {
+  "id": "w46",
+  "text": "Cinq :",
+  "start": 19.433,
+  "end": 19.77
+ },
+ {
+  "id": "w47",
+  "text": "prépare",
+  "start": 20.083,
+  "end": 20.466
+ },
+ {
+  "id": "w48",
+  "text": "deux",
+  "start": 20.49,
+  "end": 20.606
+ },
+ {
+  "id": "w49",
+  "text": "sauces,",
+  "start": 20.64,
+  "end": 20.954
+ },
+ {
+  "id": "w50",
+  "text": "yaourt",
+  "start": 21.151,
+  "end": 21.5
+ },
+ {
+  "id": "w51",
+  "text": "citron",
+  "start": 21.523,
+  "end": 21.883
+ },
+ {
+  "id": "w52",
+  "text": "et",
+  "start": 21.999,
+  "end": 22.103
+ },
+ {
+  "id": "w53",
+  "text": "vinaigrette.",
+  "start": 22.138,
+  "end": 22.695
+ },
+ {
+  "id": "w54",
+  "text": "Six :",
+  "start": 23.552,
+  "end": 23.935
+ },
+ {
+  "id": "w55",
+  "text": "range",
+  "start": 24.388,
+  "end": 24.643
+ },
+ {
+  "id": "w56",
+  "text": "tout",
+  "start": 24.667,
+  "end": 24.783
+ },
+ {
+  "id": "w57",
+  "text": "en",
+  "start": 24.841,
+  "end": 24.887
+ },
+ {
+  "id": "w58",
+  "text": "portions,",
+  "start": 24.922,
+  "end": 25.328
+ },
+ {
+  "id": "w59",
+  "text": "avec",
+  "start": 25.444,
+  "end": 25.711
+ },
+ {
+  "id": "w60",
+  "text": "la",
+  "start": 25.77,
+  "end": 25.839
+ },
+ {
+  "id": "w61",
+  "text": "date.",
+  "start": 25.886,
+  "end": 26.071
+ },
+ {
+  "id": "w62",
+  "text": "Le",
+  "start": 26.695,
+  "end": 26.858
+ },
+ {
+  "id": "w63",
+  "text": "plan",
+  "start": 26.892,
+  "end": 27.055
+ },
+ {
+  "id": "w64",
+  "text": "complet,",
+  "start": 27.101,
+  "end": 27.484
+ },
+ {
+  "id": "w65",
+  "text": "avec",
+  "start": 27.566,
+  "end": 27.798
+ },
+ {
+  "id": "w66",
+  "text": "les",
+  "start": 27.856,
+  "end": 27.926
+ },
+ {
+  "id": "w67",
+  "text": "repères",
+  "start": 27.96,
+  "end": 28.262
+ },
+ {
+  "id": "w68",
+  "text": "de",
+  "start": 28.286,
+  "end": 28.332
+ },
+ {
+  "id": "w69",
+  "text": "conservation,",
+  "start": 28.378,
+  "end": 29.029
+ },
+ {
+  "id": "w70",
+  "text": "est",
+  "start": 29.156,
+  "end": 29.261
+ },
+ {
+  "id": "w71",
+  "text": "dans",
+  "start": 29.296,
+  "end": 29.412
+ },
+ {
+  "id": "w72",
+  "text": "mon",
+  "start": 29.435,
+  "end": 29.539
+ },
+ {
+  "id": "w73",
+  "text": "guide.",
+  "start": 29.574,
+  "end": 29.911
+ }
+]

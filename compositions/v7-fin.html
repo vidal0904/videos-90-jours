@@ -1,0 +1,97 @@
+<!-- Vidéo 7 · 27,6–35 s · « Le plan complet, avec les repères de conservation, est dans mon guide » :
+     page « Batch cooking » (p. 199) + couverture + « Lien en bio ». Les 0,6 dernières secondes
+     reprennent l'image 0 (chrono à 90:00 + accroche) pour la boucle. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .chr-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 250px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .chr-bloc {
+      position: absolute;
+      left: calc(50% - 300px);
+      top: 640px;
+      width: 600px;
+      height: 300px;
+      border-radius: 60px;
+      background: var(--creme);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    }
+    .chr-temps {
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 190px;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
+      color: var(--vert-foret);
+    }
+    .fin7-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 260px;
+      text-align: center;
+      font-size: 84px;
+      color: var(--creme);
+    }
+    .fin7-feuille {
+      position: absolute;
+      width: 450px;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .fin7-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    #fin7-page { left: 130px; top: 500px; }
+    #fin7-couv { left: 500px; top: 580px; }
+    #fin7-boucle {
+      position: absolute;
+      inset: 0;
+    }
+  </style>
+  <div id="root" data-composition-id="v7-fin" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+      <p id="fin7-guide" class="fin7-texte titre">Le plan complet<br /><em>dans le guide</em></p>
+      <p id="fin7-lien" class="fin7-texte titre">Lien en <em>bio</em></p>
+      <div id="fin7-page" class="fin7-feuille"><img src="capture/pages/batch-cooking-p199.png" alt="Batch cooking : avancer sa semaine le dimanche" /></div>
+      <div id="fin7-couv" class="fin7-feuille"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
+    </div>
+    <div id="fin7-boucle" aria-hidden="true" data-layout-allow-overlap>
+      <p class="chr-texte titre">Ma semaine de repas<br />en <em>90 minutes</em>,<br />le dimanche.</p>
+      <div class="chr-bloc"><span class="chr-temps">90:00</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « Le plan complet » (28,7 s)
+    tl.fromTo("#fin7-page", { opacity: 0, y: 200, rotation: 0 }, { opacity: 1, y: 0, rotation: -3, duration: 0.45, ease: "power3.out" }, 0.15);
+    tl.fromTo("#fin7-guide", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.4);
+    // « est dans mon guide » (31,2 s)
+    tl.fromTo("#fin7-couv", { opacity: 0, x: 200, rotation: 0 }, { opacity: 1, x: 0, rotation: 3, duration: 0.45, ease: "power3.out" }, 3.5);
+    tl.to("#fin7-guide", { opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }, 3.9);
+    tl.fromTo("#fin7-lien", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 4.1);
+    // Boucle : le chrono revient à 90:00, comme à l'image 0
+    tl.to(["#fin7-lien", "#fin7-page", "#fin7-couv"], { opacity: 0, duration: 0.3, ease: "power2.in" }, 6.65);
+    tl.fromTo("#fin7-boucle", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 6.8);
+    window.__timelines["v7-fin"] = tl;
+  </script>
+</template>
