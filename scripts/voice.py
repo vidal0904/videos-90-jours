@@ -59,7 +59,7 @@ for token in text.split(" "):
         words.append(token)
 
 # Écrit comme on le dit pour la voix, affiché comme on le lit dans les sous-titres
-AFFICHAGE = {"quatre-vingt-dix": "90", "quatre-vingts": "80", "soixante-dix": "70", "douze": "12"}
+AFFICHAGE = {"quatre-vingt-dix": "90", "quatre-vingts": "80", "soixante-dix": "70", "douze": "12", "dix": "10"}
 
 
 def affiche(mot):

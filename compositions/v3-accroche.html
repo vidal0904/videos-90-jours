@@ -1,0 +1,33 @@
+<!-- Vidéo 3 · 0–3,3 s · accroche sur fond crème. Le minuteur est une scène à part (v3-minuteur). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #acc3-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 300px;
+      text-align: center;
+      font-size: 92px;
+      color: var(--encre);
+    }
+    /* Sur crème, l'accent terracotta est réservé au minuteur : italique en vert */
+    #acc3-texte em {
+      color: var(--vert-foret-2);
+    }
+  </style>
+  <div id="root" data-composition-id="v3-accroche" data-width="1080" data-height="1920">
+    <p id="acc3-texte" class="titre">Envie de sucre<br />à&nbsp;16&#8239;h&#8239;?<br /><em>Fais ça avant de craquer.</em></p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Image 0 : la phrase est déjà là (vignette), elle se pose
+    tl.fromTo("#acc3-texte", { scale: 1.06 }, { scale: 1, duration: 0.5, ease: "power3.out" }, 0);
+    tl.to("#acc3-texte", { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, 3.0);
+    window.__timelines["v3-accroche"] = tl;
+  </script>
+</template>

@@ -1,0 +1,67 @@
+<!-- Vidéo 3 · 3,3–12,1 s · la règle des 10 minutes (BRIEF §4) en 4 cartes, pastilles vertes
+     numérotées comme les listes du PDF ; chaque carte arrive sur son numéro dans la voix. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .eta-carte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      height: 140px;
+      padding: 0 40px;
+      border-radius: 28px;
+      background: var(--sauge-claire);
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      box-shadow: 0 14px 30px rgba(35, 39, 31, 0.1);
+    }
+    .eta-pastille {
+      flex: none;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: var(--vert-foret);
+      color: var(--creme);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 44px;
+    }
+    .eta-texte {
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 1.12;
+      color: var(--encre);
+    }
+  </style>
+  <div id="root" data-composition-id="v3-etapes" data-width="1080" data-height="1920">
+    <div id="eta-carte-1" class="eta-carte" data-t="1.1" style="top: 560px">
+      <span class="eta-pastille">1</span><span class="eta-texte">Un grand verre d'eau</span>
+    </div>
+    <div id="eta-carte-2" class="eta-carte" data-t="2.84" style="top: 725px">
+      <span class="eta-pastille">2</span><span class="eta-texte">Attends 10 minutes</span>
+    </div>
+    <div id="eta-carte-3" class="eta-carte" data-t="4.25" style="top: 890px">
+      <span class="eta-pastille">3</span><span class="eta-texte">Quelques pas, change d'activité</span>
+    </div>
+    <div id="eta-carte-4" class="eta-carte" data-t="6.72" style="top: 1055px">
+      <span class="eta-pastille">4</span><span class="eta-texte">As-tu vraiment faim&#8239;?</span>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « Un » 4,41 · « Deux » 6,14 · « Trois » 7,55 · « Quatre » 10,02 (s, vidéo)
+    document.querySelectorAll(".eta-carte").forEach((c) => {
+      tl.fromTo(c, { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, parseFloat(c.dataset.t) - 0.1);
+    });
+    window.__timelines["v3-etapes"] = tl;
+  </script>
+</template>

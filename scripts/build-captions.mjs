@@ -50,7 +50,9 @@ let courant = [];
 mots.forEach((m, i) => {
   const suivant = mots[i + 1];
   const cars = [...courant, m].map((x) => x.text).join(" ").length;
-  if (courant.length && (courant.length >= MAX_MOTS || cars > MAX_CARS)) {
+  // Un mot de plus permis s'il termine la phrase et tient sur la ligne (pas de « faim. » orphelin)
+  const finit = /[.!?…]$/.test(m.text) && courant.length === MAX_MOTS && cars <= MAX_CARS;
+  if (courant.length && !finit && (courant.length >= MAX_MOTS || cars > MAX_CARS)) {
     const report = [];
     while (courant.length > 1 && OUTILS.has(courant.at(-1).text.toLowerCase())) report.unshift(courant.pop());
     groupes.push(courant);

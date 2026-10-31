@@ -1,0 +1,76 @@
+<!-- Vidéo 3 · 0–12,1 s · minuteur circulaire terracotta : apparaît sous l'accroche, monte en haut
+     sur « la règle des dix minutes », puis tourne de 10:00 à 00:00 en accéléré pendant les 4 étapes. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #min-bloc {
+      position: absolute;
+      left: calc(50% - 200px);
+      top: 760px;
+      width: 400px;
+      height: 400px;
+    }
+    #min-bloc svg {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+    #min-piste {
+      fill: none;
+      stroke: var(--sauge-claire);
+      stroke-width: 24;
+    }
+    #min-arc {
+      fill: none;
+      stroke: var(--terracotta);
+      stroke-width: 24;
+      stroke-linecap: round;
+      /* circonférence réelle (2π × 170) : pathLength n'est pas fiable sur un cercle */
+      stroke-dasharray: 1068.14;
+    }
+    #min-temps {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 104px;
+      font-variant-numeric: tabular-nums;
+      color: var(--encre);
+    }
+  </style>
+  <div id="root" data-composition-id="v3-minuteur" data-width="1080" data-height="1920">
+    <div id="min-bloc">
+      <svg viewBox="0 0 400 400" aria-hidden="true">
+        <circle id="min-piste" cx="200" cy="200" r="170" />
+        <circle id="min-arc" cx="200" cy="200" r="170" />
+      </svg>
+      <span id="min-temps">10:00</span>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const temps = document.getElementById("min-temps");
+    const reste = { s: 600 };
+    const affiche = () => {
+      const s = Math.max(0, Math.ceil(reste.s));
+      temps.textContent = `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+    };
+    // Le minuteur apparaît sous l'accroche
+    tl.fromTo("#min-bloc", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 0.15);
+    tl.fromTo("#min-arc", { strokeDashoffset: 1068.14 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 0.2);
+    // « la règle des dix minutes » (3,3 s) : il monte en haut pour laisser la place aux étapes
+    tl.to("#min-bloc", { y: -535, scale: 0.6, duration: 0.5, ease: "power3.inOut" }, 3.3);
+    // 10:00 → 00:00 en accéléré, fini sur « vraiment faim » (11,84 s)
+    tl.fromTo(reste, { s: 600 }, { s: 0, duration: 8.2, ease: "none", onUpdate: affiche }, 3.7);
+    tl.fromTo("#min-arc", { strokeDashoffset: 0 }, { strokeDashoffset: 1068.14, duration: 8.2, ease: "none", immediateRender: false }, 3.7);
+    tl.fromTo("#min-bloc", { scale: 0.6 }, { scale: 0.66, duration: 0.1, yoyo: true, repeat: 1, ease: "power2.out", immediateRender: false }, 11.85);
+    window.__timelines["v3-minuteur"] = tl;
+  </script>
+</template>

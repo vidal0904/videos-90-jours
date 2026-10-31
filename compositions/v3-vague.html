@@ -1,0 +1,88 @@
+<!-- Vidéo 3 · 12,1–16,75 s · « une envie, c'est comme une vague » : la courbe se dessine
+     (monte → pic → redescend), chaque mot arrive avec la voix. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    #vag-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 300px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--encre);
+    }
+    #vag-titre em {
+      color: var(--vert-foret-2);
+    }
+    #vag-zone {
+      position: absolute;
+      left: var(--safe-x);
+      top: 640px;
+      width: 920px;
+      height: 520px;
+    }
+    #vag-zone svg {
+      position: absolute;
+      inset: 0;
+      overflow: visible;
+    }
+    #vag-base {
+      stroke: var(--sauge);
+      stroke-width: 3;
+      stroke-dasharray: 10 12;
+    }
+    #vag-courbe {
+      fill: none;
+      stroke: var(--terracotta);
+      stroke-width: 12;
+      stroke-linecap: round;
+      stroke-dasharray: 1;
+    }
+    #vag-sommet {
+      fill: var(--terracotta);
+    }
+    .vag-mot {
+      position: absolute;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 48px;
+      color: var(--vert-foret);
+      white-space: nowrap;
+    }
+    #vag-monte { left: 60px; top: 250px; }
+    #vag-pic { left: 0; right: 0; top: -40px; text-align: center; }
+    #vag-redescend { right: 0; top: 250px; }
+  </style>
+  <div id="root" data-composition-id="v3-vague" data-width="1080" data-height="1920">
+    <p id="vag-titre" class="titre">Une envie, c'est comme<br />une <em>vague</em></p>
+    <div id="vag-zone" data-layout-allow-overlap data-layout-allow-overflow>
+      <svg viewBox="0 0 920 520" aria-hidden="true">
+        <line id="vag-base" x1="20" y1="440" x2="900" y2="440" />
+        <path id="vag-courbe" d="M40 440 C 220 440, 300 110, 460 110 S 700 440, 880 440" pathLength="1" />
+        <circle id="vag-sommet" cx="460" cy="110" r="18" />
+      </svg>
+      <span id="vag-monte" class="vag-mot">monte</span>
+      <span id="vag-pic" class="vag-mot">pic</span>
+      <span id="vag-redescend" class="vag-mot">redescend</span>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#vag-titre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+    tl.fromTo("#vag-base", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.9);
+    // « monte » (14,03 s) : la courbe grimpe jusqu'au sommet sur « pic » (15,15 s)
+    tl.fromTo("#vag-courbe", { strokeDashoffset: 1 }, { strokeDashoffset: 0.5, duration: 1.85, ease: "sine.inOut" }, 1.2);
+    tl.fromTo("#vag-monte", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 1.85);
+    tl.fromTo("#vag-sommet", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(2.5)" }, 3.0);
+    tl.fromTo("#vag-pic", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 3.0);
+    // « redescend » (16,09 s)
+    tl.to("#vag-courbe", { strokeDashoffset: 0, duration: 1.2, ease: "sine.inOut" }, 3.1);
+    tl.fromTo("#vag-redescend", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 3.9);
+    window.__timelines["v3-vague"] = tl;
+  </script>
+</template>
