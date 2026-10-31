@@ -1,0 +1,146 @@
+<!-- Vidéo 6 · 10,15–16,3 s · erreur 2 « sauter des repas » : l'horloge saute midi (repas barré),
+     puis la jauge de faim monte jusqu'au terracotta sur « affamée … dérape ». -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .err-entete {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+    }
+    .err-num {
+      flex: none;
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      background: var(--creme);
+      color: var(--vert-foret);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-titre);
+      font-weight: 600;
+      font-size: 68px;
+    }
+    .err-titre {
+      font-size: 62px;
+      color: var(--creme);
+    }
+    #e2-horloge {
+      position: absolute;
+      left: calc(50% - 210px);
+      top: 420px;
+      width: 420px;
+      height: 420px;
+    }
+    #e2-horloge svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+    #e2-cadran {
+      fill: var(--creme);
+    }
+    #e2-grad line {
+      stroke: var(--vert-foret);
+      stroke-width: 6;
+      stroke-linecap: round;
+    }
+    #e2-midi-txt {
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 34px;
+      fill: var(--vert-foret);
+    }
+    #e2-barre {
+      stroke: var(--terracotta);
+      stroke-width: 10;
+      stroke-linecap: round;
+    }
+    .e2-aiguille {
+      stroke: var(--vert-foret);
+      stroke-linecap: round;
+    }
+    #e2-jauge-bloc {
+      position: absolute;
+      left: 140px;
+      right: 140px;
+      top: 960px;
+    }
+    #e2-jauge-titre {
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 44px;
+      color: var(--creme);
+      margin-bottom: 18px;
+    }
+    #e2-jauge {
+      position: relative;
+      height: 64px;
+      border-radius: 999px;
+      background: rgba(251, 248, 242, 0.14);
+      overflow: hidden;
+    }
+    #e2-remplissage {
+      position: absolute;
+      inset: 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--sauge), var(--dore) 55%, var(--terracotta));
+      transform-origin: left center;
+    }
+  </style>
+  <div id="root" data-composition-id="v6-erreur2" data-width="1080" data-height="1920">
+    <div id="e2-entete" class="err-entete"><span class="err-num">2</span><p class="err-titre titre">Sauter des repas</p></div>
+    <div id="e2-horloge" data-layout-allow-overflow>
+      <svg viewBox="-210 -210 420 420" aria-hidden="true">
+        <circle id="e2-cadran" r="200" />
+        <g id="e2-grad">
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(0)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(30)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(60)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(90)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(120)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(150)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(180)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(210)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(240)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(270)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(300)" />
+        <line x1="0" y1="-170" x2="0" y2="-150" transform="rotate(330)" />
+        </g>
+        <text id="e2-midi-txt" x="0" y="-105" text-anchor="middle">12</text>
+        <line id="e2-barre" x1="-40" y1="-128" x2="40" y2="-92" />
+        <line id="e2-heures" class="e2-aiguille" x1="0" y1="0" x2="0" y2="-95" stroke-width="14" />
+        <line id="e2-minutes" class="e2-aiguille" x1="0" y1="0" x2="0" y2="-150" stroke-width="9" />
+        <circle r="14" fill="#1E3B2C" />
+      </svg>
+    </div>
+    <div id="e2-jauge-bloc">
+      <p id="e2-jauge-titre">Faim</p>
+      <div id="e2-jauge"><span id="e2-remplissage"></span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#e2-entete", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 0.05);
+    tl.fromTo("#e2-horloge", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)" }, 0.2);
+    // « sauter des repas » (10,89 s) : les aiguilles filent de 9 h à 15 h, midi est barré au passage
+    tl.fromTo("#e2-heures", { rotation: 270, svgOrigin: "0 0" }, { rotation: 450, duration: 2.2, ease: "power1.inOut" }, 0.6);
+    tl.fromTo("#e2-minutes", { rotation: 0, svgOrigin: "0 0" }, { rotation: 2160, duration: 2.2, ease: "power1.inOut" }, 0.6);
+    tl.fromTo("#e2-barre", { strokeDasharray: 90, strokeDashoffset: 90 }, { strokeDashoffset: 0, duration: 0.25, ease: "power2.out" }, 1.45);
+    // « Tu arrives affamée » (12,9 s) → « dérape » (15,02 s) : la jauge monte jusqu'au terracotta
+    tl.fromTo("#e2-jauge-bloc", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 2.1);
+    tl.fromTo("#e2-remplissage", { scaleX: 0.08 }, { scaleX: 0.95, duration: 2.4, ease: "power2.in" }, 2.6);
+    tl.fromTo("#e2-jauge", { x: 0 }, { x: 6, duration: 0.05, yoyo: true, repeat: 9, ease: "none", immediateRender: false }, 4.85);
+    window.__timelines["v6-erreur2"] = tl;
+  </script>
+</template>

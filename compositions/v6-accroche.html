@@ -1,0 +1,40 @@
+<!-- Vidéo 6 · 0–3,75 s · le « 3 » géant + l'accroche, déjà à l'écran à l'image 0 (vignette, boucle). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .acc6-bloc {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 230px;
+      text-align: center;
+    }
+    .acc6-trois {
+      font-size: 520px;
+      line-height: 1;
+      color: var(--terracotta);
+    }
+    .acc6-texte {
+      margin-top: 30px;
+      font-size: 74px;
+      color: var(--creme);
+    }
+  </style>
+  <div id="root" data-composition-id="v6-accroche" data-width="1080" data-height="1920">
+    <div id="acc6-bloc" class="acc6-bloc">
+      <div class="acc6-trois chiffre">3</div>
+      <p class="acc6-texte titre">erreurs qui font <em>abandonner</em><br />au bout de 2 semaines.</p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « Trois erreurs » : le 3 respire, puis tout sort avant l'erreur 1 (3,88 s)
+    tl.fromTo(".acc6-trois", { scale: 1 }, { scale: 1.05, duration: 0.5, ease: "power2.out", yoyo: true, repeat: 1 }, 0.55);
+    tl.to("#acc6-bloc", { opacity: 0, y: -40, duration: 0.3, ease: "power2.in" }, 3.4);
+    window.__timelines["v6-accroche"] = tl;
+  </script>
+</template>

@@ -60,9 +60,9 @@ for token in text.split(" "):
 
 # Écrit comme on le dit pour la voix, affiché comme on le lit dans les sous-titres
 AFFICHAGE = {"quatre-vingt-dix": "90", "quatre-vingts": "80", "soixante-dix": "70", "douze": "12", "dix": "10",
-             "treize": "13", "quinze": "15", "trente": "30"}
+             "treize": "13", "quinze": "15", "trente": "30", "quatre-vingt-dix-neuf": "99"}
 # Nombres en plusieurs mots : fusionnés en un seul mot affiché (horaires du premier au dernier)
-AFFICHAGE_MULTI = {("trois", "cent", "seize"): "316"}
+AFFICHAGE_MULTI = {("trois", "cent", "seize"): "316", ("un", "pour", "cent"): "1\u00a0%"}
 
 
 def affiche(mot):

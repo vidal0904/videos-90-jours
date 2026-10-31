@@ -1,0 +1,80 @@
+<!-- Vidéo 6 · 24,5–30 s · « on avance une semaine à la fois » : ouverture de la semaine 1 (p. 91),
+     couverture, « Lien en bio ». Les 0,5 dernières secondes reprennent l'image 0 (le « 3 »). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .acc6-bloc {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 230px;
+      text-align: center;
+    }
+    .acc6-trois {
+      font-size: 520px;
+      line-height: 1;
+      color: var(--terracotta);
+    }
+    .acc6-texte {
+      margin-top: 30px;
+      font-size: 74px;
+      color: var(--creme);
+    }
+    .fin6-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 250px;
+      text-align: center;
+      font-size: 84px;
+      color: var(--creme);
+    }
+    .fin6-feuille {
+      position: absolute;
+      width: 440px;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .fin6-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    #fin6-semaine { left: 150px; top: 520px; }
+    #fin6-couv { left: 490px; top: 590px; }
+  </style>
+  <div id="root" data-composition-id="v6-fin" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+      <p id="fin6-semaine-txt" class="fin6-texte titre">Une semaine<br /><em>à la fois.</em></p>
+      <p id="fin6-lien" class="fin6-texte titre">Lien en <em>bio</em></p>
+      <div id="fin6-semaine" class="fin6-feuille"><img src="capture/pages/semaine-1-p91.png" alt="Semaine 1, poser les fondations" /></div>
+      <div id="fin6-couv" class="fin6-feuille"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
+    </div>
+    <div id="fin6-acc-bloc" class="acc6-bloc">
+      <div class="acc6-trois chiffre">3</div>
+      <p class="acc6-texte titre">erreurs qui font <em>abandonner</em><br />au bout de 2 semaines.</p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // « Dans mon guide » (24,61 s) : la semaine 1
+    tl.fromTo("#fin6-semaine", { opacity: 0, y: 200, rotation: 0 }, { opacity: 1, y: 0, rotation: -3, duration: 0.45, ease: "power3.out" }, 0.1);
+    // « une semaine à la fois » (26,23 s)
+    tl.fromTo("#fin6-semaine-txt", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.65);
+    tl.fromTo("#fin6-couv", { opacity: 0, x: 200, rotation: 0 }, { opacity: 1, x: 0, rotation: 3, duration: 0.45, ease: "power3.out" }, 2.1);
+    // « Lien en bio » (28,02 s)
+    tl.to("#fin6-semaine-txt", { opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }, 3.25);
+    tl.fromTo("#fin6-lien", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 3.45);
+    // Boucle : retour au « 3 » de l'image 0
+    tl.to(["#fin6-lien", "#fin6-semaine", "#fin6-couv"], { opacity: 0, duration: 0.3, ease: "power2.in" }, 4.95);
+    tl.fromTo("#fin6-acc-bloc", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 5.15);
+    window.__timelines["v6-fin"] = tl;
+  </script>
+</template>

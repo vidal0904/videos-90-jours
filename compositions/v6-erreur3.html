@@ -1,0 +1,194 @@
+<!-- Vidéo 6 · 16,3–24,5 s · erreur 3 « abandonner après un écart » : 100 repas = 100 carrés verts,
+     un seul passe en terracotta ; « 1 % » puis « 99 % » (règle du 1 sur 100, BRIEF §4). -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .err-entete {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+    }
+    .err-num {
+      flex: none;
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      background: var(--creme);
+      color: var(--vert-foret);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-titre);
+      font-weight: 600;
+      font-size: 68px;
+    }
+    .err-titre {
+      font-size: 62px;
+      color: var(--creme);
+    }
+    #e3-grille {
+      position: absolute;
+      left: calc(50% - 300px);
+      top: 640px;
+      width: 600px;
+      height: 600px;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 8px;
+    }
+    .e3-c {
+      border-radius: 8px;
+      background: var(--sauge);
+    }
+    #e3-c57 {
+      background: var(--terracotta);
+    }
+    .e3-pct {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 380px;
+      text-align: center;
+      font-size: 200px;
+      line-height: 1;
+    }
+    #e3-un {
+      color: var(--terracotta);
+    }
+    #e3-nn {
+      color: var(--creme);
+    }
+  </style>
+  <div id="root" data-composition-id="v6-erreur3" data-width="1080" data-height="1920">
+    <div id="e3-entete" class="err-entete"><span class="err-num">3</span><p class="err-titre titre">Abandonner après un écart</p></div>
+    <p id="e3-un" class="e3-pct chiffre" data-layout-allow-overlap>1&#8239;%</p>
+    <p id="e3-nn" class="e3-pct chiffre" data-layout-allow-overlap>99&#8239;%</p>
+    <div id="e3-grille">
+      <span class="e3-c" id="e3-c0"></span>
+      <span class="e3-c" id="e3-c1"></span>
+      <span class="e3-c" id="e3-c2"></span>
+      <span class="e3-c" id="e3-c3"></span>
+      <span class="e3-c" id="e3-c4"></span>
+      <span class="e3-c" id="e3-c5"></span>
+      <span class="e3-c" id="e3-c6"></span>
+      <span class="e3-c" id="e3-c7"></span>
+      <span class="e3-c" id="e3-c8"></span>
+      <span class="e3-c" id="e3-c9"></span>
+      <span class="e3-c" id="e3-c10"></span>
+      <span class="e3-c" id="e3-c11"></span>
+      <span class="e3-c" id="e3-c12"></span>
+      <span class="e3-c" id="e3-c13"></span>
+      <span class="e3-c" id="e3-c14"></span>
+      <span class="e3-c" id="e3-c15"></span>
+      <span class="e3-c" id="e3-c16"></span>
+      <span class="e3-c" id="e3-c17"></span>
+      <span class="e3-c" id="e3-c18"></span>
+      <span class="e3-c" id="e3-c19"></span>
+      <span class="e3-c" id="e3-c20"></span>
+      <span class="e3-c" id="e3-c21"></span>
+      <span class="e3-c" id="e3-c22"></span>
+      <span class="e3-c" id="e3-c23"></span>
+      <span class="e3-c" id="e3-c24"></span>
+      <span class="e3-c" id="e3-c25"></span>
+      <span class="e3-c" id="e3-c26"></span>
+      <span class="e3-c" id="e3-c27"></span>
+      <span class="e3-c" id="e3-c28"></span>
+      <span class="e3-c" id="e3-c29"></span>
+      <span class="e3-c" id="e3-c30"></span>
+      <span class="e3-c" id="e3-c31"></span>
+      <span class="e3-c" id="e3-c32"></span>
+      <span class="e3-c" id="e3-c33"></span>
+      <span class="e3-c" id="e3-c34"></span>
+      <span class="e3-c" id="e3-c35"></span>
+      <span class="e3-c" id="e3-c36"></span>
+      <span class="e3-c" id="e3-c37"></span>
+      <span class="e3-c" id="e3-c38"></span>
+      <span class="e3-c" id="e3-c39"></span>
+      <span class="e3-c" id="e3-c40"></span>
+      <span class="e3-c" id="e3-c41"></span>
+      <span class="e3-c" id="e3-c42"></span>
+      <span class="e3-c" id="e3-c43"></span>
+      <span class="e3-c" id="e3-c44"></span>
+      <span class="e3-c" id="e3-c45"></span>
+      <span class="e3-c" id="e3-c46"></span>
+      <span class="e3-c" id="e3-c47"></span>
+      <span class="e3-c" id="e3-c48"></span>
+      <span class="e3-c" id="e3-c49"></span>
+      <span class="e3-c" id="e3-c50"></span>
+      <span class="e3-c" id="e3-c51"></span>
+      <span class="e3-c" id="e3-c52"></span>
+      <span class="e3-c" id="e3-c53"></span>
+      <span class="e3-c" id="e3-c54"></span>
+      <span class="e3-c" id="e3-c55"></span>
+      <span class="e3-c" id="e3-c56"></span>
+      <span class="e3-c" id="e3-c57"></span>
+      <span class="e3-c" id="e3-c58"></span>
+      <span class="e3-c" id="e3-c59"></span>
+      <span class="e3-c" id="e3-c60"></span>
+      <span class="e3-c" id="e3-c61"></span>
+      <span class="e3-c" id="e3-c62"></span>
+      <span class="e3-c" id="e3-c63"></span>
+      <span class="e3-c" id="e3-c64"></span>
+      <span class="e3-c" id="e3-c65"></span>
+      <span class="e3-c" id="e3-c66"></span>
+      <span class="e3-c" id="e3-c67"></span>
+      <span class="e3-c" id="e3-c68"></span>
+      <span class="e3-c" id="e3-c69"></span>
+      <span class="e3-c" id="e3-c70"></span>
+      <span class="e3-c" id="e3-c71"></span>
+      <span class="e3-c" id="e3-c72"></span>
+      <span class="e3-c" id="e3-c73"></span>
+      <span class="e3-c" id="e3-c74"></span>
+      <span class="e3-c" id="e3-c75"></span>
+      <span class="e3-c" id="e3-c76"></span>
+      <span class="e3-c" id="e3-c77"></span>
+      <span class="e3-c" id="e3-c78"></span>
+      <span class="e3-c" id="e3-c79"></span>
+      <span class="e3-c" id="e3-c80"></span>
+      <span class="e3-c" id="e3-c81"></span>
+      <span class="e3-c" id="e3-c82"></span>
+      <span class="e3-c" id="e3-c83"></span>
+      <span class="e3-c" id="e3-c84"></span>
+      <span class="e3-c" id="e3-c85"></span>
+      <span class="e3-c" id="e3-c86"></span>
+      <span class="e3-c" id="e3-c87"></span>
+      <span class="e3-c" id="e3-c88"></span>
+      <span class="e3-c" id="e3-c89"></span>
+      <span class="e3-c" id="e3-c90"></span>
+      <span class="e3-c" id="e3-c91"></span>
+      <span class="e3-c" id="e3-c92"></span>
+      <span class="e3-c" id="e3-c93"></span>
+      <span class="e3-c" id="e3-c94"></span>
+      <span class="e3-c" id="e3-c95"></span>
+      <span class="e3-c" id="e3-c96"></span>
+      <span class="e3-c" id="e3-c97"></span>
+      <span class="e3-c" id="e3-c98"></span>
+      <span class="e3-c" id="e3-c99"></span>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#e3-entete", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 0.05);
+    // La grille se pose en cascade (100 repas)
+    tl.fromTo(".e3-c", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)", stagger: { each: 0.008, from: "start" } }, 0.7);
+    // Le carré terracotta commence vert et passe en terracotta sur « Un repas sur cent » (19,58 s)
+    tl.fromTo("#e3-c57", { backgroundColor: "#8FA68A" }, { backgroundColor: "#C2643F", duration: 0.25, ease: "none", immediateRender: true }, 3.3);
+    tl.fromTo("#e3-c57", { scale: 1 }, { scale: 1.35, duration: 0.2, yoyo: true, repeat: 1, ease: "power2.out", immediateRender: false }, 3.3);
+    // « un pour cent » (20,8 s)
+    tl.fromTo("#e3-un", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 4.45);
+    // « les quatre-vingt-dix-neuf autres » (22,96 s) : 99 %, les 99 carrés verts s'éclairent
+    tl.to("#e3-un", { opacity: 0, y: -30, duration: 0.25, ease: "power2.in" }, 6.45);
+    tl.fromTo("#e3-nn", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }, 6.6);
+    tl.to(".e3-c:not(#e3-c57)", { backgroundColor: "#EEF2EA", duration: 0.4, stagger: { each: 0.004, from: "center" }, ease: "none" }, 6.6);
+    window.__timelines["v6-erreur3"] = tl;
+  </script>
+</template>
