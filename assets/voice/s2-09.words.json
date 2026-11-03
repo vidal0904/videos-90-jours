@@ -1,0 +1,356 @@
+[
+ {
+  "id": "w0",
+  "text": "Le",
+  "start": 0.0,
+  "end": 0.29
+ },
+ {
+  "id": "w1",
+  "text": "plus",
+  "start": 0.325,
+  "end": 0.464
+ },
+ {
+  "id": "w2",
+  "text": "important,",
+  "start": 0.522,
+  "end": 0.975
+ },
+ {
+  "id": "w3",
+  "text": "c'est",
+  "start": 1.022,
+  "end": 1.184
+ },
+ {
+  "id": "w4",
+  "text": "ce",
+  "start": 1.207,
+  "end": 1.289
+ },
+ {
+  "id": "w5",
+  "text": "qui",
+  "start": 1.347,
+  "end": 1.44
+ },
+ {
+  "id": "w6",
+  "text": "se",
+  "start": 1.486,
+  "end": 1.567
+ },
+ {
+  "id": "w7",
+  "text": "passe",
+  "start": 1.614,
+  "end": 1.811
+ },
+ {
+  "id": "w8",
+  "text": "après",
+  "start": 1.858,
+  "end": 2.136
+ },
+ {
+  "id": "w9",
+  "text": "le",
+  "start": 2.159,
+  "end": 2.218
+ },
+ {
+  "id": "w10",
+  "text": "jour",
+  "start": 2.264,
+  "end": 2.392
+ },
+ {
+  "id": "w11",
+  "text": "90.",
+  "start": 2.45,
+  "end": 3.123
+ },
+ {
+  "id": "w12",
+  "text": "Dans",
+  "start": 3.79,
+  "end": 4.011
+ },
+ {
+  "id": "w13",
+  "text": "mon",
+  "start": 4.034,
+  "end": 4.138
+ },
+ {
+  "id": "w14",
+  "text": "guide,",
+  "start": 4.173,
+  "end": 4.51
+ },
+ {
+  "id": "w15",
+  "text": "tu",
+  "start": 4.847,
+  "end": 4.963
+ },
+ {
+  "id": "w16",
+  "text": "fais",
+  "start": 5.021,
+  "end": 5.148
+ },
+ {
+  "id": "w17",
+  "text": "un",
+  "start": 5.172,
+  "end": 5.23
+ },
+ {
+  "id": "w18",
+  "text": "bilan",
+  "start": 5.264,
+  "end": 5.508
+ },
+ {
+  "id": "w19",
+  "text": "aux",
+  "start": 5.531,
+  "end": 5.613
+ },
+ {
+  "id": "w20",
+  "text": "jours",
+  "start": 5.648,
+  "end": 5.903
+ },
+ {
+  "id": "w21",
+  "text": "30,",
+  "start": 5.949,
+  "end": 6.46
+ },
+ {
+  "id": "w22",
+  "text": "60",
+  "start": 6.634,
+  "end": 7.238
+ },
+ {
+  "id": "w23",
+  "text": "et",
+  "start": 7.296,
+  "end": 7.436
+ },
+ {
+  "id": "w24",
+  "text": "90.",
+  "start": 7.47,
+  "end": 8.144
+ },
+ {
+  "id": "w25",
+  "text": "Puis",
+  "start": 8.788,
+  "end": 9.043
+ },
+ {
+  "id": "w26",
+  "text": "une",
+  "start": 9.113,
+  "end": 9.241
+ },
+ {
+  "id": "w27",
+  "text": "partie",
+  "start": 9.264,
+  "end": 9.577
+ },
+ {
+  "id": "w28",
+  "text": "entière",
+  "start": 9.612,
+  "end": 10.007
+ },
+ {
+  "id": "w29",
+  "text": "pour",
+  "start": 10.03,
+  "end": 10.146
+ },
+ {
+  "id": "w30",
+  "text": "durer :",
+  "start": 10.193,
+  "end": 10.425
+ },
+ {
+  "id": "w31",
+  "text": "l'effet",
+  "start": 10.762,
+  "end": 11.04
+ },
+ {
+  "id": "w32",
+  "text": "yoyo,",
+  "start": 11.075,
+  "end": 11.423
+ },
+ {
+  "id": "w33",
+  "text": "les",
+  "start": 11.656,
+  "end": 11.795
+ },
+ {
+  "id": "w34",
+  "text": "écarts",
+  "start": 11.876,
+  "end": 12.167
+ },
+ {
+  "id": "w35",
+  "text": "sans",
+  "start": 12.19,
+  "end": 12.329
+ },
+ {
+  "id": "w36",
+  "text": "culpabilité,",
+  "start": 12.352,
+  "end": 13.037
+ },
+ {
+  "id": "w37",
+  "text": "la",
+  "start": 13.223,
+  "end": 13.304
+ },
+ {
+  "id": "w38",
+  "text": "motivation.",
+  "start": 13.374,
+  "end": 14.001
+ },
+ {
+  "id": "w39",
+  "text": "Et",
+  "start": 14.621,
+  "end": 14.76
+ },
+ {
+  "id": "w40",
+  "text": "un",
+  "start": 14.83,
+  "end": 14.876
+ },
+ {
+  "id": "w41",
+  "text": "plan",
+  "start": 14.911,
+  "end": 15.085
+ },
+ {
+  "id": "w42",
+  "text": "pour",
+  "start": 15.12,
+  "end": 15.236
+ },
+ {
+  "id": "w43",
+  "text": "les",
+  "start": 15.26,
+  "end": 15.329
+ },
+ {
+  "id": "w44",
+  "text": "mois",
+  "start": 15.352,
+  "end": 15.492
+ },
+ {
+  "id": "w45",
+  "text": "4 à 12.",
+  "start": 15.538,
+  "end": 16.177
+ },
+ {
+  "id": "w46",
+  "text": "Avec",
+  "start": 16.832,
+  "end": 17.122
+ },
+ {
+  "id": "w47",
+  "text": "un",
+  "start": 17.18,
+  "end": 17.227
+ },
+ {
+  "id": "w48",
+  "text": "certificat",
+  "start": 17.273,
+  "end": 17.819
+ },
+ {
+  "id": "w49",
+  "text": "pour",
+  "start": 17.842,
+  "end": 17.958
+ },
+ {
+  "id": "w50",
+  "text": "noter",
+  "start": 18.005,
+  "end": 18.214
+ },
+ {
+  "id": "w51",
+  "text": "les",
+  "start": 18.237,
+  "end": 18.33
+ },
+ {
+  "id": "w52",
+  "text": "3 habitudes",
+  "start": 18.353,
+  "end": 19.05
+ },
+ {
+  "id": "w53",
+  "text": "que",
+  "start": 19.073,
+  "end": 19.154
+ },
+ {
+  "id": "w54",
+  "text": "tu",
+  "start": 19.189,
+  "end": 19.282
+ },
+ {
+  "id": "w55",
+  "text": "gardes.",
+  "start": 19.34,
+  "end": 19.653
+ },
+ {
+  "id": "w56",
+  "text": "Lien",
+  "start": 20.251,
+  "end": 20.553
+ },
+ {
+  "id": "w57",
+  "text": "en",
+  "start": 20.599,
+  "end": 20.657
+ },
+ {
+  "id": "w58",
+  "text": "bio.",
+  "start": 20.715,
+  "end": 20.971
+ }
+]

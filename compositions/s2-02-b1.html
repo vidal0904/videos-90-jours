@@ -1,0 +1,94 @@
+<!-- Série 2 · vidéo 02 · bloc 1 (chaine) · 2.33–11.56 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    #s2-02-b1-r {
+      position: absolute;
+      left: calc(50% - 455px);
+      top: 700px;
+      width: 910px;
+      display: grid;
+      grid-template-columns: repeat(7, 118px);
+      gap: 14px;
+    }
+    .s2-j {
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 36px;
+      color: var(--creme);
+      opacity: 0.8;
+    }
+    .s2-cel {
+      position: relative;
+      height: 118px;
+      border-radius: 18px;
+      border: 4px solid rgba(251, 248, 242, 0.22);
+      background: rgba(251, 248, 242, 0.08);
+    }
+    .s2-cel svg {
+      position: absolute;
+      inset: 14px;
+      fill: none;
+      stroke: var(--sauge);
+      stroke-width: 3.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .s2-cel b {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-titre);
+      font-size: 64px;
+      color: var(--terracotta);
+    }
+  </style>
+  <div id="root" data-composition-id="s2-02-b1" data-width="1080" data-height="1920">
+    <p id="s2-02-b1-titre" class="s2-titre titre">Jamais <em>2 jours</em> de suite</p>
+    <div id="s2-02-b1-r"><span class="s2-j">L</span><span class="s2-j">M</span><span class="s2-j">M</span><span class="s2-j">J</span><span class="s2-j">V</span><span class="s2-j">S</span><span class="s2-j">D</span><span id="s2-02-b1-c0" class="s2-cel"><svg viewBox="0 0 24 24"><path id="s2-02-b1-k0" d="M5 12.5l4.5 4.5 9.5-10" /></svg></span><span id="s2-02-b1-c1" class="s2-cel"><svg viewBox="0 0 24 24"><path id="s2-02-b1-k1" d="M5 12.5l4.5 4.5 9.5-10" /></svg></span><span id="s2-02-b1-c2" class="s2-cel"><svg viewBox="0 0 24 24"><path id="s2-02-b1-k2" d="M5 12.5l4.5 4.5 9.5-10" /></svg><b id="s2-02-b1-q">?</b></span><span id="s2-02-b1-c3" class="s2-cel"><svg viewBox="0 0 24 24"><path id="s2-02-b1-k3" d="M5 12.5l4.5 4.5 9.5-10" /></svg></span><span id="s2-02-b1-c4" class="s2-cel"><svg viewBox="0 0 24 24"><path id="s2-02-b1-k4" d="M5 12.5l4.5 4.5 9.5-10" /></svg></span><span id="s2-02-b1-c5" class="s2-cel"><svg viewBox="0 0 24 24"><path id="s2-02-b1-k5" d="M5 12.5l4.5 4.5 9.5-10" /></svg></span><span id="s2-02-b1-c6" class="s2-cel"><svg viewBox="0 0 24 24"><path id="s2-02-b1-k6" d="M5 12.5l4.5 4.5 9.5-10" /></svg></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s2-02-b1-r", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s2-02-b1-k0", { strokeDasharray: 30, strokeDashoffset: 30 }, { strokeDashoffset: 0, duration: 0.25 }, 0.4);
+    tl.set("#s2-02-b1-k1", { opacity: 0 }, 0);  // le jour de l'écart n'est pas coché
+    tl.fromTo("#s2-02-b1-c1", { borderColor: "rgba(251, 248, 242, 0.22)", backgroundColor: "rgba(251, 248, 242, 0.08)" }, { borderColor: "#C2643F", backgroundColor: "rgba(194, 100, 63, 0.35)", duration: 0.3 }, 0.6);
+    tl.fromTo("#s2-02-b1-q", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 1.39);
+    tl.fromTo("#s2-02-b1-c2", { borderColor: "rgba(251, 248, 242, 0.22)" }, { borderColor: "#C2643F", duration: 0.2, yoyo: true, repeat: 3, immediateRender: false }, 1.49);
+    tl.to("#s2-02-b1-q", { opacity: 0, duration: 0.2 }, 3.77);
+    tl.fromTo("#s2-02-b1-k2", { strokeDasharray: 30, strokeDashoffset: 30 }, { strokeDashoffset: 0, duration: 0.25 }, 3.97);
+    tl.fromTo("#s2-02-b1-k3", { strokeDasharray: 30, strokeDashoffset: 30 }, { strokeDashoffset: 0, duration: 0.25 }, 4.22);
+    tl.fromTo("#s2-02-b1-k4", { strokeDasharray: 30, strokeDashoffset: 30 }, { strokeDashoffset: 0, duration: 0.25 }, 4.47);
+    tl.fromTo("#s2-02-b1-k5", { strokeDasharray: 30, strokeDashoffset: 30 }, { strokeDashoffset: 0, duration: 0.25 }, 4.72);
+    tl.fromTo("#s2-02-b1-k6", { strokeDasharray: 30, strokeDashoffset: 30 }, { strokeDashoffset: 0, duration: 0.25 }, 4.97);
+    tl.fromTo("#s2-02-b1-titre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.77);
+    window.__timelines["s2-02-b1"] = tl;
+  </script>
+</template>

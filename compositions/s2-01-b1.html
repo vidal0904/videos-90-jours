@@ -1,0 +1,84 @@
+<!-- Série 2 · vidéo 01 · bloc 1 (colonnes) · 1.86–15.01 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    .s2-col-titre em {
+      color: var(--dore);
+    }
+    .s2-col-titre {
+      position: absolute;
+      top: 250px;
+      width: 440px;
+      text-align: center;
+      font-size: 96px;
+      color: var(--creme);
+    }
+    .s2-col-item {
+      position: absolute;
+      width: 440px;
+      padding: 22px 18px;
+      border-radius: 24px;
+      background: rgba(251, 248, 242, 0.08);
+      border: 2px solid rgba(251, 248, 242, 0.22);
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 1.15;
+      color: var(--creme);
+    }
+    #s2-01-b1-sep {
+      position: absolute;
+      left: 539px;
+      top: 260px;
+      width: 2px;
+      height: 960px;
+      background: rgba(251, 248, 242, 0.22);
+    }
+  </style>
+  <div id="root" data-composition-id="s2-01-b1" data-width="1080" data-height="1920">
+    <span id="s2-01-b1-sep"></span>
+    <p id="s2-01-b1-tg" class="s2-col-titre titre" style="left: 80px">Faim</p>
+    <p id="s2-01-b1-td" class="s2-col-titre titre" style="left: 560px"><em>Envie</em></p>
+    <p id="s2-01-b1-i0" class="s2-col-item" style="left: 560px; top: 440px">arrive d'un coup</p>
+    <p id="s2-01-b1-i1" class="s2-col-item" style="left: 560px; top: 630px">un aliment précis</p>
+    <p id="s2-01-b1-i2" class="s2-col-item" style="left: 560px; top: 820px">→ souvent émotionnelle</p>
+    <p id="s2-01-b1-i3" class="s2-col-item" style="left: 80px; top: 440px">monte doucement</p>
+    <p id="s2-01-b1-i4" class="s2-col-item" style="left: 80px; top: 630px">plein d'aliments te vont</p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(["#s2-01-b1-tg", "#s2-01-b1-td"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s2-01-b1-sep", { scaleY: 0 }, { scaleY: 1, duration: 0.4, ease: "power2.out" }, 0.1);
+    tl.fromTo("#s2-01-b1-i0", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.33);
+    tl.fromTo("#s2-01-b1-i1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 4.68);
+    tl.fromTo("#s2-01-b1-i2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 7.18);
+    tl.fromTo("#s2-01-b1-i3", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 10.15);
+    tl.fromTo("#s2-01-b1-i4", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 11.14);
+    window.__timelines["s2-01-b1"] = tl;
+  </script>
+</template>

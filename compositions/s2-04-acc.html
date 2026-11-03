@@ -1,0 +1,42 @@
+<!-- Série 2 · vidéo 04 « 3 questions avant tes courses » · accroche (image 0)
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    .s2-accroche {
+      top: 560px;
+      font-size: 92px;
+    }
+  </style>
+  <div id="root" data-composition-id="s2-04-acc" data-width="1080" data-height="1920">
+    <p id="s2-04-acc-acc" class="s2-texte s2-accroche titre">Avant le supermarché,<br /><em>pose-toi ces 3 questions.</em></p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.to("#s2-04-acc-acc", { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, 2.72);
+    window.__timelines["s2-04-acc"] = tl;
+  </script>
+</template>

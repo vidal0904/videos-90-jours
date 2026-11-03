@@ -1,0 +1,344 @@
+[
+ {
+  "id": "w0",
+  "text": "4 phrases",
+  "start": 0.0,
+  "end": 0.639
+ },
+ {
+  "id": "w1",
+  "text": "à",
+  "start": 0.708,
+  "end": 0.766
+ },
+ {
+  "id": "w2",
+  "text": "te",
+  "start": 0.836,
+  "end": 0.906
+ },
+ {
+  "id": "w3",
+  "text": "répéter",
+  "start": 0.952,
+  "end": 1.312
+ },
+ {
+  "id": "w4",
+  "text": "quand",
+  "start": 1.335,
+  "end": 1.463
+ },
+ {
+  "id": "w5",
+  "text": "tu",
+  "start": 1.486,
+  "end": 1.567
+ },
+ {
+  "id": "w6",
+  "text": "doutes.",
+  "start": 1.614,
+  "end": 1.881
+ },
+ {
+  "id": "w7",
+  "text": "Un",
+  "start": 2.443,
+  "end": 2.594
+ },
+ {
+  "id": "w8",
+  "text": "écart",
+  "start": 2.675,
+  "end": 2.954
+ },
+ {
+  "id": "w9",
+  "text": "n'efface",
+  "start": 2.989,
+  "end": 3.267
+ },
+ {
+  "id": "w10",
+  "text": "pas",
+  "start": 3.302,
+  "end": 3.407
+ },
+ {
+  "id": "w11",
+  "text": "mes",
+  "start": 3.43,
+  "end": 3.534
+ },
+ {
+  "id": "w12",
+  "text": "progrès.",
+  "start": 3.558,
+  "end": 3.952
+ },
+ {
+  "id": "w13",
+  "text": "Je",
+  "start": 4.655,
+  "end": 4.806
+ },
+ {
+  "id": "w14",
+  "text": "choisis",
+  "start": 4.841,
+  "end": 5.143
+ },
+ {
+  "id": "w15",
+  "text": "la",
+  "start": 5.177,
+  "end": 5.235
+ },
+ {
+  "id": "w16",
+  "text": "régularité",
+  "start": 5.294,
+  "end": 5.874
+ },
+ {
+  "id": "w17",
+  "text": "plutôt",
+  "start": 5.955,
+  "end": 6.257
+ },
+ {
+  "id": "w18",
+  "text": "que",
+  "start": 6.28,
+  "end": 6.35
+ },
+ {
+  "id": "w19",
+  "text": "la",
+  "start": 6.385,
+  "end": 6.455
+ },
+ {
+  "id": "w20",
+  "text": "perfection.",
+  "start": 6.501,
+  "end": 7.035
+ },
+ {
+  "id": "w21",
+  "text": "Je",
+  "start": 7.702,
+  "end": 7.865
+ },
+ {
+  "id": "w22",
+  "text": "progresse",
+  "start": 7.911,
+  "end": 8.306
+ },
+ {
+  "id": "w23",
+  "text": "à",
+  "start": 8.329,
+  "end": 8.352
+ },
+ {
+  "id": "w24",
+  "text": "mon",
+  "start": 8.387,
+  "end": 8.503
+ },
+ {
+  "id": "w25",
+  "text": "rythme.",
+  "start": 8.526,
+  "end": 8.851
+ },
+ {
+  "id": "w26",
+  "text": "Ma",
+  "start": 9.448,
+  "end": 9.564
+ },
+ {
+  "id": "w27",
+  "text": "valeur",
+  "start": 9.622,
+  "end": 9.854
+ },
+ {
+  "id": "w28",
+  "text": "ne",
+  "start": 9.901,
+  "end": 9.97
+ },
+ {
+  "id": "w29",
+  "text": "dépend",
+  "start": 10.005,
+  "end": 10.237
+ },
+ {
+  "id": "w30",
+  "text": "pas",
+  "start": 10.261,
+  "end": 10.377
+ },
+ {
+  "id": "w31",
+  "text": "d'un",
+  "start": 10.4,
+  "end": 10.516
+ },
+ {
+  "id": "w32",
+  "text": "chiffre.",
+  "start": 10.563,
+  "end": 10.888
+ },
+ {
+  "id": "w33",
+  "text": "Enregistre-les,",
+  "start": 11.52,
+  "end": 12.356
+ },
+ {
+  "id": "w34",
+  "text": "ou",
+  "start": 12.553,
+  "end": 12.681
+ },
+ {
+  "id": "w35",
+  "text": "envoie-les",
+  "start": 12.727,
+  "end": 13.111
+ },
+ {
+  "id": "w36",
+  "text": "à",
+  "start": 13.169,
+  "end": 13.192
+ },
+ {
+  "id": "w37",
+  "text": "celle",
+  "start": 13.25,
+  "end": 13.436
+ },
+ {
+  "id": "w38",
+  "text": "qui",
+  "start": 13.459,
+  "end": 13.54
+ },
+ {
+  "id": "w39",
+  "text": "en",
+  "start": 13.575,
+  "end": 13.645
+ },
+ {
+  "id": "w40",
+  "text": "a",
+  "start": 13.714,
+  "end": 13.738
+ },
+ {
+  "id": "w41",
+  "text": "besoin.",
+  "start": 13.784,
+  "end": 14.097
+ },
+ {
+  "id": "w42",
+  "text": "Il",
+  "start": 14.985,
+  "end": 15.136
+ },
+ {
+  "id": "w43",
+  "text": "y",
+  "start": 15.171,
+  "end": 15.194
+ },
+ {
+  "id": "w44",
+  "text": "en",
+  "start": 15.229,
+  "end": 15.287
+ },
+ {
+  "id": "w45",
+  "text": "a",
+  "start": 15.357,
+  "end": 15.38
+ },
+ {
+  "id": "w46",
+  "text": "24",
+  "start": 15.461,
+  "end": 15.914
+ },
+ {
+  "id": "w47",
+  "text": "dans",
+  "start": 15.949,
+  "end": 16.065
+ },
+ {
+  "id": "w48",
+  "text": "mon",
+  "start": 16.088,
+  "end": 16.181
+ },
+ {
+  "id": "w49",
+  "text": "guide,",
+  "start": 16.216,
+  "end": 16.529
+ },
+ {
+  "id": "w50",
+  "text": "plus",
+  "start": 16.738,
+  "end": 16.959
+ },
+ {
+  "id": "w51",
+  "text": "100",
+  "start": 16.994,
+  "end": 17.203
+ },
+ {
+  "id": "w52",
+  "text": "phrases",
+  "start": 17.226,
+  "end": 17.528
+ },
+ {
+  "id": "w53",
+  "text": "inspirantes.",
+  "start": 17.551,
+  "end": 18.178
+ },
+ {
+  "id": "w54",
+  "text": "Lien",
+  "start": 18.822,
+  "end": 19.17
+ },
+ {
+  "id": "w55",
+  "text": "en",
+  "start": 19.252,
+  "end": 19.414
+ },
+ {
+  "id": "w56",
+  "text": "bio.",
+  "start": 19.461,
+  "end": 19.704
+ }
+]

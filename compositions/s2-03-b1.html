@@ -1,0 +1,80 @@
+<!-- Série 2 · vidéo 03 · bloc 1 (barre) · 2.89–10.39 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    #s2-03-b1-barre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 640px;
+      height: 150px;
+      border-radius: 32px;
+      overflow: hidden;
+      background: rgba(251, 248, 242, 0.08);
+    }
+    .s2-seg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-titre);
+      font-weight: 600;
+      font-size: 60px;
+      color: var(--creme);
+      transform-origin: left center;
+    }
+    .s2-seg-legende {
+      position: absolute;
+      top: 820px;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 42px;
+      color: var(--creme);
+    }
+    .s2-pied {
+      top: 1000px;
+      font-size: 72px;
+    }
+  </style>
+  <div id="root" data-composition-id="s2-03-b1" data-width="1080" data-height="1920">
+    <p id="s2-03-b1-titre" class="s2-titre titre">La règle <em>80/20</em></p>
+    <div id="s2-03-b1-barre"><span id="s2-03-b1-g" class="s2-seg" style="left: 0; width: 80%; background: var(--sauge); color: var(--vert-foret)">80&#8239;%</span><span id="s2-03-b1-d" class="s2-seg" style="left: 80%; width: 20%; background: var(--terracotta)">20&#8239;%</span></div>
+    <p id="s2-03-b1-lg" class="s2-seg-legende" style="left: 80px">aliments nutritifs</p>
+    <p id="s2-03-b1-ld" class="s2-seg-legende" style="right: 80px">flexibilité</p>
+    <p id="s2-03-b1-pied" class="s2-texte s2-pied titre"><em>sans culpabilité</em></p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s2-03-b1-titre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.32);
+    tl.fromTo(["#s2-03-b1-g", "#s2-03-b1-lg"], { opacity: 0, scaleX: 0 }, { opacity: 1, scaleX: 1, duration: 0.6, ease: "power2.out" }, 1.48);
+    tl.fromTo(["#s2-03-b1-d", "#s2-03-b1-ld"], { opacity: 0, scaleX: 0 }, { opacity: 1, scaleX: 1, duration: 0.5, ease: "power2.out" }, 4.19);
+    tl.fromTo("#s2-03-b1-pied", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 6.08);
+    window.__timelines["s2-03-b1"] = tl;
+  </script>
+</template>

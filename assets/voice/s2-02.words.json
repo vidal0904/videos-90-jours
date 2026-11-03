@@ -1,0 +1,386 @@
+[
+ {
+  "id": "w0",
+  "text": "Un",
+  "start": 0.0,
+  "end": 0.151
+ },
+ {
+  "id": "w1",
+  "text": "écart,",
+  "start": 0.232,
+  "end": 0.592
+ },
+ {
+  "id": "w2",
+  "text": "ça",
+  "start": 0.766,
+  "end": 0.94
+ },
+ {
+  "id": "w3",
+  "text": "arrive.",
+  "start": 0.975,
+  "end": 1.347
+ },
+ {
+  "id": "w4",
+  "text": "Le",
+  "start": 1.979,
+  "end": 2.118
+ },
+ {
+  "id": "w5",
+  "text": "vrai",
+  "start": 2.153,
+  "end": 2.304
+ },
+ {
+  "id": "w6",
+  "text": "piège,",
+  "start": 2.339,
+  "end": 2.757
+ },
+ {
+  "id": "w7",
+  "text": "c'est",
+  "start": 2.873,
+  "end": 3.059
+ },
+ {
+  "id": "w8",
+  "text": "le",
+  "start": 3.082,
+  "end": 3.152
+ },
+ {
+  "id": "w9",
+  "text": "deuxième",
+  "start": 3.221,
+  "end": 3.546
+ },
+ {
+  "id": "w10",
+  "text": "jour.",
+  "start": 3.57,
+  "end": 3.837
+ },
+ {
+  "id": "w11",
+  "text": "Ma",
+  "start": 4.794,
+  "end": 4.968
+ },
+ {
+  "id": "w12",
+  "text": "règle :",
+  "start": 5.015,
+  "end": 5.328
+ },
+ {
+  "id": "w13",
+  "text": "jamais",
+  "start": 5.595,
+  "end": 5.92
+ },
+ {
+  "id": "w14",
+  "text": "deux",
+  "start": 5.978,
+  "end": 6.094
+ },
+ {
+  "id": "w15",
+  "text": "jours",
+  "start": 6.118,
+  "end": 6.28
+ },
+ {
+  "id": "w16",
+  "text": "de",
+  "start": 6.303,
+  "end": 6.373
+ },
+ {
+  "id": "w17",
+  "text": "suite",
+  "start": 6.419,
+  "end": 6.756
+ },
+ {
+  "id": "w18",
+  "text": "sans",
+  "start": 6.837,
+  "end": 7.093
+ },
+ {
+  "id": "w19",
+  "text": "revenir",
+  "start": 7.128,
+  "end": 7.488
+ },
+ {
+  "id": "w20",
+  "text": "à",
+  "start": 7.522,
+  "end": 7.546
+ },
+ {
+  "id": "w21",
+  "text": "tes",
+  "start": 7.592,
+  "end": 7.708
+ },
+ {
+  "id": "w22",
+  "text": "habitudes",
+  "start": 7.755,
+  "end": 8.149
+ },
+ {
+  "id": "w23",
+  "text": "essentielles.",
+  "start": 8.184,
+  "end": 8.823
+ },
+ {
+  "id": "w24",
+  "text": "Un",
+  "start": 9.513,
+  "end": 9.594
+ },
+ {
+  "id": "w25",
+  "text": "repas",
+  "start": 9.652,
+  "end": 9.908
+ },
+ {
+  "id": "w26",
+  "text": "qui",
+  "start": 9.931,
+  "end": 10.012
+ },
+ {
+  "id": "w27",
+  "text": "dérape ?",
+  "start": 10.059,
+  "end": 10.419
+ },
+ {
+  "id": "w28",
+  "text": "Tu",
+  "start": 11.213,
+  "end": 11.387
+ },
+ {
+  "id": "w29",
+  "text": "reviens",
+  "start": 11.445,
+  "end": 11.701
+ },
+ {
+  "id": "w30",
+  "text": "au",
+  "start": 11.724,
+  "end": 11.782
+ },
+ {
+  "id": "w31",
+  "text": "repas",
+  "start": 11.828,
+  "end": 12.072
+ },
+ {
+  "id": "w32",
+  "text": "suivant.",
+  "start": 12.095,
+  "end": 12.444
+ },
+ {
+  "id": "w33",
+  "text": "Pas",
+  "start": 13.053,
+  "end": 13.239
+ },
+ {
+  "id": "w34",
+  "text": "lundi,",
+  "start": 13.262,
+  "end": 13.61
+ },
+ {
+  "id": "w35",
+  "text": "pas",
+  "start": 13.947,
+  "end": 14.086
+ },
+ {
+  "id": "w36",
+  "text": "le",
+  "start": 14.11,
+  "end": 14.156
+ },
+ {
+  "id": "w37",
+  "text": "mois",
+  "start": 14.202,
+  "end": 14.307
+ },
+ {
+  "id": "w38",
+  "text": "prochain :",
+  "start": 14.33,
+  "end": 14.667
+ },
+ {
+  "id": "w39",
+  "text": "au",
+  "start": 15.131,
+  "end": 15.282
+ },
+ {
+  "id": "w40",
+  "text": "repas",
+  "start": 15.317,
+  "end": 15.549
+ },
+ {
+  "id": "w41",
+  "text": "suivant.",
+  "start": 15.572,
+  "end": 15.909
+ },
+ {
+  "id": "w42",
+  "text": "Enregistre",
+  "start": 16.703,
+  "end": 17.307
+ },
+ {
+  "id": "w43",
+  "text": "cette",
+  "start": 17.342,
+  "end": 17.527
+ },
+ {
+  "id": "w44",
+  "text": "règle",
+  "start": 17.551,
+  "end": 17.818
+ },
+ {
+  "id": "w45",
+  "text": "pour",
+  "start": 17.852,
+  "end": 17.968
+ },
+ {
+  "id": "w46",
+  "text": "le",
+  "start": 18.003,
+  "end": 18.073
+ },
+ {
+  "id": "w47",
+  "text": "jour",
+  "start": 18.119,
+  "end": 18.305
+ },
+ {
+  "id": "w48",
+  "text": "où",
+  "start": 18.352,
+  "end": 18.41
+ },
+ {
+  "id": "w49",
+  "text": "tu",
+  "start": 18.444,
+  "end": 18.526
+ },
+ {
+  "id": "w50",
+  "text": "en",
+  "start": 18.584,
+  "end": 18.642
+ },
+ {
+  "id": "w51",
+  "text": "auras",
+  "start": 18.688,
+  "end": 18.851
+ },
+ {
+  "id": "w52",
+  "text": "besoin.",
+  "start": 18.874,
+  "end": 19.211
+ },
+ {
+  "id": "w53",
+  "text": "Elle",
+  "start": 20.029,
+  "end": 20.261
+ },
+ {
+  "id": "w54",
+  "text": "est",
+  "start": 20.284,
+  "end": 20.354
+ },
+ {
+  "id": "w55",
+  "text": "dans",
+  "start": 20.377,
+  "end": 20.505
+ },
+ {
+  "id": "w56",
+  "text": "mon",
+  "start": 20.528,
+  "end": 20.633
+ },
+ {
+  "id": "w57",
+  "text": "guide",
+  "start": 20.679,
+  "end": 20.888
+ },
+ {
+  "id": "w58",
+  "text": "de",
+  "start": 20.911,
+  "end": 20.981
+ },
+ {
+  "id": "w59",
+  "text": "90",
+  "start": 21.027,
+  "end": 21.608
+ },
+ {
+  "id": "w60",
+  "text": "jours,",
+  "start": 21.631,
+  "end": 21.933
+ },
+ {
+  "id": "w61",
+  "text": "lien",
+  "start": 22.154,
+  "end": 22.467
+ },
+ {
+  "id": "w62",
+  "text": "en",
+  "start": 22.548,
+  "end": 22.641
+ },
+ {
+  "id": "w63",
+  "text": "bio.",
+  "start": 22.688,
+  "end": 22.966
+ }
+]

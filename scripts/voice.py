@@ -60,10 +60,18 @@ for token in text.split(" "):
 
 # Écrit comme on le dit pour la voix, affiché comme on le lit dans les sous-titres
 AFFICHAGE = {"quatre-vingt-dix": "90", "quatre-vingts": "80", "soixante-dix": "70", "douze": "12", "dix": "10",
-             "treize": "13", "quinze": "15", "trente": "30", "quatre-vingt-dix-neuf": "99", "vingt": "20"}
-# Nombres en plusieurs mots : fusionnés en un seul mot affiché (horaires du premier au dernier)
+             "treize": "13", "quinze": "15", "trente": "30", "quatre-vingt-dix-neuf": "99", "vingt": "20",
+             "vingt-trois": "23", "vingt-quatre": "24", "soixante": "60", "cent": "100"}
+# Nombres en plusieurs mots : fusionnés en un seul mot affiché (horaires du premier au dernier).
+# Comparés aux mots écrits (avant AFFICHAGE), les plus longs d'abord.
 AFFICHAGE_MULTI = {("trois", "cent", "seize"): "316", ("un", "pour", "cent"): "1\u00a0%",
-                   ("onze", "heures"): "11\u00a0h", ("deux", "minutes"): "2 minutes"}
+                   ("quatre-vingts", "pour", "cent"): "80\u00a0%", ("vingt", "pour", "cent"): "20\u00a0%",
+                   ("quatre-vingt", "vingt"): "80/20", ("onze", "heures"): "11\u00a0h", ("deux", "minutes"): "2 minutes",
+                   ("jour", "zéro"): "jour 0", ("jour", "un"): "jour 1", ("jour", "deux"): "jour 2", ("jour", "trois"): "jour 3",
+                   ("jour", "quatre"): "jour 4", ("jour", "cinq"): "jour 5", ("jour", "six"): "jour 6", ("jour", "sept"): "jour 7",
+                   ("trois", "questions"): "3 questions", ("quatre", "phrases"): "4 phrases", ("sept", "missions"): "7 missions",
+                   ("cinq", "raisons"): "5 raisons", ("deux", "questions"): "2 questions", ("trois", "premières"): "3 premières",
+                   ("trois", "habitudes"): "3 habitudes", ("quatre", "à", "douze"): "4 à 12"}
 
 
 def affiche(mot):
@@ -205,19 +213,21 @@ if len(spoken) != len(words):
     )
 
 out = [
-    {"id": f"w{i}", "text": affiche(w), "start": round(ph[0].start, 3), "end": round(ph[-1].end, 3)}
+    {"id": f"w{i}", "text": affiche(w), "ecrit": w, "start": round(ph[0].start, 3), "end": round(ph[-1].end, 3)}
     for i, (w, ph) in enumerate(zip(words, spoken))
 ]
-for suite, chiffre in AFFICHAGE_MULTI.items():
+nu = lambda t: t.rstrip(".,;:!?…\u00a0»").lower()
+for suite, chiffre in sorted(AFFICHAGE_MULTI.items(), key=lambda kv: -len(kv[0])):
     i = 0
     while i <= len(out) - len(suite):
         bloc = out[i:i + len(suite)]
-        if tuple(m["text"].rstrip(".,;:!?…\u00a0»").lower() for m in bloc) == suite:
-            fin = bloc[-1]["text"][len(bloc[-1]["text"].rstrip(".,;:!?…\u00a0»")):]
-            out[i:i + len(suite)] = [{"id": "", "text": chiffre + fin, "start": bloc[0]["start"], "end": bloc[-1]["end"]}]
+        if tuple(nu(m["ecrit"]) for m in bloc) == suite:
+            fin = bloc[-1]["ecrit"][len(bloc[-1]["ecrit"].rstrip(".,;:!?…\u00a0»")):]
+            debut = chiffre[0].upper() + chiffre[1:] if bloc[0]["ecrit"][:1].isupper() else chiffre
+            out[i:i + len(suite)] = [{"text": debut + fin, "ecrit": " ".join(m["ecrit"] for m in bloc),
+                                      "start": bloc[0]["start"], "end": bloc[-1]["end"]}]
         i += 1
-for i, m in enumerate(out):
-    m["id"] = f"w{i}"
+out = [{"id": f"w{i}", "text": m["text"], "start": m["start"], "end": m["end"]} for i, m in enumerate(out)]
 wav = src.with_suffix(".wav")
 sf.write(wav, audio, sr)
 src.with_suffix(".words.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")

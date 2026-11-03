@@ -1,0 +1,404 @@
+[
+ {
+  "id": "w0",
+  "text": "Pas",
+  "start": 0.0,
+  "end": 0.186
+ },
+ {
+  "id": "w1",
+  "text": "le",
+  "start": 0.221,
+  "end": 0.29
+ },
+ {
+  "id": "w2",
+  "text": "temps",
+  "start": 0.337,
+  "end": 0.476
+ },
+ {
+  "id": "w3",
+  "text": "de",
+  "start": 0.499,
+  "end": 0.546
+ },
+ {
+  "id": "w4",
+  "text": "cuisiner ?",
+  "start": 0.592,
+  "end": 0.998
+ },
+ {
+  "id": "w5",
+  "text": "Dans",
+  "start": 1.84,
+  "end": 2.014
+ },
+ {
+  "id": "w6",
+  "text": "mon",
+  "start": 2.037,
+  "end": 2.13
+ },
+ {
+  "id": "w7",
+  "text": "guide,",
+  "start": 2.177,
+  "end": 2.479
+ },
+ {
+  "id": "w8",
+  "text": "23",
+  "start": 2.676,
+  "end": 3.152
+ },
+ {
+  "id": "w9",
+  "text": "recettes",
+  "start": 3.175,
+  "end": 3.512
+ },
+ {
+  "id": "w10",
+  "text": "se",
+  "start": 3.535,
+  "end": 3.605
+ },
+ {
+  "id": "w11",
+  "text": "préparent",
+  "start": 3.64,
+  "end": 4.034
+ },
+ {
+  "id": "w12",
+  "text": "en",
+  "start": 4.127,
+  "end": 4.266
+ },
+ {
+  "id": "w13",
+  "text": "15",
+  "start": 4.383,
+  "end": 4.696
+ },
+ {
+  "id": "w14",
+  "text": "minutes",
+  "start": 4.719,
+  "end": 4.998
+ },
+ {
+  "id": "w15",
+  "text": "environ.",
+  "start": 5.044,
+  "end": 5.393
+ },
+ {
+  "id": "w16",
+  "text": "Le",
+  "start": 6.001,
+  "end": 6.152
+ },
+ {
+  "id": "w17",
+  "text": "matin :",
+  "start": 6.198,
+  "end": 6.465
+ },
+ {
+  "id": "w18",
+  "text": "omelette",
+  "start": 6.872,
+  "end": 7.232
+ },
+ {
+  "id": "w19",
+  "text": "tomate",
+  "start": 7.255,
+  "end": 7.661
+ },
+ {
+  "id": "w20",
+  "text": "et",
+  "start": 7.719,
+  "end": 7.835
+ },
+ {
+  "id": "w21",
+  "text": "fines",
+  "start": 7.882,
+  "end": 8.126
+ },
+ {
+  "id": "w22",
+  "text": "herbes,",
+  "start": 8.195,
+  "end": 8.486
+ },
+ {
+  "id": "w23",
+  "text": "ou",
+  "start": 8.753,
+  "end": 8.857
+ },
+ {
+  "id": "w24",
+  "text": "yaourt",
+  "start": 8.927,
+  "end": 9.24
+ },
+ {
+  "id": "w25",
+  "text": "grec",
+  "start": 9.298,
+  "end": 9.588
+ },
+ {
+  "id": "w26",
+  "text": "et",
+  "start": 9.681,
+  "end": 9.786
+ },
+ {
+  "id": "w27",
+  "text": "fruits",
+  "start": 9.821,
+  "end": 10.064
+ },
+ {
+  "id": "w28",
+  "text": "rouges.",
+  "start": 10.088,
+  "end": 10.366
+ },
+ {
+  "id": "w29",
+  "text": "Le",
+  "start": 10.952,
+  "end": 11.126
+ },
+ {
+  "id": "w30",
+  "text": "midi :",
+  "start": 11.173,
+  "end": 11.509
+ },
+ {
+  "id": "w31",
+  "text": "salade",
+  "start": 11.974,
+  "end": 12.38
+ },
+ {
+  "id": "w32",
+  "text": "de",
+  "start": 12.403,
+  "end": 12.485
+ },
+ {
+  "id": "w33",
+  "text": "thon",
+  "start": 12.554,
+  "end": 12.717
+ },
+ {
+  "id": "w34",
+  "text": "au",
+  "start": 12.74,
+  "end": 12.786
+ },
+ {
+  "id": "w35",
+  "text": "citron,",
+  "start": 12.81,
+  "end": 13.274
+ },
+ {
+  "id": "w36",
+  "text": "ou",
+  "start": 13.669,
+  "end": 13.808
+ },
+ {
+  "id": "w37",
+  "text": "wrap",
+  "start": 13.854,
+  "end": 14.156
+ },
+ {
+  "id": "w38",
+  "text": "au",
+  "start": 14.214,
+  "end": 14.261
+ },
+ {
+  "id": "w39",
+  "text": "thon",
+  "start": 14.331,
+  "end": 14.551
+ },
+ {
+  "id": "w40",
+  "text": "et",
+  "start": 14.667,
+  "end": 14.841
+ },
+ {
+  "id": "w41",
+  "text": "crudités.",
+  "start": 14.876,
+  "end": 15.445
+ },
+ {
+  "id": "w42",
+  "text": "Le",
+  "start": 16.414,
+  "end": 16.553
+ },
+ {
+  "id": "w43",
+  "text": "soir",
+  "start": 16.588,
+  "end": 16.762
+ },
+ {
+  "id": "w44",
+  "text": "pressé :",
+  "start": 16.809,
+  "end": 17.192
+ },
+ {
+  "id": "w45",
+  "text": "crevettes",
+  "start": 17.424,
+  "end": 17.854
+ },
+ {
+  "id": "w46",
+  "text": "sautées",
+  "start": 17.877,
+  "end": 18.283
+ },
+ {
+  "id": "w47",
+  "text": "et",
+  "start": 18.399,
+  "end": 18.55
+ },
+ {
+  "id": "w48",
+  "text": "riz",
+  "start": 18.608,
+  "end": 18.736
+ },
+ {
+  "id": "w49",
+  "text": "complet.",
+  "start": 18.771,
+  "end": 19.166
+ },
+ {
+  "id": "w50",
+  "text": "Enregistre",
+  "start": 19.833,
+  "end": 20.46
+ },
+ {
+  "id": "w51",
+  "text": "cette",
+  "start": 20.495,
+  "end": 20.669
+ },
+ {
+  "id": "w52",
+  "text": "vidéo",
+  "start": 20.692,
+  "end": 21.006
+ },
+ {
+  "id": "w53",
+  "text": "pour",
+  "start": 21.052,
+  "end": 21.168
+ },
+ {
+  "id": "w54",
+  "text": "tes",
+  "start": 21.203,
+  "end": 21.319
+ },
+ {
+  "id": "w55",
+  "text": "soirs",
+  "start": 21.342,
+  "end": 21.644
+ },
+ {
+  "id": "w56",
+  "text": "sans",
+  "start": 21.691,
+  "end": 21.9
+ },
+ {
+  "id": "w57",
+  "text": "énergie.",
+  "start": 21.946,
+  "end": 22.434
+ },
+ {
+  "id": "w58",
+  "text": "Les",
+  "start": 23.252,
+  "end": 23.438
+ },
+ {
+  "id": "w59",
+  "text": "23",
+  "start": 23.496,
+  "end": 23.937
+ },
+ {
+  "id": "w60",
+  "text": "sont",
+  "start": 23.96,
+  "end": 24.1
+ },
+ {
+  "id": "w61",
+  "text": "dans",
+  "start": 24.123,
+  "end": 24.227
+ },
+ {
+  "id": "w62",
+  "text": "mon",
+  "start": 24.25,
+  "end": 24.355
+ },
+ {
+  "id": "w63",
+  "text": "guide,",
+  "start": 24.413,
+  "end": 24.726
+ },
+ {
+  "id": "w64",
+  "text": "lien",
+  "start": 24.935,
+  "end": 25.261
+ },
+ {
+  "id": "w65",
+  "text": "en",
+  "start": 25.342,
+  "end": 25.435
+ },
+ {
+  "id": "w66",
+  "text": "bio.",
+  "start": 25.493,
+  "end": 25.748
+ }
+]

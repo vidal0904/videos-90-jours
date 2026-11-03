@@ -1,0 +1,51 @@
+<!-- Série 2 · vidéo 02 · bloc 2 (phrases) · 11.56–17.05 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    .s2-phrase {
+      top: 660px;
+      font-size: 84px;
+      line-height: 1.2;
+    }
+  </style>
+  <div id="root" data-composition-id="s2-02-b2" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+    <p id="s2-02-b2-p0" class="s2-texte s2-phrase titre">Au repas <em>suivant.</em></p>
+    <p id="s2-02-b2-p1" class="s2-texte s2-phrase titre">Pas lundi.<br /><em>Pas le mois prochain.</em></p>
+    <p id="s2-02-b2-p2" class="s2-texte s2-phrase titre">Au repas <em>suivant.</em></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s2-02-b2-p0", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 0.66);
+    tl.to("#s2-02-b2-p0", { opacity: 0, duration: 0.3, ease: "sine.in" }, 1.64);
+    tl.fromTo("#s2-02-b2-p1", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 1.99);
+    tl.to("#s2-02-b2-p1", { opacity: 0, duration: 0.3, ease: "sine.in" }, 3.72);
+    tl.fromTo("#s2-02-b2-p2", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 4.07);
+    window.__timelines["s2-02-b2"] = tl;
+  </script>
+</template>

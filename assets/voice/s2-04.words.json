@@ -1,0 +1,350 @@
+[
+ {
+  "id": "w0",
+  "text": "3 questions",
+  "start": 0.0,
+  "end": 0.871
+ },
+ {
+  "id": "w1",
+  "text": "avant",
+  "start": 0.917,
+  "end": 1.196
+ },
+ {
+  "id": "w2",
+  "text": "de",
+  "start": 1.231,
+  "end": 1.289
+ },
+ {
+  "id": "w3",
+  "text": "faire",
+  "start": 1.335,
+  "end": 1.509
+ },
+ {
+  "id": "w4",
+  "text": "tes",
+  "start": 1.533,
+  "end": 1.625
+ },
+ {
+  "id": "w5",
+  "text": "courses.",
+  "start": 1.649,
+  "end": 2.009
+ },
+ {
+  "id": "w6",
+  "text": "Un :",
+  "start": 2.722,
+  "end": 2.931
+ },
+ {
+  "id": "w7",
+  "text": "est-ce",
+  "start": 3.21,
+  "end": 3.419
+ },
+ {
+  "id": "w8",
+  "text": "que",
+  "start": 3.442,
+  "end": 3.535
+ },
+ {
+  "id": "w9",
+  "text": "j'ai",
+  "start": 3.57,
+  "end": 3.662
+ },
+ {
+  "id": "w10",
+  "text": "ma",
+  "start": 3.697,
+  "end": 3.767
+ },
+ {
+  "id": "w11",
+  "text": "liste ?",
+  "start": 3.813,
+  "end": 4.173
+ },
+ {
+  "id": "w12",
+  "text": "Deux :",
+  "start": 4.84,
+  "end": 5.13
+ },
+ {
+  "id": "w13",
+  "text": "est-ce",
+  "start": 5.374,
+  "end": 5.583
+ },
+ {
+  "id": "w14",
+  "text": "que",
+  "start": 5.618,
+  "end": 5.711
+ },
+ {
+  "id": "w15",
+  "text": "j'ai",
+  "start": 5.734,
+  "end": 5.838
+ },
+ {
+  "id": "w16",
+  "text": "faim ?",
+  "start": 5.885,
+  "end": 6.047
+ },
+ {
+  "id": "w17",
+  "text": "Si",
+  "start": 6.773,
+  "end": 7.04
+ },
+ {
+  "id": "w18",
+  "text": "oui,",
+  "start": 7.075,
+  "end": 7.319
+ },
+ {
+  "id": "w19",
+  "text": "mange",
+  "start": 7.516,
+  "end": 7.783
+ },
+ {
+  "id": "w20",
+  "text": "d'abord.",
+  "start": 7.806,
+  "end": 8.236
+ },
+ {
+  "id": "w21",
+  "text": "Trois,",
+  "start": 8.845,
+  "end": 9.298
+ },
+ {
+  "id": "w22",
+  "text": "devant",
+  "start": 9.472,
+  "end": 9.739
+ },
+ {
+  "id": "w23",
+  "text": "chaque",
+  "start": 9.762,
+  "end": 9.983
+ },
+ {
+  "id": "w24",
+  "text": "produit :",
+  "start": 10.006,
+  "end": 10.378
+ },
+ {
+  "id": "w25",
+  "text": "était-ce",
+  "start": 10.586,
+  "end": 10.946
+ },
+ {
+  "id": "w26",
+  "text": "sur",
+  "start": 10.97,
+  "end": 11.109
+ },
+ {
+  "id": "w27",
+  "text": "ma",
+  "start": 11.144,
+  "end": 11.225
+ },
+ {
+  "id": "w28",
+  "text": "liste ?",
+  "start": 11.271,
+  "end": 11.597
+ },
+ {
+  "id": "w29",
+  "text": "Simple,",
+  "start": 12.449,
+  "end": 12.89
+ },
+ {
+  "id": "w30",
+  "text": "mais",
+  "start": 13.088,
+  "end": 13.215
+ },
+ {
+  "id": "w31",
+  "text": "ça",
+  "start": 13.238,
+  "end": 13.308
+ },
+ {
+  "id": "w32",
+  "text": "change",
+  "start": 13.355,
+  "end": 13.552
+ },
+ {
+  "id": "w33",
+  "text": "tout",
+  "start": 13.61,
+  "end": 13.749
+ },
+ {
+  "id": "w34",
+  "text": "dans",
+  "start": 13.773,
+  "end": 13.889
+ },
+ {
+  "id": "w35",
+  "text": "le",
+  "start": 13.912,
+  "end": 13.97
+ },
+ {
+  "id": "w36",
+  "text": "chariot.",
+  "start": 14.005,
+  "end": 14.399
+ },
+ {
+  "id": "w37",
+  "text": "Dans",
+  "start": 14.985,
+  "end": 15.171
+ },
+ {
+  "id": "w38",
+  "text": "mon",
+  "start": 15.194,
+  "end": 15.298
+ },
+ {
+  "id": "w39",
+  "text": "guide,",
+  "start": 15.345,
+  "end": 15.635
+ },
+ {
+  "id": "w40",
+  "text": "les",
+  "start": 15.786,
+  "end": 15.925
+ },
+ {
+  "id": "w41",
+  "text": "12",
+  "start": 15.972,
+  "end": 16.216
+ },
+ {
+  "id": "w42",
+  "text": "listes",
+  "start": 16.25,
+  "end": 16.529
+ },
+ {
+  "id": "w43",
+  "text": "de",
+  "start": 16.552,
+  "end": 16.622
+ },
+ {
+  "id": "w44",
+  "text": "courses",
+  "start": 16.668,
+  "end": 16.994
+ },
+ {
+  "id": "w45",
+  "text": "sont",
+  "start": 17.11,
+  "end": 17.319
+ },
+ {
+  "id": "w46",
+  "text": "déjà",
+  "start": 17.353,
+  "end": 17.655
+ },
+ {
+  "id": "w47",
+  "text": "calculées,",
+  "start": 17.69,
+  "end": 18.213
+ },
+ {
+  "id": "w48",
+  "text": "quantités",
+  "start": 18.456,
+  "end": 18.863
+ },
+ {
+  "id": "w49",
+  "text": "comprises.",
+  "start": 18.886,
+  "end": 19.374
+ },
+ {
+  "id": "w50",
+  "text": "Enregistre",
+  "start": 19.89,
+  "end": 20.482
+ },
+ {
+  "id": "w51",
+  "text": "pour",
+  "start": 20.598,
+  "end": 20.761
+ },
+ {
+  "id": "w52",
+  "text": "ta",
+  "start": 20.807,
+  "end": 20.9
+ },
+ {
+  "id": "w53",
+  "text": "prochaine",
+  "start": 20.947,
+  "end": 21.26
+ },
+ {
+  "id": "w54",
+  "text": "sortie,",
+  "start": 21.283,
+  "end": 21.678
+ },
+ {
+  "id": "w55",
+  "text": "lien",
+  "start": 21.829,
+  "end": 22.049
+ },
+ {
+  "id": "w56",
+  "text": "en",
+  "start": 22.119,
+  "end": 22.166
+ },
+ {
+  "id": "w57",
+  "text": "bio.",
+  "start": 22.2,
+  "end": 22.409
+ }
+]

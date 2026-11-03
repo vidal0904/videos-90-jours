@@ -1,0 +1,374 @@
+[
+ {
+  "id": "w0",
+  "text": "Avant",
+  "start": 0.0,
+  "end": 0.313
+ },
+ {
+  "id": "w1",
+  "text": "le",
+  "start": 0.337,
+  "end": 0.395
+ },
+ {
+  "id": "w2",
+  "text": "jour 1,",
+  "start": 0.441,
+  "end": 0.882
+ },
+ {
+  "id": "w3",
+  "text": "il",
+  "start": 1.045,
+  "end": 1.196
+ },
+ {
+  "id": "w4",
+  "text": "y",
+  "start": 1.265,
+  "end": 1.289
+ },
+ {
+  "id": "w5",
+  "text": "a",
+  "start": 1.324,
+  "end": 1.347
+ },
+ {
+  "id": "w6",
+  "text": "le",
+  "start": 1.393,
+  "end": 1.463
+ },
+ {
+  "id": "w7",
+  "text": "jour 0.",
+  "start": 1.509,
+  "end": 2.009
+ },
+ {
+  "id": "w8",
+  "text": "15",
+  "start": 2.768,
+  "end": 3.081
+ },
+ {
+  "id": "w9",
+  "text": "minutes",
+  "start": 3.105,
+  "end": 3.383
+ },
+ {
+  "id": "w10",
+  "text": "pour",
+  "start": 3.407,
+  "end": 3.511
+ },
+ {
+  "id": "w11",
+  "text": "poser",
+  "start": 3.557,
+  "end": 3.801
+ },
+ {
+  "id": "w12",
+  "text": "ton",
+  "start": 3.836,
+  "end": 3.941
+ },
+ {
+  "id": "w13",
+  "text": "point",
+  "start": 3.987,
+  "end": 4.15
+ },
+ {
+  "id": "w14",
+  "text": "de",
+  "start": 4.173,
+  "end": 4.231
+ },
+ {
+  "id": "w15",
+  "text": "départ.",
+  "start": 4.277,
+  "end": 4.707
+ },
+ {
+  "id": "w16",
+  "text": "Pourquoi",
+  "start": 5.351,
+  "end": 5.723
+ },
+ {
+  "id": "w17",
+  "text": "tu",
+  "start": 5.746,
+  "end": 5.85
+ },
+ {
+  "id": "w18",
+  "text": "commences.",
+  "start": 5.885,
+  "end": 6.268
+ },
+ {
+  "id": "w19",
+  "text": "Tes",
+  "start": 6.959,
+  "end": 7.133
+ },
+ {
+  "id": "w20",
+  "text": "repères",
+  "start": 7.168,
+  "end": 7.47
+ },
+ {
+  "id": "w21",
+  "text": "personnels.",
+  "start": 7.493,
+  "end": 8.004
+ },
+ {
+  "id": "w22",
+  "text": "Des",
+  "start": 8.566,
+  "end": 8.74
+ },
+ {
+  "id": "w23",
+  "text": "mesures,",
+  "start": 8.775,
+  "end": 9.228
+ },
+ {
+  "id": "w24",
+  "text": "seulement",
+  "start": 9.437,
+  "end": 9.773
+ },
+ {
+  "id": "w25",
+  "text": "si",
+  "start": 9.808,
+  "end": 9.89
+ },
+ {
+  "id": "w26",
+  "text": "tu",
+  "start": 9.924,
+  "end": 10.017
+ },
+ {
+  "id": "w27",
+  "text": "le",
+  "start": 10.052,
+  "end": 10.122
+ },
+ {
+  "id": "w28",
+  "text": "souhaites.",
+  "start": 10.168,
+  "end": 10.54
+ },
+ {
+  "id": "w29",
+  "text": "Tes",
+  "start": 11.102,
+  "end": 11.288
+ },
+ {
+  "id": "w30",
+  "text": "3 premières",
+  "start": 11.323,
+  "end": 11.961
+ },
+ {
+  "id": "w31",
+  "text": "habitudes.",
+  "start": 12.008,
+  "end": 12.507
+ },
+ {
+  "id": "w32",
+  "text": "Et",
+  "start": 13.499,
+  "end": 13.673
+ },
+ {
+  "id": "w33",
+  "text": "un",
+  "start": 13.754,
+  "end": 13.824
+ },
+ {
+  "id": "w34",
+  "text": "engagement",
+  "start": 13.905,
+  "end": 14.347
+ },
+ {
+  "id": "w35",
+  "text": "envers",
+  "start": 14.416,
+  "end": 14.672
+ },
+ {
+  "id": "w36",
+  "text": "toi-même.",
+  "start": 14.695,
+  "end": 15.171
+ },
+ {
+  "id": "w37",
+  "text": "Tu",
+  "start": 15.803,
+  "end": 15.977
+ },
+ {
+  "id": "w38",
+  "text": "y",
+  "start": 16.024,
+  "end": 16.047
+ },
+ {
+  "id": "w39",
+  "text": "reviens",
+  "start": 16.105,
+  "end": 16.407
+ },
+ {
+  "id": "w40",
+  "text": "au",
+  "start": 16.43,
+  "end": 16.511
+ },
+ {
+  "id": "w41",
+  "text": "jour",
+  "start": 16.558,
+  "end": 16.755
+ },
+ {
+  "id": "w42",
+  "text": "30,",
+  "start": 16.848,
+  "end": 17.289
+ },
+ {
+  "id": "w43",
+  "text": "60",
+  "start": 17.463,
+  "end": 18.009
+ },
+ {
+  "id": "w44",
+  "text": "et",
+  "start": 18.067,
+  "end": 18.183
+ },
+ {
+  "id": "w45",
+  "text": "90",
+  "start": 18.229,
+  "end": 19.031
+ },
+ {
+  "id": "w46",
+  "text": "pour",
+  "start": 19.356,
+  "end": 19.518
+ },
+ {
+  "id": "w47",
+  "text": "voir",
+  "start": 19.565,
+  "end": 19.669
+ },
+ {
+  "id": "w48",
+  "text": "le",
+  "start": 19.716,
+  "end": 19.774
+ },
+ {
+  "id": "w49",
+  "text": "chemin",
+  "start": 19.808,
+  "end": 20.041
+ },
+ {
+  "id": "w50",
+  "text": "parcouru.",
+  "start": 20.087,
+  "end": 20.563
+ },
+ {
+  "id": "w51",
+  "text": "Ton",
+  "start": 21.265,
+  "end": 21.439
+ },
+ {
+  "id": "w52",
+  "text": "kit",
+  "start": 21.497,
+  "end": 21.648
+ },
+ {
+  "id": "w53",
+  "text": "du",
+  "start": 21.695,
+  "end": 21.787
+ },
+ {
+  "id": "w54",
+  "text": "jour 0",
+  "start": 21.822,
+  "end": 22.263
+ },
+ {
+  "id": "w55",
+  "text": "t'attend",
+  "start": 22.333,
+  "end": 22.635
+ },
+ {
+  "id": "w56",
+  "text": "dans",
+  "start": 22.658,
+  "end": 22.763
+ },
+ {
+  "id": "w57",
+  "text": "mon",
+  "start": 22.786,
+  "end": 22.89
+ },
+ {
+  "id": "w58",
+  "text": "guide,",
+  "start": 22.925,
+  "end": 23.227
+ },
+ {
+  "id": "w59",
+  "text": "lien",
+  "start": 23.541,
+  "end": 23.773
+ },
+ {
+  "id": "w60",
+  "text": "en",
+  "start": 23.842,
+  "end": 23.889
+ },
+ {
+  "id": "w61",
+  "text": "bio.",
+  "start": 23.935,
+  "end": 24.144
+ }
+]

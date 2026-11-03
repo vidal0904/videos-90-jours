@@ -1,0 +1,410 @@
+[
+ {
+  "id": "w0",
+  "text": "Faim",
+  "start": 0.0,
+  "end": 0.29
+ },
+ {
+  "id": "w1",
+  "text": "ou",
+  "start": 0.372,
+  "end": 0.488
+ },
+ {
+  "id": "w2",
+  "text": "envie ?",
+  "start": 0.534,
+  "end": 0.836
+ },
+ {
+  "id": "w3",
+  "text": "Pose-toi",
+  "start": 1.515,
+  "end": 1.91
+ },
+ {
+  "id": "w4",
+  "text": "2 questions.",
+  "start": 1.945,
+  "end": 2.49
+ },
+ {
+  "id": "w5",
+  "text": "Est-ce",
+  "start": 3.076,
+  "end": 3.32
+ },
+ {
+  "id": "w6",
+  "text": "que",
+  "start": 3.343,
+  "end": 3.436
+ },
+ {
+  "id": "w7",
+  "text": "c'est",
+  "start": 3.471,
+  "end": 3.622
+ },
+ {
+  "id": "w8",
+  "text": "arrivé",
+  "start": 3.691,
+  "end": 3.935
+ },
+ {
+  "id": "w9",
+  "text": "d'un",
+  "start": 3.97,
+  "end": 4.086
+ },
+ {
+  "id": "w10",
+  "text": "coup ?",
+  "start": 4.144,
+  "end": 4.365
+ },
+ {
+  "id": "w11",
+  "text": "Est-ce",
+  "start": 5.055,
+  "end": 5.299
+ },
+ {
+  "id": "w12",
+  "text": "que",
+  "start": 5.322,
+  "end": 5.415
+ },
+ {
+  "id": "w13",
+  "text": "tu",
+  "start": 5.45,
+  "end": 5.554
+ },
+ {
+  "id": "w14",
+  "text": "veux",
+  "start": 5.612,
+  "end": 5.763
+ },
+ {
+  "id": "w15",
+  "text": "un",
+  "start": 5.844,
+  "end": 5.961
+ },
+ {
+  "id": "w16",
+  "text": "aliment",
+  "start": 6.042,
+  "end": 6.332
+ },
+ {
+  "id": "w17",
+  "text": "bien",
+  "start": 6.367,
+  "end": 6.576
+ },
+ {
+  "id": "w18",
+  "text": "précis ?",
+  "start": 6.611,
+  "end": 7.029
+ },
+ {
+  "id": "w19",
+  "text": "Si",
+  "start": 7.777,
+  "end": 7.951
+ },
+ {
+  "id": "w20",
+  "text": "c'est",
+  "start": 7.986,
+  "end": 8.137
+ },
+ {
+  "id": "w21",
+  "text": "oui,",
+  "start": 8.16,
+  "end": 8.404
+ },
+ {
+  "id": "w22",
+  "text": "c'est",
+  "start": 8.543,
+  "end": 8.729
+ },
+ {
+  "id": "w23",
+  "text": "souvent",
+  "start": 8.752,
+  "end": 8.996
+ },
+ {
+  "id": "w24",
+  "text": "une",
+  "start": 9.019,
+  "end": 9.112
+ },
+ {
+  "id": "w25",
+  "text": "faim",
+  "start": 9.147,
+  "end": 9.275
+ },
+ {
+  "id": "w26",
+  "text": "émotionnelle.",
+  "start": 9.356,
+  "end": 10.087
+ },
+ {
+  "id": "w27",
+  "text": "La",
+  "start": 10.777,
+  "end": 10.928
+ },
+ {
+  "id": "w28",
+  "text": "vraie",
+  "start": 10.998,
+  "end": 11.241
+ },
+ {
+  "id": "w29",
+  "text": "faim",
+  "start": 11.299,
+  "end": 11.474
+ },
+ {
+  "id": "w30",
+  "text": "monte",
+  "start": 11.52,
+  "end": 11.694
+ },
+ {
+  "id": "w31",
+  "text": "doucement,",
+  "start": 11.717,
+  "end": 12.205
+ },
+ {
+  "id": "w32",
+  "text": "et",
+  "start": 12.321,
+  "end": 12.449
+ },
+ {
+  "id": "w33",
+  "text": "plein",
+  "start": 12.507,
+  "end": 12.751
+ },
+ {
+  "id": "w34",
+  "text": "d'aliments",
+  "start": 12.797,
+  "end": 13.18
+ },
+ {
+  "id": "w35",
+  "text": "te",
+  "start": 13.203,
+  "end": 13.273
+ },
+ {
+  "id": "w36",
+  "text": "feraient",
+  "start": 13.331,
+  "end": 13.598
+ },
+ {
+  "id": "w37",
+  "text": "plaisir.",
+  "start": 13.621,
+  "end": 14.063
+ },
+ {
+  "id": "w38",
+  "text": "Dans",
+  "start": 14.66,
+  "end": 14.881
+ },
+ {
+  "id": "w39",
+  "text": "le",
+  "start": 14.915,
+  "end": 14.985
+ },
+ {
+  "id": "w40",
+  "text": "doute :",
+  "start": 15.02,
+  "end": 15.287
+ },
+ {
+  "id": "w41",
+  "text": "un",
+  "start": 15.786,
+  "end": 15.891
+ },
+ {
+  "id": "w42",
+  "text": "verre",
+  "start": 15.937,
+  "end": 16.146
+ },
+ {
+  "id": "w43",
+  "text": "d'eau,",
+  "start": 16.169,
+  "end": 16.39
+ },
+ {
+  "id": "w44",
+  "text": "10",
+  "start": 16.808,
+  "end": 16.982
+ },
+ {
+  "id": "w45",
+  "text": "minutes,",
+  "start": 17.005,
+  "end": 17.458
+ },
+ {
+  "id": "w46",
+  "text": "quelques",
+  "start": 17.644,
+  "end": 18.004
+ },
+ {
+  "id": "w47",
+  "text": "pas,",
+  "start": 18.027,
+  "end": 18.282
+ },
+ {
+  "id": "w48",
+  "text": "puis",
+  "start": 18.573,
+  "end": 18.747
+ },
+ {
+  "id": "w49",
+  "text": "tu",
+  "start": 18.77,
+  "end": 18.863
+ },
+ {
+  "id": "w50",
+  "text": "réévalues.",
+  "start": 18.944,
+  "end": 19.42
+ },
+ {
+  "id": "w51",
+  "text": "Envoie",
+  "start": 20.215,
+  "end": 20.587
+ },
+ {
+  "id": "w52",
+  "text": "ça",
+  "start": 20.633,
+  "end": 20.749
+ },
+ {
+  "id": "w53",
+  "text": "à",
+  "start": 20.784,
+  "end": 20.807
+ },
+ {
+  "id": "w54",
+  "text": "celle",
+  "start": 20.854,
+  "end": 21.028
+ },
+ {
+  "id": "w55",
+  "text": "qui",
+  "start": 21.051,
+  "end": 21.121
+ },
+ {
+  "id": "w56",
+  "text": "grignote",
+  "start": 21.167,
+  "end": 21.515
+ },
+ {
+  "id": "w57",
+  "text": "le",
+  "start": 21.539,
+  "end": 21.608
+ },
+ {
+  "id": "w58",
+  "text": "soir.",
+  "start": 21.655,
+  "end": 21.968
+ },
+ {
+  "id": "w59",
+  "text": "Le",
+  "start": 22.612,
+  "end": 22.775
+ },
+ {
+  "id": "w60",
+  "text": "reste",
+  "start": 22.833,
+  "end": 23.065
+ },
+ {
+  "id": "w61",
+  "text": "est",
+  "start": 23.088,
+  "end": 23.158
+ },
+ {
+  "id": "w62",
+  "text": "dans",
+  "start": 23.192,
+  "end": 23.355
+ },
+ {
+  "id": "w63",
+  "text": "mon",
+  "start": 23.378,
+  "end": 23.483
+ },
+ {
+  "id": "w64",
+  "text": "guide,",
+  "start": 23.529,
+  "end": 23.831
+ },
+ {
+  "id": "w65",
+  "text": "lien",
+  "start": 23.97,
+  "end": 24.261
+ },
+ {
+  "id": "w66",
+  "text": "en",
+  "start": 24.342,
+  "end": 24.435
+ },
+ {
+  "id": "w67",
+  "text": "bio.",
+  "start": 24.481,
+  "end": 24.725
+ }
+]

@@ -1,0 +1,72 @@
+<!-- Série 2 · vidéo 05 · bloc 1 (compteur) · 3.12–5.70 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    .s2-chiffre {
+      top: 220px;
+      font-size: 250px;
+      line-height: 1;
+      color: var(--terracotta);
+    }
+    .s2-libelle {
+      top: 480px;
+      font-size: 70px;
+    }
+    .s2-sous {
+      top: 580px;
+      font-size: 54px;
+    }    .s2-feuille {
+      position: absolute;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .s2-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+  <div id="root" data-composition-id="s2-05-b1" data-width="1080" data-height="1920">
+    <p id="s2-05-b1-n" class="s2-texte s2-chiffre chiffre">0</p>
+    <p id="s2-05-b1-lib" class="s2-texte s2-libelle titre">minutes</p>
+    <p id="s2-05-b1-sous" class="s2-texte s2-sous titre"><em>pour poser ton point de départ</em></p>
+    <div id="s2-05-b1-f" class="s2-feuille" style="left: calc(50% - 210px); top: 690px; width: 420px"><img src="capture/pages/kit-jour-0-p10.png" alt="Kit de démarrage, jour 0" /></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(["#s2-05-b1-n", "#s2-05-b1-lib"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.15);
+    const n = document.getElementById("s2-05-b1-n");
+    const c = { v: 0 };
+    tl.fromTo(c, { v: 0 }, { v: 15, duration: 0.8, ease: "power2.out", onUpdate: () => (n.textContent = Math.round(c.v)) }, 0.25);
+    tl.fromTo("#s2-05-b1-sous", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.94);
+    tl.fromTo("#s2-05-b1-f", { opacity: 0, y: 200, rotation: 0 }, { opacity: 1, y: 0, rotation: 2, duration: 0.45, ease: "power3.out" }, 1.22);
+    window.__timelines["s2-05-b1"] = tl;
+  </script>
+</template>

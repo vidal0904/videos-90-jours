@@ -1,0 +1,77 @@
+<!-- Série 2 · vidéo 05 · bloc 3 (pastilles) · 16.15–21.62 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    #s2-05-b3-ligne {
+      position: absolute;
+      left: 150px;
+      right: 150px;
+      top: 798px;
+      height: 4px;
+      background: rgba(251, 248, 242, 0.22);
+      transform-origin: left center;
+    }
+    .s2-past {
+      position: absolute;
+      top: 740px;
+      width: 240px;
+      height: 120px;
+      margin-left: -120px;
+      border-radius: 999px;
+      background: var(--creme);
+      color: var(--vert-foret);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 46px;
+    }
+    .s2-pied {
+      top: 950px;
+      font-size: 64px;
+    }
+  </style>
+  <div id="root" data-composition-id="s2-05-b3" data-width="1080" data-height="1920">
+    <p id="s2-05-b3-titre" class="s2-titre titre">Tu y <em>reviens</em></p>
+    <span id="s2-05-b3-ligne"></span>
+    <span id="s2-05-b3-p0" class="s2-past" style="left: 270px">Jour 30</span>
+    <span id="s2-05-b3-p1" class="s2-past" style="left: 540px">Jour 60</span>
+    <span id="s2-05-b3-p2" class="s2-past" style="left: 810px">Jour 90</span>
+    <p id="s2-05-b3-pied" class="s2-texte s2-pied titre"><em>pour voir le chemin parcouru</em></p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s2-05-b3-p0", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 1.19);
+    tl.fromTo("#s2-05-b3-p1", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 1.81);
+    tl.fromTo("#s2-05-b3-p2", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 2.58);
+    tl.fromTo("#s2-05-b3-titre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s2-05-b3-ligne", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, 0.2);
+    tl.fromTo("#s2-05-b3-pied", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.91);
+    window.__timelines["s2-05-b3"] = tl;
+  </script>
+</template>

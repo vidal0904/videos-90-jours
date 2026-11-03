@@ -1,0 +1,76 @@
+<!-- Série 2 · vidéo 07 · fin + boucle · 20.18–29 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }    .s2-feuille {
+      position: absolute;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .s2-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .s2-fin-texte {
+      top: 260px;
+      font-size: 84px;
+    }
+    .s2-accroche {
+      top: 560px;
+      font-size: 92px;
+    }
+    #s2-07-fin-boucle {
+      position: absolute;
+      inset: 0;
+    }
+  </style>
+  <div id="root" data-composition-id="s2-07-fin" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+      <p id="s2-07-fin-t0" class="s2-texte s2-fin-texte titre">Enregistre<br /><em>pour tes soirs sans énergie</em></p>
+      <p id="s2-07-fin-t1" class="s2-texte s2-fin-texte titre">Lien en <em>bio</em></p>
+      <div id="s2-07-fin-f0" class="s2-feuille" style="left: 130px; top: 520px; width: 450px"><img src="capture/pages/index-recettes-p200.png" alt="Index des 70 recettes" /></div>
+      <div id="s2-07-fin-f1" class="s2-feuille" style="left: 500px; top: 600px; width: 450px"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
+    </div>
+    <div id="s2-07-fin-boucle" aria-hidden="true" data-layout-allow-overlap>
+      <p class="s2-texte s2-accroche titre">Pas le temps de cuisiner&#8239;?<br /><em>23 recettes en 15 minutes.</em></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s2-07-fin-t0", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.15);
+    tl.to("#s2-07-fin-t0", { opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }, 5.0);
+    tl.fromTo("#s2-07-fin-t1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 5.25);
+    tl.fromTo("#s2-07-fin-f0", { opacity: 0, y: 200, rotation: 0 }, { opacity: 1, y: 0, rotation: -3, duration: 0.45, ease: "power3.out" }, 3.57);
+    tl.fromTo("#s2-07-fin-f1", { opacity: 0, x: 200, rotation: 0 }, { opacity: 1, x: 0, rotation: 3, duration: 0.45, ease: "power3.out" }, 4.28);
+    tl.to(["#s2-07-fin-t1", "#s2-07-fin-f0", "#s2-07-fin-f1"], { opacity: 0, duration: 0.3, ease: "power2.in" }, 8.07);
+    tl.fromTo("#s2-07-fin-boucle", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 8.27);
+    window.__timelines["s2-07-fin"] = tl;
+  </script>
+</template>

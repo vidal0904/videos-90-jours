@@ -1,0 +1,814 @@
+"""Série 2 — génère les 10 vidéos de SCRIPTS-SERIE-2.md à partir de blocs.
+
+    python3 -I scripts/serie2.py [01 02 …]     # toutes par défaut
+
+Chaque vidéo = un fond, une musique, une accroche (image 0), une suite de blocs et une fin
+(« Lien en bio » + vraies pages, puis retour à l'image 0 pour une boucle sans couture).
+Chaque bloc et chaque élément est calé sur un mot de la voix : `m` = indice du mot dans
+assets/voice/s2-XX.words.json (instant vidéo = début du mot + DECALAGE).
+Écrit compositions/s2-XX-*.html et videos/s2-XX.html (racine à copier dans index.html).
+"""
+import json
+import pathlib
+import sys
+
+DECALAGE = 0.6  # la voix démarre 0,6 s après l'image 0 (l'accroche se lit d'abord)
+P = "capture/pages/"
+COUV = ("couverture.png", "Couverture du guide 90 jours")
+
+# --------------------------------------------------------------------------------------
+# Les 10 vidéos (contenu : SCRIPTS-SERIE-2.md ; chiffres : BRIEF-EBOOK.md §2)
+# --------------------------------------------------------------------------------------
+VIDEOS = {
+    "01": dict(titre="Faim ou envie ? Le test des 5 secondes", fond="vert", musique="nappe", mention=True, duree=28,
+               accroche="Faim… ou juste envie&#8239;?<br /><em>Fais ce test.</em>",
+               blocs=[
+                   dict(type="colonnes", m=3, gauche="Faim", droite="Envie", items=[
+                       ("droite", "arrive d'un coup", 8), ("droite", "un aliment précis", 16),
+                       ("droite", "→ souvent émotionnelle", 22),
+                       ("gauche", "monte doucement", 30), ("gauche", "plein d'aliments te vont", 33)]),
+                   dict(type="cartes", m=38, titre="Dans le <em>doute</em>", items=[
+                       ("1", "Un verre d'eau", None, 42), ("2", "Attends 10 minutes", None, 44),
+                       ("3", "Quelques pas", None, 46), ("4", "Réévalue ta faim", None, 49)]),
+               ],
+               fin=dict(m=51, textes=[("Envoie ça à celle<br /><em>qui grignote le soir</em>", 51)],
+                        pages=[("chapitre-10-sucre-p70.png", "Chapitre 10, gérer les envies de sucre", 59), COUV + (61,)], lien=65)),
+    "02": dict(titre="La règle des 24 h", fond="vert", musique="nappe", mention=True, duree=26,
+               accroche="Un écart, ok.<br /><em>Deux jours de suite&#8239;?</em>",
+               blocs=[
+                   dict(type="chaine", m=4, piege=9, regle=13, titre_regle="Jamais <em>2 jours</em> de suite"),
+                   dict(type="phrases", m=28, items=[("Au repas <em>suivant.</em>", 30), ("Pas lundi.<br /><em>Pas le mois prochain.</em>", 33),
+                                                       ("Au repas <em>suivant.</em>", 39)]),
+               ],
+               fin=dict(m=42, textes=[("Enregistre<br /><em>cette règle</em>", 42)],
+                        pages=[("outil-01-calendrier-p295.png", "Calendrier des 90 jours", 44), COUV + (55,)], lien=61)),
+    "03": dict(titre="80/20 sans s'interdire le chocolat", fond="vert", musique="nappe", mention=True, duree=26,
+               accroche="Tu n'as pas besoin<br />de <em>supprimer le chocolat.</em>",
+               blocs=[
+                   dict(type="barre", m=8, titre="La règle <em>80/20</em>", t_titre=9, gauche=("80&#8239;%", "aliments nutritifs", 11),
+                        droite=("20&#8239;%", "flexibilité", 14), pied=("sans culpabilité", 17)),
+                   dict(type="grille", m=19, n=21, cols=7, taille=96, titre="Une <em>semaine</em>", t_titre=19,
+                        accents=[5, 9, 20], t_accents=23, legende=("prévus et assumés", 26)),
+                   dict(type="grille", m=29, n=100, cols=10, taille=52, titre="1 repas sur <em>100</em>", t_titre=31,
+                        accents=[57], t_accents=31, grand=("1&#8239;%", 36)),
+               ],
+               fin=dict(m=37, textes=[("Envoie ça à ton amie<br /><em>qui s'interdit tout</em>", 37)],
+                        pages=[COUV + (40,)], lien=52)),
+    "04": dict(titre="3 questions avant tes courses", fond="vert", musique="nappe", mention=True, duree=25,
+               accroche="Avant le supermarché,<br /><em>pose-toi ces 3 questions.</em>",
+               blocs=[
+                   dict(type="cartes", m=6, titre="Avant les <em>courses</em>", items=[
+                       ("1", "J'ai ma liste&#8239;?", None, 6), ("2", "J'ai faim&#8239;?", "Si oui, mange d'abord.", 12),
+                       ("3", "Était-ce sur ma liste&#8239;?", "Devant chaque produit.", 21)]),
+                   dict(type="page", m=37, src="courses-s1-p95.png", alt="Liste de courses de la semaine 1",
+                        titre="12 listes <em>déjà calculées</em>", t_titre=41, zoom=(47, "35%", "30%", 1.25)),
+               ],
+               fin=dict(m=50, textes=[("Enregistre<br /><em>pour tes prochaines courses</em>", 50)],
+                        pages=[COUV + (51,)], lien=55)),
+    "05": dict(titre="Le kit du Jour 0", fond="vert", musique="nappe", mention=False, duree=27,
+               accroche="Avant le jour 1,<br /><em>il y a le jour 0.</em>",
+               blocs=[
+                   dict(type="compteur", m=8, n=15, libelle="minutes", sous=("pour poser ton point de départ", 11),
+                        page=("kit-jour-0-p10.png", "Kit de démarrage, jour 0", 12)),
+                   dict(type="cartes", m=16, titre="Ton <em>jour 0</em>", compact=True, items=[
+                       (None, "Pourquoi tu commences", None, 16), (None, "Tes repères personnels", None, 19),
+                       (None, "Des mesures, si tu le souhaites", None, 22), (None, "Tes 3 premières habitudes", None, 29),
+                       (None, "Un engagement envers toi", None, 32)]),
+                   dict(type="pastilles", m=37, titre="Tu y <em>reviens</em>", items=[("Jour 30", 42), ("Jour 60", 43), ("Jour 90", 45)],
+                        pied=("pour voir le chemin parcouru", 47)),
+               ],
+               fin=dict(m=51, textes=[("Ton kit du <em>jour 0</em>", 51)],
+                        pages=[("kit-jour-0-p10.png", "Kit de démarrage, jour 0", 52), COUV + (55,)], lien=59)),
+    "06": dict(titre="Une case vide n'est pas un échec", fond="creme", musique="piano", mention=False, duree=26,
+               accroche="Tu as raté un jour&#8239;?<br /><em>Lis ça.</em>",
+               blocs=[
+                   dict(type="phrases", m=5, items=[("Une case vide<br />n'est pas un échec.", 5), ("C'est une <em>information.</em>", 12)]),
+                   dict(type="tracker", m=15, n=14, vide=9, reprise=10, t_debut=15, t_fin=18, t_reprise=31,
+                        questions=("Fatigue&#8239;? Imprévu&#8239;? Journée chargée&#8239;?", 19), pied=("Tu notes, tu ajustes, tu reprends.", 24)),
+                   dict(type="phrases", m=34, items=[("Une journée non cochée<br /><em>n'efface rien.</em>", 34),
+                                                       ("Les progrès lents<br /><em>restent des progrès.</em>", 40)]),
+               ],
+               fin=dict(m=46, textes=[("Envoie ça à quelqu'un<br /><em>qui en a besoin</em>", 46)],
+                        pages=[("outil-04-tracker-m1-p298.png", "Tracker d'habitudes, mois 1", 55), COUV + (56,)], lien=59)),
+    "07": dict(titre="23 recettes en 15 minutes", fond="vert", musique="nappe", mention=True, duree=29,
+               accroche="Pas le temps de cuisiner&#8239;?<br /><em>23 recettes en 15 minutes.</em>",
+               blocs=[
+                   dict(type="compteur", m=5, n=23, t_n=8, libelle="recettes express", sous=("≈ 15 minutes", 13)),
+                   dict(type="cartes", m=18, titre=None, compact=True, items=[
+                       ("Matin", "Omelette tomate & fines herbes", None, 18), ("Matin", "Yaourt grec & fruits rouges", None, 24),
+                       ("Midi", "Salade de thon au citron", None, 31), ("Midi", "Wrap au thon & crudités", None, 37),
+                       ("Soir", "Crevettes sautées & riz complet", None, 45)]),
+               ],
+               fin=dict(m=50, textes=[("Enregistre<br /><em>pour tes soirs sans énergie</em>", 50)],
+                        pages=[("index-recettes-p200.png", "Index des 70 recettes", 58), COUV + (60,)], lien=64)),
+    "08": dict(titre="4 phrases quand tu doutes", fond="creme", musique="piano", mention=False, duree=23,
+               accroche="Garde ces 4 phrases<br /><em>pour les jours difficiles.</em>",
+               blocs=[
+                   dict(type="phrases", m=7, carte=True, items=[
+                       ("Un écart n'efface pas<br /><em>mes progrès.</em>", 7), ("Je choisis la régularité<br /><em>plutôt que la perfection.</em>", 13),
+                       ("Je progresse<br /><em>à mon rythme.</em>", 21), ("Ma valeur ne dépend pas<br /><em>d'un chiffre.</em>", 26)]),
+               ],
+               fin=dict(m=34, textes=[("Enregistre-les<br /><em>ou envoie-les</em>", 34), ("24 affirmations<br /><em>+ 100 phrases</em>", 46)],
+                        pages=[("outil-10-affirmations-p310.png", "24 affirmations positives", 42), COUV + (47,)], lien=54)),
+    "09": dict(titre="Et après le jour 90 ?", fond="vert", musique="nappe", mention=False, duree=24,
+               accroche="Le plus important,<br /><em>c'est après le jour 90.</em>",
+               blocs=[
+                   dict(type="pastilles", m=12, titre="Un <em>bilan</em>", items=[("Jour 30", 21), ("Jour 60", 22), ("Jour 90", 24)]),
+                   dict(type="cartes", m=25, titre="Une partie pour <em>durer</em>", items=[
+                       (None, "L'effet yoyo", None, 31), (None, "Les écarts sans culpabilité", None, 33), (None, "La motivation", None, 37)]),
+                   dict(type="phrases", m=39, items=[("Un plan pour les<br /><em>mois 4 à 12</em>", 39)]),
+               ],
+               fin=dict(m=46, textes=[("Les 3 habitudes<br /><em>que tu gardes</em>", 46)],
+                        pages=[("outil-certificat-p315.png", "Certificat de parcours", 48), COUV + (52,)], lien=56)),
+    "10": dict(titre="Défi : 7 jours, 7 missions", fond="vert", musique="nappe", mention=True, duree=29,
+               accroche="7 missions simples<br /><em>pour reprendre de l'élan.</em>",
+               blocs=[
+                   dict(type="cartes", m=6, titre="Défi <em>7 jours</em>", note="Adapte chaque mission à ta condition physique.",
+                        compact=True, coche=True, items=[
+                            ("1", "Bois suffisamment d'eau", None, 6), ("2", "Marche au moins 20 minutes", None, 10),
+                            ("3", "Un légume à chaque repas", None, 16), ("4", "Une journée sans boisson sucrée", None, 22),
+                            ("5", "Couche-toi pour une vraie nuit", None, 28), ("6", "Un repas maison", None, 34),
+                            ("7", "5 raisons de prendre soin de toi", None, 38)]),
+               ],
+               fin=dict(m=46, textes=[("Enregistre<br /><em>et commence demain</em>", 46)],
+                        pages=[("outil-07-defi-30-jours-p305.png", "Défi motivation 30 jours", 50), COUV + (53,)], lien=57)),
+}
+
+# --------------------------------------------------------------------------------------
+# Rendu
+# --------------------------------------------------------------------------------------
+THEMES = {
+    "vert": dict(texte="var(--creme)", em="var(--dore)", carte="rgba(251, 248, 242, 0.08)", bord="rgba(251, 248, 242, 0.22)",
+                 carte_texte="var(--creme)", detail="var(--dore)", pastille="var(--creme)", pastille_texte="var(--vert-foret)",
+                 fond="compositions/components/fond-vert.html", fond_id="fond-vert"),
+    "creme": dict(texte="var(--encre)", em="var(--vert-foret-2)", carte="var(--sauge-claire)", bord="rgba(30, 59, 44, 0.12)",
+                  carte_texte="var(--encre)", detail="var(--vert-foret-2)", pastille="var(--vert-foret)", pastille_texte="var(--creme)",
+                  fond="compositions/components/fond-creme.html", fond_id="fond-creme"),
+}
+
+
+def scene(nom, commentaire, css, html, js):
+    return f'''<!-- {commentaire}
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {{
+      position: absolute;
+      inset: 0;
+    }}
+{css}
+  </style>
+  <div id="root" data-composition-id="{nom}" data-width="1080" data-height="1920">
+{html}
+  </div>
+  <script>
+    const tl = gsap.timeline({{ paused: true }});
+{js}
+    window.__timelines["{nom}"] = tl;
+  </script>
+</template>
+'''
+
+
+def css_commun(th):
+    return f'''    .s2-titre {{
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: {th["texte"]};
+    }}
+    .s2-titre em, .s2-texte em {{
+      color: {th["em"]};
+    }}
+    .s2-texte {{
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: {th["texte"]};
+    }}'''
+
+
+ENTREE = '{ opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }'
+
+
+def rendu_accroche(nom, v, th, fin_t, replique=False):
+    css = css_commun(th) + '''
+    .s2-accroche {
+      top: 560px;
+      font-size: 92px;
+    }'''
+    html = f'    <p id="{nom}-acc" class="s2-texte s2-accroche titre">{v["accroche"]}</p>'
+    js = f'    tl.to("#{nom}-acc", {{ opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }}, {fin_t - 0.35:.2f});'
+    return css, html, js
+
+
+def html_feuille(id_, src, alt, extra_style):
+    return (f'<div id="{id_}" class="s2-feuille" style="{extra_style}"><img src="{P}{src}" alt="{alt}" /></div>')
+
+
+CSS_FEUILLE = '''    .s2-feuille {
+      position: absolute;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .s2-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }'''
+
+
+def rendu_bloc(nom, b, th, t0, T):
+    """t0 : début absolu du bloc ; T(m) : instant absolu du mot m. Retourne css, html, js (instants locaux)."""
+    L = lambda m, d=0.0: round(T(m) - t0 + d, 2)
+    css, html, js = css_commun(th), [], []
+    typ = b["type"]
+    if typ == "cartes":
+        compact = b.get("compact")
+        h, gap, fs = (112, 14, 44) if compact else (150, 24, 50)
+        if len(b["items"]) >= 7:  # liste longue : doit finir au-dessus des sous-titres
+            h, gap, fs = 98, 10, 40
+        top = 430 if b.get("titre") else 300
+        if b.get("note"):
+            top += 40
+        css += f'''
+    .s2-carte {{
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      height: {h}px;
+      padding: 0 34px;
+      border-radius: 26px;
+      background: {th["carte"]};
+      border: 2px solid {th["bord"]};
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }}
+    .s2-num {{
+      flex: none;
+      min-width: {int(h * 0.6)}px;
+      height: {int(h * 0.6)}px;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: {th["pastille"]};
+      color: {th["pastille_texte"]};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: {int(fs * 0.7)}px;
+    }}
+    .s2-carte-texte {{
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: {fs}px;
+      line-height: 1.12;
+      color: {th["carte_texte"]};
+    }}
+    .s2-carte-detail {{
+      display: block;
+      margin-top: 6px;
+      font-size: 36px;
+      color: {th["detail"]};
+    }}
+    .s2-case {{
+      flex: none;
+      width: {int(h * 0.5)}px;
+      height: {int(h * 0.5)}px;
+      border-radius: 12px;
+      border: 4px solid {th["carte_texte"]};
+      opacity: 0.7;
+      position: relative;
+    }}
+    .s2-case svg {{
+      position: absolute;
+      inset: -4px;
+      width: calc(100% + 8px);
+      height: calc(100% + 8px);
+      fill: none;
+      stroke: var(--terracotta);
+      stroke-width: 3.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }}
+    .s2-note {{
+      top: 345px;
+      font-family: var(--font-texte);
+      font-weight: 500;
+      font-size: 32px;
+      opacity: 0.8;
+    }}'''
+        if b.get("titre"):
+            html.append(f'    <p id="{nom}-titre" class="s2-titre titre">{b["titre"]}</p>')
+            js.append(f'    tl.fromTo("#{nom}-titre", {ENTREE}, 0.05);')
+        if b.get("note"):
+            html.append(f'    <p id="{nom}-note" class="s2-texte s2-note">{b["note"]}</p>')
+            js.append(f'    tl.fromTo("#{nom}-note", {{ opacity: 0 }}, {{ opacity: 0.8, duration: 0.4 }}, 0.3);')
+        for i, (num, texte, detail, m) in enumerate(b["items"]):
+            y = top + i * (h + gap)
+            tete = ""
+            if b.get("coche"):
+                tete = f'<span class="s2-case"><svg viewBox="0 0 24 24"><path id="{nom}-coche-{i}" d="M5 12.5l4.5 4.5 9.5-10" /></svg></span>'
+            if num:
+                tete += f'<span class="s2-num">{num}</span>'
+            det = f'<span id="{nom}-det-{i}" class="s2-carte-detail">{detail}</span>' if detail else ""
+            html.append(f'    <div id="{nom}-c{i}" class="s2-carte" style="top: {y}px">{tete}<p class="s2-carte-texte">{texte}{det}</p></div>')
+            t = max(0.1, L(m, -0.15))
+            js.append(f'    tl.fromTo("#{nom}-c{i}", {{ opacity: 0, x: 60 }}, {{ opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }}, {t});')
+            if b.get("coche"):
+                js.append(f'    tl.fromTo("#{nom}-coche-{i}", {{ strokeDasharray: 30, strokeDashoffset: 30 }}, {{ strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }}, {t + 0.55:.2f});')
+    elif typ == "colonnes":
+        css += f'''
+    .s2-col-titre em {{
+      color: {th["em"]};
+    }}
+    .s2-col-titre {{
+      position: absolute;
+      top: 250px;
+      width: 440px;
+      text-align: center;
+      font-size: 96px;
+      color: {th["texte"]};
+    }}
+    .s2-col-item {{
+      position: absolute;
+      width: 440px;
+      padding: 22px 18px;
+      border-radius: 24px;
+      background: {th["carte"]};
+      border: 2px solid {th["bord"]};
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 1.15;
+      color: {th["carte_texte"]};
+    }}
+    #{nom}-sep {{
+      position: absolute;
+      left: 539px;
+      top: 260px;
+      width: 2px;
+      height: 960px;
+      background: {th["bord"]};
+    }}'''
+        html.append(f'    <span id="{nom}-sep"></span>')
+        html.append(f'    <p id="{nom}-tg" class="s2-col-titre titre" style="left: 80px">{b["gauche"]}</p>')
+        html.append(f'    <p id="{nom}-td" class="s2-col-titre titre" style="left: 560px"><em>{b["droite"]}</em></p>')
+        js.append(f'    tl.fromTo(["#{nom}-tg", "#{nom}-td"], {ENTREE}, 0.05);')
+        js.append(f'    tl.fromTo("#{nom}-sep", {{ scaleY: 0 }}, {{ scaleY: 1, duration: 0.4, ease: "power2.out" }}, 0.1);')
+        rang = {"gauche": 0, "droite": 0}
+        for i, (col, texte, m) in enumerate(b["items"]):
+            x = 80 if col == "gauche" else 560
+            y = 440 + rang[col] * 190
+            rang[col] += 1
+            html.append(f'    <p id="{nom}-i{i}" class="s2-col-item" style="left: {x}px; top: {y}px">{texte}</p>')
+            js.append(f'    tl.fromTo("#{nom}-i{i}", {ENTREE}, {max(0.1, L(m, -0.1))});')
+    elif typ == "phrases":
+        carte = b.get("carte")
+        css += f'''
+    .s2-phrase {{
+      top: 660px;
+      font-size: {84 if not carte else 76}px;
+      line-height: 1.2;
+    }}''' + (f'''
+    .s2-phrase {{
+      left: 100px;
+      right: 100px;
+      padding: 60px 50px;
+      border-radius: 36px;
+      background: {th["carte"]};
+    }}''' if carte else "")
+        items = b["items"]
+        for i, (texte, m) in enumerate(items):
+            html.append(f'    <p id="{nom}-p{i}" class="s2-texte s2-phrase titre">{texte}</p>')
+            t = max(0.05, L(m, -0.1))
+            js.append(f'    tl.fromTo("#{nom}-p{i}", {{ opacity: 0, y: 20 }}, {{ opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }}, {t});')
+            if i < len(items) - 1:
+                js.append(f'    tl.to("#{nom}-p{i}", {{ opacity: 0, duration: 0.3, ease: "sine.in" }}, {max(t + 0.6, L(items[i + 1][1], -0.45))});')
+        html.insert(0, '    <div data-layout-allow-overlap>')
+        html.append('    </div>')
+    elif typ == "page":
+        css += CSS_FEUILLE + f'''
+    #{nom}-cam {{
+      position: absolute;
+      inset: 0;
+      transform-origin: {b["zoom"][1] if b.get("zoom") else "50%"} {b["zoom"][2] if b.get("zoom") else "45%"};
+    }}'''
+        html.append(f'    <p id="{nom}-titre" class="s2-titre titre">{b["titre"]}</p>')
+        html.append(f'    <div id="{nom}-cam" data-layout-allow-overflow>{html_feuille(nom + "-f", b["src"], b["alt"], "left: calc(50% - 250px); top: 470px; width: 500px")}</div>')
+        js.append(f'    tl.fromTo("#{nom}-f", {{ opacity: 0, y: 200, rotation: 0 }}, {{ opacity: 1, y: 0, rotation: -2, duration: 0.45, ease: "power3.out" }}, 0.05);')
+        js.append(f'    tl.fromTo("#{nom}-titre", {ENTREE}, {max(0.1, L(b["t_titre"], -0.1))});')
+        if b.get("zoom"):
+            m, _, _, s = b["zoom"]
+            js.append(f'    tl.fromTo("#{nom}-cam", {{ scale: 1 }}, {{ scale: {s}, duration: 0.7, ease: "power3.inOut" }}, {L(m, -0.2)});')
+    elif typ == "compteur":
+        css += f'''
+    .s2-chiffre {{
+      top: 220px;
+      font-size: 250px;
+      line-height: 1;
+      color: var(--terracotta);
+    }}
+    .s2-libelle {{
+      top: 480px;
+      font-size: 70px;
+    }}
+    .s2-sous {{
+      top: 580px;
+      font-size: 54px;
+    }}''' + (CSS_FEUILLE if b.get("page") else "")
+        html.append(f'    <p id="{nom}-n" class="s2-texte s2-chiffre chiffre">0</p>')
+        html.append(f'    <p id="{nom}-lib" class="s2-texte s2-libelle titre">{b["libelle"]}</p>')
+        t_n = L(b.get("t_n", b["m"]))
+        js.append(f'    tl.fromTo(["#{nom}-n", "#{nom}-lib"], {ENTREE}, {max(0.05, t_n - 0.1)});')
+        js.append(f'''    const n = document.getElementById("{nom}-n");
+    const c = {{ v: 0 }};
+    tl.fromTo(c, {{ v: 0 }}, {{ v: {b["n"]}, duration: 0.8, ease: "power2.out", onUpdate: () => (n.textContent = Math.round(c.v)) }}, {max(0.05, t_n)});''')
+        if b.get("sous"):
+            html.append(f'    <p id="{nom}-sous" class="s2-texte s2-sous titre"><em>{b["sous"][0]}</em></p>')
+            js.append(f'    tl.fromTo("#{nom}-sous", {ENTREE}, {L(b["sous"][1], -0.1)});')
+        if b.get("page"):
+            src, alt, m = b["page"]
+            html.append("    " + html_feuille(nom + "-f", src, alt, "left: calc(50% - 210px); top: 690px; width: 420px"))
+            js.append(f'    tl.fromTo("#{nom}-f", {{ opacity: 0, y: 200, rotation: 0 }}, {{ opacity: 1, y: 0, rotation: 2, duration: 0.45, ease: "power3.out" }}, {L(m, -0.1)});')
+    elif typ == "barre":
+        css += f'''
+    #{nom}-barre {{
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 640px;
+      height: 150px;
+      border-radius: 32px;
+      overflow: hidden;
+      background: {th["carte"]};
+    }}
+    .s2-seg {{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-titre);
+      font-weight: 600;
+      font-size: 60px;
+      color: var(--creme);
+      transform-origin: left center;
+    }}
+    .s2-seg-legende {{
+      position: absolute;
+      top: 820px;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 42px;
+      color: {th["texte"]};
+    }}
+    .s2-pied {{
+      top: 1000px;
+      font-size: 72px;
+    }}'''
+        html.append(f'    <p id="{nom}-titre" class="s2-titre titre">{b["titre"]}</p>')
+        html.append(f'''    <div id="{nom}-barre"><span id="{nom}-g" class="s2-seg" style="left: 0; width: 80%; background: var(--sauge); color: var(--vert-foret)">{b["gauche"][0]}</span><span id="{nom}-d" class="s2-seg" style="left: 80%; width: 20%; background: var(--terracotta)">{b["droite"][0]}</span></div>''')
+        html.append(f'    <p id="{nom}-lg" class="s2-seg-legende" style="left: 80px">{b["gauche"][1]}</p>')
+        html.append(f'    <p id="{nom}-ld" class="s2-seg-legende" style="right: 80px">{b["droite"][1]}</p>')
+        html.append(f'    <p id="{nom}-pied" class="s2-texte s2-pied titre"><em>{b["pied"][0]}</em></p>')
+        js.append(f'    tl.fromTo("#{nom}-titre", {ENTREE}, {max(0.05, L(b["t_titre"], -0.1))});')
+        js.append(f'    tl.fromTo(["#{nom}-g", "#{nom}-lg"], {{ opacity: 0, scaleX: 0 }}, {{ opacity: 1, scaleX: 1, duration: 0.6, ease: "power2.out" }}, {L(b["gauche"][2], -0.1)});')
+        js.append(f'    tl.fromTo(["#{nom}-d", "#{nom}-ld"], {{ opacity: 0, scaleX: 0 }}, {{ opacity: 1, scaleX: 1, duration: 0.5, ease: "power2.out" }}, {L(b["droite"][2], -0.1)});')
+        js.append(f'    tl.fromTo("#{nom}-pied", {ENTREE}, {L(b["pied"][1], -0.1)});')
+    elif typ == "grille":
+        n, cols, taille = b["n"], b["cols"], b["taille"]
+        gap = 8 if taille < 80 else 14
+        largeur = cols * taille + (cols - 1) * gap
+        lignes = -(-n // cols)
+        haut = 640 if b.get("grand") else 560
+        css += f'''
+    #{nom}-g {{
+      position: absolute;
+      left: calc(50% - {largeur // 2}px);
+      top: {haut}px;
+      width: {largeur}px;
+      display: grid;
+      grid-template-columns: repeat({cols}, {taille}px);
+      grid-auto-rows: {taille}px;
+      gap: {gap}px;
+    }}
+    .s2-cel {{
+      border-radius: {max(6, taille // 7)}px;
+      background: var(--sauge);
+    }}
+    .s2-grand {{
+      top: 420px;
+      font-size: 170px;
+      line-height: 1;
+      color: var(--terracotta);
+    }}
+    .s2-legende {{
+      top: {haut + lignes * (taille + gap) + 40}px;
+      font-size: 64px;
+    }}'''
+        html.append(f'    <p id="{nom}-titre" class="s2-titre titre">{b["titre"]}</p>')
+        cel = "".join(f'<span id="{nom}-c{i}" class="s2-cel"></span>' for i in range(n))
+        html.append(f'    <div id="{nom}-g">{cel}</div>')
+        js.append(f'    tl.fromTo("#{nom}-titre", {ENTREE}, {max(0.05, L(b["t_titre"], -0.1))});')
+        js.append(f'    tl.fromTo("#{nom}-g .s2-cel", {{ opacity: 0, scale: 0.4 }}, {{ opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)", stagger: {round(0.8 / n, 4)} }}, 0.15);')
+        for i in b["accents"]:
+            js.append(f'    tl.fromTo("#{nom}-c{i}", {{ backgroundColor: "#8FA68A" }}, {{ backgroundColor: "#C2643F", duration: 0.25, ease: "none", immediateRender: false }}, {L(b["t_accents"])});')
+            js.append(f'    tl.fromTo("#{nom}-c{i}", {{ scale: 1 }}, {{ scale: 1.25, duration: 0.18, yoyo: true, repeat: 1, ease: "power2.out", immediateRender: false }}, {L(b["t_accents"])});')
+        if b.get("legende"):
+            html.append(f'    <p id="{nom}-leg" class="s2-texte s2-legende titre"><em>{b["legende"][0]}</em></p>')
+            js.append(f'    tl.fromTo("#{nom}-leg", {ENTREE}, {L(b["legende"][1], -0.1)});')
+        if b.get("grand"):
+            html.append(f'    <p id="{nom}-grand" class="s2-texte s2-grand chiffre">{b["grand"][0]}</p>')
+            js.append(f'    tl.fromTo("#{nom}-grand", {ENTREE}, {L(b["grand"][1], -0.1)});')
+    elif typ == "tracker":
+        n = b["n"]
+        css += f'''
+    #{nom}-g {{
+      position: absolute;
+      left: calc(50% - 455px);
+      top: 640px;
+      width: 910px;
+      display: grid;
+      grid-template-columns: repeat(7, 118px);
+      grid-auto-rows: 118px;
+      gap: 14px;
+    }}
+    .s2-cel {{
+      position: relative;
+      border-radius: 18px;
+      border: 4px solid {th["bord"]};
+      background: {th["carte"]};
+    }}
+    .s2-cel svg {{
+      position: absolute;
+      inset: 14px;
+      fill: none;
+      stroke: var(--vert-foret);
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }}
+    .s2-q {{
+      top: 300px;
+      font-size: 64px;
+    }}
+    .s2-pied {{
+      top: 1000px;
+      font-size: 60px;
+    }}'''
+        cel = "".join(f'<span id="{nom}-c{i}" class="s2-cel"><svg viewBox="0 0 24 24"><path id="{nom}-k{i}" d="M5 12.5l4.5 4.5 9.5-10" /></svg></span>' for i in range(n))
+        html.append(f'    <p id="{nom}-q" class="s2-texte s2-q titre"><em>{b["questions"][0]}</em></p>')
+        html.append(f'    <div id="{nom}-g">{cel}</div>')
+        html.append(f'    <p id="{nom}-pied" class="s2-texte s2-pied titre">{b["pied"][0]}</p>')
+        js.append(f'    tl.fromTo("#{nom}-g", {{ opacity: 0, y: 30 }}, {{ opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }}, 0.05);')
+        coches = [i for i in range(b["vide"])]
+        a, z = L(b["t_debut"]), L(b["t_fin"])
+        for k, i in enumerate(coches):
+            t = round(a + (z - a) * k / max(1, len(coches) - 1), 2)
+            js.append(f'    tl.fromTo("#{nom}-k{i}", {{ strokeDasharray: 30, strokeDashoffset: 30 }}, {{ strokeDashoffset: 0, duration: 0.2, ease: "power2.out" }}, {t});')
+        js.append(f'    tl.fromTo("#{nom}-c{b["vide"]}", {{ borderColor: "rgba(30, 59, 44, 0.12)" }}, {{ borderColor: "#C2643F", duration: 0.3, ease: "none", immediateRender: false }}, {round(z + 0.3, 2)});')
+        for i in range(b["vide"], n):
+            js.append(f'    tl.set("#{nom}-k{i}", {{ strokeDasharray: 30, strokeDashoffset: 30 }}, 0);')
+        js.append(f'    tl.fromTo("#{nom}-k{b["reprise"]}", {{ strokeDasharray: 30, strokeDashoffset: 30 }}, {{ strokeDashoffset: 0, duration: 0.3, ease: "power2.out", immediateRender: false }}, {L(b["t_reprise"])});')
+        js.append(f'    tl.fromTo("#{nom}-q", {ENTREE}, {L(b["questions"][1], -0.1)});')
+        js.append(f'    tl.fromTo("#{nom}-pied", {ENTREE}, {L(b["pied"][1], -0.1)});')
+    elif typ == "chaine":
+        jours = "L M M J V S D".split()
+        css += f'''
+    #{nom}-r {{
+      position: absolute;
+      left: calc(50% - 455px);
+      top: 700px;
+      width: 910px;
+      display: grid;
+      grid-template-columns: repeat(7, 118px);
+      gap: 14px;
+    }}
+    .s2-j {{
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 36px;
+      color: {th["texte"]};
+      opacity: 0.8;
+    }}
+    .s2-cel {{
+      position: relative;
+      height: 118px;
+      border-radius: 18px;
+      border: 4px solid {th["bord"]};
+      background: {th["carte"]};
+    }}
+    .s2-cel svg {{
+      position: absolute;
+      inset: 14px;
+      fill: none;
+      stroke: var(--sauge);
+      stroke-width: 3.4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }}
+    .s2-cel b {{
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-titre);
+      font-size: 64px;
+      color: var(--terracotta);
+    }}'''
+        tete = "".join(f'<span class="s2-j">{j}</span>' for j in jours)
+        cel = "".join(f'<span id="{nom}-c{i}" class="s2-cel"><svg viewBox="0 0 24 24"><path id="{nom}-k{i}" d="M5 12.5l4.5 4.5 9.5-10" /></svg>{"<b id=" + chr(34) + nom + "-q" + chr(34) + ">?</b>" if i == 2 else ""}</span>' for i in range(7))
+        html.append(f'    <p id="{nom}-titre" class="s2-titre titre">{b["titre_regle"]}</p>')
+        html.append(f'    <div id="{nom}-r">{tete}{cel}</div>')
+        js.append(f'    tl.fromTo("#{nom}-r", {{ opacity: 0, y: 30 }}, {{ opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }}, 0.05);')
+        js.append(f'    tl.fromTo("#{nom}-k0", {{ strokeDasharray: 30, strokeDashoffset: 30 }}, {{ strokeDashoffset: 0, duration: 0.25 }}, 0.4);')
+        js.append(f'    tl.set("#{nom}-k1", {{ opacity: 0 }}, 0);  // le jour de l\'écart n\'est pas coché')
+        js.append(f'    tl.fromTo("#{nom}-c1", {{ borderColor: "rgba(251, 248, 242, 0.22)", backgroundColor: "rgba(251, 248, 242, 0.08)" }}, {{ borderColor: "#C2643F", backgroundColor: "rgba(194, 100, 63, 0.35)", duration: 0.3 }}, 0.6);')
+        js.append(f'    tl.fromTo("#{nom}-q", {{ opacity: 0, scale: 0.5 }}, {{ opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }}, {L(b["piege"], -0.1)});')
+        js.append(f'    tl.fromTo("#{nom}-c2", {{ borderColor: "rgba(251, 248, 242, 0.22)" }}, {{ borderColor: "#C2643F", duration: 0.2, yoyo: true, repeat: 3, immediateRender: false }}, {L(b["piege"])});')
+        js.append(f'    tl.to("#{nom}-q", {{ opacity: 0, duration: 0.2 }}, {L(b["regle"], -0.1)});')
+        for k, i in enumerate(range(2, 7)):
+            js.append(f'    tl.fromTo("#{nom}-k{i}", {{ strokeDasharray: 30, strokeDashoffset: 30 }}, {{ strokeDashoffset: 0, duration: 0.25 }}, {L(b["regle"], 0.1 + k * 0.25):.2f});')
+        js.append(f'    tl.fromTo("#{nom}-titre", {ENTREE}, {L(b["regle"], -0.1)});')
+    elif typ == "pastilles":
+        css += f'''
+    #{nom}-ligne {{
+      position: absolute;
+      left: 150px;
+      right: 150px;
+      top: 798px;
+      height: 4px;
+      background: {th["bord"]};
+      transform-origin: left center;
+    }}
+    .s2-past {{
+      position: absolute;
+      top: 740px;
+      width: 240px;
+      height: 120px;
+      margin-left: -120px;
+      border-radius: 999px;
+      background: {th["pastille"]};
+      color: {th["pastille_texte"]};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 46px;
+    }}
+    .s2-pied {{
+      top: 950px;
+      font-size: 64px;
+    }}'''
+        html.append(f'    <p id="{nom}-titre" class="s2-titre titre">{b["titre"]}</p>')
+        html.append(f'    <span id="{nom}-ligne"></span>')
+        k = len(b["items"])
+        for i, (texte, m) in enumerate(b["items"]):
+            x = 150 + 120 + i * (780 - 240) / max(1, k - 1)
+            html.append(f'    <span id="{nom}-p{i}" class="s2-past" style="left: {x:.0f}px">{texte}</span>')
+            js.append(f'    tl.fromTo("#{nom}-p{i}", {{ opacity: 0, scale: 0.6 }}, {{ opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }}, {max(0.1, L(m, -0.1))});')
+        js.append(f'    tl.fromTo("#{nom}-titre", {ENTREE}, 0.05);')
+        js.append(f'    tl.fromTo("#{nom}-ligne", {{ scaleX: 0 }}, {{ scaleX: 1, duration: 0.6, ease: "power2.out" }}, 0.2);')
+        if b.get("pied"):
+            html.append(f'    <p id="{nom}-pied" class="s2-texte s2-pied titre"><em>{b["pied"][0]}</em></p>')
+            js.append(f'    tl.fromTo("#{nom}-pied", {ENTREE}, {L(b["pied"][1], -0.1)});')
+    else:
+        raise SystemExit(f"bloc inconnu : {typ}")
+    return css, "\n".join(html), "\n".join(js)
+
+
+def rendu_fin(nom, v, f, th, t0, T, duree):
+    L = lambda m, d=0.0: round(T(m) - t0 + d, 2)
+    css = css_commun(th) + CSS_FEUILLE + '''
+    .s2-fin-texte {
+      top: 260px;
+      font-size: 84px;
+    }
+    .s2-accroche {
+      top: 560px;
+      font-size: 92px;
+    }
+    #''' + nom + '''-boucle {
+      position: absolute;
+      inset: 0;
+    }'''
+    html, js = ['    <div data-layout-allow-overlap>'], []
+    textes = f["textes"] + [("Lien en <em>bio</em>", f["lien"])]
+    for i, (texte, m) in enumerate(textes):
+        html.append(f'      <p id="{nom}-t{i}" class="s2-texte s2-fin-texte titre">{texte}</p>')
+        t = max(0.05, L(m, -0.1))
+        js.append(f'    tl.fromTo("#{nom}-t{i}", {ENTREE}, {t});')
+        if i < len(textes) - 1:
+            js.append(f'    tl.to("#{nom}-t{i}", {{ opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }}, {max(t + 0.5, L(textes[i + 1][1], -0.35))});')
+    places = (["left: calc(50% - 225px); top: 560px; width: 450px"] if len(f["pages"]) == 1
+              else ["left: 130px; top: 520px; width: 450px", "left: 500px; top: 600px; width: 450px"])
+    rots = [-2] if len(f["pages"]) == 1 else [-3, 3]
+    for i, ((src, alt, m), place, r) in enumerate(zip(f["pages"], places, rots)):
+        html.append("      " + html_feuille(f"{nom}-f{i}", src, alt, place))
+        depart = "{ opacity: 0, y: 200, rotation: 0 }" if i == 0 else "{ opacity: 0, x: 200, rotation: 0 }"
+        arrivee = f"{{ opacity: 1, {'y' if i == 0 else 'x'}: 0, rotation: {r}, duration: 0.45, ease: \"power3.out\" }}"
+        js.append(f'    tl.fromTo("#{nom}-f{i}", {depart}, {arrivee}, {max(0.1, L(m, -0.1))});')
+    html.append('    </div>')
+    # Boucle : la dernière demi-seconde reprend exactement l'image 0
+    html.append(f'    <div id="{nom}-boucle" aria-hidden="true" data-layout-allow-overlap>')
+    html.append(f'      <p class="s2-texte s2-accroche titre">{v["accroche"]}</p>')
+    html.append('    </div>')
+    fin_local = round(duree - t0, 2)
+    tous = ", ".join(f'"#{nom}-t{len(textes) - 1}"' for _ in [0]) + "".join(f', "#{nom}-f{i}"' for i in range(len(f["pages"])))
+    js.append(f'    tl.to([{tous}], {{ opacity: 0, duration: 0.3, ease: "power2.in" }}, {fin_local - 0.75:.2f});')
+    js.append(f'    tl.fromTo("#{nom}-boucle", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.3, ease: "power2.out" }}, {fin_local - 0.55:.2f});')
+    return css, "\n".join(html), "\n".join(js)
+
+
+def hote(id_, src, debut, duree, i, kind="graphics"):
+    return f'''      <div
+        id="{id_}"
+        data-composition-id="{id_}"
+        data-composition-src="{src}"
+        data-start="{round(debut, 2)}"
+        data-duration="{round(duree, 2)}"
+        data-track-index="{i}"
+        data-track-kind="{kind}"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: {i + 1}"
+      ></div>'''
+
+
+def genere(num):
+    v = VIDEOS[num]
+    th = THEMES[v["fond"]]
+    mots = json.loads(pathlib.Path(f"assets/voice/s2-{num}.words.json").read_text())
+    T = lambda m: mots[m]["start"] + DECALAGE
+    duree = v["duree"]
+    # Découpage : chaque bloc commence 0,25 s avant son premier mot et finit au début du suivant
+    debuts = [max(0.0, T(b["m"]) - 0.25) for b in v["blocs"]] + [max(0.0, T(v["fin"]["m"]) - 0.25)]
+    scenes, sons = [], []
+    base = f"s2-{num}"
+    # accroche
+    css, html, js = rendu_accroche(f"{base}-acc", v, th, debuts[0])
+    pathlib.Path(f"compositions/{base}-acc.html").write_text(scene(f"{base}-acc", f"Série 2 · vidéo {num} « {v['titre']} » · accroche (image 0)", css, html, js))
+    scenes.append((f"{base}-acc", 0.0, debuts[0]))
+    for k, b in enumerate(v["blocs"]):
+        nom = f"{base}-b{k + 1}"
+        t0, t1 = debuts[k], debuts[k + 1]
+        css, html, js = rendu_bloc(nom, b, th, t0, T)
+        pathlib.Path(f"compositions/{nom}.html").write_text(scene(nom, f"Série 2 · vidéo {num} · bloc {k + 1} ({b['type']}) · {t0:.2f}–{t1:.2f} s", css, html, js))
+        scenes.append((nom, t0, t1 - t0))
+        sons.append((f"sfx-b{k + 1}", "assets/sfx/whoosh-short.mp3", round(t0 + 0.2, 2), 0.3))
+    nom = f"{base}-fin"
+    t0 = debuts[-1]
+    css, html, js = rendu_fin(nom, v, v["fin"], th, t0, T, duree)
+    pathlib.Path(f"compositions/{nom}.html").write_text(scene(nom, f"Série 2 · vidéo {num} · fin + boucle · {t0:.2f}–{duree} s", css, html, js))
+    scenes.append((nom, t0, duree - t0))
+    sons.append(("sfx-lien", "assets/sfx/chime.mp3", round(T(v["fin"]["lien"]), 2), 0.3))
+
+    hotes = [hote(th["fond_id"], th["fond"], 0, duree, 0)]
+    for i, (n, d, du) in enumerate(scenes):
+        hotes.append(hote(n, f"compositions/{n}.html", d, du, i + 1))
+    i = len(scenes) + 1
+    if v["mention"]:
+        hotes.append(hote("mention-sante", "compositions/mention-sante.html", 0, duree, i))
+        i += 1
+    hotes.append(hote(f"sous-titres-{base}", f"compositions/{base}-sous-titres.html", 0, duree, i, "captions"))
+    i += 1
+    audio = [("voix", f"assets/voice/{base}.final.wav", DECALAGE, 1), ("musique", f"assets/music/{base}.wav", 0, 1),
+             ("sfx-accroche", "assets/sfx/whoosh.mp3", 0.05, 0.35)] + sons
+    for j, (id_, src, st, vol) in enumerate(audio):
+        hotes.append(f'      <audio id="{id_}" class="clip" src="{src}" data-start="{st}" data-track-index="{i + j}" data-volume="{vol}"></audio>')
+    tete = pathlib.Path("videos/video-01.html").read_text()
+    tete = tete[:tete.index("<body>")].replace("background: var(--vert-foret);", f"background: var(--{'vert-foret' if v['fond'] == 'vert' else 'creme'});")
+    racine = tete + f'''<body>
+    <!-- Série 2 · vidéo {num} — « {v["titre"]} » · {duree} s (SCRIPTS-SERIE-2.md ; généré par scripts/serie2.py) -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="{duree}" data-width="1080" data-height="1920">
+{chr(10).join(hotes)}
+    </div>
+    <script>
+      window.__timelines["main"] = gsap.timeline({{ paused: true }});
+    </script>
+  </body>
+</html>
+'''
+    pathlib.Path(f"videos/{base}.html").write_text(racine)
+    print(f"videos/{base}.html · {len(scenes)} scènes · {duree} s")
+
+
+if __name__ == "__main__":
+    for num in (sys.argv[1:] or sorted(VIDEOS)):
+        genere(num)

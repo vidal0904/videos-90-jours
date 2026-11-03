@@ -1,0 +1,72 @@
+<!-- Série 2 · vidéo 03 · bloc 2 (grille) · 10.39–14.46 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    #s2-03-b2-g {
+      position: absolute;
+      left: calc(50% - 378px);
+      top: 560px;
+      width: 756px;
+      display: grid;
+      grid-template-columns: repeat(7, 96px);
+      grid-auto-rows: 96px;
+      gap: 14px;
+    }
+    .s2-cel {
+      border-radius: 13px;
+      background: var(--sauge);
+    }
+    .s2-grand {
+      top: 420px;
+      font-size: 170px;
+      line-height: 1;
+      color: var(--terracotta);
+    }
+    .s2-legende {
+      top: 930px;
+      font-size: 64px;
+    }
+  </style>
+  <div id="root" data-composition-id="s2-03-b2" data-width="1080" data-height="1920">
+    <p id="s2-03-b2-titre" class="s2-titre titre">Une <em>semaine</em></p>
+    <div id="s2-03-b2-g"><span id="s2-03-b2-c0" class="s2-cel"></span><span id="s2-03-b2-c1" class="s2-cel"></span><span id="s2-03-b2-c2" class="s2-cel"></span><span id="s2-03-b2-c3" class="s2-cel"></span><span id="s2-03-b2-c4" class="s2-cel"></span><span id="s2-03-b2-c5" class="s2-cel"></span><span id="s2-03-b2-c6" class="s2-cel"></span><span id="s2-03-b2-c7" class="s2-cel"></span><span id="s2-03-b2-c8" class="s2-cel"></span><span id="s2-03-b2-c9" class="s2-cel"></span><span id="s2-03-b2-c10" class="s2-cel"></span><span id="s2-03-b2-c11" class="s2-cel"></span><span id="s2-03-b2-c12" class="s2-cel"></span><span id="s2-03-b2-c13" class="s2-cel"></span><span id="s2-03-b2-c14" class="s2-cel"></span><span id="s2-03-b2-c15" class="s2-cel"></span><span id="s2-03-b2-c16" class="s2-cel"></span><span id="s2-03-b2-c17" class="s2-cel"></span><span id="s2-03-b2-c18" class="s2-cel"></span><span id="s2-03-b2-c19" class="s2-cel"></span><span id="s2-03-b2-c20" class="s2-cel"></span></div>
+    <p id="s2-03-b2-leg" class="s2-texte s2-legende titre"><em>prévus et assumés</em></p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s2-03-b2-titre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.15);
+    tl.fromTo("#s2-03-b2-g .s2-cel", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)", stagger: 0.0381 }, 0.15);
+    tl.fromTo("#s2-03-b2-c5", { backgroundColor: "#8FA68A" }, { backgroundColor: "#C2643F", duration: 0.25, ease: "none", immediateRender: false }, 1.22);
+    tl.fromTo("#s2-03-b2-c5", { scale: 1 }, { scale: 1.25, duration: 0.18, yoyo: true, repeat: 1, ease: "power2.out", immediateRender: false }, 1.22);
+    tl.fromTo("#s2-03-b2-c9", { backgroundColor: "#8FA68A" }, { backgroundColor: "#C2643F", duration: 0.25, ease: "none", immediateRender: false }, 1.22);
+    tl.fromTo("#s2-03-b2-c9", { scale: 1 }, { scale: 1.25, duration: 0.18, yoyo: true, repeat: 1, ease: "power2.out", immediateRender: false }, 1.22);
+    tl.fromTo("#s2-03-b2-c20", { backgroundColor: "#8FA68A" }, { backgroundColor: "#C2643F", duration: 0.25, ease: "none", immediateRender: false }, 1.22);
+    tl.fromTo("#s2-03-b2-c20", { scale: 1 }, { scale: 1.25, duration: 0.18, yoyo: true, repeat: 1, ease: "power2.out", immediateRender: false }, 1.22);
+    tl.fromTo("#s2-03-b2-leg", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.38);
+    window.__timelines["s2-03-b2"] = tl;
+  </script>
+</template>
