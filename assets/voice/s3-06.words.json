@@ -1,0 +1,356 @@
+[
+ {
+  "id": "w0",
+  "text": "3 questions",
+  "start": 0.0,
+  "end": 0.592
+ },
+ {
+  "id": "w1",
+  "text": "qu'on",
+  "start": 0.615,
+  "end": 0.731
+ },
+ {
+  "id": "w2",
+  "text": "se",
+  "start": 0.766,
+  "end": 0.836
+ },
+ {
+  "id": "w3",
+  "text": "pose",
+  "start": 0.906,
+  "end": 1.173
+ },
+ {
+  "id": "w4",
+  "text": "avant",
+  "start": 1.219,
+  "end": 1.486
+ },
+ {
+  "id": "w5",
+  "text": "de",
+  "start": 1.509,
+  "end": 1.567
+ },
+ {
+  "id": "w6",
+  "text": "commencer.",
+  "start": 1.614,
+  "end": 2.101
+ },
+ {
+  "id": "w7",
+  "text": "Faut-il",
+  "start": 2.815,
+  "end": 3.175
+ },
+ {
+  "id": "w8",
+  "text": "compter",
+  "start": 3.245,
+  "end": 3.5
+ },
+ {
+  "id": "w9",
+  "text": "les",
+  "start": 3.523,
+  "end": 3.604
+ },
+ {
+  "id": "w10",
+  "text": "calories ?",
+  "start": 3.628,
+  "end": 4.034
+ },
+ {
+  "id": "w11",
+  "text": "Non,",
+  "start": 4.747,
+  "end": 5.014
+ },
+ {
+  "id": "w12",
+  "text": "aucune",
+  "start": 5.119,
+  "end": 5.525
+ },
+ {
+  "id": "w13",
+  "text": "n'est",
+  "start": 5.548,
+  "end": 5.676
+ },
+ {
+  "id": "w14",
+  "text": "indiquée",
+  "start": 5.734,
+  "end": 6.082
+ },
+ {
+  "id": "w15",
+  "text": "dans",
+  "start": 6.105,
+  "end": 6.245
+ },
+ {
+  "id": "w16",
+  "text": "le",
+  "start": 6.268,
+  "end": 6.326
+ },
+ {
+  "id": "w17",
+  "text": "guide.",
+  "start": 6.372,
+  "end": 6.674
+ },
+ {
+  "id": "w18",
+  "text": "Faut-il",
+  "start": 7.284,
+  "end": 7.609
+ },
+ {
+  "id": "w19",
+  "text": "passer",
+  "start": 7.667,
+  "end": 7.911
+ },
+ {
+  "id": "w20",
+  "text": "des",
+  "start": 7.946,
+  "end": 8.062
+ },
+ {
+  "id": "w21",
+  "text": "heures",
+  "start": 8.108,
+  "end": 8.271
+ },
+ {
+  "id": "w22",
+  "text": "en",
+  "start": 8.317,
+  "end": 8.433
+ },
+ {
+  "id": "w23",
+  "text": "cuisine ?",
+  "start": 8.491,
+  "end": 8.886
+ },
+ {
+  "id": "w24",
+  "text": "Non :",
+  "start": 9.541,
+  "end": 9.796
+ },
+ {
+  "id": "w25",
+  "text": "23",
+  "start": 10.017,
+  "end": 10.447
+ },
+ {
+  "id": "w26",
+  "text": "recettes",
+  "start": 10.47,
+  "end": 10.795
+ },
+ {
+  "id": "w27",
+  "text": "express,",
+  "start": 10.853,
+  "end": 11.41
+ },
+ {
+  "id": "w28",
+  "text": "et",
+  "start": 11.631,
+  "end": 11.735
+ },
+ {
+  "id": "w29",
+  "text": "un",
+  "start": 11.828,
+  "end": 11.875
+ },
+ {
+  "id": "w30",
+  "text": "batch",
+  "start": 11.933,
+  "end": 12.13
+ },
+ {
+  "id": "w31",
+  "text": "cooking",
+  "start": 12.176,
+  "end": 12.455
+ },
+ {
+  "id": "w32",
+  "text": "le",
+  "start": 12.502,
+  "end": 12.56
+ },
+ {
+  "id": "w33",
+  "text": "dimanche.",
+  "start": 12.606,
+  "end": 13.012
+ },
+ {
+  "id": "w34",
+  "text": "Et",
+  "start": 13.517,
+  "end": 13.668
+ },
+ {
+  "id": "w35",
+  "text": "si",
+  "start": 13.691,
+  "end": 13.784
+ },
+ {
+  "id": "w36",
+  "text": "je",
+  "start": 13.842,
+  "end": 13.912
+ },
+ {
+  "id": "w37",
+  "text": "rate",
+  "start": 13.947,
+  "end": 14.144
+ },
+ {
+  "id": "w38",
+  "text": "un",
+  "start": 14.167,
+  "end": 14.214
+ },
+ {
+  "id": "w39",
+  "text": "jour ?",
+  "start": 14.26,
+  "end": 14.492
+ },
+ {
+  "id": "w40",
+  "text": "Tu",
+  "start": 15.078,
+  "end": 15.241
+ },
+ {
+  "id": "w41",
+  "text": "reprends",
+  "start": 15.299,
+  "end": 15.589
+ },
+ {
+  "id": "w42",
+  "text": "au",
+  "start": 15.612,
+  "end": 15.658
+ },
+ {
+  "id": "w43",
+  "text": "repas",
+  "start": 15.682,
+  "end": 15.914
+ },
+ {
+  "id": "w44",
+  "text": "suivant,",
+  "start": 15.937,
+  "end": 16.297
+ },
+ {
+  "id": "w45",
+  "text": "sans",
+  "start": 16.483,
+  "end": 16.657
+ },
+ {
+  "id": "w46",
+  "text": "culpabilité.",
+  "start": 16.68,
+  "end": 17.377
+ },
+ {
+  "id": "w47",
+  "text": "Envie",
+  "start": 17.986,
+  "end": 18.311
+ },
+ {
+  "id": "w48",
+  "text": "d'essayer ?",
+  "start": 18.346,
+  "end": 18.81
+ },
+ {
+  "id": "w49",
+  "text": "Commente",
+  "start": 19.733,
+  "end": 20.174
+ },
+ {
+  "id": "w50",
+  "text": "« 90 JOURS »,",
+  "start": 20.232,
+  "end": 21.184
+ },
+ {
+  "id": "w51",
+  "text": "et",
+  "start": 21.324,
+  "end": 21.428
+ },
+ {
+  "id": "w52",
+  "text": "je",
+  "start": 21.463,
+  "end": 21.533
+ },
+ {
+  "id": "w53",
+  "text": "t'envoie",
+  "start": 21.579,
+  "end": 21.869
+ },
+ {
+  "id": "w54",
+  "text": "le",
+  "start": 21.892,
+  "end": 21.962
+ },
+ {
+  "id": "w55",
+  "text": "lien",
+  "start": 22.009,
+  "end": 22.241
+ },
+ {
+  "id": "w56",
+  "text": "en",
+  "start": 22.31,
+  "end": 22.403
+ },
+ {
+  "id": "w57",
+  "text": "message",
+  "start": 22.45,
+  "end": 22.798
+ },
+ {
+  "id": "w58",
+  "text": "privé.",
+  "start": 22.833,
+  "end": 23.17
+ }
+]

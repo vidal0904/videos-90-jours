@@ -1,0 +1,398 @@
+[
+ {
+  "id": "w0",
+  "text": "Voici",
+  "start": 0.0,
+  "end": 0.36
+ },
+ {
+  "id": "w1",
+  "text": "à",
+  "start": 0.418,
+  "end": 0.441
+ },
+ {
+  "id": "w2",
+  "text": "quoi",
+  "start": 0.499,
+  "end": 0.627
+ },
+ {
+  "id": "w3",
+  "text": "ressemble",
+  "start": 0.662,
+  "end": 0.987
+ },
+ {
+  "id": "w4",
+  "text": "une",
+  "start": 1.068,
+  "end": 1.207
+ },
+ {
+  "id": "w5",
+  "text": "semaine",
+  "start": 1.242,
+  "end": 1.556
+ },
+ {
+  "id": "w6",
+  "text": "avec",
+  "start": 1.579,
+  "end": 1.73
+ },
+ {
+  "id": "w7",
+  "text": "mon",
+  "start": 1.776,
+  "end": 1.881
+ },
+ {
+  "id": "w8",
+  "text": "guide.",
+  "start": 1.916,
+  "end": 2.194
+ },
+ {
+  "id": "w9",
+  "text": "Le",
+  "start": 2.815,
+  "end": 2.943
+ },
+ {
+  "id": "w10",
+  "text": "dimanche,",
+  "start": 2.989,
+  "end": 3.488
+ },
+ {
+  "id": "w11",
+  "text": "ton",
+  "start": 3.697,
+  "end": 3.848
+ },
+ {
+  "id": "w12",
+  "text": "menu",
+  "start": 3.883,
+  "end": 4.15
+ },
+ {
+  "id": "w13",
+  "text": "et",
+  "start": 4.208,
+  "end": 4.255
+ },
+ {
+  "id": "w14",
+  "text": "ta",
+  "start": 4.278,
+  "end": 4.348
+ },
+ {
+  "id": "w15",
+  "text": "liste",
+  "start": 4.417,
+  "end": 4.626
+ },
+ {
+  "id": "w16",
+  "text": "de",
+  "start": 4.673,
+  "end": 4.742
+ },
+ {
+  "id": "w17",
+  "text": "courses",
+  "start": 4.789,
+  "end": 5.091
+ },
+ {
+  "id": "w18",
+  "text": "sont",
+  "start": 5.16,
+  "end": 5.346
+ },
+ {
+  "id": "w19",
+  "text": "déjà",
+  "start": 5.369,
+  "end": 5.59
+ },
+ {
+  "id": "w20",
+  "text": "prêts.",
+  "start": 5.625,
+  "end": 5.857
+ },
+ {
+  "id": "w21",
+  "text": "Tu",
+  "start": 6.651,
+  "end": 6.814
+ },
+ {
+  "id": "w22",
+  "text": "cuisines",
+  "start": 6.848,
+  "end": 7.197
+ },
+ {
+  "id": "w23",
+  "text": "en",
+  "start": 7.243,
+  "end": 7.348
+ },
+ {
+  "id": "w24",
+  "text": "batch,",
+  "start": 7.406,
+  "end": 7.696
+ },
+ {
+  "id": "w25",
+  "text": "60",
+  "start": 7.916,
+  "end": 8.462
+ },
+ {
+  "id": "w26",
+  "text": "à",
+  "start": 8.52,
+  "end": 8.567
+ },
+ {
+  "id": "w27",
+  "text": "90",
+  "start": 8.683,
+  "end": 9.182
+ },
+ {
+  "id": "w28",
+  "text": "minutes.",
+  "start": 9.205,
+  "end": 9.588
+ },
+ {
+  "id": "w29",
+  "text": "Chaque",
+  "start": 10.395,
+  "end": 10.697
+ },
+ {
+  "id": "w30",
+  "text": "jour,",
+  "start": 10.72,
+  "end": 10.975
+ },
+ {
+  "id": "w31",
+  "text": "tu",
+  "start": 11.08,
+  "end": 11.208
+ },
+ {
+  "id": "w32",
+  "text": "coches",
+  "start": 11.266,
+  "end": 11.498
+ },
+ {
+  "id": "w33",
+  "text": "ta",
+  "start": 11.521,
+  "end": 11.591
+ },
+ {
+  "id": "w34",
+  "text": "checklist.",
+  "start": 11.637,
+  "end": 12.136
+ },
+ {
+  "id": "w35",
+  "text": "En",
+  "start": 12.792,
+  "end": 12.989
+ },
+ {
+  "id": "w36",
+  "text": "fin",
+  "start": 13.047,
+  "end": 13.175
+ },
+ {
+  "id": "w37",
+  "text": "de",
+  "start": 13.198,
+  "end": 13.245
+ },
+ {
+  "id": "w38",
+  "text": "semaine,",
+  "start": 13.268,
+  "end": 13.616
+ },
+ {
+  "id": "w39",
+  "text": "ton",
+  "start": 13.674,
+  "end": 13.814
+ },
+ {
+  "id": "w40",
+  "text": "journal",
+  "start": 13.849,
+  "end": 14.197
+ },
+ {
+  "id": "w41",
+  "text": "et",
+  "start": 14.255,
+  "end": 14.301
+ },
+ {
+  "id": "w42",
+  "text": "ton",
+  "start": 14.325,
+  "end": 14.429
+ },
+ {
+  "id": "w43",
+  "text": "bilan",
+  "start": 14.475,
+  "end": 14.696
+ },
+ {
+  "id": "w44",
+  "text": "font",
+  "start": 14.766,
+  "end": 14.905
+ },
+ {
+  "id": "w45",
+  "text": "le",
+  "start": 14.928,
+  "end": 14.998
+ },
+ {
+  "id": "w46",
+  "text": "point.",
+  "start": 15.044,
+  "end": 15.288
+ },
+ {
+  "id": "w47",
+  "text": "Et",
+  "start": 16.071,
+  "end": 16.199
+ },
+ {
+  "id": "w48",
+  "text": "la",
+  "start": 16.245,
+  "end": 16.315
+ },
+ {
+  "id": "w49",
+  "text": "semaine",
+  "start": 16.373,
+  "end": 16.651
+ },
+ {
+  "id": "w50",
+  "text": "suivante,",
+  "start": 16.675,
+  "end": 17.093
+ },
+ {
+  "id": "w51",
+  "text": "tout",
+  "start": 17.232,
+  "end": 17.418
+ },
+ {
+  "id": "w52",
+  "text": "est",
+  "start": 17.464,
+  "end": 17.534
+ },
+ {
+  "id": "w53",
+  "text": "prêt",
+  "start": 17.557,
+  "end": 17.696
+ },
+ {
+  "id": "w54",
+  "text": "à",
+  "start": 17.72,
+  "end": 17.743
+ },
+ {
+  "id": "w55",
+  "text": "nouveau.",
+  "start": 17.778,
+  "end": 18.068
+ },
+ {
+  "id": "w56",
+  "text": "Commente",
+  "start": 18.7,
+  "end": 19.095
+ },
+ {
+  "id": "w57",
+  "text": "« 90 JOURS »,",
+  "start": 19.13,
+  "end": 20.035
+ },
+ {
+  "id": "w58",
+  "text": "et",
+  "start": 20.14,
+  "end": 20.244
+ },
+ {
+  "id": "w59",
+  "text": "je",
+  "start": 20.291,
+  "end": 20.36
+ },
+ {
+  "id": "w60",
+  "text": "t'envoie",
+  "start": 20.407,
+  "end": 20.685
+ },
+ {
+  "id": "w61",
+  "text": "le",
+  "start": 20.709,
+  "end": 20.778
+ },
+ {
+  "id": "w62",
+  "text": "lien",
+  "start": 20.825,
+  "end": 21.057
+ },
+ {
+  "id": "w63",
+  "text": "en",
+  "start": 21.115,
+  "end": 21.208
+ },
+ {
+  "id": "w64",
+  "text": "message",
+  "start": 21.254,
+  "end": 21.591
+ },
+ {
+  "id": "w65",
+  "text": "privé.",
+  "start": 21.626,
+  "end": 21.974
+ }
+]

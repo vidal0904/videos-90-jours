@@ -1,4 +1,4 @@
-<!-- Série 2 · vidéo 06 · fin + boucle · 19.04–26 s
+<!-- Série 2 · vidéo 06 · fin + boucle · 19.04–29 s
      Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
 <template>
   <link rel="stylesheet" href="assets/design/tokens.css" />
@@ -42,6 +42,43 @@
       top: 260px;
       font-size: 84px;
     }
+    .s2-cta {
+      top: 230px;
+    }
+    .s2-cta-titre {
+      margin: 0;
+      font-size: 84px;
+      line-height: 1.15;
+    }
+    .s2-mot-cle {
+      position: relative;
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 46px 18px;
+      border-radius: 60px;
+      background: var(--vert-foret);
+      color: var(--creme);
+      font-family: var(--font-texte);
+      font-weight: 800;
+      font-size: 78px;
+      letter-spacing: 0.02em;
+    }
+    .s2-mot-cle::after {
+      content: "";
+      position: absolute;
+      left: 54px;
+      bottom: -22px;
+      border-left: 0 solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 24px solid var(--vert-foret);
+    }
+    .s2-cta-sous {
+      margin: 34px 0 0;
+      font-family: var(--font-texte);
+      font-weight: 500;
+      font-size: 42px;
+      color: var(--vert-foret-2);
+    }
     .s2-accroche {
       top: 560px;
       font-size: 92px;
@@ -54,9 +91,9 @@
   <div id="root" data-composition-id="s2-06-fin" data-width="1080" data-height="1920">
     <div data-layout-allow-overlap>
       <p id="s2-06-fin-t0" class="s2-texte s2-fin-texte titre">Envoie ça à quelqu'un<br /><em>qui en a besoin</em></p>
-      <p id="s2-06-fin-t1" class="s2-texte s2-fin-texte titre">Lien en <em>bio</em></p>
-      <div id="s2-06-fin-f0" class="s2-feuille" style="left: 130px; top: 520px; width: 450px"><img src="capture/pages/outil-04-tracker-m1-p298.png" alt="Tracker d'habitudes, mois 1" /></div>
-      <div id="s2-06-fin-f1" class="s2-feuille" style="left: 500px; top: 600px; width: 450px"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
+      <div id="s2-06-fin-t1" class="s2-texte s2-cta"><p class="s2-cta-titre titre">Commente</p><span class="s2-mot-cle">90 JOURS</span><p class="s2-cta-sous">et reçois le lien en message privé</p></div>
+      <div id="s2-06-fin-f0" class="s2-feuille" style="left: 150px; top: 600px; width: 380px"><img src="capture/pages/outil-04-tracker-m1-p298.png" alt="Tracker d'habitudes, mois 1" /></div>
+      <div id="s2-06-fin-f1" class="s2-feuille" style="left: 530px; top: 660px; width: 380px"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
     </div>
     <div id="s2-06-fin-boucle" aria-hidden="true" data-layout-allow-overlap>
       <p class="s2-texte s2-accroche titre">Tu as raté un jour&#8239;?<br /><em>Lis ça.</em></p>
@@ -65,12 +102,12 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s2-06-fin-t0", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.15);
-    tl.to("#s2-06-fin-t0", { opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }, 3.4);
-    tl.fromTo("#s2-06-fin-t1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.65);
-    tl.fromTo("#s2-06-fin-f0", { opacity: 0, y: 200, rotation: 0 }, { opacity: 1, y: 0, rotation: -3, duration: 0.45, ease: "power3.out" }, 2.83);
-    tl.fromTo("#s2-06-fin-f1", { opacity: 0, x: 200, rotation: 0 }, { opacity: 1, x: 0, rotation: 3, duration: 0.45, ease: "power3.out" }, 3.06);
-    tl.to(["#s2-06-fin-t1", "#s2-06-fin-f0", "#s2-06-fin-f1"], { opacity: 0, duration: 0.3, ease: "power2.in" }, 6.21);
-    tl.fromTo("#s2-06-fin-boucle", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 6.41);
+    tl.to("#s2-06-fin-t0", { opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }, 3.65);
+    tl.fromTo("#s2-06-fin-t1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.9);
+    tl.fromTo("#s2-06-fin-f0", { opacity: 0, y: 200, rotation: 0 }, { opacity: 1, y: 0, rotation: -3, duration: 0.45, ease: "power3.out" }, 2.63);
+    tl.fromTo("#s2-06-fin-f1", { opacity: 0, x: 200, rotation: 0 }, { opacity: 1, x: 0, rotation: 3, duration: 0.45, ease: "power3.out" }, 2.85);
+    tl.to(["#s2-06-fin-t1", "#s2-06-fin-f0", "#s2-06-fin-f1"], { opacity: 0, duration: 0.3, ease: "power2.in" }, 9.21);
+    tl.fromTo("#s2-06-fin-boucle", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 9.41);
     window.__timelines["s2-06-fin"] = tl;
   </script>
 </template>

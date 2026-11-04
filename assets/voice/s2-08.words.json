@@ -325,20 +325,62 @@
  },
  {
   "id": "w54",
-  "text": "Lien",
-  "start": 18.822,
-  "end": 19.17
+  "text": "Commente",
+  "start": 18.65,
+  "end": 19.103
  },
  {
   "id": "w55",
-  "text": "en",
-  "start": 19.252,
-  "end": 19.414
+  "text": "« 90 JOURS »,",
+  "start": 19.172,
+  "end": 20.113
  },
  {
   "id": "w56",
-  "text": "bio.",
-  "start": 19.461,
-  "end": 19.704
+  "text": "et",
+  "start": 20.264,
+  "end": 20.38
+ },
+ {
+  "id": "w57",
+  "text": "je",
+  "start": 20.426,
+  "end": 20.496
+ },
+ {
+  "id": "w58",
+  "text": "t'envoie",
+  "start": 20.554,
+  "end": 20.856
+ },
+ {
+  "id": "w59",
+  "text": "le",
+  "start": 20.879,
+  "end": 20.949
+ },
+ {
+  "id": "w60",
+  "text": "lien",
+  "start": 20.995,
+  "end": 21.216
+ },
+ {
+  "id": "w61",
+  "text": "en",
+  "start": 21.274,
+  "end": 21.378
+ },
+ {
+  "id": "w62",
+  "text": "message",
+  "start": 21.425,
+  "end": 21.761
+ },
+ {
+  "id": "w63",
+  "text": "privé.",
+  "start": 21.785,
+  "end": 22.133
  }
 ]

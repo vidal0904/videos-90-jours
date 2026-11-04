@@ -1,0 +1,84 @@
+<!-- Série 3 · vidéo 02 · bloc 1 (colonnes) · 2.47–16.10 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--encre);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--vert-foret-2);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--encre);
+    }
+    .s2-col-titre em {
+      color: var(--vert-foret-2);
+    }
+    .s2-col-titre {
+      position: absolute;
+      top: 250px;
+      width: 440px;
+      text-align: center;
+      font-size: 72px;
+      color: var(--encre);
+    }
+    .s2-col-item {
+      position: absolute;
+      width: 440px;
+      padding: 22px 18px;
+      border-radius: 24px;
+      background: var(--sauge-claire);
+      border: 2px solid rgba(30, 59, 44, 0.12);
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 1.15;
+      color: var(--encre);
+    }
+    #s3-02-b1-sep {
+      position: absolute;
+      left: 539px;
+      top: 260px;
+      width: 2px;
+      height: 960px;
+      background: rgba(30, 59, 44, 0.12);
+    }
+  </style>
+  <div id="root" data-composition-id="s3-02-b1" data-width="1080" data-height="1920">
+    <span id="s3-02-b1-sep"></span>
+    <p id="s3-02-b1-tg" class="s2-col-titre titre" style="left: 80px">Pour toi</p>
+    <p id="s3-02-b1-td" class="s2-col-titre titre" style="left: 560px"><em>Pas pour toi</em></p>
+    <p id="s3-02-b1-i0" class="s2-col-item" style="left: 80px; top: 440px">Un cadre simple, jour après jour</p>
+    <p id="s3-02-b1-i1" class="s2-col-item" style="left: 80px; top: 678px">Arrêter de recommencer lundi</p>
+    <p id="s3-02-b1-i2" class="s2-col-item" style="left: 80px; top: 916px">Sans compter les calories</p>
+    <p id="s3-02-b1-i3" class="s2-col-item" style="left: 560px; top: 440px">Un régime strict</p>
+    <p id="s3-02-b1-i4" class="s2-col-item" style="left: 560px; top: 630px">Un résultat promis d'avance</p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(["#s3-02-b1-tg", "#s3-02-b1-td"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s3-02-b1-sep", { scaleY: 0 }, { scaleY: 1, duration: 0.4, ease: "power2.out" }, 0.1);
+    tl.fromTo("#s3-02-b1-i0", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.67);
+    tl.fromTo("#s3-02-b1-i1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 4.65);
+    tl.fromTo("#s3-02-b1-i2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 8.0);
+    tl.fromTo("#s3-02-b1-i3", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 10.93);
+    tl.fromTo("#s3-02-b1-i4", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 11.95);
+    window.__timelines["s3-02-b1"] = tl;
+  </script>
+</template>

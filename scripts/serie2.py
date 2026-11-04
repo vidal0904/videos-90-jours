@@ -1,16 +1,21 @@
-"""Série 2 — génère les 10 vidéos de SCRIPTS-SERIE-2.md à partir de blocs.
+"""Séries 2 et 3 — génère les vidéos de SCRIPTS-SERIE-2.md et SCRIPTS-SERIE-3.md à partir de blocs.
 
-    python3 -I scripts/serie2.py [01 02 …]     # toutes par défaut
+    python3 -I scripts/serie2.py [01 02 … s3-01 …]     # toutes par défaut (« 01 » = « s2-01 »)
 
 Chaque vidéo = un fond, une musique, une accroche (image 0), une suite de blocs et une fin
-(« Lien en bio » + vraies pages, puis retour à l'image 0 pour une boucle sans couture).
+(vraies pages + « Commente 90 JOURS », puis retour à l'image 0 pour une boucle sans couture).
+La durée suit la voix (dernier mot + 1,6 s) et la musique est régénérée si elle ne colle plus.
 Chaque bloc et chaque élément est calé sur un mot de la voix : `m` = indice du mot dans
 assets/voice/s2-XX.words.json (instant vidéo = début du mot + DECALAGE).
 Écrit compositions/s2-XX-*.html et videos/s2-XX.html (racine à copier dans index.html).
 """
 import json
+import math
 import pathlib
+import subprocess
 import sys
+
+import soundfile as sf
 
 DECALAGE = 0.6  # la voix démarre 0,6 s après l'image 0 (l'accroche se lit d'abord)
 P = "capture/pages/"
@@ -20,7 +25,7 @@ COUV = ("couverture.png", "Couverture du guide 90 jours")
 # Les 10 vidéos (contenu : SCRIPTS-SERIE-2.md ; chiffres : BRIEF-EBOOK.md §2)
 # --------------------------------------------------------------------------------------
 VIDEOS = {
-    "01": dict(titre="Faim ou envie ? Le test des 5 secondes", fond="vert", musique="nappe", mention=True, duree=28,
+    "s2-01": dict(titre="Faim ou envie ? Le test des 5 secondes", fond="vert", musique="nappe", mention=True, duree=28,
                accroche="Faim… ou juste envie&#8239;?<br /><em>Fais ce test.</em>",
                blocs=[
                    dict(type="colonnes", m=3, gauche="Faim", droite="Envie", items=[
@@ -33,7 +38,7 @@ VIDEOS = {
                ],
                fin=dict(m=51, textes=[("Envoie ça à celle<br /><em>qui grignote le soir</em>", 51)],
                         pages=[("chapitre-10-sucre-p70.png", "Chapitre 10, gérer les envies de sucre", 59), COUV + (61,)], lien=65)),
-    "02": dict(titre="La règle des 24 h", fond="vert", musique="nappe", mention=True, duree=26,
+    "s2-02": dict(titre="La règle des 24 h", fond="vert", musique="nappe", mention=True, duree=26,
                accroche="Un écart, ok.<br /><em>Deux jours de suite&#8239;?</em>",
                blocs=[
                    dict(type="chaine", m=4, piege=9, regle=13, titre_regle="Jamais <em>2 jours</em> de suite"),
@@ -42,7 +47,7 @@ VIDEOS = {
                ],
                fin=dict(m=42, textes=[("Enregistre<br /><em>cette règle</em>", 42)],
                         pages=[("outil-01-calendrier-p295.png", "Calendrier des 90 jours", 44), COUV + (55,)], lien=61)),
-    "03": dict(titre="80/20 sans s'interdire le chocolat", fond="vert", musique="nappe", mention=True, duree=26,
+    "s2-03": dict(titre="80/20 sans s'interdire le chocolat", fond="vert", musique="nappe", mention=True, duree=26,
                accroche="Tu n'as pas besoin<br />de <em>supprimer le chocolat.</em>",
                blocs=[
                    dict(type="barre", m=8, titre="La règle <em>80/20</em>", t_titre=9, gauche=("80&#8239;%", "aliments nutritifs", 11),
@@ -54,7 +59,7 @@ VIDEOS = {
                ],
                fin=dict(m=37, textes=[("Envoie ça à ton amie<br /><em>qui s'interdit tout</em>", 37)],
                         pages=[COUV + (40,)], lien=52)),
-    "04": dict(titre="3 questions avant tes courses", fond="vert", musique="nappe", mention=True, duree=25,
+    "s2-04": dict(titre="3 questions avant tes courses", fond="vert", musique="nappe", mention=True, duree=25,
                accroche="Avant le supermarché,<br /><em>pose-toi ces 3 questions.</em>",
                blocs=[
                    dict(type="cartes", m=6, titre="Avant les <em>courses</em>", items=[
@@ -65,7 +70,7 @@ VIDEOS = {
                ],
                fin=dict(m=50, textes=[("Enregistre<br /><em>pour tes prochaines courses</em>", 50)],
                         pages=[COUV + (51,)], lien=55)),
-    "05": dict(titre="Le kit du Jour 0", fond="vert", musique="nappe", mention=False, duree=27,
+    "s2-05": dict(titre="Le kit du Jour 0", fond="vert", musique="nappe", mention=False, duree=27,
                accroche="Avant le jour 1,<br /><em>il y a le jour 0.</em>",
                blocs=[
                    dict(type="compteur", m=8, n=15, libelle="minutes", sous=("pour poser ton point de départ", 11),
@@ -79,7 +84,7 @@ VIDEOS = {
                ],
                fin=dict(m=51, textes=[("Ton kit du <em>jour 0</em>", 51)],
                         pages=[("kit-jour-0-p10.png", "Kit de démarrage, jour 0", 52), COUV + (55,)], lien=59)),
-    "06": dict(titre="Une case vide n'est pas un échec", fond="creme", musique="piano", mention=False, duree=26,
+    "s2-06": dict(titre="Une case vide n'est pas un échec", fond="creme", musique="piano", mention=False, duree=26,
                accroche="Tu as raté un jour&#8239;?<br /><em>Lis ça.</em>",
                blocs=[
                    dict(type="phrases", m=5, items=[("Une case vide<br />n'est pas un échec.", 5), ("C'est une <em>information.</em>", 12)]),
@@ -90,7 +95,7 @@ VIDEOS = {
                ],
                fin=dict(m=46, textes=[("Envoie ça à quelqu'un<br /><em>qui en a besoin</em>", 46)],
                         pages=[("outil-04-tracker-m1-p298.png", "Tracker d'habitudes, mois 1", 55), COUV + (56,)], lien=59)),
-    "07": dict(titre="23 recettes en 15 minutes", fond="vert", musique="nappe", mention=True, duree=29,
+    "s2-07": dict(titre="23 recettes en 15 minutes", fond="vert", musique="nappe", mention=True, duree=29,
                accroche="Pas le temps de cuisiner&#8239;?<br /><em>23 recettes en 15 minutes.</em>",
                blocs=[
                    dict(type="compteur", m=5, n=23, t_n=8, libelle="recettes express", sous=("≈ 15 minutes", 13)),
@@ -101,7 +106,7 @@ VIDEOS = {
                ],
                fin=dict(m=50, textes=[("Enregistre<br /><em>pour tes soirs sans énergie</em>", 50)],
                         pages=[("index-recettes-p200.png", "Index des 70 recettes", 58), COUV + (60,)], lien=64)),
-    "08": dict(titre="4 phrases quand tu doutes", fond="creme", musique="piano", mention=False, duree=23,
+    "s2-08": dict(titre="4 phrases quand tu doutes", fond="creme", musique="piano", mention=False, duree=23,
                accroche="Garde ces 4 phrases<br /><em>pour les jours difficiles.</em>",
                blocs=[
                    dict(type="phrases", m=7, carte=True, items=[
@@ -110,7 +115,7 @@ VIDEOS = {
                ],
                fin=dict(m=34, textes=[("Enregistre-les<br /><em>ou envoie-les</em>", 34), ("24 affirmations<br /><em>+ 100 phrases</em>", 46)],
                         pages=[("outil-10-affirmations-p310.png", "24 affirmations positives", 42), COUV + (47,)], lien=54)),
-    "09": dict(titre="Et après le jour 90 ?", fond="vert", musique="nappe", mention=False, duree=24,
+    "s2-09": dict(titre="Et après le jour 90 ?", fond="vert", musique="nappe", mention=False, duree=24,
                accroche="Le plus important,<br /><em>c'est après le jour 90.</em>",
                blocs=[
                    dict(type="pastilles", m=12, titre="Un <em>bilan</em>", items=[("Jour 30", 21), ("Jour 60", 22), ("Jour 90", 24)]),
@@ -120,7 +125,7 @@ VIDEOS = {
                ],
                fin=dict(m=46, textes=[("Les 3 habitudes<br /><em>que tu gardes</em>", 46)],
                         pages=[("outil-certificat-p315.png", "Certificat de parcours", 48), COUV + (52,)], lien=56)),
-    "10": dict(titre="Défi : 7 jours, 7 missions", fond="vert", musique="nappe", mention=True, duree=29,
+    "s2-10": dict(titre="Défi : 7 jours, 7 missions", fond="vert", musique="nappe", mention=True, duree=29,
                accroche="7 missions simples<br /><em>pour reprendre de l'élan.</em>",
                blocs=[
                    dict(type="cartes", m=6, titre="Défi <em>7 jours</em>", note="Adapte chaque mission à ta condition physique.",
@@ -133,6 +138,98 @@ VIDEOS = {
                fin=dict(m=46, textes=[("Enregistre<br /><em>et commence demain</em>", 46)],
                         pages=[("outil-07-defi-30-jours-p305.png", "Défi motivation 30 jours", 50), COUV + (53,)], lien=57)),
 }
+
+# --------------------------------------------------------------------------------------
+# Série 3 — Reels de vente (SCRIPTS-SERIE-3.md, VENTE-REELS.md). Ancres : "@mot" = 1re occurrence du mot
+# affiché (minuscules, sans ponctuation), "@mot#2" = 2e occurrence.
+# --------------------------------------------------------------------------------------
+VIDEOS.update({
+    "s3-01": dict(titre="Ce que tu reçois vraiment", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="Ce que tu reçois<br /><em>vraiment</em> dans mon guide.",
+                  blocs=[
+                      dict(type="compteur", m="@316", n=316, libelle="pages", sous=("à lire sur téléphone, tablette, ordi", "@pages")),
+                      dict(type="pages", m="@12", items=[
+                          ("menu-s1-p94.png", "Menu de la semaine 1", "12 menus<br /><em>déjà faits</em>", "@12"),
+                          ("courses-s1-p95.png", "Liste de courses de la semaine 1", "12 listes de courses<br /><em>quantités pour 1</em>", "@12#2"),
+                          ("index-recettes-p200.png", "Index des 70 recettes", "70 recettes<br /><em>dont 23 express</em>", "@70"),
+                          ("outil-01-calendrier-p295.png", "Calendrier des 90 jours", "13 outils<br /><em>à imprimer</em>", "@13")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s3-02": dict(titre="Pour qui, pas pour qui", fond="creme", musique="piano", mention=True, duree=0,
+                  accroche="Ce guide n'est pas<br /><em>pour tout le monde.</em>",
+                  blocs=[
+                      dict(type="colonnes", m="@il", gauche="Pour toi", droite="Pas pour toi", taille_titre=72, items=[
+                          ("gauche", "Un cadre simple, jour après jour", "@cadre"),
+                          ("gauche", "Arrêter de recommencer lundi", "@assez"),
+                          ("gauche", "Sans compter les calories", "@compter"),
+                          ("droite", "Un régime strict", "@régime"),
+                          ("droite", "Un résultat promis d'avance", "@résultat")]),
+                      dict(type="phrases", m="@ici", items=[("On construit<br /><em>des habitudes.</em>", "@ici")]),
+                  ],
+                  fin=dict(m="@si#5", textes=[], pages=[COUV + ("@si#5",)], lien=0)),
+    "s3-03": dict(titre="Une semaine avec le guide", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="Une semaine<br /><em>avec mon guide.</em>",
+                  blocs=[
+                      dict(type="pages", m="@dimanche", items=[
+                          ("menu-s1-p94.png", "Menu de la semaine 1", "Dimanche&#8239;:<br /><em>le menu est prêt</em>", "@dimanche"),
+                          ("courses-s1-p95.png", "Liste de courses de la semaine 1", "<em>La liste aussi</em>", "@liste"),
+                          ("batch-cooking-p199.png", "Batch cooking du dimanche", "Batch cooking<br /><em>60 à 90 min</em>", "@batch"),
+                          ("outil-02-checklist-p296.png", "Checklist quotidienne", "Chaque jour&#8239;:<br /><em>ta checklist</em>", "@chaque"),
+                          ("journal-s1-p96.png", "Journal de la semaine 1", "Ton journal…", "@journal"),
+                          ("bilan-s1-p97.png", "Bilan de la semaine 1", "<em>…et ton bilan</em>", "@bilan")]),
+                      dict(type="phrases", m="@suivante", items=[("La semaine suivante,<br /><em>tout est prêt à nouveau.</em>", "@suivante")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s3-04": dict(titre="Encore un régime ? Non.", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="Encore un régime&#8239;?<br /><em>Non. Voilà pourquoi.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@aucun", titre="Pas un <em>régime</em>", items=[
+                          ("1", "Aucun aliment interdit", None, "@aucun"),
+                          ("2", "Aucune calorie à compter", "Aucune n'est indiquée&#8239;: c'est un choix.", "@aucune"),
+                          ("3", "80&#8239;% nutritif, 20&#8239;% flexible", "Sans culpabilité.", "@80"),
+                          ("4", "Après un écart", "On reprend au repas suivant, pas lundi.", "@après")]),
+                      dict(type="phrases", m="@ce", items=[("Pas un régime&#8239;:<br /><em>un cadre de 90 jours.</em>", "@ce")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s3-05": dict(titre="Sans plan ou avec un plan ?", fond="creme", musique="piano", mention=True, duree=0,
+                  accroche="Sans plan,<br /><em>ou avec un plan&#8239;?</em>",
+                  blocs=[
+                      dict(type="colonnes", m="@sans#2", gauche="Sans plan", droite="Avec le guide", taille_titre=66, items=[
+                          ("gauche", "Courses au hasard", "@courses"),
+                          ("droite", "Liste déjà calculée", "@liste"),
+                          ("gauche", "On improvise chaque soir", "@improvises"),
+                          ("droite", "Menu de la semaine prêt", "@menu"),
+                          ("gauche", "Un écart → on recommence lundi", "@écart"),
+                          ("droite", "Un écart → le repas suivant", "@reviens")]),
+                      dict(type="phrases", m="@différence", items=[("La différence,<br /><em>c'est l'organisation.</em>", "@différence")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s3-06": dict(titre="3 questions avant de commencer", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="3 questions<br /><em>avant de commencer.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@faut-il", titre="Tes <em>questions</em>", items=[
+                          ("1", "Compter les calories&#8239;?", "Non. Aucune n'est indiquée.", "@faut-il"),
+                          ("2", "Des heures en cuisine&#8239;?", "Non&#8239;: 23 recettes express.", "@faut-il#2"),
+                          ("3", "Et si je rate un jour&#8239;?", "Tu reprends au repas suivant.", "@rate")]),
+                  ],
+                  fin=dict(m="@envie", textes=[], pages=[COUV + ("@envie",)], lien=0)),
+})
+
+
+def resout(x, mots):
+    """Remplace les ancres "@mot" / "@mot#k" par l'indice du mot dans la voix."""
+    if isinstance(x, str) and x.startswith("@"):
+        cle, _, k = x[1:].partition("#")
+        nu = lambda t: t.lower().rstrip(".,;:!?… »").split(" ")[0]
+        trouves = [i for i, m in enumerate(mots) if nu(m["text"]) == cle]
+        if len(trouves) < int(k or 1):
+            sys.exit(f"ancre {x} introuvable")
+        return trouves[int(k or 1) - 1]
+    if isinstance(x, dict):
+        return {c: resout(y, mots) for c, y in x.items()}
+    if isinstance(x, (list, tuple)):
+        return type(x)(resout(y, mots) for y in x)
+    return x
 
 # --------------------------------------------------------------------------------------
 # Rendu
@@ -337,7 +434,7 @@ def rendu_bloc(nom, b, th, t0, T):
       top: 250px;
       width: 440px;
       text-align: center;
-      font-size: 96px;
+      font-size: {b.get("taille_titre", 96)}px;
       color: {th["texte"]};
     }}
     .s2-col-item {{
@@ -367,11 +464,14 @@ def rendu_bloc(nom, b, th, t0, T):
         html.append(f'    <p id="{nom}-td" class="s2-col-titre titre" style="left: 560px"><em>{b["droite"]}</em></p>')
         js.append(f'    tl.fromTo(["#{nom}-tg", "#{nom}-td"], {ENTREE}, 0.05);')
         js.append(f'    tl.fromTo("#{nom}-sep", {{ scaleY: 0 }}, {{ scaleY: 1, duration: 0.4, ease: "power2.out" }}, 0.1);')
-        rang = {"gauche": 0, "droite": 0}
+        # Hauteur estimée de chaque case (~12 caractères par ligne à 48 px sur 440 px) : pas de chevauchement
+        import re as _re
+        haut = {"gauche": 440, "droite": 440}
         for i, (col, texte, m) in enumerate(b["items"]):
             x = 80 if col == "gauche" else 560
-            y = 440 + rang[col] * 190
-            rang[col] += 1
+            y = haut[col]
+            lignes = max(1, math.ceil(len(_re.sub(r"<[^>]+>|&#?\w+;", "x", texte)) / 12))
+            haut[col] += max(190, 44 + 56 * lignes + 26)
             html.append(f'    <p id="{nom}-i{i}" class="s2-col-item" style="left: {x}px; top: {y}px">{texte}</p>')
             js.append(f'    tl.fromTo("#{nom}-i{i}", {ENTREE}, {max(0.1, L(m, -0.1))});')
     elif typ == "phrases":
@@ -645,6 +745,26 @@ def rendu_bloc(nom, b, th, t0, T):
         for k, i in enumerate(range(2, 7)):
             js.append(f'    tl.fromTo("#{nom}-k{i}", {{ strokeDasharray: 30, strokeDashoffset: 30 }}, {{ strokeDashoffset: 0, duration: 0.25 }}, {L(b["regle"], 0.1 + k * 0.25):.2f});')
         js.append(f'    tl.fromTo("#{nom}-titre", {ENTREE}, {L(b["regle"], -0.1)});')
+    elif typ == "pages":
+        # Feuilletage de vraies pages : chacune arrive par la droite et s'empile ; son titre remplace le précédent
+        css += CSS_FEUILLE + """
+    .s2-pages-titre {
+      top: 230px;
+      font-size: 76px;
+      line-height: 1.12;
+    }"""
+        items = b["items"]
+        rots = [-3, 2.5, -1.5, 3, -2.5, 1.5]
+        for i, (src, alt, titre, m) in enumerate(items):
+            t = max(0.05, L(m, -0.15))
+            html.append(f'    <p id="{nom}-t{i}" class="s2-texte s2-pages-titre titre">{titre}</p>')
+            html.append("    " + html_feuille(f"{nom}-f{i}", src, alt, "left: calc(50% - 255px); top: 460px; width: 510px"))
+            js.append(f'    tl.fromTo("#{nom}-f{i}", {{ opacity: 0, x: 620, rotation: 12 }}, {{ opacity: 1, x: 0, rotation: {rots[i % 6]}, duration: 0.5, ease: "power3.out" }}, {t:.2f});')
+            js.append(f'    tl.fromTo("#{nom}-t{i}", {ENTREE}, {t + 0.05:.2f});')
+            if i < len(items) - 1:
+                js.append(f'    tl.to("#{nom}-t{i}", {{ opacity: 0, y: -20, duration: 0.2, ease: "power2.in" }}, {max(t + 0.5, L(items[i + 1][3], -0.35)):.2f});')
+        html.insert(0, '    <div data-layout-allow-overlap>')
+        html.append('    </div>')
     elif typ == "pastilles":
         css += f'''
     #{nom}-ligne {{
@@ -700,6 +820,43 @@ def rendu_fin(nom, v, f, th, t0, T, duree):
       top: 260px;
       font-size: 84px;
     }
+    .s2-cta {
+      top: 230px;
+    }
+    .s2-cta-titre {
+      margin: 0;
+      font-size: 84px;
+      line-height: 1.15;
+    }
+    .s2-mot-cle {
+      position: relative;
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 46px 18px;
+      border-radius: 60px;
+      background: ''' + th["pastille"] + ''';
+      color: ''' + th["pastille_texte"] + ''';
+      font-family: var(--font-texte);
+      font-weight: 800;
+      font-size: 78px;
+      letter-spacing: 0.02em;
+    }
+    .s2-mot-cle::after {
+      content: "";
+      position: absolute;
+      left: 54px;
+      bottom: -22px;
+      border-left: 0 solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 24px solid ''' + th["pastille"] + ''';
+    }
+    .s2-cta-sous {
+      margin: 34px 0 0;
+      font-family: var(--font-texte);
+      font-weight: 500;
+      font-size: 42px;
+      color: ''' + th["em"] + ''';
+    }
     .s2-accroche {
       top: 560px;
       font-size: 92px;
@@ -709,15 +866,21 @@ def rendu_fin(nom, v, f, th, t0, T, duree):
       inset: 0;
     }'''
     html, js = ['    <div data-layout-allow-overlap>'], []
-    textes = f["textes"] + [("Lien en <em>bio</em>", f["lien"])]
+    textes = f["textes"] + [(None, f["lien"])]
     for i, (texte, m) in enumerate(textes):
-        html.append(f'      <p id="{nom}-t{i}" class="s2-texte s2-fin-texte titre">{texte}</p>')
+        if texte is None:  # appel à l'action : le mot-clé à commenter, comme une bulle de commentaire
+            html.append(f'      <div id="{nom}-t{i}" class="s2-texte s2-cta"><p class="s2-cta-titre titre">Commente</p>'
+                        f'<span class="s2-mot-cle">90 JOURS</span>'
+                        f'<p class="s2-cta-sous">et reçois le lien en message privé</p></div>')
+        else:
+            html.append(f'      <p id="{nom}-t{i}" class="s2-texte s2-fin-texte titre">{texte}</p>')
         t = max(0.05, L(m, -0.1))
         js.append(f'    tl.fromTo("#{nom}-t{i}", {ENTREE}, {t});')
         if i < len(textes) - 1:
             js.append(f'    tl.to("#{nom}-t{i}", {{ opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }}, {max(t + 0.5, L(textes[i + 1][1], -0.35))});')
-    places = (["left: calc(50% - 225px); top: 560px; width: 450px"] if len(f["pages"]) == 1
-              else ["left: 130px; top: 520px; width: 450px", "left: 500px; top: 600px; width: 450px"])
+    # Pages sous le bloc « Commente 90 JOURS » (qui descend jusqu'à ~560 px), au-dessus des sous-titres
+    places = (["left: calc(50% - 200px); top: 610px; width: 400px"] if len(f["pages"]) == 1
+              else ["left: 150px; top: 600px; width: 380px", "left: 530px; top: 660px; width: 380px"])
     rots = [-2] if len(f["pages"]) == 1 else [-3, 3]
     for i, ((src, alt, m), place, r) in enumerate(zip(f["pages"], places, rots)):
         html.append("      " + html_feuille(f"{nom}-f{i}", src, alt, place))
@@ -752,30 +915,38 @@ def hote(id_, src, debut, duree, i, kind="graphics"):
 
 
 def genere(num):
-    v = VIDEOS[num]
+    base = num if num.startswith("s") else f"s2-{num}"
+    serie = base[1]
+    num = base[3:]
+    mots = json.loads(pathlib.Path(f"assets/voice/{base}.words.json").read_text())
+    v = resout(VIDEOS[base], mots)
     th = THEMES[v["fond"]]
-    mots = json.loads(pathlib.Path(f"assets/voice/s2-{num}.words.json").read_text())
     T = lambda m: mots[m]["start"] + DECALAGE
-    duree = v["duree"]
+    # Durée : dernier mot + 1,6 s (l'écran de fin se lit, puis la boucle) ; ancre du CTA : « commente »
+    duree = math.ceil(mots[-1]["end"] + DECALAGE + 1.6)
+    v["fin"]["lien"] = max(i for i, m in enumerate(mots) if m["text"].lower() == "commente")
+    musique = pathlib.Path(f"assets/music/{base}.wav")
+    if not musique.exists() or abs(sf.info(musique).duration - duree) > 0.05:
+        subprocess.run([sys.executable, "-I", "scripts/music-pad.py", str(duree), str(musique)]
+                       + (["--piano"] if v["musique"] == "piano" else []), check=True, capture_output=True)
     # Découpage : chaque bloc commence 0,25 s avant son premier mot et finit au début du suivant
     debuts = [max(0.0, T(b["m"]) - 0.25) for b in v["blocs"]] + [max(0.0, T(v["fin"]["m"]) - 0.25)]
     scenes, sons = [], []
-    base = f"s2-{num}"
     # accroche
     css, html, js = rendu_accroche(f"{base}-acc", v, th, debuts[0])
-    pathlib.Path(f"compositions/{base}-acc.html").write_text(scene(f"{base}-acc", f"Série 2 · vidéo {num} « {v['titre']} » · accroche (image 0)", css, html, js))
+    pathlib.Path(f"compositions/{base}-acc.html").write_text(scene(f"{base}-acc", f"Série {serie} · vidéo {num} « {v['titre']} » · accroche (image 0)", css, html, js))
     scenes.append((f"{base}-acc", 0.0, debuts[0]))
     for k, b in enumerate(v["blocs"]):
         nom = f"{base}-b{k + 1}"
         t0, t1 = debuts[k], debuts[k + 1]
         css, html, js = rendu_bloc(nom, b, th, t0, T)
-        pathlib.Path(f"compositions/{nom}.html").write_text(scene(nom, f"Série 2 · vidéo {num} · bloc {k + 1} ({b['type']}) · {t0:.2f}–{t1:.2f} s", css, html, js))
+        pathlib.Path(f"compositions/{nom}.html").write_text(scene(nom, f"Série {serie} · vidéo {num} · bloc {k + 1} ({b['type']}) · {t0:.2f}–{t1:.2f} s", css, html, js))
         scenes.append((nom, t0, t1 - t0))
         sons.append((f"sfx-b{k + 1}", "assets/sfx/whoosh-short.mp3", round(t0 + 0.2, 2), 0.3))
     nom = f"{base}-fin"
     t0 = debuts[-1]
     css, html, js = rendu_fin(nom, v, v["fin"], th, t0, T, duree)
-    pathlib.Path(f"compositions/{nom}.html").write_text(scene(nom, f"Série 2 · vidéo {num} · fin + boucle · {t0:.2f}–{duree} s", css, html, js))
+    pathlib.Path(f"compositions/{nom}.html").write_text(scene(nom, f"Série {serie} · vidéo {num} · fin + boucle · {t0:.2f}–{duree} s", css, html, js))
     scenes.append((nom, t0, duree - t0))
     sons.append(("sfx-lien", "assets/sfx/chime.mp3", round(T(v["fin"]["lien"]), 2), 0.3))
 
@@ -795,7 +966,7 @@ def genere(num):
     tete = pathlib.Path("videos/video-01.html").read_text()
     tete = tete[:tete.index("<body>")].replace("background: var(--vert-foret);", f"background: var(--{'vert-foret' if v['fond'] == 'vert' else 'creme'});")
     racine = tete + f'''<body>
-    <!-- Série 2 · vidéo {num} — « {v["titre"]} » · {duree} s (SCRIPTS-SERIE-2.md ; généré par scripts/serie2.py) -->
+    <!-- Série {serie} · vidéo {num} — « {v["titre"]} » · {duree} s (SCRIPTS-SERIE-{serie}.md ; généré par scripts/serie2.py) -->
     <div id="root" data-composition-id="main" data-start="0" data-duration="{duree}" data-width="1080" data-height="1920">
 {chr(10).join(hotes)}
     </div>

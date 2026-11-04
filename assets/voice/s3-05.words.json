@@ -1,0 +1,410 @@
+[
+ {
+  "id": "w0",
+  "text": "Sans",
+  "start": 0.0,
+  "end": 0.244
+ },
+ {
+  "id": "w1",
+  "text": "plan,",
+  "start": 0.267,
+  "end": 0.522
+ },
+ {
+  "id": "w2",
+  "text": "ou",
+  "start": 0.615,
+  "end": 0.708
+ },
+ {
+  "id": "w3",
+  "text": "avec",
+  "start": 0.766,
+  "end": 0.952
+ },
+ {
+  "id": "w4",
+  "text": "un",
+  "start": 1.033,
+  "end": 1.08
+ },
+ {
+  "id": "w5",
+  "text": "plan ?",
+  "start": 1.115,
+  "end": 1.289
+ },
+ {
+  "id": "w6",
+  "text": "Sans",
+  "start": 2.025,
+  "end": 2.28
+ },
+ {
+  "id": "w7",
+  "text": "plan,",
+  "start": 2.304,
+  "end": 2.524
+ },
+ {
+  "id": "w8",
+  "text": "tu",
+  "start": 2.652,
+  "end": 2.768
+ },
+ {
+  "id": "w9",
+  "text": "fais",
+  "start": 2.814,
+  "end": 2.942
+ },
+ {
+  "id": "w10",
+  "text": "tes",
+  "start": 2.965,
+  "end": 3.058
+ },
+ {
+  "id": "w11",
+  "text": "courses",
+  "start": 3.082,
+  "end": 3.36
+ },
+ {
+  "id": "w12",
+  "text": "au",
+  "start": 3.407,
+  "end": 3.523
+ },
+ {
+  "id": "w13",
+  "text": "hasard.",
+  "start": 3.581,
+  "end": 3.964
+ },
+ {
+  "id": "w14",
+  "text": "Avec",
+  "start": 4.608,
+  "end": 4.887
+ },
+ {
+  "id": "w15",
+  "text": "le",
+  "start": 4.945,
+  "end": 5.003
+ },
+ {
+  "id": "w16",
+  "text": "guide,",
+  "start": 5.049,
+  "end": 5.386
+ },
+ {
+  "id": "w17",
+  "text": "ta",
+  "start": 5.525,
+  "end": 5.665
+ },
+ {
+  "id": "w18",
+  "text": "liste",
+  "start": 5.723,
+  "end": 5.932
+ },
+ {
+  "id": "w19",
+  "text": "est",
+  "start": 5.955,
+  "end": 6.024
+ },
+ {
+  "id": "w20",
+  "text": "déjà",
+  "start": 6.059,
+  "end": 6.361
+ },
+ {
+  "id": "w21",
+  "text": "calculée.",
+  "start": 6.408,
+  "end": 6.907
+ },
+ {
+  "id": "w22",
+  "text": "Sans",
+  "start": 7.609,
+  "end": 7.888
+ },
+ {
+  "id": "w23",
+  "text": "plan,",
+  "start": 7.911,
+  "end": 8.131
+ },
+ {
+  "id": "w24",
+  "text": "tu",
+  "start": 8.213,
+  "end": 8.329
+ },
+ {
+  "id": "w25",
+  "text": "improvises",
+  "start": 8.387,
+  "end": 8.805
+ },
+ {
+  "id": "w26",
+  "text": "chaque",
+  "start": 8.921,
+  "end": 9.211
+ },
+ {
+  "id": "w27",
+  "text": "soir.",
+  "start": 9.234,
+  "end": 9.548
+ },
+ {
+  "id": "w28",
+  "text": "Avec",
+  "start": 10.238,
+  "end": 10.517
+ },
+ {
+  "id": "w29",
+  "text": "le",
+  "start": 10.586,
+  "end": 10.644
+ },
+ {
+  "id": "w30",
+  "text": "guide,",
+  "start": 10.691,
+  "end": 10.981
+ },
+ {
+  "id": "w31",
+  "text": "ton",
+  "start": 11.225,
+  "end": 11.387
+ },
+ {
+  "id": "w32",
+  "text": "menu",
+  "start": 11.422,
+  "end": 11.631
+ },
+ {
+  "id": "w33",
+  "text": "de",
+  "start": 11.666,
+  "end": 11.724
+ },
+ {
+  "id": "w34",
+  "text": "la",
+  "start": 11.759,
+  "end": 11.829
+ },
+ {
+  "id": "w35",
+  "text": "semaine",
+  "start": 11.887,
+  "end": 12.177
+ },
+ {
+  "id": "w36",
+  "text": "est",
+  "start": 12.2,
+  "end": 12.27
+ },
+ {
+  "id": "w37",
+  "text": "prêt.",
+  "start": 12.305,
+  "end": 12.595
+ },
+ {
+  "id": "w38",
+  "text": "Sans",
+  "start": 13.285,
+  "end": 13.54
+ },
+ {
+  "id": "w39",
+  "text": "plan,",
+  "start": 13.564,
+  "end": 13.807
+ },
+ {
+  "id": "w40",
+  "text": "un",
+  "start": 13.97,
+  "end": 14.086
+ },
+ {
+  "id": "w41",
+  "text": "écart,",
+  "start": 14.167,
+  "end": 14.516
+ },
+ {
+  "id": "w42",
+  "text": "et",
+  "start": 14.609,
+  "end": 14.725
+ },
+ {
+  "id": "w43",
+  "text": "tu",
+  "start": 14.748,
+  "end": 14.829
+ },
+ {
+  "id": "w44",
+  "text": "recommences",
+  "start": 14.887,
+  "end": 15.259
+ },
+ {
+  "id": "w45",
+  "text": "lundi.",
+  "start": 15.282,
+  "end": 15.595
+ },
+ {
+  "id": "w46",
+  "text": "Avec",
+  "start": 16.146,
+  "end": 16.425
+ },
+ {
+  "id": "w47",
+  "text": "le",
+  "start": 16.494,
+  "end": 16.541
+ },
+ {
+  "id": "w48",
+  "text": "guide,",
+  "start": 16.587,
+  "end": 16.843
+ },
+ {
+  "id": "w49",
+  "text": "tu",
+  "start": 16.912,
+  "end": 17.052
+ },
+ {
+  "id": "w50",
+  "text": "reviens",
+  "start": 17.11,
+  "end": 17.365
+ },
+ {
+  "id": "w51",
+  "text": "au",
+  "start": 17.4,
+  "end": 17.493
+ },
+ {
+  "id": "w52",
+  "text": "repas",
+  "start": 17.539,
+  "end": 17.783
+ },
+ {
+  "id": "w53",
+  "text": "suivant.",
+  "start": 17.806,
+  "end": 18.178
+ },
+ {
+  "id": "w54",
+  "text": "La",
+  "start": 18.961,
+  "end": 19.1
+ },
+ {
+  "id": "w55",
+  "text": "différence,",
+  "start": 19.158,
+  "end": 19.739
+ },
+ {
+  "id": "w56",
+  "text": "c'est",
+  "start": 19.82,
+  "end": 19.994
+ },
+ {
+  "id": "w57",
+  "text": "l'organisation.",
+  "start": 20.029,
+  "end": 20.83
+ },
+ {
+  "id": "w58",
+  "text": "Commente",
+  "start": 21.358,
+  "end": 21.741
+ },
+ {
+  "id": "w59",
+  "text": "« 90 JOURS »,",
+  "start": 21.788,
+  "end": 22.647
+ },
+ {
+  "id": "w60",
+  "text": "et",
+  "start": 22.728,
+  "end": 22.809
+ },
+ {
+  "id": "w61",
+  "text": "je",
+  "start": 22.856,
+  "end": 22.937
+ },
+ {
+  "id": "w62",
+  "text": "t'envoie",
+  "start": 22.983,
+  "end": 23.274
+ },
+ {
+  "id": "w63",
+  "text": "le",
+  "start": 23.297,
+  "end": 23.367
+ },
+ {
+  "id": "w64",
+  "text": "lien",
+  "start": 23.413,
+  "end": 23.645
+ },
+ {
+  "id": "w65",
+  "text": "en",
+  "start": 23.703,
+  "end": 23.796
+ },
+ {
+  "id": "w66",
+  "text": "message",
+  "start": 23.843,
+  "end": 24.179
+ },
+ {
+  "id": "w67",
+  "text": "privé.",
+  "start": 24.214,
+  "end": 24.562
+ }
+]

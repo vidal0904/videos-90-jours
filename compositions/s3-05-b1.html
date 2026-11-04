@@ -1,0 +1,86 @@
+<!-- Série 3 · vidéo 05 · bloc 1 (colonnes) · 2.38–19.51 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--encre);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--vert-foret-2);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--encre);
+    }
+    .s2-col-titre em {
+      color: var(--vert-foret-2);
+    }
+    .s2-col-titre {
+      position: absolute;
+      top: 250px;
+      width: 440px;
+      text-align: center;
+      font-size: 66px;
+      color: var(--encre);
+    }
+    .s2-col-item {
+      position: absolute;
+      width: 440px;
+      padding: 22px 18px;
+      border-radius: 24px;
+      background: var(--sauge-claire);
+      border: 2px solid rgba(30, 59, 44, 0.12);
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 1.15;
+      color: var(--encre);
+    }
+    #s3-05-b1-sep {
+      position: absolute;
+      left: 539px;
+      top: 260px;
+      width: 2px;
+      height: 960px;
+      background: rgba(30, 59, 44, 0.12);
+    }
+  </style>
+  <div id="root" data-composition-id="s3-05-b1" data-width="1080" data-height="1920">
+    <span id="s3-05-b1-sep"></span>
+    <p id="s3-05-b1-tg" class="s2-col-titre titre" style="left: 80px">Sans plan</p>
+    <p id="s3-05-b1-td" class="s2-col-titre titre" style="left: 560px"><em>Avec le guide</em></p>
+    <p id="s3-05-b1-i0" class="s2-col-item" style="left: 80px; top: 440px">Courses au hasard</p>
+    <p id="s3-05-b1-i1" class="s2-col-item" style="left: 560px; top: 440px">Liste déjà calculée</p>
+    <p id="s3-05-b1-i2" class="s2-col-item" style="left: 80px; top: 630px">On improvise chaque soir</p>
+    <p id="s3-05-b1-i3" class="s2-col-item" style="left: 560px; top: 630px">Menu de la semaine prêt</p>
+    <p id="s3-05-b1-i4" class="s2-col-item" style="left: 80px; top: 820px">Un écart → on recommence lundi</p>
+    <p id="s3-05-b1-i5" class="s2-col-item" style="left: 560px; top: 820px">Un écart → le repas suivant</p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo(["#s3-05-b1-tg", "#s3-05-b1-td"], { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s3-05-b1-sep", { scaleY: 0 }, { scaleY: 1, duration: 0.4, ease: "power2.out" }, 0.1);
+    tl.fromTo("#s3-05-b1-i0", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.21);
+    tl.fromTo("#s3-05-b1-i1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.85);
+    tl.fromTo("#s3-05-b1-i2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 6.51);
+    tl.fromTo("#s3-05-b1-i3", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 9.55);
+    tl.fromTo("#s3-05-b1-i4", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 12.29);
+    tl.fromTo("#s3-05-b1-i5", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 15.24);
+    window.__timelines["s3-05-b1"] = tl;
+  </script>
+</template>

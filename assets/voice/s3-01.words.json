@@ -1,0 +1,320 @@
+[
+ {
+  "id": "w0",
+  "text": "Voici",
+  "start": 0.0,
+  "end": 0.488
+ },
+ {
+  "id": "w1",
+  "text": "ce",
+  "start": 0.522,
+  "end": 0.569
+ },
+ {
+  "id": "w2",
+  "text": "que",
+  "start": 0.604,
+  "end": 0.685
+ },
+ {
+  "id": "w3",
+  "text": "tu",
+  "start": 0.72,
+  "end": 0.813
+ },
+ {
+  "id": "w4",
+  "text": "reçois",
+  "start": 0.871,
+  "end": 1.126
+ },
+ {
+  "id": "w5",
+  "text": "vraiment",
+  "start": 1.149,
+  "end": 1.521
+ },
+ {
+  "id": "w6",
+  "text": "dans",
+  "start": 1.544,
+  "end": 1.649
+ },
+ {
+  "id": "w7",
+  "text": "mon",
+  "start": 1.672,
+  "end": 1.765
+ },
+ {
+  "id": "w8",
+  "text": "guide.",
+  "start": 1.811,
+  "end": 2.113
+ },
+ {
+  "id": "w9",
+  "text": "316",
+  "start": 2.861,
+  "end": 3.627
+ },
+ {
+  "id": "w10",
+  "text": "pages,",
+  "start": 3.65,
+  "end": 3.964
+ },
+ {
+  "id": "w11",
+  "text": "à",
+  "start": 4.103,
+  "end": 4.15
+ },
+ {
+  "id": "w12",
+  "text": "lire",
+  "start": 4.231,
+  "end": 4.405
+ },
+ {
+  "id": "w13",
+  "text": "sur",
+  "start": 4.428,
+  "end": 4.533
+ },
+ {
+  "id": "w14",
+  "text": "ton",
+  "start": 4.579,
+  "end": 4.672
+ },
+ {
+  "id": "w15",
+  "text": "téléphone.",
+  "start": 4.707,
+  "end": 5.241
+ },
+ {
+  "id": "w16",
+  "text": "12",
+  "start": 5.955,
+  "end": 6.257
+ },
+ {
+  "id": "w17",
+  "text": "menus",
+  "start": 6.28,
+  "end": 6.501
+ },
+ {
+  "id": "w18",
+  "text": "de",
+  "start": 6.524,
+  "end": 6.57
+ },
+ {
+  "id": "w19",
+  "text": "la",
+  "start": 6.617,
+  "end": 6.686
+ },
+ {
+  "id": "w20",
+  "text": "semaine,",
+  "start": 6.744,
+  "end": 7.116
+ },
+ {
+  "id": "w21",
+  "text": "déjà",
+  "start": 7.22,
+  "end": 7.499
+ },
+ {
+  "id": "w22",
+  "text": "faits.",
+  "start": 7.569,
+  "end": 7.778
+ },
+ {
+  "id": "w23",
+  "text": "12",
+  "start": 8.584,
+  "end": 8.967
+ },
+ {
+  "id": "w24",
+  "text": "listes",
+  "start": 9.002,
+  "end": 9.292
+ },
+ {
+  "id": "w25",
+  "text": "de",
+  "start": 9.315,
+  "end": 9.385
+ },
+ {
+  "id": "w26",
+  "text": "courses,",
+  "start": 9.432,
+  "end": 9.78
+ },
+ {
+  "id": "w27",
+  "text": "avec",
+  "start": 9.919,
+  "end": 10.151
+ },
+ {
+  "id": "w28",
+  "text": "les",
+  "start": 10.209,
+  "end": 10.291
+ },
+ {
+  "id": "w29",
+  "text": "quantités",
+  "start": 10.325,
+  "end": 10.743
+ },
+ {
+  "id": "w30",
+  "text": "pour",
+  "start": 10.778,
+  "end": 10.883
+ },
+ {
+  "id": "w31",
+  "text": "une",
+  "start": 10.918,
+  "end": 11.01
+ },
+ {
+  "id": "w32",
+  "text": "personne.",
+  "start": 11.034,
+  "end": 11.51
+ },
+ {
+  "id": "w33",
+  "text": "70",
+  "start": 12.142,
+  "end": 12.699
+ },
+ {
+  "id": "w34",
+  "text": "recettes,",
+  "start": 12.722,
+  "end": 13.117
+ },
+ {
+  "id": "w35",
+  "text": "dont",
+  "start": 13.233,
+  "end": 13.431
+ },
+ {
+  "id": "w36",
+  "text": "23",
+  "start": 13.489,
+  "end": 13.895
+ },
+ {
+  "id": "w37",
+  "text": "express.",
+  "start": 13.918,
+  "end": 14.394
+ },
+ {
+  "id": "w38",
+  "text": "Et",
+  "start": 14.957,
+  "end": 15.108
+ },
+ {
+  "id": "w39",
+  "text": "13",
+  "start": 15.154,
+  "end": 15.445
+ },
+ {
+  "id": "w40",
+  "text": "outils",
+  "start": 15.468,
+  "end": 15.735
+ },
+ {
+  "id": "w41",
+  "text": "à",
+  "start": 15.781,
+  "end": 15.805
+ },
+ {
+  "id": "w42",
+  "text": "imprimer.",
+  "start": 15.874,
+  "end": 16.292
+ },
+ {
+  "id": "w43",
+  "text": "Commente",
+  "start": 16.936,
+  "end": 17.308
+ },
+ {
+  "id": "w44",
+  "text": "« 90 JOURS »,",
+  "start": 17.342,
+  "end": 18.213
+ },
+ {
+  "id": "w45",
+  "text": "et",
+  "start": 18.294,
+  "end": 18.364
+ },
+ {
+  "id": "w46",
+  "text": "je",
+  "start": 18.422,
+  "end": 18.492
+ },
+ {
+  "id": "w47",
+  "text": "t'envoie",
+  "start": 18.538,
+  "end": 18.84
+ },
+ {
+  "id": "w48",
+  "text": "le",
+  "start": 18.863,
+  "end": 18.933
+ },
+ {
+  "id": "w49",
+  "text": "lien",
+  "start": 18.979,
+  "end": 19.165
+ },
+ {
+  "id": "w50",
+  "text": "en",
+  "start": 19.235,
+  "end": 19.328
+ },
+ {
+  "id": "w51",
+  "text": "message",
+  "start": 19.374,
+  "end": 19.699
+ },
+ {
+  "id": "w52",
+  "text": "privé.",
+  "start": 19.734,
+  "end": 20.059
+ }
+]

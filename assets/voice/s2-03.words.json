@@ -272,61 +272,97 @@
  {
   "id": "w45",
   "text": "Mon",
-  "start": 19.879,
-  "end": 20.053
+  "start": 19.713,
+  "end": 19.876
  },
  {
   "id": "w46",
-  "text": "guide,",
-  "start": 20.111,
-  "end": 20.413
+  "text": "guide",
+  "start": 19.922,
+  "end": 20.143
  },
  {
   "id": "w47",
-  "text": "sans",
-  "start": 20.622,
-  "end": 20.831
+  "text": "est",
+  "start": 20.166,
+  "end": 20.235
  },
  {
   "id": "w48",
-  "text": "aliments",
-  "start": 20.877,
-  "end": 21.179
+  "text": "sans",
+  "start": 20.282,
+  "end": 20.479
  },
  {
   "id": "w49",
-  "text": "interdits,",
-  "start": 21.214,
-  "end": 21.702
+  "text": "aliments",
+  "start": 20.537,
+  "end": 20.839
  },
  {
   "id": "w50",
-  "text": "est",
-  "start": 21.853,
-  "end": 21.98
+  "text": "interdits :",
+  "start": 20.897,
+  "end": 21.315
  },
  {
   "id": "w51",
-  "text": "en",
-  "start": 22.062,
-  "end": 22.12
+  "text": "commente",
+  "start": 21.524,
+  "end": 21.907
  },
  {
   "id": "w52",
-  "text": "lien",
-  "start": 22.155,
-  "end": 22.294
+  "text": "« 90 JOURS »,",
+  "start": 21.954,
+  "end": 22.987
  },
  {
   "id": "w53",
-  "text": "en",
-  "start": 22.329,
-  "end": 22.398
+  "text": "et",
+  "start": 23.08,
+  "end": 23.184
  },
  {
   "id": "w54",
-  "text": "bio.",
-  "start": 22.445,
-  "end": 22.7
+  "text": "je",
+  "start": 23.231,
+  "end": 23.3
+ },
+ {
+  "id": "w55",
+  "text": "t'envoie",
+  "start": 23.347,
+  "end": 23.626
+ },
+ {
+  "id": "w56",
+  "text": "le",
+  "start": 23.66,
+  "end": 23.718
+ },
+ {
+  "id": "w57",
+  "text": "lien",
+  "start": 23.765,
+  "end": 23.974
+ },
+ {
+  "id": "w58",
+  "text": "en",
+  "start": 24.044,
+  "end": 24.136
+ },
+ {
+  "id": "w59",
+  "text": "message",
+  "start": 24.183,
+  "end": 24.508
+ },
+ {
+  "id": "w60",
+  "text": "privé.",
+  "start": 24.531,
+  "end": 24.868
  }
 ]

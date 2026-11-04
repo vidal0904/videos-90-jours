@@ -23,3 +23,20 @@ Sources de vérité : `BRIEF-EBOOK.md` (contenu, règles absolues) et `DESIGN.md
 Passer la voix off à ElevenLabs (clé dans la variable `ELEVENLABS_API_KEY`, domaine
 `api.elevenlabs.io` autorisé), avec les horaires mot à mot de l'endpoint `with-timestamps`,
 puis recaler et re-rendre la vidéo 1, puis la vidéo 2.
+
+## Séries 2 et 3 (vidéos générées par blocs)
+
+Fabriquer ou refaire une vidéo `s2-XX` / `s3-XX` :
+
+```bash
+python3 -I scripts/voice.py assets/voice/s3-01.txt --par-phrase --speed 1.0 --pause-phrase 0.4
+python3 -I scripts/mot-cle.py assets/voice/s3-01.words.json          # « commente 90 jours » → « 90 JOURS »
+bash scripts/voice-polish.sh assets/voice/s3-01.wav --leger
+python3 scripts/sous-titres-serie.py s3-01
+python3 -I scripts/serie2.py s3-01                                     # scènes + racine videos/s3-01.html (+ musique si besoin)
+cp videos/s3-01.html index.html && npx hyperframes render -q draft -f 30 -o renders/s3-01-brouillon.mp4
+```
+
+- Changer seulement la fin d'une voix déjà validée : modifier la dernière phrase du `.txt`, puis
+  `voice.py … --garder-phrases N` (N = nombre de phrases gardées telles quelles). Seule la suite est régénérée.
+- CTA, message privé automatique et règles d'honnêteté : `VENTE-REELS.md`.

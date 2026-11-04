@@ -44,15 +44,23 @@ ap.add_argument("--speed", type=float, default=1.0)
 ap.add_argument("--voice", default=VOICE)
 # Pauses un peu plus longues que Kokoro par défaut : « pauses courtes après les phrases-clés »
 ap.add_argument("--pause-phrase", type=float, default=0.38)
+ap.add_argument("--garder-phrases", type=int, default=0,
+                help="ElevenLabs --par-phrase : garde la voix et les mots déjà générés des N premières phrases "
+                     "(<nom>.wav / .words.json) et ne génère que les phrases suivantes")
 ap.add_argument("--pause-virgule", type=float, default=0.14)
 args = ap.parse_args()
 
 src = pathlib.Path(args.script)
 text = " ".join(src.read_text(encoding="utf-8").split())
+PHRASES = [p for p in re.split(r"(?<=[.!?…])\s+", text) if p]
+if args.garder_phrases and not (args.moteur == "elevenlabs" and args.par_phrase):
+    sys.exit("--garder-phrases ne marche qu'avec --moteur elevenlabs --par-phrase")
+# Ce qu'on génère vraiment (tout le texte, ou seulement les phrases après celles qu'on garde)
+a_dire = " ".join(PHRASES[args.garder_phrases:])
 # En français « ? », « ! », « : » et « ; » sont détachés par une espace : on les colle
 # (espace insécable) au mot précédent, ce ne sont pas des mots prononcés
 words = []
-for token in text.split(" "):
+for token in a_dire.split(" "):
     if words and all(c in "?!:;»" for c in token):
         words[-1] += "\u00a0" + token
     else:
@@ -176,9 +184,11 @@ def elevenlabs_phonemes():
     if not args.par_phrase:
         return elevenlabs_appel(text)
     # Une requête par phrase, puis `--pause-phrase` secondes de silence entre les phrases
-    phrases = [p for p in re.split(r"(?<=[.!?…])\s+", text) if p]
+    phrases = PHRASES
     morceaux, phs, t0, sr = [], [], 0.0, 44100
     for i, phrase in enumerate(phrases):
+        if i < args.garder_phrases:
+            continue
         audio, sr, ph = elevenlabs_appel(phrase, " ".join(phrases[:i]), " ".join(phrases[i + 1:]))
         phs += [Ph(p.phoneme, p.start + t0, p.end + t0) for p in ph]
         morceaux.append(audio)
@@ -227,8 +237,26 @@ for suite, chiffre in sorted(AFFICHAGE_MULTI.items(), key=lambda kv: -len(kv[0])
             out[i:i + len(suite)] = [{"text": debut + fin, "ecrit": " ".join(m["ecrit"] for m in bloc),
                                       "start": bloc[0]["start"], "end": bloc[-1]["end"]}]
         i += 1
-out = [{"id": f"w{i}", "text": m["text"], "start": m["start"], "end": m["end"]} for i, m in enumerate(out)]
 wav = src.with_suffix(".wav")
+if args.garder_phrases:
+    # On recolle : ancienne voix jusqu'au milieu du silence avant la 1re phrase régénérée, puis la suite
+    anciens = json.loads(src.with_suffix(".words.json").read_text(encoding="utf-8"))
+    ancien_audio, sr0 = sf.read(wav, dtype="float32")
+    if sr0 != sr:
+        sys.exit(f"fréquences différentes : {sr0} / {sr}")
+    fins = [i for i, m in enumerate(anciens) if re.search(r"[.!?…]$", m["text"])]
+    if len(fins) <= args.garder_phrases - 1:
+        sys.exit(f"l'ancienne voix n'a que {len(fins)} phrases")
+    k = fins[args.garder_phrases - 1] + 1
+    coupe = (anciens[k - 1]["end"] + anciens[k]["start"]) / 2
+    marge = 0.15
+    decal = coupe + marge
+    print(f"garde w0–w{k - 1} (… {' '.join(m['text'] for m in anciens[k - 3:k])}), coupe à {coupe:.2f}s")
+    garde = ancien_audio[: int(coupe * sr)].copy()
+    garde[-int(0.01 * sr):] *= np.linspace(1, 0, int(0.01 * sr), dtype=np.float32)  # pas de clic au raccord
+    audio = np.concatenate([garde, np.zeros(int(marge * sr), dtype=np.float32), audio])
+    out = anciens[:k] + [{**m, "start": round(m["start"] + decal, 3), "end": round(m["end"] + decal, 3)} for m in out]
+out = [{"id": f"w{i}", "text": m["text"], "start": m["start"], "end": m["end"]} for i, m in enumerate(out)]
 sf.write(wav, audio, sr)
 src.with_suffix(".words.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{wav} {len(audio) / sr:.2f}s, {len(out)} words")

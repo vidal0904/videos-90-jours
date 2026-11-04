@@ -59,7 +59,8 @@ mots.forEach((m, i) => {
     courant = report;
   }
   courant.push(m);
-  const finDePhrase = /[.!?…,;:]$/.test(m.text);
+  // Le mot-clé à commenter (« 90 JOURS ») ferme son groupe : il reste lisible d'un coup d'œil
+  const finDePhrase = /[.!?…,;:»]$/.test(m.text) || m.text.includes("»");
   const pause = suivant ? suivant.start - m.end >= PAUSE : true;
   if (finDePhrase || pause || !suivant) {
     groupes.push(courant);

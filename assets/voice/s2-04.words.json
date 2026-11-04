@@ -302,49 +302,91 @@
  {
   "id": "w50",
   "text": "Enregistre",
-  "start": 19.89,
-  "end": 20.482
+  "start": 19.782,
+  "end": 20.409
  },
  {
   "id": "w51",
   "text": "pour",
-  "start": 20.598,
-  "end": 20.761
+  "start": 20.444,
+  "end": 20.548
  },
  {
   "id": "w52",
   "text": "ta",
-  "start": 20.807,
-  "end": 20.9
+  "start": 20.583,
+  "end": 20.664
  },
  {
   "id": "w53",
   "text": "prochaine",
-  "start": 20.947,
-  "end": 21.26
+  "start": 20.722,
+  "end": 21.059
  },
  {
   "id": "w54",
   "text": "sortie,",
-  "start": 21.283,
-  "end": 21.678
+  "start": 21.082,
+  "end": 21.489
  },
  {
   "id": "w55",
-  "text": "lien",
-  "start": 21.829,
-  "end": 22.049
+  "text": "et",
+  "start": 21.802,
+  "end": 21.918
  },
  {
   "id": "w56",
-  "text": "en",
-  "start": 22.119,
-  "end": 22.166
+  "text": "commente",
+  "start": 21.965,
+  "end": 22.278
  },
  {
   "id": "w57",
-  "text": "bio.",
-  "start": 22.2,
-  "end": 22.409
+  "text": "« 90 JOURS »",
+  "start": 22.325,
+  "end": 23.219
+ },
+ {
+  "id": "w58",
+  "text": "pour",
+  "start": 23.253,
+  "end": 23.393
+ },
+ {
+  "id": "w59",
+  "text": "recevoir",
+  "start": 23.439,
+  "end": 23.892
+ },
+ {
+  "id": "w60",
+  "text": "le",
+  "start": 23.927,
+  "end": 23.985
+ },
+ {
+  "id": "w61",
+  "text": "lien",
+  "start": 24.031,
+  "end": 24.252
+ },
+ {
+  "id": "w62",
+  "text": "en",
+  "start": 24.31,
+  "end": 24.414
+ },
+ {
+  "id": "w63",
+  "text": "message",
+  "start": 24.472,
+  "end": 24.786
+ },
+ {
+  "id": "w64",
+  "text": "privé.",
+  "start": 24.809,
+  "end": 25.169
  }
 ]
