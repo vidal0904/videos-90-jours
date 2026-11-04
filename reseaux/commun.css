@@ -1,0 +1,7 @@
+@font-face { font-family: "Lora"; font-weight: 600; src: url("../assets/fonts/Lora-600.woff2") format("woff2"); }
+@font-face { font-family: "Lora"; font-style: italic; font-weight: 600; src: url("../assets/fonts/Lora-600-italic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 400 900; src: url("../assets/fonts/Inter-variable.woff2") format("woff2"); }
+:root { --vert: #1e3b2c; --creme: #fbf8f2; --dore: #e3cfa6; --sauge: #8fa68a; }
+html, body { margin: 0; background: var(--vert); }
+.titre { font-family: "Lora", serif; font-weight: 600; letter-spacing: -0.01em; color: var(--creme); }
+.titre em { font-style: italic; color: var(--dore); }
