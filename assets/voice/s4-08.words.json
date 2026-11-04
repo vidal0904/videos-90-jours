@@ -1,0 +1,326 @@
+[
+ {
+  "id": "w0",
+  "text": "3 phrases",
+  "start": 0.0,
+  "end": 0.58
+ },
+ {
+  "id": "w1",
+  "text": "du",
+  "start": 0.604,
+  "end": 0.673
+ },
+ {
+  "id": "w2",
+  "text": "guide,",
+  "start": 0.72,
+  "end": 1.022
+ },
+ {
+  "id": "w3",
+  "text": "à",
+  "start": 1.289,
+  "end": 1.335
+ },
+ {
+  "id": "w4",
+  "text": "garder",
+  "start": 1.451,
+  "end": 1.776
+ },
+ {
+  "id": "w5",
+  "text": "pour",
+  "start": 1.811,
+  "end": 1.927
+ },
+ {
+  "id": "w6",
+  "text": "les",
+  "start": 1.95,
+  "end": 2.043
+ },
+ {
+  "id": "w7",
+  "text": "jours",
+  "start": 2.067,
+  "end": 2.322
+ },
+ {
+  "id": "w8",
+  "text": "sans",
+  "start": 2.368,
+  "end": 2.531
+ },
+ {
+  "id": "w9",
+  "text": "motivation.",
+  "start": 2.554,
+  "end": 3.146
+ },
+ {
+  "id": "w10",
+  "text": "La",
+  "start": 3.837,
+  "end": 3.953
+ },
+ {
+  "id": "w11",
+  "text": "meilleure",
+  "start": 4.011,
+  "end": 4.255
+ },
+ {
+  "id": "w12",
+  "text": "version",
+  "start": 4.278,
+  "end": 4.592
+ },
+ {
+  "id": "w13",
+  "text": "de",
+  "start": 4.626,
+  "end": 4.685
+ },
+ {
+  "id": "w14",
+  "text": "vous-même",
+  "start": 4.719,
+  "end": 5.079
+ },
+ {
+  "id": "w15",
+  "text": "n'est",
+  "start": 5.102,
+  "end": 5.23
+ },
+ {
+  "id": "w16",
+  "text": "pas",
+  "start": 5.265,
+  "end": 5.474
+ },
+ {
+  "id": "w17",
+  "text": "une",
+  "start": 5.59,
+  "end": 5.671
+ },
+ {
+  "id": "w18",
+  "text": "destination.",
+  "start": 5.695,
+  "end": 6.345
+ },
+ {
+  "id": "w19",
+  "text": "C'est",
+  "start": 6.884,
+  "end": 7.105
+ },
+ {
+  "id": "w20",
+  "text": "une",
+  "start": 7.186,
+  "end": 7.267
+ },
+ {
+  "id": "w21",
+  "text": "direction.",
+  "start": 7.29,
+  "end": 7.79
+ },
+ {
+  "id": "w22",
+  "text": "Vous",
+  "start": 8.352,
+  "end": 8.538
+ },
+ {
+  "id": "w23",
+  "text": "n'avez",
+  "start": 8.561,
+  "end": 8.758
+ },
+ {
+  "id": "w24",
+  "text": "pas",
+  "start": 8.793,
+  "end": 8.898
+ },
+ {
+  "id": "w25",
+  "text": "besoin",
+  "start": 8.932,
+  "end": 9.165
+ },
+ {
+  "id": "w26",
+  "text": "d'être",
+  "start": 9.2,
+  "end": 9.42
+ },
+ {
+  "id": "w27",
+  "text": "parfait,",
+  "start": 9.467,
+  "end": 9.873
+ },
+ {
+  "id": "w28",
+  "text": "seulement",
+  "start": 10.105,
+  "end": 10.477
+ },
+ {
+  "id": "w29",
+  "text": "constant.",
+  "start": 10.511,
+  "end": 10.929
+ },
+ {
+  "id": "w30",
+  "text": "Les",
+  "start": 11.445,
+  "end": 11.608
+ },
+ {
+  "id": "w31",
+  "text": "progrès",
+  "start": 11.642,
+  "end": 11.956
+ },
+ {
+  "id": "w32",
+  "text": "lents",
+  "start": 12.002,
+  "end": 12.2
+ },
+ {
+  "id": "w33",
+  "text": "restent",
+  "start": 12.351,
+  "end": 12.734
+ },
+ {
+  "id": "w34",
+  "text": "des",
+  "start": 12.85,
+  "end": 13.001
+ },
+ {
+  "id": "w35",
+  "text": "progrès.",
+  "start": 13.036,
+  "end": 13.454
+ },
+ {
+  "id": "w36",
+  "text": "Envoie-les",
+  "start": 13.935,
+  "end": 14.492
+ },
+ {
+  "id": "w37",
+  "text": "à",
+  "start": 14.55,
+  "end": 14.585
+ },
+ {
+  "id": "w38",
+  "text": "celle",
+  "start": 14.643,
+  "end": 14.817
+ },
+ {
+  "id": "w39",
+  "text": "qui",
+  "start": 14.841,
+  "end": 14.922
+ },
+ {
+  "id": "w40",
+  "text": "en",
+  "start": 14.957,
+  "end": 15.015
+ },
+ {
+  "id": "w41",
+  "text": "a",
+  "start": 15.084,
+  "end": 15.108
+ },
+ {
+  "id": "w42",
+  "text": "besoin",
+  "start": 15.154,
+  "end": 15.479
+ },
+ {
+  "id": "w43",
+  "text": "aujourd'hui.",
+  "start": 15.549,
+  "end": 16.083
+ },
+ {
+  "id": "w44",
+  "text": "Commente",
+  "start": 16.75,
+  "end": 17.133
+ },
+ {
+  "id": "w45",
+  "text": "« 90 JOURS »,",
+  "start": 17.18,
+  "end": 18.074
+ },
+ {
+  "id": "w46",
+  "text": "et",
+  "start": 18.166,
+  "end": 18.248
+ },
+ {
+  "id": "w47",
+  "text": "je",
+  "start": 18.294,
+  "end": 18.364
+ },
+ {
+  "id": "w48",
+  "text": "t'envoie",
+  "start": 18.41,
+  "end": 18.677
+ },
+ {
+  "id": "w49",
+  "text": "le",
+  "start": 18.7,
+  "end": 18.77
+ },
+ {
+  "id": "w50",
+  "text": "lien",
+  "start": 18.817,
+  "end": 19.037
+ },
+ {
+  "id": "w51",
+  "text": "en",
+  "start": 19.095,
+  "end": 19.188
+ },
+ {
+  "id": "w52",
+  "text": "message",
+  "start": 19.235,
+  "end": 19.56
+ },
+ {
+  "id": "w53",
+  "text": "privé.",
+  "start": 19.594,
+  "end": 19.931
+ }
+]

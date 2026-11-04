@@ -215,6 +215,138 @@ VIDEOS.update({
                   fin=dict(m="@envie", textes=[], pages=[COUV + ("@envie",)], lien=0)),
 })
 
+# --------------------------------------------------------------------------------------
+# Série 4 — SCRIPTS-SERIE-4.md (vraies pages : recettes B7, L20, D9, semaine 1, journal, bilan, p. 197, mois 1)
+# --------------------------------------------------------------------------------------
+VIDEOS.update({
+    "s4-01": dict(titre="Pancakes banane-avoine, 3 ingrédients", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="3 ingrédients,<br /><em>une vraie gourmandise.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@une#2", titre="Les <em>ingrédients</em>", compact=True, items=[
+                          ("1", "Banane bien mûre", None, "@banane"), ("2", "Œufs", None, "@2 œufs"),
+                          ("30 g", "Flocons d'avoine", None, "@30")]),
+                      dict(type="cartes", m="@mixe", titre="La <em>recette</em>", compact=True, items=[
+                          ("1", "Mixe le tout", None, "@mixe"), ("2", "Poêle légèrement huilée", None, "@chauffe"),
+                          ("3", "Petites louches, 1 à 2 min par côté", None, "@verse")]),
+                      dict(type="page", m="@le#2", src="recette-b7-pancakes-p209.png", alt="Recette B7, pancakes banane-avoine",
+                           titre="Le <em>conseil</em>", t_titre="@conseil", zoom=("@sers", "40%", "47%", 1.6)),
+                  ],
+                  fin=dict(m="@enregistre", textes=[("Enregistre<br /><em>pour ce week-end</em>", "@enregistre")],
+                           pages=[("index-recettes-p200.png", "Index des 70 recettes", "@recette"), COUV + ("@commente",)], lien=0)),
+    "s4-02": dict(titre="Grand bowl au quinoa, à emporter", fond="creme", musique="piano", mention=True, duree=0,
+                  accroche="Un bowl complet,<br /><em>à emporter.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@du", titre="Grand bowl <em>au quinoa</em>", compact=True, items=[
+                          (None, "Quinoa (100 g cuit)", None, "@quinoa"), (None, "Poulet grillé (120 g)", None, "@poulet"),
+                          (None, "½ avocat", None, "@avocat"), (None, "1 tomate", None, "@tomate"),
+                          (None, "½ concombre", None, "@concombre"), (None, "1 poignée de salade verte", None, "@salade"),
+                          (None, "Huile d'olive, citron", None, "@d'huile")]),
+                      dict(type="page", m="@cuis", src="recette-l20-bowl-quinoa-p243.png", alt="Recette L20, grand bowl au quinoa",
+                           titre="En <em>3 étapes</em>", t_titre="@cuis", zoom=("@coupe", "59%", "40%", 1.5)),
+                      dict(type="phrases", m="@l'astuce", items=[
+                          ("Le quinoa se garde<br /><em>4 jours au frais.</em>", "@l'astuce"),
+                          ("Version végétarienne&#8239;:<br /><em>pois chiches ou tofu.</em>", "@version")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s4-03": dict(titre="Tu manges végétarien ?", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="Tu manges végétarien&#8239;?<br /><em>Regarde ça.</em>",
+                  blocs=[
+                      dict(type="compteur", m="@dans", t_n="@30", n=30, libelle="recettes végétariennes", sous=("sur 70 recettes", "@70")),
+                      dict(type="page", m="@par", src="recette-d9-tofu-p253.png", alt="Recette D9, tofu sauté aux légumes",
+                           titre="Tofu sauté<br /><em>façon asiatique</em>", t_titre="@par", zoom=("@tofu#2", "39%", "40%", 1.5)),
+                      dict(type="cartes", m="@dore", titre="En <em>3 gestes</em>", compact=True, items=[
+                          ("1", "Dore le tofu", None, "@dore"), ("2", "Légumes + gingembre", None, "@ajoute"),
+                          ("3", "5 min, puis sauce soja", None, "@fais")]),
+                      dict(type="phrases", m="@conseil", items=[("Presse le tofu<br /><em>dans un torchon.</em>", "@conseil")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[("recette-d9-tofu-p253.png", "Recette D9, tofu sauté", "@commente"),
+                                                            COUV + ("@commente",)], lien=0)),
+    "s4-04": dict(titre="4 recettes pour 7 jours", fond="creme", musique="piano", mention=True, duree=0,
+                  accroche="Cuisiner tous les soirs&#8239;?<br /><em>Pas besoin.</em>",
+                  blocs=[
+                      dict(type="page", m="@dans", src="menu-s1-p94.png", alt="Menu de la semaine 1",
+                           titre="2 portions&#8239;:<br /><em>ce soir + demain</em>", t_titre="@2"),
+                      dict(type="compteur", m="@résultat", t_n="@4", n=4, libelle="recettes", sous=("pour 7 jours", "@7")),
+                      dict(type="phrases", m="@et", items=[("Prévue pour 1 personne.<br /><em>Plusieurs&#8239;? Tu multiplies.</em>", "@et")]),
+                  ],
+                  fin=dict(m="@enregistre", textes=[("Enregistre<br /><em>l'idée</em>", "@enregistre")],
+                           pages=[COUV + ("@commente",)], lien=0)),
+    "s4-05": dict(titre="Ta semaine 1 : seulement 4 choses", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="Ta semaine 1&#8239;:<br /><em>seulement 4 choses.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@boire", titre="Semaine <em>1</em>", compact=True, coche=True, items=[
+                          ("1", "Boire suffisamment d'eau", None, "@boire"), ("2", "Marcher au moins 20 minutes", None, "@marcher"),
+                          ("3", "Noter tous tes repas", None, "@noter"), ("4", "Protéger ton sommeil (7 h et +)", None, "@protéger")]),
+                      dict(type="page", m="@c'est#2", src="semaine-1-p91.png", alt="Semaine 1, poser les fondations",
+                           titre="Une semaine,<br /><em>4 objectifs</em>", t_titre="@c'est#2"),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s4-06": dict(titre="Le journal du soir : 5 questions", fond="creme", musique="piano", mention=True, duree=0,
+                  accroche="5 questions,<br /><em>2 minutes, chaque soir.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@ai-je", titre="Le journal <em>du soir</em>", compact=True, items=[
+                          ("Eau", "Ai-je bu suffisamment&#8239;?", None, "@ai-je"),
+                          ("Marche", "Ai-je marché aujourd'hui&#8239;?", None, "@ai-je#2"),
+                          ("Repas", "Ai-je mangé consciemment&#8239;?", None, "@ai-je#3"),
+                          ("Sommeil", "Combien d'heures vais-je dormir&#8239;?", None, "@combien"),
+                          ("Humeur", "Comment je me sens&#8239;?", None, "@comment")]),
+                      dict(type="page", m="@c'est", src="journal-s1-p96.png", alt="Journal de la semaine 1",
+                           titre="Journal <em>de la semaine</em>", t_titre="@c'est"),
+                  ],
+                  fin=dict(m="@enregistre", textes=[("Enregistre<br /><em>pour ce soir</em>", "@enregistre")],
+                           pages=[COUV + ("@commente",)], lien=0)),
+    "s4-07": dict(titre="Le bilan du dimanche", fond="vert", musique="nappe", mention=False, duree=0,
+                  accroche="Le dimanche, ne regarde<br /><em>pas que ton poids.</em>",
+                  blocs=[
+                      dict(type="phrases", m="@dans", items=[("Le poids reste<br /><em>facultatif.</em>", "@dans")]),
+                      dict(type="cartes", m="@note", titre="Note <em>aussi</em>", compact=True, items=[
+                          (None, "Ton énergie", None, "@énergie"), (None, "Ton sommeil", None, "@sommeil"),
+                          (None, "Ta motivation", None, "@motivation")]),
+                      dict(type="phrases", m="@qu'est-ce", items=[
+                          ("Qu'est-ce qui a<br /><em>bien fonctionné&#8239;?</em>", "@qu'est-ce"),
+                          ("Qu'est-ce que<br /><em>j'ajuste&#8239;?</em>", "@qu'est-ce#2")]),
+                  ],
+                  fin=dict(m="@envoie", textes=[("Envoie ça<br /><em>à quelqu'un</em>", "@envoie")],
+                           pages=[("bilan-s1-p97.png", "Bilan de la semaine 1", "@envoie"), COUV + ("@commente",)], lien=0)),
+    "s4-08": dict(titre="3 phrases du guide à garder", fond="creme", musique="piano", mention=False, duree=0,
+                  accroche="3 phrases<br /><em>à garder.</em>",
+                  blocs=[
+                      dict(type="phrases", m="@la", carte=True, items=[
+                          ("La meilleure version<br />de vous-même<br /><em>est une direction,<br />pas une destination.</em>", "@la"),
+                          ("Vous n'avez pas besoin<br />d'être parfait,<br /><em>seulement constant.</em>", "@vous"),
+                          ("Les progrès lents<br /><em>restent des progrès.</em>", "@les#2")]),
+                  ],
+                  fin=dict(m="@envoie-les", textes=[("Envoie-les<br /><em>à celle qui en a besoin</em>", "@envoie-les")],
+                           pages=[("outil-10-affirmations-p310.png", "24 affirmations positives", "@envoie-les"),
+                                  COUV + ("@commente",)], lien=0)),
+    "s4-09": dict(titre="Pourquoi aucune calorie dans le guide", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="Pourquoi aucune calorie<br /><em>dans mon guide&#8239;?</em>",
+                  blocs=[
+                      dict(type="cartes", m="@parce", titre="Les chiffres <em>varient</em>", compact=True, items=[
+                          (None, "Selon les marques", None, "@marques"), (None, "Selon les tailles", None, "@tailles"),
+                          (None, "Selon la cuisson", None, "@cuisson"), (None, "Et selon chaque personne", None, "@besoins")]),
+                      dict(type="cartes", m="@à#2", titre="Des repères <em>concrets</em>", compact=True, coche=True, items=[
+                          ("1", "La composition de l'assiette", None, "@composition"),
+                          ("2", "Des portions pour 1 personne", None, "@portions"),
+                          ("3", "Le temps de préparation", None, "@temps")]),
+                      dict(type="phrases", m="@si", items=[("Tu as faim&#8239;?<br /><em>Plus de légumes ou de féculents.</em>", "@si")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[("bien-utiliser-recettes-p197.png", "Bien utiliser les recettes", "@commente"),
+                                                            COUV + ("@commente",)], lien=0)),
+    "s4-10": dict(titre="90 jours, une étape à la fois", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="90 jours,<br /><em>une étape à la fois.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@mois", titre="3 mois, <em>3 étapes</em>", items=[
+                          ("M1", "Installer les bases", "Sans tout changer en même temps.", "@mois"),
+                          ("M2", "Renforcer tes habitudes", "Et sortir du mode régime.", "@mois#2"),
+                          ("M3", "Consolider", "Et construire ton plan pour la suite.", "@mois#3")]),
+                      dict(type="page", m="@chaque", src="ouverture-mois-1-p90.png", alt="Mois 1, installer les bases",
+                           titre="Chaque semaine<br /><em>son objectif</em>", t_titre="@chaque"),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[("semaine-1-p91.png", "Semaine 1, poser les fondations", "@commente"),
+                                                            COUV + ("@commente",)], lien=0)),
+})
+
 
 def resout(x, mots):
     """Remplace les ancres "@mot" / "@mot#k" par l'indice du mot dans la voix."""

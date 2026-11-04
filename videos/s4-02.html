@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <link rel="stylesheet" href="assets/design/tokens.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--creme);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Série 4 · vidéo 02 — « Grand bowl au quinoa, à emporter » · 33 s (SCRIPTS-SERIE-4.md ; généré par scripts/serie2.py) -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="33" data-width="1080" data-height="1920">
+      <div
+        id="fond-creme"
+        data-composition-id="fond-creme"
+        data-composition-src="compositions/components/fond-creme.html"
+        data-start="0"
+        data-duration="33"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 1"
+      ></div>
+      <div
+        id="s4-02-acc"
+        data-composition-id="s4-02-acc"
+        data-composition-src="compositions/s4-02-acc.html"
+        data-start="0.0"
+        data-duration="2.47"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 2"
+      ></div>
+      <div
+        id="s4-02-b1"
+        data-composition-id="s4-02-b1"
+        data-composition-src="compositions/s4-02-b1.html"
+        data-start="2.47"
+        data-duration="8.48"
+        data-track-index="2"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 3"
+      ></div>
+      <div
+        id="s4-02-b2"
+        data-composition-id="s4-02-b2"
+        data-composition-src="compositions/s4-02-b2.html"
+        data-start="10.95"
+        data-duration="7.16"
+        data-track-index="3"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 4"
+      ></div>
+      <div
+        id="s4-02-b3"
+        data-composition-id="s4-02-b3"
+        data-composition-src="compositions/s4-02-b3.html"
+        data-start="18.11"
+        data-duration="9.48"
+        data-track-index="4"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 5"
+      ></div>
+      <div
+        id="s4-02-fin"
+        data-composition-id="s4-02-fin"
+        data-composition-src="compositions/s4-02-fin.html"
+        data-start="27.6"
+        data-duration="5.4"
+        data-track-index="5"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 6"
+      ></div>
+      <div
+        id="mention-sante"
+        data-composition-id="mention-sante"
+        data-composition-src="compositions/mention-sante.html"
+        data-start="0"
+        data-duration="33"
+        data-track-index="6"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 7"
+      ></div>
+      <div
+        id="sous-titres-s4-02"
+        data-composition-id="sous-titres-s4-02"
+        data-composition-src="compositions/s4-02-sous-titres.html"
+        data-start="0"
+        data-duration="33"
+        data-track-index="7"
+        data-track-kind="captions"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 8"
+      ></div>
+      <audio id="voix" class="clip" src="assets/voice/s4-02.final.wav" data-start="0.6" data-track-index="8" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/music/s4-02.wav" data-start="0" data-track-index="9" data-volume="1"></audio>
+      <audio id="sfx-accroche" class="clip" src="assets/sfx/whoosh.mp3" data-start="0.05" data-track-index="10" data-volume="0.35"></audio>
+      <audio id="sfx-b1" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="2.67" data-track-index="11" data-volume="0.3"></audio>
+      <audio id="sfx-b2" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="11.15" data-track-index="12" data-volume="0.3"></audio>
+      <audio id="sfx-b3" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="18.31" data-track-index="13" data-volume="0.3"></audio>
+      <audio id="sfx-lien" class="clip" src="assets/sfx/chime.mp3" data-start="27.85" data-track-index="14" data-volume="0.3"></audio>
+    </div>
+    <script>
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

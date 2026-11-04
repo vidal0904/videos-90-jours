@@ -1,0 +1,48 @@
+<!-- Série 4 · vidéo 02 · bloc 3 (phrases) · 18.11–27.60 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--encre);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--vert-foret-2);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--encre);
+    }
+    .s2-phrase {
+      top: 660px;
+      font-size: 84px;
+      line-height: 1.2;
+    }
+  </style>
+  <div id="root" data-composition-id="s4-02-b3" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+    <p id="s4-02-b3-p0" class="s2-texte s2-phrase titre">Le quinoa se garde<br /><em>4 jours au frais.</em></p>
+    <p id="s4-02-b3-p1" class="s2-texte s2-phrase titre">Version végétarienne&#8239;:<br /><em>pois chiches ou tofu.</em></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s4-02-b3-p0", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 0.15);
+    tl.to("#s4-02-b3-p0", { opacity: 0, duration: 0.3, ease: "sine.in" }, 4.8);
+    tl.fromTo("#s4-02-b3-p1", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 5.15);
+    window.__timelines["s4-02-b3"] = tl;
+  </script>
+</template>

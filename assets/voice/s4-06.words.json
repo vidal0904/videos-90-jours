@@ -1,0 +1,284 @@
+[
+ {
+  "id": "w0",
+  "text": "5 questions,",
+  "start": 0.0,
+  "end": 0.778
+ },
+ {
+  "id": "w1",
+  "text": "2 minutes,",
+  "start": 0.952,
+  "end": 1.556
+ },
+ {
+  "id": "w2",
+  "text": "chaque",
+  "start": 1.683,
+  "end": 1.962
+ },
+ {
+  "id": "w3",
+  "text": "soir.",
+  "start": 1.985,
+  "end": 2.31
+ },
+ {
+  "id": "w4",
+  "text": "Ai-je",
+  "start": 2.861,
+  "end": 3.105
+ },
+ {
+  "id": "w5",
+  "text": "bu",
+  "start": 3.14,
+  "end": 3.244
+ },
+ {
+  "id": "w6",
+  "text": "suffisamment ?",
+  "start": 3.279,
+  "end": 3.871
+ },
+ {
+  "id": "w7",
+  "text": "Ai-je",
+  "start": 4.515,
+  "end": 4.759
+ },
+ {
+  "id": "w8",
+  "text": "marché",
+  "start": 4.794,
+  "end": 5.095
+ },
+ {
+  "id": "w9",
+  "text": "aujourd'hui ?",
+  "start": 5.119,
+  "end": 5.56
+ },
+ {
+  "id": "w10",
+  "text": "Ai-je",
+  "start": 6.541,
+  "end": 6.738
+ },
+ {
+  "id": "w11",
+  "text": "mangé",
+  "start": 6.773,
+  "end": 7.017
+ },
+ {
+  "id": "w12",
+  "text": "consciemment ?",
+  "start": 7.063,
+  "end": 7.609
+ },
+ {
+  "id": "w13",
+  "text": "Combien",
+  "start": 8.287,
+  "end": 8.624
+ },
+ {
+  "id": "w14",
+  "text": "d'heures",
+  "start": 8.659,
+  "end": 8.856
+ },
+ {
+  "id": "w15",
+  "text": "vais-je",
+  "start": 8.879,
+  "end": 9.065
+ },
+ {
+  "id": "w16",
+  "text": "dormir ?",
+  "start": 9.088,
+  "end": 9.483
+ },
+ {
+  "id": "w17",
+  "text": "Comment",
+  "start": 10.313,
+  "end": 10.685
+ },
+ {
+  "id": "w18",
+  "text": "je",
+  "start": 10.719,
+  "end": 10.789
+ },
+ {
+  "id": "w19",
+  "text": "me",
+  "start": 10.835,
+  "end": 10.917
+ },
+ {
+  "id": "w20",
+  "text": "sens",
+  "start": 10.975,
+  "end": 11.172
+ },
+ {
+  "id": "w21",
+  "text": "aujourd'hui ?",
+  "start": 11.195,
+  "end": 11.625
+ },
+ {
+  "id": "w22",
+  "text": "C'est",
+  "start": 12.385,
+  "end": 12.582
+ },
+ {
+  "id": "w23",
+  "text": "le",
+  "start": 12.606,
+  "end": 12.664
+ },
+ {
+  "id": "w24",
+  "text": "journal",
+  "start": 12.733,
+  "end": 13.024
+ },
+ {
+  "id": "w25",
+  "text": "de",
+  "start": 13.082,
+  "end": 13.14
+ },
+ {
+  "id": "w26",
+  "text": "la",
+  "start": 13.186,
+  "end": 13.267
+ },
+ {
+  "id": "w27",
+  "text": "semaine,",
+  "start": 13.325,
+  "end": 13.778
+ },
+ {
+  "id": "w28",
+  "text": "dans",
+  "start": 13.987,
+  "end": 14.161
+ },
+ {
+  "id": "w29",
+  "text": "mon",
+  "start": 14.185,
+  "end": 14.289
+ },
+ {
+  "id": "w30",
+  "text": "guide.",
+  "start": 14.347,
+  "end": 14.684
+ },
+ {
+  "id": "w31",
+  "text": "Enregistre",
+  "start": 15.525,
+  "end": 16.187
+ },
+ {
+  "id": "w32",
+  "text": "ces",
+  "start": 16.222,
+  "end": 16.326
+ },
+ {
+  "id": "w33",
+  "text": "questions",
+  "start": 16.349,
+  "end": 16.698
+ },
+ {
+  "id": "w34",
+  "text": "pour",
+  "start": 16.721,
+  "end": 16.825
+ },
+ {
+  "id": "w35",
+  "text": "ce",
+  "start": 16.86,
+  "end": 16.953
+ },
+ {
+  "id": "w36",
+  "text": "soir.",
+  "start": 16.999,
+  "end": 17.301
+ },
+ {
+  "id": "w37",
+  "text": "Commente",
+  "start": 18.247,
+  "end": 18.63
+ },
+ {
+  "id": "w38",
+  "text": "« 90 JOURS »,",
+  "start": 18.677,
+  "end": 19.629
+ },
+ {
+  "id": "w39",
+  "text": "et",
+  "start": 19.803,
+  "end": 19.919
+ },
+ {
+  "id": "w40",
+  "text": "je",
+  "start": 19.965,
+  "end": 20.035
+ },
+ {
+  "id": "w41",
+  "text": "t'envoie",
+  "start": 20.081,
+  "end": 20.372
+ },
+ {
+  "id": "w42",
+  "text": "le",
+  "start": 20.395,
+  "end": 20.465
+ },
+ {
+  "id": "w43",
+  "text": "lien",
+  "start": 20.511,
+  "end": 20.755
+ },
+ {
+  "id": "w44",
+  "text": "en",
+  "start": 20.801,
+  "end": 20.941
+ },
+ {
+  "id": "w45",
+  "text": "message",
+  "start": 20.987,
+  "end": 21.335
+ },
+ {
+  "id": "w46",
+  "text": "privé.",
+  "start": 21.358,
+  "end": 21.695
+ }
+]

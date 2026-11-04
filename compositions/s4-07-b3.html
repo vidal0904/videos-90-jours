@@ -1,0 +1,48 @@
+<!-- Série 4 · vidéo 07 · bloc 3 (phrases) · 12.68–17.15 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    .s2-phrase {
+      top: 660px;
+      font-size: 84px;
+      line-height: 1.2;
+    }
+  </style>
+  <div id="root" data-composition-id="s4-07-b3" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+    <p id="s4-07-b3-p0" class="s2-texte s2-phrase titre">Qu'est-ce qui a<br /><em>bien fonctionné&#8239;?</em></p>
+    <p id="s4-07-b3-p1" class="s2-texte s2-phrase titre">Qu'est-ce que<br /><em>j'ajuste&#8239;?</em></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s4-07-b3-p0", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 0.15);
+    tl.to("#s4-07-b3-p0", { opacity: 0, duration: 0.3, ease: "sine.in" }, 1.87);
+    tl.fromTo("#s4-07-b3-p1", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 2.22);
+    window.__timelines["s4-07-b3"] = tl;
+  </script>
+</template>

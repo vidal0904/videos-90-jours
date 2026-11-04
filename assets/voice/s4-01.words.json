@@ -1,0 +1,386 @@
+[
+ {
+  "id": "w0",
+  "text": "3 ingrédients,",
+  "start": 0.0,
+  "end": 0.778
+ },
+ {
+  "id": "w1",
+  "text": "une",
+  "start": 0.906,
+  "end": 1.057
+ },
+ {
+  "id": "w2",
+  "text": "vraie",
+  "start": 1.103,
+  "end": 1.324
+ },
+ {
+  "id": "w3",
+  "text": "gourmandise",
+  "start": 1.358,
+  "end": 1.811
+ },
+ {
+  "id": "w4",
+  "text": "du",
+  "start": 1.834,
+  "end": 1.904
+ },
+ {
+  "id": "w5",
+  "text": "week-end.",
+  "start": 1.939,
+  "end": 2.334
+ },
+ {
+  "id": "w6",
+  "text": "Une",
+  "start": 2.861,
+  "end": 3.047
+ },
+ {
+  "id": "w7",
+  "text": "banane",
+  "start": 3.07,
+  "end": 3.349
+ },
+ {
+  "id": "w8",
+  "text": "bien",
+  "start": 3.372,
+  "end": 3.558
+ },
+ {
+  "id": "w9",
+  "text": "mûre,",
+  "start": 3.581,
+  "end": 3.883
+ },
+ {
+  "id": "w10",
+  "text": "2 œufs,",
+  "start": 4.08,
+  "end": 4.498
+ },
+ {
+  "id": "w11",
+  "text": "30 g",
+  "start": 4.719,
+  "end": 5.241
+ },
+ {
+  "id": "w12",
+  "text": "de",
+  "start": 5.264,
+  "end": 5.322
+ },
+ {
+  "id": "w13",
+  "text": "flocons",
+  "start": 5.369,
+  "end": 5.659
+ },
+ {
+  "id": "w14",
+  "text": "d'avoine.",
+  "start": 5.682,
+  "end": 6.112
+ },
+ {
+  "id": "w15",
+  "text": "Mixe",
+  "start": 6.837,
+  "end": 7.174
+ },
+ {
+  "id": "w16",
+  "text": "le",
+  "start": 7.197,
+  "end": 7.278
+ },
+ {
+  "id": "w17",
+  "text": "tout.",
+  "start": 7.325,
+  "end": 7.568
+ },
+ {
+  "id": "w18",
+  "text": "Chauffe",
+  "start": 8.212,
+  "end": 8.549
+ },
+ {
+  "id": "w19",
+  "text": "une",
+  "start": 8.572,
+  "end": 8.665
+ },
+ {
+  "id": "w20",
+  "text": "poêle",
+  "start": 8.688,
+  "end": 8.943
+ },
+ {
+  "id": "w21",
+  "text": "légèrement",
+  "start": 8.978,
+  "end": 9.408
+ },
+ {
+  "id": "w22",
+  "text": "huilée.",
+  "start": 9.431,
+  "end": 9.733
+ },
+ {
+  "id": "w23",
+  "text": "Verse",
+  "start": 10.377,
+  "end": 10.76
+ },
+ {
+  "id": "w24",
+  "text": "de",
+  "start": 10.807,
+  "end": 10.876
+ },
+ {
+  "id": "w25",
+  "text": "petites",
+  "start": 10.923,
+  "end": 11.248
+ },
+ {
+  "id": "w26",
+  "text": "louches,",
+  "start": 11.271,
+  "end": 11.608
+ },
+ {
+  "id": "w27",
+  "text": "et",
+  "start": 11.782,
+  "end": 11.921
+ },
+ {
+  "id": "w28",
+  "text": "cuis",
+  "start": 11.956,
+  "end": 12.153
+ },
+ {
+  "id": "w29",
+  "text": "1 à 2 minutes",
+  "start": 12.235,
+  "end": 13.163
+ },
+ {
+  "id": "w30",
+  "text": "de",
+  "start": 13.187,
+  "end": 13.268
+ },
+ {
+  "id": "w31",
+  "text": "chaque",
+  "start": 13.314,
+  "end": 13.57
+ },
+ {
+  "id": "w32",
+  "text": "côté.",
+  "start": 13.593,
+  "end": 13.93
+ },
+ {
+  "id": "w33",
+  "text": "Le",
+  "start": 14.771,
+  "end": 14.934
+ },
+ {
+  "id": "w34",
+  "text": "conseil",
+  "start": 14.968,
+  "end": 15.259
+ },
+ {
+  "id": "w35",
+  "text": "du",
+  "start": 15.293,
+  "end": 15.375
+ },
+ {
+  "id": "w36",
+  "text": "guide :",
+  "start": 15.421,
+  "end": 15.677
+ },
+ {
+  "id": "w37",
+  "text": "sers",
+  "start": 15.944,
+  "end": 16.222
+ },
+ {
+  "id": "w38",
+  "text": "avec",
+  "start": 16.245,
+  "end": 16.431
+ },
+ {
+  "id": "w39",
+  "text": "quelques",
+  "start": 16.454,
+  "end": 16.745
+ },
+ {
+  "id": "w40",
+  "text": "fruits",
+  "start": 16.768,
+  "end": 16.965
+ },
+ {
+  "id": "w41",
+  "text": "rouges,",
+  "start": 16.989,
+  "end": 17.29
+ },
+ {
+  "id": "w42",
+  "text": "ou",
+  "start": 17.488,
+  "end": 17.569
+ },
+ {
+  "id": "w43",
+  "text": "un",
+  "start": 17.627,
+  "end": 17.685
+ },
+ {
+  "id": "w44",
+  "text": "peu",
+  "start": 17.743,
+  "end": 17.848
+ },
+ {
+  "id": "w45",
+  "text": "de",
+  "start": 17.882,
+  "end": 17.952
+ },
+ {
+  "id": "w46",
+  "text": "yaourt",
+  "start": 17.999,
+  "end": 18.254
+ },
+ {
+  "id": "w47",
+  "text": "grec.",
+  "start": 18.324,
+  "end": 18.626
+ },
+ {
+  "id": "w48",
+  "text": "Enregistre",
+  "start": 19.258,
+  "end": 19.862
+ },
+ {
+  "id": "w49",
+  "text": "la",
+  "start": 19.897,
+  "end": 19.943
+ },
+ {
+  "id": "w50",
+  "text": "recette",
+  "start": 20.001,
+  "end": 20.291
+ },
+ {
+  "id": "w51",
+  "text": "pour",
+  "start": 20.315,
+  "end": 20.407
+ },
+ {
+  "id": "w52",
+  "text": "ce",
+  "start": 20.442,
+  "end": 20.523
+ },
+ {
+  "id": "w53",
+  "text": "week-end.",
+  "start": 20.582,
+  "end": 20.941
+ },
+ {
+  "id": "w54",
+  "text": "Commente",
+  "start": 21.515,
+  "end": 21.933
+ },
+ {
+  "id": "w55",
+  "text": "« 90 JOURS »,",
+  "start": 21.979,
+  "end": 22.931
+ },
+ {
+  "id": "w56",
+  "text": "et",
+  "start": 23.036,
+  "end": 23.117
+ },
+ {
+  "id": "w57",
+  "text": "je",
+  "start": 23.175,
+  "end": 23.245
+ },
+ {
+  "id": "w58",
+  "text": "t'envoie",
+  "start": 23.291,
+  "end": 23.57
+ },
+ {
+  "id": "w59",
+  "text": "le",
+  "start": 23.593,
+  "end": 23.674
+ },
+ {
+  "id": "w60",
+  "text": "lien",
+  "start": 23.721,
+  "end": 23.965
+ },
+ {
+  "id": "w61",
+  "text": "en",
+  "start": 24.034,
+  "end": 24.127
+ },
+ {
+  "id": "w62",
+  "text": "message",
+  "start": 24.174,
+  "end": 24.51
+ },
+ {
+  "id": "w63",
+  "text": "privé.",
+  "start": 24.545,
+  "end": 24.905
+ }
+]

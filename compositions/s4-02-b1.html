@@ -1,0 +1,120 @@
+<!-- Série 4 · vidéo 02 · bloc 1 (cartes) · 2.47–10.95 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--encre);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--vert-foret-2);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--encre);
+    }
+    .s2-carte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      height: 98px;
+      padding: 0 34px;
+      border-radius: 26px;
+      background: var(--sauge-claire);
+      border: 2px solid rgba(30, 59, 44, 0.12);
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+    .s2-num {
+      flex: none;
+      min-width: 58px;
+      height: 58px;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: var(--vert-foret);
+      color: var(--creme);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 28px;
+    }
+    .s2-carte-texte {
+      font-family: var(--font-texte);
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1.12;
+      color: var(--encre);
+    }
+    .s2-carte-detail {
+      display: block;
+      margin-top: 6px;
+      font-size: 36px;
+      color: var(--vert-foret-2);
+    }
+    .s2-case {
+      flex: none;
+      width: 49px;
+      height: 49px;
+      border-radius: 12px;
+      border: 4px solid var(--encre);
+      opacity: 0.7;
+      position: relative;
+    }
+    .s2-case svg {
+      position: absolute;
+      inset: -4px;
+      width: calc(100% + 8px);
+      height: calc(100% + 8px);
+      fill: none;
+      stroke: var(--terracotta);
+      stroke-width: 3.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .s2-note {
+      top: 345px;
+      font-family: var(--font-texte);
+      font-weight: 500;
+      font-size: 32px;
+      opacity: 0.8;
+    }
+  </style>
+  <div id="root" data-composition-id="s4-02-b1" data-width="1080" data-height="1920">
+    <p id="s4-02-b1-titre" class="s2-titre titre">Grand bowl <em>au quinoa</em></p>
+    <div id="s4-02-b1-c0" class="s2-carte" style="top: 430px"><p class="s2-carte-texte">Quinoa (100 g cuit)</p></div>
+    <div id="s4-02-b1-c1" class="s2-carte" style="top: 538px"><p class="s2-carte-texte">Poulet grillé (120 g)</p></div>
+    <div id="s4-02-b1-c2" class="s2-carte" style="top: 646px"><p class="s2-carte-texte">½ avocat</p></div>
+    <div id="s4-02-b1-c3" class="s2-carte" style="top: 754px"><p class="s2-carte-texte">1 tomate</p></div>
+    <div id="s4-02-b1-c4" class="s2-carte" style="top: 862px"><p class="s2-carte-texte">½ concombre</p></div>
+    <div id="s4-02-b1-c5" class="s2-carte" style="top: 970px"><p class="s2-carte-texte">1 poignée de salade verte</p></div>
+    <div id="s4-02-b1-c6" class="s2-carte" style="top: 1078px"><p class="s2-carte-texte">Huile d'olive, citron</p></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s4-02-b1-titre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s4-02-b1-c0", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 0.33);
+    tl.fromTo("#s4-02-b1-c1", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 1.27);
+    tl.fromTo("#s4-02-b1-c2", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 2.67);
+    tl.fromTo("#s4-02-b1-c3", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 3.47);
+    tl.fromTo("#s4-02-b1-c4", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 4.35);
+    tl.fromTo("#s4-02-b1-c5", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 5.22);
+    tl.fromTo("#s4-02-b1-c6", { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 6.57);
+    window.__timelines["s4-02-b1"] = tl;
+  </script>
+</template>

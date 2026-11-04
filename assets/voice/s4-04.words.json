@@ -1,0 +1,362 @@
+[
+ {
+  "id": "w0",
+  "text": "Cuisiner",
+  "start": 0.0,
+  "end": 0.453
+ },
+ {
+  "id": "w1",
+  "text": "tous",
+  "start": 0.476,
+  "end": 0.592
+ },
+ {
+  "id": "w2",
+  "text": "les",
+  "start": 0.615,
+  "end": 0.708
+ },
+ {
+  "id": "w3",
+  "text": "soirs ?",
+  "start": 0.743,
+  "end": 1.045
+ },
+ {
+  "id": "w4",
+  "text": "Pas",
+  "start": 1.654,
+  "end": 1.84
+ },
+ {
+  "id": "w5",
+  "text": "besoin.",
+  "start": 1.875,
+  "end": 2.223
+ },
+ {
+  "id": "w6",
+  "text": "Dans",
+  "start": 2.89,
+  "end": 3.087
+ },
+ {
+  "id": "w7",
+  "text": "les",
+  "start": 3.111,
+  "end": 3.192
+ },
+ {
+  "id": "w8",
+  "text": "menus",
+  "start": 3.215,
+  "end": 3.424
+ },
+ {
+  "id": "w9",
+  "text": "de",
+  "start": 3.447,
+  "end": 3.505
+ },
+ {
+  "id": "w10",
+  "text": "mon",
+  "start": 3.54,
+  "end": 3.656
+ },
+ {
+  "id": "w11",
+  "text": "guide,",
+  "start": 3.714,
+  "end": 3.993
+ },
+ {
+  "id": "w12",
+  "text": "tu",
+  "start": 4.039,
+  "end": 4.132
+ },
+ {
+  "id": "w13",
+  "text": "cuisines",
+  "start": 4.179,
+  "end": 4.562
+ },
+ {
+  "id": "w14",
+  "text": "2 portions :",
+  "start": 4.608,
+  "end": 5.235
+ },
+ {
+  "id": "w15",
+  "text": "une",
+  "start": 5.584,
+  "end": 5.734
+ },
+ {
+  "id": "w16",
+  "text": "pour",
+  "start": 5.758,
+  "end": 5.862
+ },
+ {
+  "id": "w17",
+  "text": "ce",
+  "start": 5.897,
+  "end": 5.99
+ },
+ {
+  "id": "w18",
+  "text": "soir,",
+  "start": 6.036,
+  "end": 6.385
+ },
+ {
+  "id": "w19",
+  "text": "une",
+  "start": 6.617,
+  "end": 6.756
+ },
+ {
+  "id": "w20",
+  "text": "pour",
+  "start": 6.779,
+  "end": 6.895
+ },
+ {
+  "id": "w21",
+  "text": "le",
+  "start": 6.93,
+  "end": 6.988
+ },
+ {
+  "id": "w22",
+  "text": "lendemain.",
+  "start": 7.035,
+  "end": 7.395
+ },
+ {
+  "id": "w23",
+  "text": "Résultat :",
+  "start": 8.212,
+  "end": 8.758
+ },
+ {
+  "id": "w24",
+  "text": "4 recettes",
+  "start": 8.99,
+  "end": 9.71
+ },
+ {
+  "id": "w25",
+  "text": "pour",
+  "start": 9.733,
+  "end": 9.837
+ },
+ {
+  "id": "w26",
+  "text": "7 jours.",
+  "start": 9.895,
+  "end": 10.395
+ },
+ {
+  "id": "w27",
+  "text": "Et",
+  "start": 10.981,
+  "end": 11.144
+ },
+ {
+  "id": "w28",
+  "text": "chaque",
+  "start": 11.167,
+  "end": 11.411
+ },
+ {
+  "id": "w29",
+  "text": "recette",
+  "start": 11.434,
+  "end": 11.77
+ },
+ {
+  "id": "w30",
+  "text": "est",
+  "start": 11.84,
+  "end": 11.968
+ },
+ {
+  "id": "w31",
+  "text": "prévue",
+  "start": 11.991,
+  "end": 12.258
+ },
+ {
+  "id": "w32",
+  "text": "pour",
+  "start": 12.293,
+  "end": 12.397
+ },
+ {
+  "id": "w33",
+  "text": "une",
+  "start": 12.432,
+  "end": 12.525
+ },
+ {
+  "id": "w34",
+  "text": "personne.",
+  "start": 12.548,
+  "end": 13.001
+ },
+ {
+  "id": "w35",
+  "text": "Vous",
+  "start": 13.61,
+  "end": 13.784
+ },
+ {
+  "id": "w36",
+  "text": "êtes",
+  "start": 13.854,
+  "end": 14.179
+ },
+ {
+  "id": "w37",
+  "text": "plusieurs ?",
+  "start": 14.225,
+  "end": 14.574
+ },
+ {
+  "id": "w38",
+  "text": "Tu",
+  "start": 15.217,
+  "end": 15.403
+ },
+ {
+  "id": "w39",
+  "text": "multiplies",
+  "start": 15.449,
+  "end": 15.832
+ },
+ {
+  "id": "w40",
+  "text": "les",
+  "start": 15.856,
+  "end": 15.937
+ },
+ {
+  "id": "w41",
+  "text": "quantités.",
+  "start": 15.96,
+  "end": 16.436
+ },
+ {
+  "id": "w42",
+  "text": "Enregistre",
+  "start": 17.196,
+  "end": 17.811
+ },
+ {
+  "id": "w43",
+  "text": "l'idée,",
+  "start": 17.858,
+  "end": 18.171
+ },
+ {
+  "id": "w44",
+  "text": "elle",
+  "start": 18.287,
+  "end": 18.461
+ },
+ {
+  "id": "w45",
+  "text": "marche",
+  "start": 18.496,
+  "end": 18.752
+ },
+ {
+  "id": "w46",
+  "text": "même",
+  "start": 18.775,
+  "end": 18.949
+ },
+ {
+  "id": "w47",
+  "text": "sans",
+  "start": 18.972,
+  "end": 19.1
+ },
+ {
+  "id": "w48",
+  "text": "le",
+  "start": 19.123,
+  "end": 19.17
+ },
+ {
+  "id": "w49",
+  "text": "guide.",
+  "start": 19.216,
+  "end": 19.506
+ },
+ {
+  "id": "w50",
+  "text": "Commente",
+  "start": 20.104,
+  "end": 20.476
+ },
+ {
+  "id": "w51",
+  "text": "« 90 JOURS »,",
+  "start": 20.51,
+  "end": 21.416
+ },
+ {
+  "id": "w52",
+  "text": "et",
+  "start": 21.486,
+  "end": 21.578
+ },
+ {
+  "id": "w53",
+  "text": "je",
+  "start": 21.613,
+  "end": 21.683
+ },
+ {
+  "id": "w54",
+  "text": "t'envoie",
+  "start": 21.729,
+  "end": 21.996
+ },
+ {
+  "id": "w55",
+  "text": "le",
+  "start": 22.02,
+  "end": 22.078
+ },
+ {
+  "id": "w56",
+  "text": "lien",
+  "start": 22.124,
+  "end": 22.322
+ },
+ {
+  "id": "w57",
+  "text": "en",
+  "start": 22.391,
+  "end": 22.461
+ },
+ {
+  "id": "w58",
+  "text": "message",
+  "start": 22.507,
+  "end": 22.821
+ },
+ {
+  "id": "w59",
+  "text": "privé.",
+  "start": 22.856,
+  "end": 23.169
+ }
+]

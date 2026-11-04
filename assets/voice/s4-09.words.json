@@ -1,0 +1,440 @@
+[
+ {
+  "id": "w0",
+  "text": "Pourquoi",
+  "start": 0.0,
+  "end": 0.383
+ },
+ {
+  "id": "w1",
+  "text": "il",
+  "start": 0.406,
+  "end": 0.453
+ },
+ {
+  "id": "w2",
+  "text": "n'y",
+  "start": 0.476,
+  "end": 0.546
+ },
+ {
+  "id": "w3",
+  "text": "a",
+  "start": 0.569,
+  "end": 0.615
+ },
+ {
+  "id": "w4",
+  "text": "aucune",
+  "start": 0.697,
+  "end": 1.115
+ },
+ {
+  "id": "w5",
+  "text": "calorie",
+  "start": 1.138,
+  "end": 1.486
+ },
+ {
+  "id": "w6",
+  "text": "dans",
+  "start": 1.521,
+  "end": 1.637
+ },
+ {
+  "id": "w7",
+  "text": "mon",
+  "start": 1.66,
+  "end": 1.765
+ },
+ {
+  "id": "w8",
+  "text": "guide ?",
+  "start": 1.811,
+  "end": 2.101
+ },
+ {
+  "id": "w9",
+  "text": "Parce",
+  "start": 2.722,
+  "end": 2.931
+ },
+ {
+  "id": "w10",
+  "text": "que",
+  "start": 2.954,
+  "end": 3.035
+ },
+ {
+  "id": "w11",
+  "text": "les",
+  "start": 3.07,
+  "end": 3.163
+ },
+ {
+  "id": "w12",
+  "text": "chiffres",
+  "start": 3.186,
+  "end": 3.535
+ },
+ {
+  "id": "w13",
+  "text": "varient",
+  "start": 3.581,
+  "end": 3.918
+ },
+ {
+  "id": "w14",
+  "text": "selon",
+  "start": 4.034,
+  "end": 4.324
+ },
+ {
+  "id": "w15",
+  "text": "les",
+  "start": 4.359,
+  "end": 4.452
+ },
+ {
+  "id": "w16",
+  "text": "marques,",
+  "start": 4.475,
+  "end": 4.847
+ },
+ {
+  "id": "w17",
+  "text": "les",
+  "start": 4.998,
+  "end": 5.137
+ },
+ {
+  "id": "w18",
+  "text": "tailles",
+  "start": 5.183,
+  "end": 5.52
+ },
+ {
+  "id": "w19",
+  "text": "et",
+  "start": 5.601,
+  "end": 5.729
+ },
+ {
+  "id": "w20",
+  "text": "la",
+  "start": 5.764,
+  "end": 5.833
+ },
+ {
+  "id": "w21",
+  "text": "cuisson.",
+  "start": 5.88,
+  "end": 6.275
+ },
+ {
+  "id": "w22",
+  "text": "Et",
+  "start": 7.023,
+  "end": 7.162
+ },
+ {
+  "id": "w23",
+  "text": "que",
+  "start": 7.209,
+  "end": 7.302
+ },
+ {
+  "id": "w24",
+  "text": "les",
+  "start": 7.336,
+  "end": 7.429
+ },
+ {
+  "id": "w25",
+  "text": "besoins",
+  "start": 7.464,
+  "end": 7.812
+ },
+ {
+  "id": "w26",
+  "text": "changent",
+  "start": 7.859,
+  "end": 8.172
+ },
+ {
+  "id": "w27",
+  "text": "d'une",
+  "start": 8.196,
+  "end": 8.323
+ },
+ {
+  "id": "w28",
+  "text": "personne",
+  "start": 8.347,
+  "end": 8.672
+ },
+ {
+  "id": "w29",
+  "text": "à",
+  "start": 8.695,
+  "end": 8.718
+ },
+ {
+  "id": "w30",
+  "text": "l'autre.",
+  "start": 8.753,
+  "end": 9.043
+ },
+ {
+  "id": "w31",
+  "text": "À",
+  "start": 9.652,
+  "end": 9.745
+ },
+ {
+  "id": "w32",
+  "text": "la",
+  "start": 9.826,
+  "end": 9.884
+ },
+ {
+  "id": "w33",
+  "text": "place,",
+  "start": 9.942,
+  "end": 10.372
+ },
+ {
+  "id": "w34",
+  "text": "des",
+  "start": 10.523,
+  "end": 10.639
+ },
+ {
+  "id": "w35",
+  "text": "repères",
+  "start": 10.674,
+  "end": 10.999
+ },
+ {
+  "id": "w36",
+  "text": "concrets :",
+  "start": 11.022,
+  "end": 11.417
+ },
+ {
+  "id": "w37",
+  "text": "la",
+  "start": 11.695,
+  "end": 11.788
+ },
+ {
+  "id": "w38",
+  "text": "composition",
+  "start": 11.858,
+  "end": 12.369
+ },
+ {
+  "id": "w39",
+  "text": "de",
+  "start": 12.404,
+  "end": 12.462
+ },
+ {
+  "id": "w40",
+  "text": "l'assiette,",
+  "start": 12.508,
+  "end": 13.019
+ },
+ {
+  "id": "w41",
+  "text": "des",
+  "start": 13.193,
+  "end": 13.321
+ },
+ {
+  "id": "w42",
+  "text": "portions",
+  "start": 13.356,
+  "end": 13.681
+ },
+ {
+  "id": "w43",
+  "text": "pour",
+  "start": 13.704,
+  "end": 13.797
+ },
+ {
+  "id": "w44",
+  "text": "une",
+  "start": 13.843,
+  "end": 13.924
+ },
+ {
+  "id": "w45",
+  "text": "personne,",
+  "start": 13.948,
+  "end": 14.412
+ },
+ {
+  "id": "w46",
+  "text": "et",
+  "start": 14.633,
+  "end": 14.737
+ },
+ {
+  "id": "w47",
+  "text": "le",
+  "start": 14.784,
+  "end": 14.853
+ },
+ {
+  "id": "w48",
+  "text": "temps",
+  "start": 14.9,
+  "end": 15.051
+ },
+ {
+  "id": "w49",
+  "text": "de",
+  "start": 15.074,
+  "end": 15.132
+ },
+ {
+  "id": "w50",
+  "text": "préparation.",
+  "start": 15.167,
+  "end": 15.759
+ },
+ {
+  "id": "w51",
+  "text": "Et",
+  "start": 16.414,
+  "end": 16.553
+ },
+ {
+  "id": "w52",
+  "text": "si",
+  "start": 16.577,
+  "end": 16.681
+ },
+ {
+  "id": "w53",
+  "text": "tu",
+  "start": 16.727,
+  "end": 16.82
+ },
+ {
+  "id": "w54",
+  "text": "as",
+  "start": 16.902,
+  "end": 16.96
+ },
+ {
+  "id": "w55",
+  "text": "faim,",
+  "start": 16.994,
+  "end": 17.192
+ },
+ {
+  "id": "w56",
+  "text": "tu",
+  "start": 17.366,
+  "end": 17.505
+ },
+ {
+  "id": "w57",
+  "text": "augmentes",
+  "start": 17.575,
+  "end": 18.051
+ },
+ {
+  "id": "w58",
+  "text": "les",
+  "start": 18.074,
+  "end": 18.167
+ },
+ {
+  "id": "w59",
+  "text": "légumes",
+  "start": 18.19,
+  "end": 18.585
+ },
+ {
+  "id": "w60",
+  "text": "ou",
+  "start": 18.643,
+  "end": 18.782
+ },
+ {
+  "id": "w61",
+  "text": "les",
+  "start": 18.829,
+  "end": 18.922
+ },
+ {
+  "id": "w62",
+  "text": "féculents.",
+  "start": 18.945,
+  "end": 19.375
+ },
+ {
+  "id": "w63",
+  "text": "Commente",
+  "start": 19.879,
+  "end": 20.32
+ },
+ {
+  "id": "w64",
+  "text": "« 90 JOURS »,",
+  "start": 20.378,
+  "end": 21.4
+ },
+ {
+  "id": "w65",
+  "text": "et",
+  "start": 21.748,
+  "end": 21.853
+ },
+ {
+  "id": "w66",
+  "text": "je",
+  "start": 21.911,
+  "end": 21.98
+ },
+ {
+  "id": "w67",
+  "text": "t'envoie",
+  "start": 22.027,
+  "end": 22.329
+ },
+ {
+  "id": "w68",
+  "text": "le",
+  "start": 22.352,
+  "end": 22.422
+ },
+ {
+  "id": "w69",
+  "text": "lien",
+  "start": 22.468,
+  "end": 22.723
+ },
+ {
+  "id": "w70",
+  "text": "en",
+  "start": 22.793,
+  "end": 22.886
+ },
+ {
+  "id": "w71",
+  "text": "message",
+  "start": 22.932,
+  "end": 23.292
+ },
+ {
+  "id": "w72",
+  "text": "privé.",
+  "start": 23.316,
+  "end": 23.687
+ }
+]

@@ -1,0 +1,422 @@
+[
+ {
+  "id": "w0",
+  "text": "Tu",
+  "start": 0.0,
+  "end": 0.163
+ },
+ {
+  "id": "w1",
+  "text": "manges",
+  "start": 0.221,
+  "end": 0.418
+ },
+ {
+  "id": "w2",
+  "text": "végétarien ?",
+  "start": 0.441,
+  "end": 0.987
+ },
+ {
+  "id": "w3",
+  "text": "Dans",
+  "start": 1.607,
+  "end": 1.804
+ },
+ {
+  "id": "w4",
+  "text": "mon",
+  "start": 1.828,
+  "end": 1.932
+ },
+ {
+  "id": "w5",
+  "text": "guide,",
+  "start": 1.979,
+  "end": 2.257
+ },
+ {
+  "id": "w6",
+  "text": "30",
+  "start": 2.373,
+  "end": 2.687
+ },
+ {
+  "id": "w7",
+  "text": "recettes",
+  "start": 2.71,
+  "end": 3.047
+ },
+ {
+  "id": "w8",
+  "text": "sur",
+  "start": 3.07,
+  "end": 3.209
+ },
+ {
+  "id": "w9",
+  "text": "70",
+  "start": 3.256,
+  "end": 3.871
+ },
+ {
+  "id": "w10",
+  "text": "sont",
+  "start": 3.917,
+  "end": 4.092
+ },
+ {
+  "id": "w11",
+  "text": "végétariennes.",
+  "start": 4.115,
+  "end": 4.753
+ },
+ {
+  "id": "w12",
+  "text": "Par",
+  "start": 5.351,
+  "end": 5.56
+ },
+ {
+  "id": "w13",
+  "text": "exemple,",
+  "start": 5.606,
+  "end": 5.955
+ },
+ {
+  "id": "w14",
+  "text": "le",
+  "start": 6.199,
+  "end": 6.303
+ },
+ {
+  "id": "w15",
+  "text": "tofu",
+  "start": 6.361,
+  "end": 6.675
+ },
+ {
+  "id": "w16",
+  "text": "sauté",
+  "start": 6.733,
+  "end": 6.965
+ },
+ {
+  "id": "w17",
+  "text": "aux",
+  "start": 6.988,
+  "end": 7.058
+ },
+ {
+  "id": "w18",
+  "text": "légumes",
+  "start": 7.092,
+  "end": 7.499
+ },
+ {
+  "id": "w19",
+  "text": "façon",
+  "start": 7.65,
+  "end": 8.021
+ },
+ {
+  "id": "w20",
+  "text": "asiatique.",
+  "start": 8.103,
+  "end": 8.788
+ },
+ {
+  "id": "w21",
+  "text": "Tofu",
+  "start": 9.466,
+  "end": 9.803
+ },
+ {
+  "id": "w22",
+  "text": "ferme,",
+  "start": 9.861,
+  "end": 10.244
+ },
+ {
+  "id": "w23",
+  "text": "brocoli,",
+  "start": 10.476,
+  "end": 11.022
+ },
+ {
+  "id": "w24",
+  "text": "carotte,",
+  "start": 11.277,
+  "end": 11.823
+ },
+ {
+  "id": "w25",
+  "text": "gingembre",
+  "start": 11.974,
+  "end": 12.403
+ },
+ {
+  "id": "w26",
+  "text": "frais,",
+  "start": 12.45,
+  "end": 12.752
+ },
+ {
+  "id": "w27",
+  "text": "sauce",
+  "start": 13.03,
+  "end": 13.251
+ },
+ {
+  "id": "w28",
+  "text": "soja.",
+  "start": 13.274,
+  "end": 13.634
+ },
+ {
+  "id": "w29",
+  "text": "Dore",
+  "start": 14.278,
+  "end": 14.626
+ },
+ {
+  "id": "w30",
+  "text": "le",
+  "start": 14.65,
+  "end": 14.719
+ },
+ {
+  "id": "w31",
+  "text": "tofu,",
+  "start": 14.766,
+  "end": 15.149
+ },
+ {
+  "id": "w32",
+  "text": "ajoute",
+  "start": 15.393,
+  "end": 15.729
+ },
+ {
+  "id": "w33",
+  "text": "les",
+  "start": 15.752,
+  "end": 15.834
+ },
+ {
+  "id": "w34",
+  "text": "légumes",
+  "start": 15.857,
+  "end": 16.252
+ },
+ {
+  "id": "w35",
+  "text": "et",
+  "start": 16.31,
+  "end": 16.437
+ },
+ {
+  "id": "w36",
+  "text": "le",
+  "start": 16.484,
+  "end": 16.565
+ },
+ {
+  "id": "w37",
+  "text": "gingembre,",
+  "start": 16.612,
+  "end": 17.064
+ },
+ {
+  "id": "w38",
+  "text": "fais",
+  "start": 17.273,
+  "end": 17.424
+ },
+ {
+  "id": "w39",
+  "text": "sauter",
+  "start": 17.459,
+  "end": 17.726
+ },
+ {
+  "id": "w40",
+  "text": "5 minutes,",
+  "start": 17.761,
+  "end": 18.353
+ },
+ {
+  "id": "w41",
+  "text": "et",
+  "start": 18.458,
+  "end": 18.585
+ },
+ {
+  "id": "w42",
+  "text": "déglace",
+  "start": 18.632,
+  "end": 19.038
+ },
+ {
+  "id": "w43",
+  "text": "à",
+  "start": 19.061,
+  "end": 19.085
+ },
+ {
+  "id": "w44",
+  "text": "la",
+  "start": 19.119,
+  "end": 19.189
+ },
+ {
+  "id": "w45",
+  "text": "sauce",
+  "start": 19.247,
+  "end": 19.421
+ },
+ {
+  "id": "w46",
+  "text": "soja.",
+  "start": 19.444,
+  "end": 19.793
+ },
+ {
+  "id": "w47",
+  "text": "Le",
+  "start": 20.483,
+  "end": 20.622
+ },
+ {
+  "id": "w48",
+  "text": "conseil :",
+  "start": 20.669,
+  "end": 21.052
+ },
+ {
+  "id": "w49",
+  "text": "presse",
+  "start": 21.331,
+  "end": 21.609
+ },
+ {
+  "id": "w50",
+  "text": "le",
+  "start": 21.632,
+  "end": 21.702
+ },
+ {
+  "id": "w51",
+  "text": "tofu",
+  "start": 21.748,
+  "end": 21.992
+ },
+ {
+  "id": "w52",
+  "text": "dans",
+  "start": 22.039,
+  "end": 22.166
+ },
+ {
+  "id": "w53",
+  "text": "un",
+  "start": 22.224,
+  "end": 22.271
+ },
+ {
+  "id": "w54",
+  "text": "torchon",
+  "start": 22.306,
+  "end": 22.608
+ },
+ {
+  "id": "w55",
+  "text": "avant",
+  "start": 22.654,
+  "end": 22.84
+ },
+ {
+  "id": "w56",
+  "text": "cuisson,",
+  "start": 22.863,
+  "end": 23.246
+ },
+ {
+  "id": "w57",
+  "text": "il",
+  "start": 23.385,
+  "end": 23.513
+ },
+ {
+  "id": "w58",
+  "text": "dorera",
+  "start": 23.571,
+  "end": 23.896
+ },
+ {
+  "id": "w59",
+  "text": "mieux.",
+  "start": 23.954,
+  "end": 24.163
+ },
+ {
+  "id": "w60",
+  "text": "Commente",
+  "start": 24.877,
+  "end": 25.33
+ },
+ {
+  "id": "w61",
+  "text": "« 90 JOURS »,",
+  "start": 25.388,
+  "end": 26.282
+ },
+ {
+  "id": "w62",
+  "text": "et",
+  "start": 26.421,
+  "end": 26.526
+ },
+ {
+  "id": "w63",
+  "text": "je",
+  "start": 26.572,
+  "end": 26.642
+ },
+ {
+  "id": "w64",
+  "text": "t'envoie",
+  "start": 26.688,
+  "end": 26.978
+ },
+ {
+  "id": "w65",
+  "text": "le",
+  "start": 27.002,
+  "end": 27.071
+ },
+ {
+  "id": "w66",
+  "text": "lien",
+  "start": 27.118,
+  "end": 27.35
+ },
+ {
+  "id": "w67",
+  "text": "en",
+  "start": 27.42,
+  "end": 27.524
+ },
+ {
+  "id": "w68",
+  "text": "message",
+  "start": 27.571,
+  "end": 27.919
+ },
+ {
+  "id": "w69",
+  "text": "privé.",
+  "start": 27.954,
+  "end": 28.29
+ }
+]

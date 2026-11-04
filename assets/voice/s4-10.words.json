@@ -1,0 +1,362 @@
+[
+ {
+  "id": "w0",
+  "text": "90",
+  "start": 0.0,
+  "end": 0.72
+ },
+ {
+  "id": "w1",
+  "text": "jours,",
+  "start": 0.755,
+  "end": 1.091
+ },
+ {
+  "id": "w2",
+  "text": "3 mois,",
+  "start": 1.533,
+  "end": 2.148
+ },
+ {
+  "id": "w3",
+  "text": "une",
+  "start": 2.508,
+  "end": 2.728
+ },
+ {
+  "id": "w4",
+  "text": "étape",
+  "start": 2.752,
+  "end": 3.007
+ },
+ {
+  "id": "w5",
+  "text": "à",
+  "start": 3.03,
+  "end": 3.053
+ },
+ {
+  "id": "w6",
+  "text": "la",
+  "start": 3.077,
+  "end": 3.146
+ },
+ {
+  "id": "w7",
+  "text": "fois.",
+  "start": 3.204,
+  "end": 3.483
+ },
+ {
+  "id": "w8",
+  "text": "Mois 1 :",
+  "start": 4.208,
+  "end": 4.696
+ },
+ {
+  "id": "w9",
+  "text": "installer",
+  "start": 5.021,
+  "end": 5.473
+ },
+ {
+  "id": "w10",
+  "text": "les",
+  "start": 5.497,
+  "end": 5.59
+ },
+ {
+  "id": "w11",
+  "text": "bases,",
+  "start": 5.613,
+  "end": 5.996
+ },
+ {
+  "id": "w12",
+  "text": "sans",
+  "start": 6.158,
+  "end": 6.356
+ },
+ {
+  "id": "w13",
+  "text": "chercher",
+  "start": 6.379,
+  "end": 6.716
+ },
+ {
+  "id": "w14",
+  "text": "à",
+  "start": 6.762,
+  "end": 6.785
+ },
+ {
+  "id": "w15",
+  "text": "tout",
+  "start": 6.867,
+  "end": 7.018
+ },
+ {
+  "id": "w16",
+  "text": "changer",
+  "start": 7.041,
+  "end": 7.354
+ },
+ {
+  "id": "w17",
+  "text": "en",
+  "start": 7.412,
+  "end": 7.494
+ },
+ {
+  "id": "w18",
+  "text": "même",
+  "start": 7.54,
+  "end": 7.703
+ },
+ {
+  "id": "w19",
+  "text": "temps.",
+  "start": 7.737,
+  "end": 7.946
+ },
+ {
+  "id": "w20",
+  "text": "Mois 2 :",
+  "start": 8.555,
+  "end": 8.985
+ },
+ {
+  "id": "w21",
+  "text": "renforcer",
+  "start": 9.472,
+  "end": 9.925
+ },
+ {
+  "id": "w22",
+  "text": "tes",
+  "start": 9.96,
+  "end": 10.088
+ },
+ {
+  "id": "w23",
+  "text": "habitudes,",
+  "start": 10.134,
+  "end": 10.656
+ },
+ {
+  "id": "w24",
+  "text": "et",
+  "start": 10.923,
+  "end": 11.086
+ },
+ {
+  "id": "w25",
+  "text": "sortir",
+  "start": 11.132,
+  "end": 11.562
+ },
+ {
+  "id": "w26",
+  "text": "du",
+  "start": 11.62,
+  "end": 11.701
+ },
+ {
+  "id": "w27",
+  "text": "mode",
+  "start": 11.748,
+  "end": 11.922
+ },
+ {
+  "id": "w28",
+  "text": "régime.",
+  "start": 11.957,
+  "end": 12.386
+ },
+ {
+  "id": "w29",
+  "text": "Mois 3 :",
+  "start": 13.135,
+  "end": 13.669
+ },
+ {
+  "id": "w30",
+  "text": "consolider,",
+  "start": 13.936,
+  "end": 14.563
+ },
+ {
+  "id": "w31",
+  "text": "et",
+  "start": 14.714,
+  "end": 14.83
+ },
+ {
+  "id": "w32",
+  "text": "construire",
+  "start": 14.876,
+  "end": 15.353
+ },
+ {
+  "id": "w33",
+  "text": "ton",
+  "start": 15.376,
+  "end": 15.492
+ },
+ {
+  "id": "w34",
+  "text": "plan",
+  "start": 15.538,
+  "end": 15.724
+ },
+ {
+  "id": "w35",
+  "text": "pour",
+  "start": 15.77,
+  "end": 15.875
+ },
+ {
+  "id": "w36",
+  "text": "la",
+  "start": 15.91,
+  "end": 15.968
+ },
+ {
+  "id": "w37",
+  "text": "suite.",
+  "start": 16.026,
+  "end": 16.328
+ },
+ {
+  "id": "w38",
+  "text": "Chaque",
+  "start": 16.925,
+  "end": 17.262
+ },
+ {
+  "id": "w39",
+  "text": "semaine",
+  "start": 17.285,
+  "end": 17.575
+ },
+ {
+  "id": "w40",
+  "text": "a",
+  "start": 17.598,
+  "end": 17.622
+ },
+ {
+  "id": "w41",
+  "text": "son",
+  "start": 17.668,
+  "end": 17.784
+ },
+ {
+  "id": "w42",
+  "text": "objectif,",
+  "start": 17.854,
+  "end": 18.365
+ },
+ {
+  "id": "w43",
+  "text": "son",
+  "start": 18.539,
+  "end": 18.725
+ },
+ {
+  "id": "w44",
+  "text": "menu,",
+  "start": 18.759,
+  "end": 19.073
+ },
+ {
+  "id": "w45",
+  "text": "et",
+  "start": 19.212,
+  "end": 19.34
+ },
+ {
+  "id": "w46",
+  "text": "sa",
+  "start": 19.375,
+  "end": 19.468
+ },
+ {
+  "id": "w47",
+  "text": "liste",
+  "start": 19.526,
+  "end": 19.781
+ },
+ {
+  "id": "w48",
+  "text": "de",
+  "start": 19.827,
+  "end": 19.897
+ },
+ {
+  "id": "w49",
+  "text": "courses.",
+  "start": 19.955,
+  "end": 20.28
+ },
+ {
+  "id": "w50",
+  "text": "Commente",
+  "start": 21.04,
+  "end": 21.365
+ },
+ {
+  "id": "w51",
+  "text": "« 90 JOURS »,",
+  "start": 21.4,
+  "end": 22.259
+ },
+ {
+  "id": "w52",
+  "text": "et",
+  "start": 22.561,
+  "end": 22.665
+ },
+ {
+  "id": "w53",
+  "text": "je",
+  "start": 22.712,
+  "end": 22.77
+ },
+ {
+  "id": "w54",
+  "text": "t'envoie",
+  "start": 22.816,
+  "end": 23.083
+ },
+ {
+  "id": "w55",
+  "text": "le",
+  "start": 23.118,
+  "end": 23.176
+ },
+ {
+  "id": "w56",
+  "text": "lien",
+  "start": 23.223,
+  "end": 23.455
+ },
+ {
+  "id": "w57",
+  "text": "en",
+  "start": 23.525,
+  "end": 23.617
+ },
+ {
+  "id": "w58",
+  "text": "message",
+  "start": 23.664,
+  "end": 24.012
+ },
+ {
+  "id": "w59",
+  "text": "privé.",
+  "start": 24.047,
+  "end": 24.384
+ }
+]

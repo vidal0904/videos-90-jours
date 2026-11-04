@@ -1,0 +1,506 @@
+[
+ {
+  "id": "w0",
+  "text": "Un",
+  "start": 0.0,
+  "end": 0.151
+ },
+ {
+  "id": "w1",
+  "text": "bowl",
+  "start": 0.197,
+  "end": 0.36
+ },
+ {
+  "id": "w2",
+  "text": "complet,",
+  "start": 0.43,
+  "end": 0.813
+ },
+ {
+  "id": "w3",
+  "text": "à",
+  "start": 1.045,
+  "end": 1.091
+ },
+ {
+  "id": "w4",
+  "text": "emporter.",
+  "start": 1.149,
+  "end": 1.579
+ },
+ {
+  "id": "w5",
+  "text": "Du",
+  "start": 2.118,
+  "end": 2.304
+ },
+ {
+  "id": "w6",
+  "text": "quinoa,",
+  "start": 2.35,
+  "end": 2.815
+ },
+ {
+  "id": "w7",
+  "text": "du",
+  "start": 3.105,
+  "end": 3.244
+ },
+ {
+  "id": "w8",
+  "text": "poulet",
+  "start": 3.291,
+  "end": 3.523
+ },
+ {
+  "id": "w9",
+  "text": "grillé,",
+  "start": 3.546,
+  "end": 3.952
+ },
+ {
+  "id": "w10",
+  "text": "un",
+  "start": 4.254,
+  "end": 4.37
+ },
+ {
+  "id": "w11",
+  "text": "demi",
+  "start": 4.428,
+  "end": 4.637
+ },
+ {
+  "id": "w12",
+  "text": "avocat,",
+  "start": 4.684,
+  "end": 5.183
+ },
+ {
+  "id": "w13",
+  "text": "une",
+  "start": 5.311,
+  "end": 5.45
+ },
+ {
+  "id": "w14",
+  "text": "tomate,",
+  "start": 5.485,
+  "end": 5.996
+ },
+ {
+  "id": "w15",
+  "text": "du",
+  "start": 6.193,
+  "end": 6.321
+ },
+ {
+  "id": "w16",
+  "text": "concombre,",
+  "start": 6.367,
+  "end": 6.832
+ },
+ {
+  "id": "w17",
+  "text": "de",
+  "start": 6.983,
+  "end": 7.052
+ },
+ {
+  "id": "w18",
+  "text": "la",
+  "start": 7.11,
+  "end": 7.18
+ },
+ {
+  "id": "w19",
+  "text": "salade",
+  "start": 7.238,
+  "end": 7.528
+ },
+ {
+  "id": "w20",
+  "text": "verte,",
+  "start": 7.563,
+  "end": 7.935
+ },
+ {
+  "id": "w21",
+  "text": "un",
+  "start": 8.178,
+  "end": 8.271
+ },
+ {
+  "id": "w22",
+  "text": "filet",
+  "start": 8.329,
+  "end": 8.562
+ },
+ {
+  "id": "w23",
+  "text": "d'huile",
+  "start": 8.585,
+  "end": 8.747
+ },
+ {
+  "id": "w24",
+  "text": "d'olive",
+  "start": 8.771,
+  "end": 9.177
+ },
+ {
+  "id": "w25",
+  "text": "et",
+  "start": 9.235,
+  "end": 9.363
+ },
+ {
+  "id": "w26",
+  "text": "de",
+  "start": 9.409,
+  "end": 9.49
+ },
+ {
+  "id": "w27",
+  "text": "citron.",
+  "start": 9.537,
+  "end": 9.908
+ },
+ {
+  "id": "w28",
+  "text": "Cuis",
+  "start": 10.599,
+  "end": 10.878
+ },
+ {
+  "id": "w29",
+  "text": "le",
+  "start": 10.901,
+  "end": 10.982
+ },
+ {
+  "id": "w30",
+  "text": "quinoa",
+  "start": 11.029,
+  "end": 11.447
+ },
+ {
+  "id": "w31",
+  "text": "et",
+  "start": 11.597,
+  "end": 11.748
+ },
+ {
+  "id": "w32",
+  "text": "laisse-le",
+  "start": 11.806,
+  "end": 12.143
+ },
+ {
+  "id": "w33",
+  "text": "tiédir.",
+  "start": 12.19,
+  "end": 12.608
+ },
+ {
+  "id": "w34",
+  "text": "Coupe",
+  "start": 13.228,
+  "end": 13.53
+ },
+ {
+  "id": "w35",
+  "text": "le",
+  "start": 13.553,
+  "end": 13.611
+ },
+ {
+  "id": "w36",
+  "text": "reste,",
+  "start": 13.646,
+  "end": 13.971
+ },
+ {
+  "id": "w37",
+  "text": "et",
+  "start": 14.064,
+  "end": 14.192
+ },
+ {
+  "id": "w38",
+  "text": "dispose",
+  "start": 14.226,
+  "end": 14.633
+ },
+ {
+  "id": "w39",
+  "text": "chaque",
+  "start": 14.656,
+  "end": 14.935
+ },
+ {
+  "id": "w40",
+  "text": "ingrédient",
+  "start": 14.958,
+  "end": 15.399
+ },
+ {
+  "id": "w41",
+  "text": "en",
+  "start": 15.446,
+  "end": 15.527
+ },
+ {
+  "id": "w42",
+  "text": "sections",
+  "start": 15.585,
+  "end": 16.084
+ },
+ {
+  "id": "w43",
+  "text": "dans",
+  "start": 16.235,
+  "end": 16.409
+ },
+ {
+  "id": "w44",
+  "text": "un",
+  "start": 16.49,
+  "end": 16.548
+ },
+ {
+  "id": "w45",
+  "text": "grand",
+  "start": 16.583,
+  "end": 16.792
+ },
+ {
+  "id": "w46",
+  "text": "bol.",
+  "start": 16.815,
+  "end": 17.059
+ },
+ {
+  "id": "w47",
+  "text": "L'astuce :",
+  "start": 17.761,
+  "end": 18.33
+ },
+ {
+  "id": "w48",
+  "text": "le",
+  "start": 18.759,
+  "end": 18.864
+ },
+ {
+  "id": "w49",
+  "text": "quinoa",
+  "start": 18.91,
+  "end": 19.235
+ },
+ {
+  "id": "w50",
+  "text": "se",
+  "start": 19.305,
+  "end": 19.398
+ },
+ {
+  "id": "w51",
+  "text": "cuit",
+  "start": 19.433,
+  "end": 19.607
+ },
+ {
+  "id": "w52",
+  "text": "en",
+  "start": 19.653,
+  "end": 19.711
+ },
+ {
+  "id": "w53",
+  "text": "grande",
+  "start": 19.77,
+  "end": 20.037
+ },
+ {
+  "id": "w54",
+  "text": "quantité,",
+  "start": 20.06,
+  "end": 20.501
+ },
+ {
+  "id": "w55",
+  "text": "et",
+  "start": 20.594,
+  "end": 20.698
+ },
+ {
+  "id": "w56",
+  "text": "se",
+  "start": 20.733,
+  "end": 20.826
+ },
+ {
+  "id": "w57",
+  "text": "garde",
+  "start": 20.884,
+  "end": 21.105
+ },
+ {
+  "id": "w58",
+  "text": "4 jours",
+  "start": 21.151,
+  "end": 21.685
+ },
+ {
+  "id": "w59",
+  "text": "au",
+  "start": 21.708,
+  "end": 21.755
+ },
+ {
+  "id": "w60",
+  "text": "frais.",
+  "start": 21.79,
+  "end": 22.057
+ },
+ {
+  "id": "w61",
+  "text": "Version",
+  "start": 22.759,
+  "end": 23.142
+ },
+ {
+  "id": "w62",
+  "text": "végétarienne :",
+  "start": 23.189,
+  "end": 23.862
+ },
+ {
+  "id": "w63",
+  "text": "des",
+  "start": 24.164,
+  "end": 24.292
+ },
+ {
+  "id": "w64",
+  "text": "pois",
+  "start": 24.326,
+  "end": 24.524
+ },
+ {
+  "id": "w65",
+  "text": "chiches",
+  "start": 24.547,
+  "end": 24.895
+ },
+ {
+  "id": "w66",
+  "text": "ou",
+  "start": 25.011,
+  "end": 25.162
+ },
+ {
+  "id": "w67",
+  "text": "du",
+  "start": 25.22,
+  "end": 25.313
+ },
+ {
+  "id": "w68",
+  "text": "tofu",
+  "start": 25.36,
+  "end": 25.708
+ },
+ {
+  "id": "w69",
+  "text": "à",
+  "start": 25.801,
+  "end": 25.836
+ },
+ {
+  "id": "w70",
+  "text": "la",
+  "start": 25.905,
+  "end": 25.963
+ },
+ {
+  "id": "w71",
+  "text": "place",
+  "start": 26.01,
+  "end": 26.207
+ },
+ {
+  "id": "w72",
+  "text": "du",
+  "start": 26.23,
+  "end": 26.312
+ },
+ {
+  "id": "w73",
+  "text": "poulet.",
+  "start": 26.346,
+  "end": 26.66
+ },
+ {
+  "id": "w74",
+  "text": "Commente",
+  "start": 27.245,
+  "end": 27.64
+ },
+ {
+  "id": "w75",
+  "text": "« 90 JOURS »,",
+  "start": 27.709,
+  "end": 28.638
+ },
+ {
+  "id": "w76",
+  "text": "et",
+  "start": 28.847,
+  "end": 28.963
+ },
+ {
+  "id": "w77",
+  "text": "je",
+  "start": 29.021,
+  "end": 29.091
+ },
+ {
+  "id": "w78",
+  "text": "t'envoie",
+  "start": 29.137,
+  "end": 29.416
+ },
+ {
+  "id": "w79",
+  "text": "le",
+  "start": 29.439,
+  "end": 29.509
+ },
+ {
+  "id": "w80",
+  "text": "lien",
+  "start": 29.555,
+  "end": 29.811
+ },
+ {
+  "id": "w81",
+  "text": "en",
+  "start": 29.88,
+  "end": 29.997
+ },
+ {
+  "id": "w82",
+  "text": "message",
+  "start": 30.055,
+  "end": 30.368
+ },
+ {
+  "id": "w83",
+  "text": "privé.",
+  "start": 30.403,
+  "end": 30.763
+ }
+]

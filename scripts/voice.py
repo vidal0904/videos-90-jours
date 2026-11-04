@@ -79,7 +79,15 @@ AFFICHAGE_MULTI = {("trois", "cent", "seize"): "316", ("un", "pour", "cent"): "1
                    ("jour", "quatre"): "jour 4", ("jour", "cinq"): "jour 5", ("jour", "six"): "jour 6", ("jour", "sept"): "jour 7",
                    ("trois", "questions"): "3 questions", ("quatre", "phrases"): "4 phrases", ("sept", "missions"): "7 missions",
                    ("cinq", "raisons"): "5 raisons", ("deux", "questions"): "2 questions", ("trois", "premières"): "3 premières",
-                   ("trois", "habitudes"): "3 habitudes", ("quatre", "à", "douze"): "4 à 12"}
+                   ("trois", "habitudes"): "3 habitudes", ("quatre", "à", "douze"): "4 à 12",
+                   # série 4
+                   ("trois", "ingrédients"): "3 ingrédients", ("deux", "œufs"): "2 œufs", ("trente", "grammes"): "30\u00a0g",
+                   ("une", "à", "deux", "minutes"): "1 à 2 minutes", ("cinq", "minutes"): "5 minutes",
+                   ("quatre", "jours"): "4\u00a0jours", ("deux", "portions"): "2\u00a0portions",
+                   ("quatre", "recettes"): "4\u00a0recettes", ("sept", "jours"): "7\u00a0jours",
+                   ("semaine", "un"): "semaine 1", ("quatre", "choses"): "4 choses", ("sept", "heures"): "7\u00a0h",
+                   ("cinq", "questions"): "5 questions", ("trois", "phrases"): "3 phrases", ("trois", "mois"): "3\u00a0mois",
+                   ("mois", "un"): "mois\u00a01", ("mois", "deux"): "mois\u00a02", ("mois", "trois"): "mois\u00a03"}
 
 
 def affiche(mot):

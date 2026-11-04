@@ -1,0 +1,58 @@
+<!-- Série 4 · vidéo 08 · bloc 1 (phrases) · 4.19–14.29 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--encre);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--vert-foret-2);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--encre);
+    }
+    .s2-phrase {
+      top: 660px;
+      font-size: 76px;
+      line-height: 1.2;
+    }
+    .s2-phrase {
+      left: 100px;
+      right: 100px;
+      padding: 60px 50px;
+      border-radius: 36px;
+      background: var(--sauge-claire);
+    }
+  </style>
+  <div id="root" data-composition-id="s4-08-b1" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+    <p id="s4-08-b1-p0" class="s2-texte s2-phrase titre">La meilleure version<br />de vous-même<br /><em>est une direction,<br />pas une destination.</em></p>
+    <p id="s4-08-b1-p1" class="s2-texte s2-phrase titre">Vous n'avez pas besoin<br />d'être parfait,<br /><em>seulement constant.</em></p>
+    <p id="s4-08-b1-p2" class="s2-texte s2-phrase titre">Les progrès lents<br /><em>restent des progrès.</em></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s4-08-b1-p0", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 0.15);
+    tl.to("#s4-08-b1-p0", { opacity: 0, duration: 0.3, ease: "sine.in" }, 4.31);
+    tl.fromTo("#s4-08-b1-p1", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 4.67);
+    tl.to("#s4-08-b1-p1", { opacity: 0, duration: 0.3, ease: "sine.in" }, 7.41);
+    tl.fromTo("#s4-08-b1-p2", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 7.76);
+    window.__timelines["s4-08-b1"] = tl;
+  </script>
+</template>

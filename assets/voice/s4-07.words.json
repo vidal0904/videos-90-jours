@@ -1,0 +1,392 @@
+[
+ {
+  "id": "w0",
+  "text": "Le",
+  "start": 0.0,
+  "end": 0.174
+ },
+ {
+  "id": "w1",
+  "text": "dimanche,",
+  "start": 0.209,
+  "end": 0.662
+ },
+ {
+  "id": "w2",
+  "text": "ne",
+  "start": 0.871,
+  "end": 0.964
+ },
+ {
+  "id": "w3",
+  "text": "regarde",
+  "start": 1.022,
+  "end": 1.335
+ },
+ {
+  "id": "w4",
+  "text": "pas",
+  "start": 1.358,
+  "end": 1.474
+ },
+ {
+  "id": "w5",
+  "text": "que",
+  "start": 1.498,
+  "end": 1.579
+ },
+ {
+  "id": "w6",
+  "text": "ton",
+  "start": 1.614,
+  "end": 1.73
+ },
+ {
+  "id": "w7",
+  "text": "poids.",
+  "start": 1.776,
+  "end": 2.009
+ },
+ {
+  "id": "w8",
+  "text": "Dans",
+  "start": 2.583,
+  "end": 2.78
+ },
+ {
+  "id": "w9",
+  "text": "mon",
+  "start": 2.804,
+  "end": 2.908
+ },
+ {
+  "id": "w10",
+  "text": "guide,",
+  "start": 2.966,
+  "end": 3.245
+ },
+ {
+  "id": "w11",
+  "text": "il",
+  "start": 3.338,
+  "end": 3.431
+ },
+ {
+  "id": "w12",
+  "text": "reste",
+  "start": 3.512,
+  "end": 3.756
+ },
+ {
+  "id": "w13",
+  "text": "facultatif :",
+  "start": 3.825,
+  "end": 4.545
+ },
+ {
+  "id": "w14",
+  "text": "c'est",
+  "start": 4.847,
+  "end": 5.033
+ },
+ {
+  "id": "w15",
+  "text": "une",
+  "start": 5.114,
+  "end": 5.195
+ },
+ {
+  "id": "w16",
+  "text": "donnée",
+  "start": 5.218,
+  "end": 5.485
+ },
+ {
+  "id": "w17",
+  "text": "parmi",
+  "start": 5.509,
+  "end": 5.764
+ },
+ {
+  "id": "w18",
+  "text": "d'autres.",
+  "start": 5.811,
+  "end": 6.066
+ },
+ {
+  "id": "w19",
+  "text": "Note",
+  "start": 6.744,
+  "end": 7.023
+ },
+ {
+  "id": "w20",
+  "text": "aussi",
+  "start": 7.046,
+  "end": 7.266
+ },
+ {
+  "id": "w21",
+  "text": "ton",
+  "start": 7.324,
+  "end": 7.464
+ },
+ {
+  "id": "w22",
+  "text": "énergie,",
+  "start": 7.522,
+  "end": 8.009
+ },
+ {
+  "id": "w23",
+  "text": "ton",
+  "start": 8.195,
+  "end": 8.346
+ },
+ {
+  "id": "w24",
+  "text": "sommeil,",
+  "start": 8.393,
+  "end": 8.822
+ },
+ {
+  "id": "w25",
+  "text": "ta",
+  "start": 8.938,
+  "end": 9.054
+ },
+ {
+  "id": "w26",
+  "text": "motivation.",
+  "start": 9.112,
+  "end": 9.774
+ },
+ {
+  "id": "w27",
+  "text": "Puis",
+  "start": 10.395,
+  "end": 10.604
+ },
+ {
+  "id": "w28",
+  "text": "réponds",
+  "start": 10.639,
+  "end": 10.929
+ },
+ {
+  "id": "w29",
+  "text": "à",
+  "start": 10.952,
+  "end": 10.975
+ },
+ {
+  "id": "w30",
+  "text": "2 questions.",
+  "start": 11.022,
+  "end": 11.556
+ },
+ {
+  "id": "w31",
+  "text": "Qu'est-ce",
+  "start": 12.328,
+  "end": 12.595
+ },
+ {
+  "id": "w32",
+  "text": "qui",
+  "start": 12.618,
+  "end": 12.7
+ },
+ {
+  "id": "w33",
+  "text": "a",
+  "start": 12.746,
+  "end": 12.769
+ },
+ {
+  "id": "w34",
+  "text": "bien",
+  "start": 12.816,
+  "end": 12.978
+ },
+ {
+  "id": "w35",
+  "text": "fonctionné ?",
+  "start": 13.025,
+  "end": 13.512
+ },
+ {
+  "id": "w36",
+  "text": "Et",
+  "start": 14.167,
+  "end": 14.341
+ },
+ {
+  "id": "w37",
+  "text": "qu'est-ce",
+  "start": 14.399,
+  "end": 14.643
+ },
+ {
+  "id": "w38",
+  "text": "que",
+  "start": 14.666,
+  "end": 14.759
+ },
+ {
+  "id": "w39",
+  "text": "j'ajuste",
+  "start": 14.794,
+  "end": 15.247
+ },
+ {
+  "id": "w40",
+  "text": "la",
+  "start": 15.305,
+  "end": 15.386
+ },
+ {
+  "id": "w41",
+  "text": "semaine",
+  "start": 15.432,
+  "end": 15.63
+ },
+ {
+  "id": "w42",
+  "text": "prochaine ?",
+  "start": 15.653,
+  "end": 16.094
+ },
+ {
+  "id": "w43",
+  "text": "Envoie",
+  "start": 16.796,
+  "end": 17.156
+ },
+ {
+  "id": "w44",
+  "text": "ça",
+  "start": 17.179,
+  "end": 17.295
+ },
+ {
+  "id": "w45",
+  "text": "à",
+  "start": 17.33,
+  "end": 17.353
+ },
+ {
+  "id": "w46",
+  "text": "quelqu'un",
+  "start": 17.411,
+  "end": 17.702
+ },
+ {
+  "id": "w47",
+  "text": "qui",
+  "start": 17.748,
+  "end": 17.841
+ },
+ {
+  "id": "w48",
+  "text": "juge",
+  "start": 17.887,
+  "end": 18.061
+ },
+ {
+  "id": "w49",
+  "text": "sa",
+  "start": 18.085,
+  "end": 18.178
+ },
+ {
+  "id": "w50",
+  "text": "semaine",
+  "start": 18.236,
+  "end": 18.607
+ },
+ {
+  "id": "w51",
+  "text": "à",
+  "start": 18.688,
+  "end": 18.735
+ },
+ {
+  "id": "w52",
+  "text": "un",
+  "start": 18.851,
+  "end": 18.909
+ },
+ {
+  "id": "w53",
+  "text": "seul",
+  "start": 18.979,
+  "end": 19.141
+ },
+ {
+  "id": "w54",
+  "text": "chiffre.",
+  "start": 19.188,
+  "end": 19.559
+ },
+ {
+  "id": "w55",
+  "text": "Commente",
+  "start": 20.261,
+  "end": 20.714
+ },
+ {
+  "id": "w56",
+  "text": "« 90 JOURS »,",
+  "start": 20.783,
+  "end": 21.735
+ },
+ {
+  "id": "w57",
+  "text": "et",
+  "start": 21.875,
+  "end": 21.979
+ },
+ {
+  "id": "w58",
+  "text": "je",
+  "start": 22.026,
+  "end": 22.084
+ },
+ {
+  "id": "w59",
+  "text": "t'envoie",
+  "start": 22.142,
+  "end": 22.432
+ },
+ {
+  "id": "w60",
+  "text": "le",
+  "start": 22.455,
+  "end": 22.525
+ },
+ {
+  "id": "w61",
+  "text": "lien",
+  "start": 22.56,
+  "end": 22.78
+ },
+ {
+  "id": "w62",
+  "text": "en",
+  "start": 22.85,
+  "end": 22.943
+ },
+ {
+  "id": "w63",
+  "text": "message",
+  "start": 22.989,
+  "end": 23.291
+ },
+ {
+  "id": "w64",
+  "text": "privé.",
+  "start": 23.314,
+  "end": 23.64
+ }
+]
