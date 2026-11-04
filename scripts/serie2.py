@@ -229,7 +229,7 @@ VIDEOS.update({
                           ("1", "Mixe le tout", None, "@mixe"), ("2", "Poêle légèrement huilée", None, "@chauffe"),
                           ("3", "Petites louches, 1 à 2 min par côté", None, "@verse")]),
                       dict(type="page", m="@le#2", src="recette-b7-pancakes-p209.png", alt="Recette B7, pancakes banane-avoine",
-                           titre="Le <em>conseil</em>", t_titre="@conseil", zoom=("@sers", "40%", "47%", 1.6)),
+                           titre="Le <em>conseil</em>", t_titre="@conseil"),
                   ],
                   fin=dict(m="@enregistre", textes=[("Enregistre<br /><em>pour ce week-end</em>", "@enregistre")],
                            pages=[("index-recettes-p200.png", "Index des 70 recettes", "@recette"), COUV + ("@commente",)], lien=0)),
@@ -242,7 +242,7 @@ VIDEOS.update({
                           (None, "½ concombre", None, "@concombre"), (None, "1 poignée de salade verte", None, "@salade"),
                           (None, "Huile d'olive, citron", None, "@d'huile")]),
                       dict(type="page", m="@cuis", src="recette-l20-bowl-quinoa-p243.png", alt="Recette L20, grand bowl au quinoa",
-                           titre="En <em>3 étapes</em>", t_titre="@cuis", zoom=("@coupe", "59%", "40%", 1.5)),
+                           titre="En <em>3 étapes</em>", t_titre="@cuis"),
                       dict(type="phrases", m="@l'astuce", items=[
                           ("Le quinoa se garde<br /><em>4 jours au frais.</em>", "@l'astuce"),
                           ("Version végétarienne&#8239;:<br /><em>pois chiches ou tofu.</em>", "@version")]),
@@ -253,7 +253,7 @@ VIDEOS.update({
                   blocs=[
                       dict(type="compteur", m="@dans", t_n="@30", n=30, libelle="recettes végétariennes", sous=("sur 70 recettes", "@70")),
                       dict(type="page", m="@par", src="recette-d9-tofu-p253.png", alt="Recette D9, tofu sauté aux légumes",
-                           titre="Tofu sauté<br /><em>façon asiatique</em>", t_titre="@par", zoom=("@tofu#2", "39%", "40%", 1.5)),
+                           titre="Tofu sauté<br /><em>façon asiatique</em>", t_titre="@par"),
                       dict(type="cartes", m="@dore", titre="En <em>3 gestes</em>", compact=True, items=[
                           ("1", "Dore le tofu", None, "@dore"), ("2", "Légumes + gingembre", None, "@ajoute"),
                           ("3", "5 min, puis sauce soja", None, "@fais")]),
@@ -311,8 +311,8 @@ VIDEOS.update({
     "s4-08": dict(titre="3 phrases du guide à garder", fond="creme", musique="piano", mention=False, duree=0,
                   accroche="3 phrases<br /><em>à garder.</em>",
                   blocs=[
-                      dict(type="phrases", m="@la", carte=True, items=[
-                          ("La meilleure version<br />de vous-même<br /><em>est une direction,<br />pas une destination.</em>", "@la"),
+                      dict(type="phrases", m="@la", carte=True, taille=64, items=[
+                          ("La meilleure version<br />de vous-même<br /><em>n'est pas une destination.<br />C'est une direction.</em>", "@la"),
                           ("Vous n'avez pas besoin<br />d'être parfait,<br /><em>seulement constant.</em>", "@vous"),
                           ("Les progrès lents<br /><em>restent des progrès.</em>", "@les#2")]),
                   ],
@@ -611,7 +611,7 @@ def rendu_bloc(nom, b, th, t0, T):
         css += f'''
     .s2-phrase {{
       top: 660px;
-      font-size: {84 if not carte else 76}px;
+      font-size: {b.get("taille", 84 if not carte else 76)}px;
       line-height: 1.2;
     }}''' + (f'''
     .s2-phrase {{
