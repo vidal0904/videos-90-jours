@@ -1,0 +1,45 @@
+<!-- Série 5 · vidéo 03 · bloc 1 (phrases) · 2.94–7.24 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--encre);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--vert-foret-2);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--encre);
+    }
+    .s2-phrase {
+      top: 660px;
+      font-size: 84px;
+      line-height: 1.2;
+    }
+  </style>
+  <div id="root" data-composition-id="s5-03-b1" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+    <p id="s5-03-b1-p0" class="s2-texte s2-phrase titre">Si cette question<br /><em>te suit à chaque repas…</em></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s5-03-b1-p0", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 0.15);
+    window.__timelines["s5-03-b1"] = tl;
+  </script>
+</template>

@@ -347,6 +347,78 @@ VIDEOS.update({
                                                             COUV + ("@commente",)], lien=0)),
 })
 
+# --------------------------------------------------------------------------------------
+# Série 5 — « Dans ta tête » (STRATEGIE-AIDA.md) : bulle de pensée à l'image 0, puis AIDA
+# --------------------------------------------------------------------------------------
+VIDEOS.update({
+    "s5-01": dict(titre="Pourquoi je n'y arrive pas ?", fond="vert", musique="nappe", mention=True, duree=0, bulle=dict(n=1, taille=68),
+                  accroche="Pourquoi je n'y arrive pas… alors que les autres réussissent&#8239;?",
+                  blocs=[
+                      dict(type="phrases", m="@si", items=[("Si tu te poses<br /><em>cette question…</em>", "@si")]),
+                      dict(type="rature", m="@ce", avant="Ce n'est pas<br />une affaire de", mot="volonté", apres=".", m_rature="@volonté"),
+                      dict(type="cartes", m="@le", titre="Ce qui joue <em>vraiment</em>", compact=True, items=[
+                          (None, "Le stress", None, "@stress"), (None, "Le sommeil", None, "@sommeil"),
+                          (None, "Les hormones", None, "@hormones"), (None, "Les habitudes", None, "@habitudes")]),
+                      dict(type="phrases", m="@et", items=[("Tout changer d'un coup&#8239;?<br /><em>C'est là qu'on abandonne.</em>", "@et")]),
+                      dict(type="page", m="@mon", src="semaine-1-p91.png", alt="Semaine 1, poser les fondations",
+                           titre="Une étape<br /><em>à la fois</em>", t_titre="@une#2"),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s5-02": dict(titre="La charge mentale de l'assiette", fond="vert", musique="nappe", mention=True, duree=0, bulle=dict(n=2),
+                  accroche="On mange quoi<br />ce soir&#8239;?",
+                  blocs=[
+                      dict(type="bulles", m="@j'ai", fond="vert", items=[
+                          ("On mange quoi ce soir&#8239;?", "@on", "Menu de la semaine prêt", "@ton"),
+                          ("J'ai le droit de manger ça&#8239;?", "@j'ai", "Aucun aliment interdit", "@aucun"),
+                          ("Combien de calories&#8239;?", "@combien", "Aucune calorie à compter", "@aucune"),
+                          ("J'ai craqué… je recommence lundi&#8239;?", "@j'ai#2", "Le repas suivant, pas lundi", "@après")]),
+                      dict(type="phrases", m="@moins", items=[("Moins de questions,<br /><em>plus de place dans ta tête.</em>", "@moins")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s5-03": dict(titre="Est-ce qu'on me regarde ?", fond="creme", musique="piano", mention=False, duree=0, bulle=dict(n=3),
+                  accroche="Est-ce qu'on me regarde parce que je mange ça&#8239;?",
+                  blocs=[
+                      dict(type="phrases", m="@si", items=[("Si cette question<br /><em>te suit à chaque repas…</em>", "@si")]),
+                      dict(type="phrases", m="@tu#2", items=[
+                          ("Tu as le droit<br /><em>de manger.</em>", "@tu#2"), ("<em>Partout.</em>", "@partout"),
+                          ("Devant<br /><em>tout le monde.</em>", "@devant"), ("Ton assiette<br /><em>ne regarde que toi.</em>", "@ton")]),
+                  ],
+                  fin=dict(m="@envoie", cta=False, textes=[("Envoie ça<br /><em>à quelqu'un qui en a besoin</em>", "@envoie")], pages=[], lien=0)),
+    "s5-04": dict(titre="Est-ce que je vais tenir ?", fond="vert", musique="nappe", mention=True, duree=0, bulle=dict(n=4),
+                  accroche="Est-ce que je vais tenir si je marche jusque-là&#8239;?",
+                  blocs=[
+                      dict(type="phrases", m="@tu", items=[("Tu n'as<br /><em>rien à prouver.</em>", "@tu")]),
+                      dict(type="cartes", m="@dans", titre="Dans mon <em>guide</em>", compact=True, items=[
+                          (None, "Une activité adaptable chaque semaine", None, "@chaque"),
+                          (None, "Chaque défi s'adapte à toi", None, "@chaque#2")]),
+                      dict(type="phrases", m="@commences", items=[
+                          ("Tu commences<br /><em>là où tu en es.</em>", "@commences"),
+                          ("Douleur ou doute&#8239;?<br /><em>Demande conseil à ton médecin.</em>", "@en#2")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s5-05": dict(titre="Une semaine sans te demander quoi manger", fond="creme", musique="piano", mention=True, duree=0, bulle=dict(n=5),
+                  accroche="Imagine une semaine sans te demander quoi manger.",
+                  blocs=[
+                      dict(type="pages", m="@dimanche", items=[
+                          ("menu-s1-p94.png", "Menu de la semaine 1", "Dimanche&#8239;:<br /><em>le menu est prêt</em>", "@dimanche"),
+                          ("courses-s1-p95.png", "Liste de courses de la semaine 1", "<em>La liste aussi</em>", "@liste"),
+                          ("recette-l20-bowl-quinoa-p243.png", "Recette L20, grand bowl au quinoa", "Lundi&#8239;:<br /><em>tu sais quoi cuisiner</em>", "@lundi"),
+                          ("batch-cooking-p199.png", "Batch cooking du dimanche", "Milieu de semaine&#8239;:<br /><em>une portion d'avance</em>", "@milieu"),
+                          ("journal-s1-p96.png", "Journal de la semaine 1", "Un écart&#8239;?<br /><em>Le repas suivant.</em>", "@un"),
+                          ("bilan-s1-p97.png", "Bilan de la semaine 1", "Dimanche&#8239;:<br /><em>ton bilan</em>", "@dimanche#2")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s5-06": dict(titre="Laquelle te pèse le plus ?", fond="vert", musique="nappe", mention=False, duree=0, bulle=dict(n=6),
+                  accroche="3 questions.<br />Laquelle te pèse le plus&#8239;?",
+                  blocs=[
+                      dict(type="bulles", m="@on", fond="vert", top=300, items=[
+                          ("1 · On mange quoi ce soir&#8239;?", "@on"), ("2 · J'ai craqué, je recommence lundi&#8239;?", "@j'ai"),
+                          ("3 · Est-ce qu'on me regarde&#8239;?", "@est-ce")],
+                          pied=("Réponds <em>1, 2 ou 3</em><br />en commentaire", "@réponds")),
+                  ],
+                  fin=dict(m="@je#2", cta=False, textes=[("Je ferai une vidéo<br /><em>sur la plus choisie</em>", "@je#2")], pages=[], lien=0)),
+})
+
 
 def resout(x, mots):
     """Remplace les ancres "@mot" / "@mot#k" par l'indice du mot dans la voix."""
@@ -425,13 +497,74 @@ def css_commun(th):
 ENTREE = '{ opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }'
 
 
+BULLE = {"vert": ("var(--creme)", "var(--encre)"), "creme": ("var(--vert-foret)", "var(--creme)")}
+
+
+def css_bulle(th, fond):
+    bg, fg = BULLE[fond]
+    return f'''
+    .s5-tete {{
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 0;
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 32px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: {th["em"]};
+    }}
+    .s5-centre {{
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+    }}
+    .s5-q {{
+      position: relative;
+      display: inline-block;
+      max-width: 820px;
+      padding: 30px 46px 36px;
+      border-radius: 52px;
+      background: {bg};
+      color: {fg};
+      font-family: var(--font-titre);
+      font-weight: 600;
+      line-height: 1.16;
+      text-align: left;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    }}
+    .s5-q::after, .s5-q::before {{
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: {bg};
+    }}
+    .s5-q::after {{ left: 64px; bottom: -26px; width: 30px; height: 30px; }}
+    .s5-q::before {{ left: 40px; bottom: -50px; width: 16px; height: 16px; }}
+    .s5-droite .s5-q::after {{ left: auto; right: 64px; }}
+    .s5-droite .s5-q::before {{ left: auto; right: 40px; }}'''
+
+
+def html_accroche(nom, v):
+    """Accroche : texte simple, ou bulle de pensée « Dans ta tête » (série 5)."""
+    b = v.get("bulle")
+    if not b:
+        return f'<p id="{nom}" class="s2-texte s2-accroche titre">{v["accroche"]}</p>'
+    return (f'<div id="{nom}" class="s5-centre" style="top: {b.get("top", 430)}px">'
+            f'<p class="s5-tete" style="position: static; margin: 0 0 34px">Dans ta tête · n° {b["n"]}</p>'
+            f'<span class="s5-q" style="font-size: {b.get("taille", 74)}px">{v["accroche"]}</span></div>')
+
+
 def rendu_accroche(nom, v, th, fin_t, replique=False):
     css = css_commun(th) + '''
     .s2-accroche {
       top: 560px;
       font-size: 92px;
-    }'''
-    html = f'    <p id="{nom}-acc" class="s2-texte s2-accroche titre">{v["accroche"]}</p>'
+    }''' + (css_bulle(th, v["fond"]) if v.get("bulle") else "")
+    html = "    " + html_accroche(f"{nom}-acc", v)
     js = f'    tl.to("#{nom}-acc", {{ opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }}, {fin_t - 0.35:.2f});'
     return css, html, js
 
@@ -897,6 +1030,79 @@ def rendu_bloc(nom, b, th, t0, T):
                 js.append(f'    tl.to("#{nom}-t{i}", {{ opacity: 0, y: -20, duration: 0.2, ease: "power2.in" }}, {max(t + 0.5, L(items[i + 1][3], -0.35)):.2f});')
         html.insert(0, '    <div data-layout-allow-overlap>')
         html.append('    </div>')
+    elif typ == "rature":
+        # Une phrase dont un mot se fait barrer (« Ce n'est pas une affaire de volonté »)
+        css += """
+    .s5-rature {
+      top: 640px;
+      font-size: 90px;
+      line-height: 1.15;
+    }
+    .s5-mot {
+      position: relative;
+      display: inline-block;
+    }
+    .s5-trait {
+      position: absolute;
+      left: -8px;
+      right: -8px;
+      top: 52%;
+      height: 12px;
+      border-radius: 6px;
+      background: var(--terracotta);
+      transform-origin: left center;
+    }"""
+        html.append(f'    <p id="{nom}-t" class="s2-texte s5-rature titre">{b["avant"]} <span class="s5-mot"><em>{b["mot"]}</em>'
+                    f'<span id="{nom}-trait" class="s5-trait"></span></span>{b.get("apres", "")}</p>')
+        js.append(f'    tl.fromTo("#{nom}-t", {ENTREE}, 0.05);')
+        js.append(f'    tl.fromTo("#{nom}-trait", {{ scaleX: 0 }}, {{ scaleX: 1, duration: 0.35, ease: "power2.out" }}, {L(b["m_rature"], -0.05)});')
+    elif typ == "bulles":
+        # Bulles de pensée empilées ; chacune peut « éclater » et laisser sa réponse à la place
+        fs = b.get("taille", 54)
+        css += css_bulle(th, b["fond"]) + f"""
+    .s5-ligne {{
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+    }}
+    .s5-droite {{
+      text-align: right;
+    }}
+    .s5-rep {{
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      padding: 0 46px;
+      font-family: var(--font-titre);
+      font-style: italic;
+      font-weight: 600;
+      font-size: {fs + 4}px;
+      line-height: 1.16;
+      color: {th["em"]};
+    }}"""
+        y = b.get("top", 260)
+        par_ligne = (820 - 92) / (fs * 0.5)
+        for i, it in enumerate(b["items"]):
+            texte, m = it[0], it[1]
+            cote = "s5-droite" if i % 2 else ""
+            lignes = max(1, math.ceil(len(texte) / par_ligne))
+            html.append(f'    <div id="{nom}-b{i}" class="s5-ligne {cote}" style="top: {y}px"><span id="{nom}-q{i}" class="s5-q" style="font-size: {fs}px; transform-origin: {"right" if i % 2 else "left"} bottom">{texte}</span></div>')
+            t = max(0.05, L(m, -0.12))
+            js.append(f'    tl.fromTo("#{nom}-b{i}", {{ opacity: 0, y: 30 }}, {{ opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }}, {t:.2f});')
+            js.append(f'    tl.fromTo("#{nom}-q{i}", {{ scale: 0.85 }}, {{ scale: 1, duration: 0.45, ease: "back.out(2)" }}, {t:.2f});')
+            if len(it) > 2 and it[2]:
+                rep_txt, m_rep = it[2], it[3]
+                tr = L(m_rep, -0.1)
+                html.append(f'    <p id="{nom}-r{i}" class="s5-rep" style="top: {y + 14}px; text-align: {"right" if i % 2 else "left"}">✓ {rep_txt}</p>')
+                js.append(f'    tl.to("#{nom}-q{i}", {{ scale: 1.12, opacity: 0, duration: 0.25, ease: "power2.in" }}, {tr:.2f});')
+                js.append(f'    tl.fromTo("#{nom}-r{i}", {{ opacity: 0, y: 16 }}, {{ opacity: 1, y: 0, duration: 0.35, ease: "power3.out" }}, {tr + 0.18:.2f});')
+            y += 66 + lignes * fs * 1.16 + 56
+        if b.get("pied"):
+            texte, m = b["pied"]
+            html.append(f'    <p id="{nom}-pied" class="s2-texte titre" style="top: {y + 10:.0f}px; font-size: 68px; line-height: 1.15">{texte}</p>')
+            js.append(f'    tl.fromTo("#{nom}-pied", {ENTREE}, {L(m, -0.1):.2f});')
+        html.insert(0, '    <div data-layout-allow-overlap>')
+        html.append('    </div>')
     elif typ == "pastilles":
         css += f'''
     #{nom}-ligne {{
@@ -997,8 +1203,10 @@ def rendu_fin(nom, v, f, th, t0, T, duree):
       position: absolute;
       inset: 0;
     }'''
+    if v.get("bulle"):
+        css += css_bulle(th, v["fond"])
     html, js = ['    <div data-layout-allow-overlap>'], []
-    textes = f["textes"] + [(None, f["lien"])]
+    textes = f["textes"] + ([(None, f["lien"])] if f.get("cta", True) else [])
     for i, (texte, m) in enumerate(textes):
         if texte is None:  # appel à l'action : le mot-clé à commenter, comme une bulle de commentaire
             html.append(f'      <div id="{nom}-t{i}" class="s2-texte s2-cta"><p class="s2-cta-titre titre">Commente</p>'
@@ -1006,7 +1214,7 @@ def rendu_fin(nom, v, f, th, t0, T, duree):
                         f'<p class="s2-cta-sous">et reçois le lien en message privé</p></div>')
         else:
             html.append(f'      <p id="{nom}-t{i}" class="s2-texte s2-fin-texte titre">{texte}</p>')
-        t = max(0.05, L(m, -0.1))
+        t = max(0.05, L(m, -0.22 if texte is None else -0.1))  # le CTA arrive dès le début de la fin : pas d'écran vide
         js.append(f'    tl.fromTo("#{nom}-t{i}", {ENTREE}, {t});')
         if i < len(textes) - 1:
             js.append(f'    tl.to("#{nom}-t{i}", {{ opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }}, {max(t + 0.5, L(textes[i + 1][1], -0.35))});')
@@ -1022,7 +1230,7 @@ def rendu_fin(nom, v, f, th, t0, T, duree):
     html.append('    </div>')
     # Boucle : la dernière demi-seconde reprend exactement l'image 0
     html.append(f'    <div id="{nom}-boucle" aria-hidden="true" data-layout-allow-overlap>')
-    html.append(f'      <p class="s2-texte s2-accroche titre">{v["accroche"]}</p>')
+    html.append("      " + html_accroche(f"{nom}-rep", v))
     html.append('    </div>')
     fin_local = round(duree - t0, 2)
     tous = ", ".join(f'"#{nom}-t{len(textes) - 1}"' for _ in [0]) + "".join(f', "#{nom}-f{i}"' for i in range(len(f["pages"])))
@@ -1056,7 +1264,10 @@ def genere(num):
     T = lambda m: mots[m]["start"] + DECALAGE
     # Durée : dernier mot + 1,6 s (l'écran de fin se lit, puis la boucle) ; ancre du CTA : « commente »
     duree = math.ceil(mots[-1]["end"] + DECALAGE + 1.6)
-    v["fin"]["lien"] = max(i for i, m in enumerate(mots) if m["text"].lower() == "commente")
+    if v["fin"].get("cta", True):
+        v["fin"]["lien"] = max(i for i, m in enumerate(mots) if m["text"].lower() == "commente")
+    else:  # vidéo de soutien : pas de « Commente 90 JOURS », le carillon sonne sur le dernier texte
+        v["fin"]["lien"] = v["fin"]["textes"][-1][1]
     musique = pathlib.Path(f"assets/music/{base}.wav")
     if not musique.exists() or abs(sf.info(musique).duration - duree) > 0.05:
         subprocess.run([sys.executable, "-I", "scripts/music-pad.py", str(duree), str(musique)]

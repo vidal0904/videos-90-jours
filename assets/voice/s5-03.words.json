@@ -1,0 +1,308 @@
+[
+ {
+  "id": "w0",
+  "text": "Est-ce",
+  "start": 0.0,
+  "end": 0.209
+ },
+ {
+  "id": "w1",
+  "text": "qu'on",
+  "start": 0.232,
+  "end": 0.36
+ },
+ {
+  "id": "w2",
+  "text": "me",
+  "start": 0.383,
+  "end": 0.453
+ },
+ {
+  "id": "w3",
+  "text": "regarde",
+  "start": 0.488,
+  "end": 0.882
+ },
+ {
+  "id": "w4",
+  "text": "parce",
+  "start": 0.917,
+  "end": 1.115
+ },
+ {
+  "id": "w5",
+  "text": "que",
+  "start": 1.138,
+  "end": 1.231
+ },
+ {
+  "id": "w6",
+  "text": "je",
+  "start": 1.265,
+  "end": 1.347
+ },
+ {
+  "id": "w7",
+  "text": "mange",
+  "start": 1.393,
+  "end": 1.579
+ },
+ {
+  "id": "w8",
+  "text": "ça ?",
+  "start": 1.614,
+  "end": 1.834
+ },
+ {
+  "id": "w9",
+  "text": "Si",
+  "start": 2.586,
+  "end": 2.772
+ },
+ {
+  "id": "w10",
+  "text": "cette",
+  "start": 2.807,
+  "end": 2.981
+ },
+ {
+  "id": "w11",
+  "text": "question",
+  "start": 3.004,
+  "end": 3.329
+ },
+ {
+  "id": "w12",
+  "text": "te",
+  "start": 3.375,
+  "end": 3.445
+ },
+ {
+  "id": "w13",
+  "text": "suit",
+  "start": 3.48,
+  "end": 3.654
+ },
+ {
+  "id": "w14",
+  "text": "à",
+  "start": 3.689,
+  "end": 3.712
+ },
+ {
+  "id": "w15",
+  "text": "chaque",
+  "start": 3.759,
+  "end": 3.979
+ },
+ {
+  "id": "w16",
+  "text": "repas",
+  "start": 4.002,
+  "end": 4.211
+ },
+ {
+  "id": "w17",
+  "text": "dehors,",
+  "start": 4.246,
+  "end": 4.595
+ },
+ {
+  "id": "w18",
+  "text": "voilà",
+  "start": 4.804,
+  "end": 5.047
+ },
+ {
+  "id": "w19",
+  "text": "ce",
+  "start": 5.082,
+  "end": 5.129
+ },
+ {
+  "id": "w20",
+  "text": "que",
+  "start": 5.152,
+  "end": 5.233
+ },
+ {
+  "id": "w21",
+  "text": "j'aimerais",
+  "start": 5.256,
+  "end": 5.535
+ },
+ {
+  "id": "w22",
+  "text": "que",
+  "start": 5.558,
+  "end": 5.639
+ },
+ {
+  "id": "w23",
+  "text": "tu",
+  "start": 5.674,
+  "end": 5.767
+ },
+ {
+  "id": "w24",
+  "text": "entendes.",
+  "start": 5.825,
+  "end": 6.185
+ },
+ {
+  "id": "w25",
+  "text": "Tu",
+  "start": 6.891,
+  "end": 7.065
+ },
+ {
+  "id": "w26",
+  "text": "as",
+  "start": 7.123,
+  "end": 7.17
+ },
+ {
+  "id": "w27",
+  "text": "le",
+  "start": 7.193,
+  "end": 7.251
+ },
+ {
+  "id": "w28",
+  "text": "droit",
+  "start": 7.286,
+  "end": 7.46
+ },
+ {
+  "id": "w29",
+  "text": "de",
+  "start": 7.483,
+  "end": 7.541
+ },
+ {
+  "id": "w30",
+  "text": "manger.",
+  "start": 7.588,
+  "end": 7.889
+ },
+ {
+  "id": "w31",
+  "text": "Partout.",
+  "start": 8.502,
+  "end": 8.99
+ },
+ {
+  "id": "w32",
+  "text": "Devant",
+  "start": 9.602,
+  "end": 9.904
+ },
+ {
+  "id": "w33",
+  "text": "tout",
+  "start": 9.95,
+  "end": 10.09
+ },
+ {
+  "id": "w34",
+  "text": "le",
+  "start": 10.113,
+  "end": 10.159
+ },
+ {
+  "id": "w35",
+  "text": "monde.",
+  "start": 10.182,
+  "end": 10.461
+ },
+ {
+  "id": "w36",
+  "text": "Ton",
+  "start": 11.166,
+  "end": 11.387
+ },
+ {
+  "id": "w37",
+  "text": "assiette",
+  "start": 11.456,
+  "end": 11.735
+ },
+ {
+  "id": "w38",
+  "text": "ne",
+  "start": 11.758,
+  "end": 11.805
+ },
+ {
+  "id": "w39",
+  "text": "regarde",
+  "start": 11.839,
+  "end": 12.141
+ },
+ {
+  "id": "w40",
+  "text": "que",
+  "start": 12.164,
+  "end": 12.246
+ },
+ {
+  "id": "w41",
+  "text": "toi.",
+  "start": 12.292,
+  "end": 12.548
+ },
+ {
+  "id": "w42",
+  "text": "Envoie",
+  "start": 13.242,
+  "end": 13.59
+ },
+ {
+  "id": "w43",
+  "text": "ça",
+  "start": 13.625,
+  "end": 13.718
+ },
+ {
+  "id": "w44",
+  "text": "à",
+  "start": 13.776,
+  "end": 13.799
+ },
+ {
+  "id": "w45",
+  "text": "quelqu'un",
+  "start": 13.846,
+  "end": 14.171
+ },
+ {
+  "id": "w46",
+  "text": "qui",
+  "start": 14.229,
+  "end": 14.322
+ },
+ {
+  "id": "w47",
+  "text": "en",
+  "start": 14.368,
+  "end": 14.426
+ },
+ {
+  "id": "w48",
+  "text": "a",
+  "start": 14.496,
+  "end": 14.519
+ },
+ {
+  "id": "w49",
+  "text": "besoin",
+  "start": 14.566,
+  "end": 14.867
+ },
+ {
+  "id": "w50",
+  "text": "aujourd'hui.",
+  "start": 14.925,
+  "end": 15.448
+ }
+]

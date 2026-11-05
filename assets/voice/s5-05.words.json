@@ -1,0 +1,356 @@
+[
+ {
+  "id": "w0",
+  "text": "Imagine",
+  "start": 0.0,
+  "end": 0.476
+ },
+ {
+  "id": "w1",
+  "text": "une",
+  "start": 0.569,
+  "end": 0.766
+ },
+ {
+  "id": "w2",
+  "text": "semaine",
+  "start": 0.801,
+  "end": 1.173
+ },
+ {
+  "id": "w3",
+  "text": "sans",
+  "start": 1.219,
+  "end": 1.382
+ },
+ {
+  "id": "w4",
+  "text": "te",
+  "start": 1.405,
+  "end": 1.463
+ },
+ {
+  "id": "w5",
+  "text": "demander",
+  "start": 1.509,
+  "end": 1.811
+ },
+ {
+  "id": "w6",
+  "text": "quoi",
+  "start": 1.846,
+  "end": 1.974
+ },
+ {
+  "id": "w7",
+  "text": "manger.",
+  "start": 2.009,
+  "end": 2.31
+ },
+ {
+  "id": "w8",
+  "text": "Dimanche,",
+  "start": 2.954,
+  "end": 3.523
+ },
+ {
+  "id": "w9",
+  "text": "ton",
+  "start": 3.732,
+  "end": 3.883
+ },
+ {
+  "id": "w10",
+  "text": "menu",
+  "start": 3.929,
+  "end": 4.15
+ },
+ {
+  "id": "w11",
+  "text": "et",
+  "start": 4.185,
+  "end": 4.231
+ },
+ {
+  "id": "w12",
+  "text": "ta",
+  "start": 4.254,
+  "end": 4.312
+ },
+ {
+  "id": "w13",
+  "text": "liste",
+  "start": 4.37,
+  "end": 4.591
+ },
+ {
+  "id": "w14",
+  "text": "de",
+  "start": 4.649,
+  "end": 4.719
+ },
+ {
+  "id": "w15",
+  "text": "courses",
+  "start": 4.765,
+  "end": 4.986
+ },
+ {
+  "id": "w16",
+  "text": "sont",
+  "start": 5.009,
+  "end": 5.16
+ },
+ {
+  "id": "w17",
+  "text": "prêts.",
+  "start": 5.183,
+  "end": 5.404
+ },
+ {
+  "id": "w18",
+  "text": "Lundi,",
+  "start": 6.048,
+  "end": 6.478
+ },
+ {
+  "id": "w19",
+  "text": "tu",
+  "start": 6.675,
+  "end": 6.791
+ },
+ {
+  "id": "w20",
+  "text": "sais",
+  "start": 6.849,
+  "end": 6.965
+ },
+ {
+  "id": "w21",
+  "text": "ce",
+  "start": 6.988,
+  "end": 7.046
+ },
+ {
+  "id": "w22",
+  "text": "que",
+  "start": 7.093,
+  "end": 7.174
+ },
+ {
+  "id": "w23",
+  "text": "tu",
+  "start": 7.209,
+  "end": 7.29
+ },
+ {
+  "id": "w24",
+  "text": "cuisines.",
+  "start": 7.325,
+  "end": 7.743
+ },
+ {
+  "id": "w25",
+  "text": "En",
+  "start": 8.305,
+  "end": 8.456
+ },
+ {
+  "id": "w26",
+  "text": "milieu",
+  "start": 8.502,
+  "end": 8.711
+ },
+ {
+  "id": "w27",
+  "text": "de",
+  "start": 8.746,
+  "end": 8.816
+ },
+ {
+  "id": "w28",
+  "text": "semaine,",
+  "start": 8.862,
+  "end": 9.187
+ },
+ {
+  "id": "w29",
+  "text": "tu",
+  "start": 9.234,
+  "end": 9.327
+ },
+ {
+  "id": "w30",
+  "text": "as",
+  "start": 9.396,
+  "end": 9.443
+ },
+ {
+  "id": "w31",
+  "text": "déjà",
+  "start": 9.466,
+  "end": 9.698
+ },
+ {
+  "id": "w32",
+  "text": "une",
+  "start": 9.733,
+  "end": 9.826
+ },
+ {
+  "id": "w33",
+  "text": "portion",
+  "start": 9.849,
+  "end": 10.151
+ },
+ {
+  "id": "w34",
+  "text": "d'avance.",
+  "start": 10.186,
+  "end": 10.697
+ },
+ {
+  "id": "w35",
+  "text": "Un",
+  "start": 11.26,
+  "end": 11.411
+ },
+ {
+  "id": "w36",
+  "text": "écart ?",
+  "start": 11.481,
+  "end": 11.806
+ },
+ {
+  "id": "w37",
+  "text": "Tu",
+  "start": 12.495,
+  "end": 12.658
+ },
+ {
+  "id": "w38",
+  "text": "reviens",
+  "start": 12.704,
+  "end": 12.971
+ },
+ {
+  "id": "w39",
+  "text": "au",
+  "start": 13.006,
+  "end": 13.087
+ },
+ {
+  "id": "w40",
+  "text": "repas",
+  "start": 13.122,
+  "end": 13.354
+ },
+ {
+  "id": "w41",
+  "text": "suivant.",
+  "start": 13.377,
+  "end": 13.702
+ },
+ {
+  "id": "w42",
+  "text": "Et",
+  "start": 14.242,
+  "end": 14.381
+ },
+ {
+  "id": "w43",
+  "text": "dimanche,",
+  "start": 14.416,
+  "end": 14.811
+ },
+ {
+  "id": "w44",
+  "text": "ton",
+  "start": 14.857,
+  "end": 14.973
+ },
+ {
+  "id": "w45",
+  "text": "bilan :",
+  "start": 15.02,
+  "end": 15.264
+ },
+ {
+  "id": "w46",
+  "text": "énergie,",
+  "start": 15.612,
+  "end": 16.181
+ },
+ {
+  "id": "w47",
+  "text": "sommeil,",
+  "start": 16.448,
+  "end": 16.889
+ },
+ {
+  "id": "w48",
+  "text": "motivation.",
+  "start": 17.017,
+  "end": 17.679
+ },
+ {
+  "id": "w49",
+  "text": "Commente",
+  "start": 18.404,
+  "end": 18.799
+ },
+ {
+  "id": "w50",
+  "text": "« 90 JOURS »,",
+  "start": 18.834,
+  "end": 19.669
+ },
+ {
+  "id": "w51",
+  "text": "et",
+  "start": 19.983,
+  "end": 20.087
+ },
+ {
+  "id": "w52",
+  "text": "je",
+  "start": 20.122,
+  "end": 20.192
+ },
+ {
+  "id": "w53",
+  "text": "t'envoie",
+  "start": 20.238,
+  "end": 20.505
+ },
+ {
+  "id": "w54",
+  "text": "le",
+  "start": 20.529,
+  "end": 20.598
+ },
+ {
+  "id": "w55",
+  "text": "lien",
+  "start": 20.645,
+  "end": 20.854
+ },
+ {
+  "id": "w56",
+  "text": "en",
+  "start": 20.912,
+  "end": 21.005
+ },
+ {
+  "id": "w57",
+  "text": "message",
+  "start": 21.051,
+  "end": 21.376
+ },
+ {
+  "id": "w58",
+  "text": "privé.",
+  "start": 21.399,
+  "end": 21.748
+ }
+]

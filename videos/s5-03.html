@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <link rel="stylesheet" href="assets/design/tokens.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--creme);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Série 5 · vidéo 03 — « Est-ce qu'on me regarde ? » · 18 s (SCRIPTS-SERIE-5.md ; généré par scripts/serie2.py) -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="18" data-width="1080" data-height="1920">
+      <div
+        id="fond-creme"
+        data-composition-id="fond-creme"
+        data-composition-src="compositions/components/fond-creme.html"
+        data-start="0"
+        data-duration="18"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 1"
+      ></div>
+      <div
+        id="s5-03-acc"
+        data-composition-id="s5-03-acc"
+        data-composition-src="compositions/s5-03-acc.html"
+        data-start="0.0"
+        data-duration="2.94"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 2"
+      ></div>
+      <div
+        id="s5-03-b1"
+        data-composition-id="s5-03-b1"
+        data-composition-src="compositions/s5-03-b1.html"
+        data-start="2.94"
+        data-duration="4.3"
+        data-track-index="2"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 3"
+      ></div>
+      <div
+        id="s5-03-b2"
+        data-composition-id="s5-03-b2"
+        data-composition-src="compositions/s5-03-b2.html"
+        data-start="7.24"
+        data-duration="6.35"
+        data-track-index="3"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 4"
+      ></div>
+      <div
+        id="s5-03-fin"
+        data-composition-id="s5-03-fin"
+        data-composition-src="compositions/s5-03-fin.html"
+        data-start="13.59"
+        data-duration="4.41"
+        data-track-index="4"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 5"
+      ></div>
+      <div
+        id="sous-titres-s5-03"
+        data-composition-id="sous-titres-s5-03"
+        data-composition-src="compositions/s5-03-sous-titres.html"
+        data-start="0"
+        data-duration="18"
+        data-track-index="5"
+        data-track-kind="captions"
+        data-width="1080"
+        data-height="1920"
+        style="z-index: 6"
+      ></div>
+      <audio id="voix" class="clip" src="assets/voice/s5-03.final.wav" data-start="0.6" data-track-index="6" data-volume="1"></audio>
+      <audio id="musique" class="clip" src="assets/music/s5-03.wav" data-start="0" data-track-index="7" data-volume="1"></audio>
+      <audio id="sfx-accroche" class="clip" src="assets/sfx/whoosh.mp3" data-start="0.05" data-track-index="8" data-volume="0.35"></audio>
+      <audio id="sfx-b1" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="3.14" data-track-index="9" data-volume="0.3"></audio>
+      <audio id="sfx-b2" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="7.44" data-track-index="10" data-volume="0.3"></audio>
+      <audio id="sfx-lien" class="clip" src="assets/sfx/chime.mp3" data-start="13.84" data-track-index="11" data-volume="0.3"></audio>
+    </div>
+    <script>
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

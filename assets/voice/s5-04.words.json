@@ -1,0 +1,404 @@
+[
+ {
+  "id": "w0",
+  "text": "Est-ce",
+  "start": 0.0,
+  "end": 0.221
+ },
+ {
+  "id": "w1",
+  "text": "que",
+  "start": 0.255,
+  "end": 0.348
+ },
+ {
+  "id": "w2",
+  "text": "je",
+  "start": 0.395,
+  "end": 0.441
+ },
+ {
+  "id": "w3",
+  "text": "vais",
+  "start": 0.464,
+  "end": 0.569
+ },
+ {
+  "id": "w4",
+  "text": "tenir",
+  "start": 0.592,
+  "end": 0.975
+ },
+ {
+  "id": "w5",
+  "text": "si",
+  "start": 1.033,
+  "end": 1.149
+ },
+ {
+  "id": "w6",
+  "text": "je",
+  "start": 1.196,
+  "end": 1.289
+ },
+ {
+  "id": "w7",
+  "text": "marche",
+  "start": 1.358,
+  "end": 1.625
+ },
+ {
+  "id": "w8",
+  "text": "jusque-là ?",
+  "start": 1.683,
+  "end": 2.159
+ },
+ {
+  "id": "w9",
+  "text": "Tu",
+  "start": 2.861,
+  "end": 3.024
+ },
+ {
+  "id": "w10",
+  "text": "n'as",
+  "start": 3.07,
+  "end": 3.163
+ },
+ {
+  "id": "w11",
+  "text": "rien",
+  "start": 3.186,
+  "end": 3.302
+ },
+ {
+  "id": "w12",
+  "text": "à",
+  "start": 3.372,
+  "end": 3.395
+ },
+ {
+  "id": "w13",
+  "text": "prouver.",
+  "start": 3.43,
+  "end": 3.778
+ },
+ {
+  "id": "w14",
+  "text": "Dans",
+  "start": 4.422,
+  "end": 4.643
+ },
+ {
+  "id": "w15",
+  "text": "mon",
+  "start": 4.666,
+  "end": 4.782
+ },
+ {
+  "id": "w16",
+  "text": "guide,",
+  "start": 4.828,
+  "end": 5.165
+ },
+ {
+  "id": "w17",
+  "text": "chaque",
+  "start": 5.386,
+  "end": 5.676
+ },
+ {
+  "id": "w18",
+  "text": "semaine",
+  "start": 5.699,
+  "end": 5.989
+ },
+ {
+  "id": "w19",
+  "text": "propose",
+  "start": 6.013,
+  "end": 6.349
+ },
+ {
+  "id": "w20",
+  "text": "une",
+  "start": 6.372,
+  "end": 6.454
+ },
+ {
+  "id": "w21",
+  "text": "activité",
+  "start": 6.477,
+  "end": 6.918
+ },
+ {
+  "id": "w22",
+  "text": "physique",
+  "start": 6.953,
+  "end": 7.359
+ },
+ {
+  "id": "w23",
+  "text": "adaptable,",
+  "start": 7.417,
+  "end": 8.102
+ },
+ {
+  "id": "w24",
+  "text": "et",
+  "start": 8.335,
+  "end": 8.451
+ },
+ {
+  "id": "w25",
+  "text": "chaque",
+  "start": 8.485,
+  "end": 8.718
+ },
+ {
+  "id": "w26",
+  "text": "défi",
+  "start": 8.741,
+  "end": 9.008
+ },
+ {
+  "id": "w27",
+  "text": "s'adapte",
+  "start": 9.054,
+  "end": 9.438
+ },
+ {
+  "id": "w28",
+  "text": "à",
+  "start": 9.461,
+  "end": 9.484
+ },
+ {
+  "id": "w29",
+  "text": "ta",
+  "start": 9.507,
+  "end": 9.588
+ },
+ {
+  "id": "w30",
+  "text": "condition",
+  "start": 9.646,
+  "end": 10.03
+ },
+ {
+  "id": "w31",
+  "text": "physique.",
+  "start": 10.064,
+  "end": 10.482
+ },
+ {
+  "id": "w32",
+  "text": "Tu",
+  "start": 11.231,
+  "end": 11.405
+ },
+ {
+  "id": "w33",
+  "text": "commences",
+  "start": 11.463,
+  "end": 11.881
+ },
+ {
+  "id": "w34",
+  "text": "là",
+  "start": 12.055,
+  "end": 12.288
+ },
+ {
+  "id": "w35",
+  "text": "où",
+  "start": 12.369,
+  "end": 12.473
+ },
+ {
+  "id": "w36",
+  "text": "tu",
+  "start": 12.52,
+  "end": 12.624
+ },
+ {
+  "id": "w37",
+  "text": "en",
+  "start": 12.694,
+  "end": 12.787
+ },
+ {
+  "id": "w38",
+  "text": "es,",
+  "start": 12.903,
+  "end": 12.996
+ },
+ {
+  "id": "w39",
+  "text": "pas",
+  "start": 13.228,
+  "end": 13.402
+ },
+ {
+  "id": "w40",
+  "text": "là",
+  "start": 13.449,
+  "end": 13.565
+ },
+ {
+  "id": "w41",
+  "text": "où",
+  "start": 13.623,
+  "end": 13.669
+ },
+ {
+  "id": "w42",
+  "text": "sont",
+  "start": 13.704,
+  "end": 13.855
+ },
+ {
+  "id": "w43",
+  "text": "les",
+  "start": 13.878,
+  "end": 13.971
+ },
+ {
+  "id": "w44",
+  "text": "autres.",
+  "start": 14.052,
+  "end": 14.308
+ },
+ {
+  "id": "w45",
+  "text": "En",
+  "start": 14.835,
+  "end": 15.021
+ },
+ {
+  "id": "w46",
+  "text": "cas",
+  "start": 15.056,
+  "end": 15.195
+ },
+ {
+  "id": "w47",
+  "text": "de",
+  "start": 15.218,
+  "end": 15.288
+ },
+ {
+  "id": "w48",
+  "text": "douleur",
+  "start": 15.334,
+  "end": 15.659
+ },
+ {
+  "id": "w49",
+  "text": "ou",
+  "start": 15.706,
+  "end": 15.764
+ },
+ {
+  "id": "w50",
+  "text": "de",
+  "start": 15.81,
+  "end": 15.88
+ },
+ {
+  "id": "w51",
+  "text": "doute,",
+  "start": 15.926,
+  "end": 16.263
+ },
+ {
+  "id": "w52",
+  "text": "demande",
+  "start": 16.507,
+  "end": 16.82
+ },
+ {
+  "id": "w53",
+  "text": "conseil",
+  "start": 16.844,
+  "end": 17.203
+ },
+ {
+  "id": "w54",
+  "text": "à",
+  "start": 17.261,
+  "end": 17.285
+ },
+ {
+  "id": "w55",
+  "text": "ton",
+  "start": 17.32,
+  "end": 17.424
+ },
+ {
+  "id": "w56",
+  "text": "médecin.",
+  "start": 17.459,
+  "end": 17.807
+ },
+ {
+  "id": "w57",
+  "text": "Commente",
+  "start": 18.486,
+  "end": 18.846
+ },
+ {
+  "id": "w58",
+  "text": "« 90 JOURS »,",
+  "start": 18.869,
+  "end": 19.693
+ },
+ {
+  "id": "w59",
+  "text": "et",
+  "start": 19.763,
+  "end": 19.821
+ },
+ {
+  "id": "w60",
+  "text": "je",
+  "start": 19.879,
+  "end": 19.937
+ },
+ {
+  "id": "w61",
+  "text": "t'envoie",
+  "start": 19.984,
+  "end": 20.262
+ },
+ {
+  "id": "w62",
+  "text": "le",
+  "start": 20.286,
+  "end": 20.355
+ },
+ {
+  "id": "w63",
+  "text": "lien",
+  "start": 20.402,
+  "end": 20.622
+ },
+ {
+  "id": "w64",
+  "text": "en",
+  "start": 20.692,
+  "end": 20.762
+ },
+ {
+  "id": "w65",
+  "text": "message",
+  "start": 20.808,
+  "end": 21.121
+ },
+ {
+  "id": "w66",
+  "text": "privé.",
+  "start": 21.145,
+  "end": 21.505
+ }
+]

@@ -1,0 +1,422 @@
+[
+ {
+  "id": "w0",
+  "text": "Pourquoi",
+  "start": 0.0,
+  "end": 0.406
+ },
+ {
+  "id": "w1",
+  "text": "je",
+  "start": 0.441,
+  "end": 0.511
+ },
+ {
+  "id": "w2",
+  "text": "n'y",
+  "start": 0.557,
+  "end": 0.639
+ },
+ {
+  "id": "w3",
+  "text": "arrive",
+  "start": 0.662,
+  "end": 0.882
+ },
+ {
+  "id": "w4",
+  "text": "pas,",
+  "start": 0.917,
+  "end": 1.161
+ },
+ {
+  "id": "w5",
+  "text": "alors",
+  "start": 1.393,
+  "end": 1.649
+ },
+ {
+  "id": "w6",
+  "text": "que",
+  "start": 1.672,
+  "end": 1.741
+ },
+ {
+  "id": "w7",
+  "text": "les",
+  "start": 1.776,
+  "end": 1.881
+ },
+ {
+  "id": "w8",
+  "text": "autres",
+  "start": 1.939,
+  "end": 2.148
+ },
+ {
+  "id": "w9",
+  "text": "réussissent ?",
+  "start": 2.171,
+  "end": 2.694
+ },
+ {
+  "id": "w10",
+  "text": "Si",
+  "start": 3.372,
+  "end": 3.546
+ },
+ {
+  "id": "w11",
+  "text": "tu",
+  "start": 3.593,
+  "end": 3.685
+ },
+ {
+  "id": "w12",
+  "text": "te",
+  "start": 3.732,
+  "end": 3.79
+ },
+ {
+  "id": "w13",
+  "text": "poses",
+  "start": 3.848,
+  "end": 4.045
+ },
+ {
+  "id": "w14",
+  "text": "cette",
+  "start": 4.069,
+  "end": 4.231
+ },
+ {
+  "id": "w15",
+  "text": "question,",
+  "start": 4.254,
+  "end": 4.672
+ },
+ {
+  "id": "w16",
+  "text": "écoute",
+  "start": 4.8,
+  "end": 5.079
+ },
+ {
+  "id": "w17",
+  "text": "bien.",
+  "start": 5.102,
+  "end": 5.334
+ },
+ {
+  "id": "w18",
+  "text": "Ce",
+  "start": 5.908,
+  "end": 6.036
+ },
+ {
+  "id": "w19",
+  "text": "n'est",
+  "start": 6.082,
+  "end": 6.221
+ },
+ {
+  "id": "w20",
+  "text": "pas",
+  "start": 6.245,
+  "end": 6.396
+ },
+ {
+  "id": "w21",
+  "text": "une",
+  "start": 6.419,
+  "end": 6.512
+ },
+ {
+  "id": "w22",
+  "text": "affaire",
+  "start": 6.535,
+  "end": 6.779
+ },
+ {
+  "id": "w23",
+  "text": "de",
+  "start": 6.802,
+  "end": 6.86
+ },
+ {
+  "id": "w24",
+  "text": "volonté.",
+  "start": 6.895,
+  "end": 7.313
+ },
+ {
+  "id": "w25",
+  "text": "Le",
+  "start": 7.98,
+  "end": 8.143
+ },
+ {
+  "id": "w26",
+  "text": "stress,",
+  "start": 8.177,
+  "end": 8.688
+ },
+ {
+  "id": "w27",
+  "text": "le",
+  "start": 8.839,
+  "end": 8.944
+ },
+ {
+  "id": "w28",
+  "text": "sommeil,",
+  "start": 9.002,
+  "end": 9.443
+ },
+ {
+  "id": "w29",
+  "text": "les",
+  "start": 9.582,
+  "end": 9.733
+ },
+ {
+  "id": "w30",
+  "text": "hormones,",
+  "start": 9.803,
+  "end": 10.232
+ },
+ {
+  "id": "w31",
+  "text": "les",
+  "start": 10.36,
+  "end": 10.499
+ },
+ {
+  "id": "w32",
+  "text": "habitudes :",
+  "start": 10.557,
+  "end": 11.091
+ },
+ {
+  "id": "w33",
+  "text": "beaucoup",
+  "start": 11.44,
+  "end": 11.742
+ },
+ {
+  "id": "w34",
+  "text": "de",
+  "start": 11.765,
+  "end": 11.835
+ },
+ {
+  "id": "w35",
+  "text": "choses",
+  "start": 11.869,
+  "end": 12.136
+ },
+ {
+  "id": "w36",
+  "text": "jouent.",
+  "start": 12.171,
+  "end": 12.415
+ },
+ {
+  "id": "w37",
+  "text": "Et",
+  "start": 12.978,
+  "end": 13.141
+ },
+ {
+  "id": "w38",
+  "text": "on",
+  "start": 13.164,
+  "end": 13.245
+ },
+ {
+  "id": "w39",
+  "text": "abandonne",
+  "start": 13.303,
+  "end": 13.64
+ },
+ {
+  "id": "w40",
+  "text": "souvent",
+  "start": 13.663,
+  "end": 13.976
+ },
+ {
+  "id": "w41",
+  "text": "parce",
+  "start": 14.011,
+  "end": 14.174
+ },
+ {
+  "id": "w42",
+  "text": "qu'on",
+  "start": 14.197,
+  "end": 14.313
+ },
+ {
+  "id": "w43",
+  "text": "veut",
+  "start": 14.36,
+  "end": 14.499
+ },
+ {
+  "id": "w44",
+  "text": "tout",
+  "start": 14.557,
+  "end": 14.719
+ },
+ {
+  "id": "w45",
+  "text": "changer",
+  "start": 14.743,
+  "end": 15.045
+ },
+ {
+  "id": "w46",
+  "text": "d'un",
+  "start": 15.068,
+  "end": 15.184
+ },
+ {
+  "id": "w47",
+  "text": "coup.",
+  "start": 15.242,
+  "end": 15.451
+ },
+ {
+  "id": "w48",
+  "text": "Mon",
+  "start": 16.443,
+  "end": 16.652
+ },
+ {
+  "id": "w49",
+  "text": "guide",
+  "start": 16.722,
+  "end": 16.919
+ },
+ {
+  "id": "w50",
+  "text": "fait",
+  "start": 16.942,
+  "end": 17.035
+ },
+ {
+  "id": "w51",
+  "text": "l'inverse :",
+  "start": 17.058,
+  "end": 17.581
+ },
+ {
+  "id": "w52",
+  "text": "une",
+  "start": 17.848,
+  "end": 18.022
+ },
+ {
+  "id": "w53",
+  "text": "étape",
+  "start": 18.045,
+  "end": 18.312
+ },
+ {
+  "id": "w54",
+  "text": "à",
+  "start": 18.335,
+  "end": 18.359
+ },
+ {
+  "id": "w55",
+  "text": "la",
+  "start": 18.382,
+  "end": 18.44
+ },
+ {
+  "id": "w56",
+  "text": "fois,",
+  "start": 18.51,
+  "end": 18.788
+ },
+ {
+  "id": "w57",
+  "text": "pendant",
+  "start": 19.009,
+  "end": 19.311
+ },
+ {
+  "id": "w58",
+  "text": "90",
+  "start": 19.38,
+  "end": 20.042
+ },
+ {
+  "id": "w59",
+  "text": "jours.",
+  "start": 20.065,
+  "end": 20.414
+ },
+ {
+  "id": "w60",
+  "text": "Commente",
+  "start": 21.208,
+  "end": 21.707
+ },
+ {
+  "id": "w61",
+  "text": "« 90 JOURS »,",
+  "start": 21.823,
+  "end": 22.799
+ },
+ {
+  "id": "w62",
+  "text": "et",
+  "start": 23.031,
+  "end": 23.135
+ },
+ {
+  "id": "w63",
+  "text": "je",
+  "start": 23.193,
+  "end": 23.251
+ },
+ {
+  "id": "w64",
+  "text": "t'envoie",
+  "start": 23.309,
+  "end": 23.588
+ },
+ {
+  "id": "w65",
+  "text": "le",
+  "start": 23.623,
+  "end": 23.681
+ },
+ {
+  "id": "w66",
+  "text": "lien",
+  "start": 23.739,
+  "end": 23.994
+ },
+ {
+  "id": "w67",
+  "text": "en",
+  "start": 24.064,
+  "end": 24.157
+ },
+ {
+  "id": "w68",
+  "text": "message",
+  "start": 24.215,
+  "end": 24.552
+ },
+ {
+  "id": "w69",
+  "text": "privé.",
+  "start": 24.575,
+  "end": 24.912
+ }
+]

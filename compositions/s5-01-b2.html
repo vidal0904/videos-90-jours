@@ -1,0 +1,58 @@
+<!-- Série 5 · vidéo 01 · bloc 2 (rature) · 6.26–8.33 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    .s5-rature {
+      top: 640px;
+      font-size: 90px;
+      line-height: 1.15;
+    }
+    .s5-mot {
+      position: relative;
+      display: inline-block;
+    }
+    .s5-trait {
+      position: absolute;
+      left: -8px;
+      right: -8px;
+      top: 52%;
+      height: 12px;
+      border-radius: 6px;
+      background: var(--terracotta);
+      transform-origin: left center;
+    }
+  </style>
+  <div id="root" data-composition-id="s5-01-b2" data-width="1080" data-height="1920">
+    <p id="s5-01-b2-t" class="s2-texte s5-rature titre">Ce n'est pas<br />une affaire de <span class="s5-mot"><em>volonté</em><span id="s5-01-b2-trait" class="s5-trait"></span></span>.</p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s5-01-b2-t", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s5-01-b2-trait", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.out" }, 1.19);
+    window.__timelines["s5-01-b2"] = tl;
+  </script>
+</template>

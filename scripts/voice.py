@@ -87,7 +87,9 @@ AFFICHAGE_MULTI = {("trois", "cent", "seize"): "316", ("un", "pour", "cent"): "1
                    ("quatre", "recettes"): "4\u00a0recettes", ("sept", "jours"): "7\u00a0jours",
                    ("semaine", "un"): "semaine 1", ("quatre", "choses"): "4 choses", ("sept", "heures"): "7\u00a0h",
                    ("cinq", "questions"): "5 questions", ("trois", "phrases"): "3 phrases", ("trois", "mois"): "3\u00a0mois",
-                   ("mois", "un"): "mois\u00a01", ("mois", "deux"): "mois\u00a02", ("mois", "trois"): "mois\u00a03"}
+                   ("mois", "un"): "mois\u00a01", ("mois", "deux"): "mois\u00a02", ("mois", "trois"): "mois\u00a03",
+                   # série 5
+                   ("trois", "questions"): "3 questions"}
 
 
 def affiche(mot):

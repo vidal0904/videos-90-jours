@@ -1,0 +1,45 @@
+<!-- Série 5 · vidéo 01 · bloc 4 (phrases) · 13.33–16.79 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    .s2-phrase {
+      top: 660px;
+      font-size: 84px;
+      line-height: 1.2;
+    }
+  </style>
+  <div id="root" data-composition-id="s5-01-b4" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+    <p id="s5-01-b4-p0" class="s2-texte s2-phrase titre">Tout changer d'un coup&#8239;?<br /><em>C'est là qu'on abandonne.</em></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s5-01-b4-p0", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: "sine.out" }, 0.15);
+    window.__timelines["s5-01-b4"] = tl;
+  </script>
+</template>

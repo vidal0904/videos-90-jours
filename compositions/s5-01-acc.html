@@ -1,0 +1,85 @@
+<!-- Série 5 · vidéo 01 « Pourquoi je n'y arrive pas ? » · accroche (image 0)
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }
+    .s2-accroche {
+      top: 560px;
+      font-size: 92px;
+    }
+    .s5-tete {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 0;
+      text-align: center;
+      font-family: var(--font-texte);
+      font-weight: 700;
+      font-size: 32px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dore);
+    }
+    .s5-centre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+    }
+    .s5-q {
+      position: relative;
+      display: inline-block;
+      max-width: 820px;
+      padding: 30px 46px 36px;
+      border-radius: 52px;
+      background: var(--creme);
+      color: var(--encre);
+      font-family: var(--font-titre);
+      font-weight: 600;
+      line-height: 1.16;
+      text-align: left;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    }
+    .s5-q::after, .s5-q::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: var(--creme);
+    }
+    .s5-q::after { left: 64px; bottom: -26px; width: 30px; height: 30px; }
+    .s5-q::before { left: 40px; bottom: -50px; width: 16px; height: 16px; }
+    .s5-droite .s5-q::after { left: auto; right: 64px; }
+    .s5-droite .s5-q::before { left: auto; right: 40px; }
+  </style>
+  <div id="root" data-composition-id="s5-01-acc" data-width="1080" data-height="1920">
+    <div id="s5-01-acc-acc" class="s5-centre" style="top: 430px"><p class="s5-tete" style="position: static; margin: 0 0 34px">Dans ta tête · n° 1</p><span class="s5-q" style="font-size: 68px">Pourquoi je n'y arrive pas… alors que les autres réussissent&#8239;?</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.to("#s5-01-acc-acc", { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, 3.37);
+    window.__timelines["s5-01-acc"] = tl;
+  </script>
+</template>

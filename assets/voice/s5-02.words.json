@@ -1,0 +1,464 @@
+[
+ {
+  "id": "w0",
+  "text": "On",
+  "start": 0.0,
+  "end": 0.139
+ },
+ {
+  "id": "w1",
+  "text": "mange",
+  "start": 0.174,
+  "end": 0.383
+ },
+ {
+  "id": "w2",
+  "text": "quoi",
+  "start": 0.418,
+  "end": 0.592
+ },
+ {
+  "id": "w3",
+  "text": "ce",
+  "start": 0.627,
+  "end": 0.72
+ },
+ {
+  "id": "w4",
+  "text": "soir ?",
+  "start": 0.766,
+  "end": 1.01
+ },
+ {
+  "id": "w5",
+  "text": "J'ai",
+  "start": 1.561,
+  "end": 1.712
+ },
+ {
+  "id": "w6",
+  "text": "le",
+  "start": 1.747,
+  "end": 1.805
+ },
+ {
+  "id": "w7",
+  "text": "droit",
+  "start": 1.851,
+  "end": 2.06
+ },
+ {
+  "id": "w8",
+  "text": "de",
+  "start": 2.095,
+  "end": 2.141
+ },
+ {
+  "id": "w9",
+  "text": "manger",
+  "start": 2.188,
+  "end": 2.409
+ },
+ {
+  "id": "w10",
+  "text": "ça ?",
+  "start": 2.443,
+  "end": 2.676
+ },
+ {
+  "id": "w11",
+  "text": "Combien",
+  "start": 3.261,
+  "end": 3.598
+ },
+ {
+  "id": "w12",
+  "text": "de",
+  "start": 3.633,
+  "end": 3.691
+ },
+ {
+  "id": "w13",
+  "text": "calories ?",
+  "start": 3.725,
+  "end": 4.167
+ },
+ {
+  "id": "w14",
+  "text": "J'ai",
+  "start": 4.822,
+  "end": 5.019
+ },
+ {
+  "id": "w15",
+  "text": "craqué,",
+  "start": 5.054,
+  "end": 5.519
+ },
+ {
+  "id": "w16",
+  "text": "je",
+  "start": 5.681,
+  "end": 5.762
+ },
+ {
+  "id": "w17",
+  "text": "recommence",
+  "start": 5.809,
+  "end": 6.25
+ },
+ {
+  "id": "w18",
+  "text": "lundi ?",
+  "start": 6.285,
+  "end": 6.587
+ },
+ {
+  "id": "w19",
+  "text": "Ça",
+  "start": 7.173,
+  "end": 7.336
+ },
+ {
+  "id": "w20",
+  "text": "fait",
+  "start": 7.382,
+  "end": 7.498
+ },
+ {
+  "id": "w21",
+  "text": "beaucoup",
+  "start": 7.545,
+  "end": 7.812
+ },
+ {
+  "id": "w22",
+  "text": "de",
+  "start": 7.835,
+  "end": 7.881
+ },
+ {
+  "id": "w23",
+  "text": "questions",
+  "start": 7.928,
+  "end": 8.253
+ },
+ {
+  "id": "w24",
+  "text": "pour",
+  "start": 8.276,
+  "end": 8.38
+ },
+ {
+  "id": "w25",
+  "text": "un",
+  "start": 8.415,
+  "end": 8.462
+ },
+ {
+  "id": "w26",
+  "text": "seul",
+  "start": 8.508,
+  "end": 8.636
+ },
+ {
+  "id": "w27",
+  "text": "repas.",
+  "start": 8.694,
+  "end": 9.031
+ },
+ {
+  "id": "w28",
+  "text": "Dans",
+  "start": 9.709,
+  "end": 9.883
+ },
+ {
+  "id": "w29",
+  "text": "mon",
+  "start": 9.906,
+  "end": 10.011
+ },
+ {
+  "id": "w30",
+  "text": "guide,",
+  "start": 10.057,
+  "end": 10.348
+ },
+ {
+  "id": "w31",
+  "text": "elles",
+  "start": 10.429,
+  "end": 10.591
+ },
+ {
+  "id": "w32",
+  "text": "ont",
+  "start": 10.649,
+  "end": 10.719
+ },
+ {
+  "id": "w33",
+  "text": "déjà",
+  "start": 10.742,
+  "end": 10.94
+ },
+ {
+  "id": "w34",
+  "text": "une",
+  "start": 10.974,
+  "end": 11.056
+ },
+ {
+  "id": "w35",
+  "text": "réponse.",
+  "start": 11.079,
+  "end": 11.567
+ },
+ {
+  "id": "w36",
+  "text": "Ton",
+  "start": 12.106,
+  "end": 12.303
+ },
+ {
+  "id": "w37",
+  "text": "menu",
+  "start": 12.338,
+  "end": 12.536
+ },
+ {
+  "id": "w38",
+  "text": "de",
+  "start": 12.57,
+  "end": 12.628
+ },
+ {
+  "id": "w39",
+  "text": "la",
+  "start": 12.663,
+  "end": 12.733
+ },
+ {
+  "id": "w40",
+  "text": "semaine",
+  "start": 12.791,
+  "end": 13.104
+ },
+ {
+  "id": "w41",
+  "text": "est",
+  "start": 13.128,
+  "end": 13.197
+ },
+ {
+  "id": "w42",
+  "text": "prêt.",
+  "start": 13.232,
+  "end": 13.557
+ },
+ {
+  "id": "w43",
+  "text": "Aucun",
+  "start": 14.178,
+  "end": 14.584
+ },
+ {
+  "id": "w44",
+  "text": "aliment",
+  "start": 14.654,
+  "end": 14.933
+ },
+ {
+  "id": "w45",
+  "text": "interdit.",
+  "start": 14.956,
+  "end": 15.409
+ },
+ {
+  "id": "w46",
+  "text": "Aucune",
+  "start": 15.878,
+  "end": 16.284
+ },
+ {
+  "id": "w47",
+  "text": "calorie",
+  "start": 16.308,
+  "end": 16.667
+ },
+ {
+  "id": "w48",
+  "text": "à",
+  "start": 16.691,
+  "end": 16.714
+ },
+ {
+  "id": "w49",
+  "text": "compter.",
+  "start": 16.76,
+  "end": 17.109
+ },
+ {
+  "id": "w50",
+  "text": "Après",
+  "start": 17.764,
+  "end": 18.112
+ },
+ {
+  "id": "w51",
+  "text": "un",
+  "start": 18.136,
+  "end": 18.182
+ },
+ {
+  "id": "w52",
+  "text": "écart,",
+  "start": 18.263,
+  "end": 18.577
+ },
+ {
+  "id": "w53",
+  "text": "tu",
+  "start": 18.623,
+  "end": 18.693
+ },
+ {
+  "id": "w54",
+  "text": "reviens",
+  "start": 18.739,
+  "end": 19.006
+ },
+ {
+  "id": "w55",
+  "text": "au",
+  "start": 19.029,
+  "end": 19.122
+ },
+ {
+  "id": "w56",
+  "text": "repas",
+  "start": 19.157,
+  "end": 19.401
+ },
+ {
+  "id": "w57",
+  "text": "suivant.",
+  "start": 19.424,
+  "end": 19.761
+ },
+ {
+  "id": "w58",
+  "text": "Moins",
+  "start": 20.393,
+  "end": 20.614
+ },
+ {
+  "id": "w59",
+  "text": "de",
+  "start": 20.637,
+  "end": 20.695
+ },
+ {
+  "id": "w60",
+  "text": "questions,",
+  "start": 20.741,
+  "end": 21.182
+ },
+ {
+  "id": "w61",
+  "text": "plus",
+  "start": 21.38,
+  "end": 21.554
+ },
+ {
+  "id": "w62",
+  "text": "de",
+  "start": 21.589,
+  "end": 21.647
+ },
+ {
+  "id": "w63",
+  "text": "place",
+  "start": 21.682,
+  "end": 21.879
+ },
+ {
+  "id": "w64",
+  "text": "dans",
+  "start": 21.902,
+  "end": 21.995
+ },
+ {
+  "id": "w65",
+  "text": "ta",
+  "start": 22.018,
+  "end": 22.1
+ },
+ {
+  "id": "w66",
+  "text": "tête.",
+  "start": 22.146,
+  "end": 22.436
+ },
+ {
+  "id": "w67",
+  "text": "Commente",
+  "start": 22.976,
+  "end": 23.359
+ },
+ {
+  "id": "w68",
+  "text": "« 90 JOURS »,",
+  "start": 23.406,
+  "end": 24.3
+ },
+ {
+  "id": "w69",
+  "text": "et",
+  "start": 24.474,
+  "end": 24.567
+ },
+ {
+  "id": "w70",
+  "text": "je",
+  "start": 24.613,
+  "end": 24.683
+ },
+ {
+  "id": "w71",
+  "text": "t'envoie",
+  "start": 24.729,
+  "end": 24.985
+ },
+ {
+  "id": "w72",
+  "text": "le",
+  "start": 25.008,
+  "end": 25.066
+ },
+ {
+  "id": "w73",
+  "text": "lien",
+  "start": 25.124,
+  "end": 25.344
+ },
+ {
+  "id": "w74",
+  "text": "en",
+  "start": 25.414,
+  "end": 25.495
+ },
+ {
+  "id": "w75",
+  "text": "message",
+  "start": 25.542,
+  "end": 25.867
+ },
+ {
+  "id": "w76",
+  "text": "privé.",
+  "start": 25.89,
+  "end": 26.227
+ }
+]

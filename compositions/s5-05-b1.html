@@ -1,0 +1,84 @@
+<!-- Série 5 · vidéo 05 · bloc 1 (pages) · 3.30–18.75 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--encre);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--vert-foret-2);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--encre);
+    }    .s2-feuille {
+      position: absolute;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .s2-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .s2-pages-titre {
+      top: 230px;
+      font-size: 76px;
+      line-height: 1.12;
+    }
+  </style>
+  <div id="root" data-composition-id="s5-05-b1" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+    <p id="s5-05-b1-t0" class="s2-texte s2-pages-titre titre">Dimanche&#8239;:<br /><em>le menu est prêt</em></p>
+    <div id="s5-05-b1-f0" class="s2-feuille" style="left: calc(50% - 255px); top: 460px; width: 510px"><img src="capture/pages/menu-s1-p94.png" alt="Menu de la semaine 1" /></div>
+    <p id="s5-05-b1-t1" class="s2-texte s2-pages-titre titre"><em>La liste aussi</em></p>
+    <div id="s5-05-b1-f1" class="s2-feuille" style="left: calc(50% - 255px); top: 460px; width: 510px"><img src="capture/pages/courses-s1-p95.png" alt="Liste de courses de la semaine 1" /></div>
+    <p id="s5-05-b1-t2" class="s2-texte s2-pages-titre titre">Lundi&#8239;:<br /><em>tu sais quoi cuisiner</em></p>
+    <div id="s5-05-b1-f2" class="s2-feuille" style="left: calc(50% - 255px); top: 460px; width: 510px"><img src="capture/pages/recette-l20-bowl-quinoa-p243.png" alt="Recette L20, grand bowl au quinoa" /></div>
+    <p id="s5-05-b1-t3" class="s2-texte s2-pages-titre titre">Milieu de semaine&#8239;:<br /><em>une portion d'avance</em></p>
+    <div id="s5-05-b1-f3" class="s2-feuille" style="left: calc(50% - 255px); top: 460px; width: 510px"><img src="capture/pages/batch-cooking-p199.png" alt="Batch cooking du dimanche" /></div>
+    <p id="s5-05-b1-t4" class="s2-texte s2-pages-titre titre">Un écart&#8239;?<br /><em>Le repas suivant.</em></p>
+    <div id="s5-05-b1-f4" class="s2-feuille" style="left: calc(50% - 255px); top: 460px; width: 510px"><img src="capture/pages/journal-s1-p96.png" alt="Journal de la semaine 1" /></div>
+    <p id="s5-05-b1-t5" class="s2-texte s2-pages-titre titre">Dimanche&#8239;:<br /><em>ton bilan</em></p>
+    <div id="s5-05-b1-f5" class="s2-feuille" style="left: calc(50% - 255px); top: 460px; width: 510px"><img src="capture/pages/bilan-s1-p97.png" alt="Bilan de la semaine 1" /></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s5-05-b1-f0", { opacity: 0, x: 620, rotation: 12 }, { opacity: 1, x: 0, rotation: -3, duration: 0.5, ease: "power3.out" }, 0.10);
+    tl.fromTo("#s5-05-b1-t0", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.15);
+    tl.to("#s5-05-b1-t0", { opacity: 0, y: -20, duration: 0.2, ease: "power2.in" }, 1.32);
+    tl.fromTo("#s5-05-b1-f1", { opacity: 0, x: 620, rotation: 12 }, { opacity: 1, x: 0, rotation: 2.5, duration: 0.5, ease: "power3.out" }, 1.52);
+    tl.fromTo("#s5-05-b1-t1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 1.57);
+    tl.to("#s5-05-b1-t1", { opacity: 0, y: -20, duration: 0.2, ease: "power2.in" }, 2.99);
+    tl.fromTo("#s5-05-b1-f2", { opacity: 0, x: 620, rotation: 12 }, { opacity: 1, x: 0, rotation: -1.5, duration: 0.5, ease: "power3.out" }, 3.19);
+    tl.fromTo("#s5-05-b1-t2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.24);
+    tl.to("#s5-05-b1-t2", { opacity: 0, y: -20, duration: 0.2, ease: "power2.in" }, 5.45);
+    tl.fromTo("#s5-05-b1-f3", { opacity: 0, x: 620, rotation: 12 }, { opacity: 1, x: 0, rotation: 3, duration: 0.5, ease: "power3.out" }, 5.65);
+    tl.fromTo("#s5-05-b1-t3", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 5.70);
+    tl.to("#s5-05-b1-t3", { opacity: 0, y: -20, duration: 0.2, ease: "power2.in" }, 8.21);
+    tl.fromTo("#s5-05-b1-f4", { opacity: 0, x: 620, rotation: 12 }, { opacity: 1, x: 0, rotation: -2.5, duration: 0.5, ease: "power3.out" }, 8.41);
+    tl.fromTo("#s5-05-b1-t4", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 8.46);
+    tl.to("#s5-05-b1-t4", { opacity: 0, y: -20, duration: 0.2, ease: "power2.in" }, 11.36);
+    tl.fromTo("#s5-05-b1-f5", { opacity: 0, x: 620, rotation: 12 }, { opacity: 1, x: 0, rotation: 1.5, duration: 0.5, ease: "power3.out" }, 11.56);
+    tl.fromTo("#s5-05-b1-t5", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 11.61);
+    window.__timelines["s5-05-b1"] = tl;
+  </script>
+</template>
