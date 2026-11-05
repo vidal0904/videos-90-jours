@@ -911,7 +911,7 @@ def rendu_bloc(nom, b, th, t0, T):
       top: 220px;
       font-size: 250px;
       line-height: 1;
-      color: var(--terracotta);
+      color: {"var(--dore)" if th["texte"] == "var(--creme)" else "var(--terracotta)"};
     }}
     .s2-libelle {{
       top: 480px;
