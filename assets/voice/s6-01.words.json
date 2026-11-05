@@ -1,0 +1,374 @@
+[
+ {
+  "id": "w0",
+  "text": "5 petits-déjeuners",
+  "start": 0.0,
+  "end": 1.045
+ },
+ {
+  "id": "w1",
+  "text": "prêts",
+  "start": 1.091,
+  "end": 1.312
+ },
+ {
+  "id": "w2",
+  "text": "en",
+  "start": 1.347,
+  "end": 1.405
+ },
+ {
+  "id": "w3",
+  "text": "15",
+  "start": 1.486,
+  "end": 1.765
+ },
+ {
+  "id": "w4",
+  "text": "minutes",
+  "start": 1.788,
+  "end": 2.078
+ },
+ {
+  "id": "w5",
+  "text": "environ,",
+  "start": 2.113,
+  "end": 2.485
+ },
+ {
+  "id": "w6",
+  "text": "tirés",
+  "start": 2.647,
+  "end": 2.926
+ },
+ {
+  "id": "w7",
+  "text": "de",
+  "start": 2.949,
+  "end": 3.007
+ },
+ {
+  "id": "w8",
+  "text": "mon",
+  "start": 3.053,
+  "end": 3.17
+ },
+ {
+  "id": "w9",
+  "text": "guide.",
+  "start": 3.216,
+  "end": 3.495
+ },
+ {
+  "id": "w10",
+  "text": "Un",
+  "start": 4.115,
+  "end": 4.266
+ },
+ {
+  "id": "w11",
+  "text": "smoothie",
+  "start": 4.312,
+  "end": 4.661
+ },
+ {
+  "id": "w12",
+  "text": "banane",
+  "start": 4.695,
+  "end": 5.055
+ },
+ {
+  "id": "w13",
+  "text": "et",
+  "start": 5.125,
+  "end": 5.218
+ },
+ {
+  "id": "w14",
+  "text": "yaourt.",
+  "start": 5.264,
+  "end": 5.694
+ },
+ {
+  "id": "w15",
+  "text": "Fromage",
+  "start": 6.373,
+  "end": 6.791
+ },
+ {
+  "id": "w16",
+  "text": "blanc,",
+  "start": 6.814,
+  "end": 7.058
+ },
+ {
+  "id": "w17",
+  "text": "poire",
+  "start": 7.244,
+  "end": 7.592
+ },
+ {
+  "id": "w18",
+  "text": "et",
+  "start": 7.638,
+  "end": 7.731
+ },
+ {
+  "id": "w19",
+  "text": "cannelle.",
+  "start": 7.766,
+  "end": 8.196
+ },
+ {
+  "id": "w20",
+  "text": "Une",
+  "start": 9.048,
+  "end": 9.28
+ },
+ {
+  "id": "w21",
+  "text": "omelette",
+  "start": 9.303,
+  "end": 9.605
+ },
+ {
+  "id": "w22",
+  "text": "aux",
+  "start": 9.628,
+  "end": 9.71
+ },
+ {
+  "id": "w23",
+  "text": "épinards.",
+  "start": 9.779,
+  "end": 10.267
+ },
+ {
+  "id": "w24",
+  "text": "Un",
+  "start": 10.888,
+  "end": 11.027
+ },
+ {
+  "id": "w25",
+  "text": "bol",
+  "start": 11.074,
+  "end": 11.225
+ },
+ {
+  "id": "w26",
+  "text": "protéiné",
+  "start": 11.283,
+  "end": 11.736
+ },
+ {
+  "id": "w27",
+  "text": "aux",
+  "start": 11.759,
+  "end": 11.84
+ },
+ {
+  "id": "w28",
+  "text": "amandes.",
+  "start": 11.921,
+  "end": 12.281
+ },
+ {
+  "id": "w29",
+  "text": "Des",
+  "start": 12.96,
+  "end": 13.146
+ },
+ {
+  "id": "w30",
+  "text": "œufs",
+  "start": 13.227,
+  "end": 13.332
+ },
+ {
+  "id": "w31",
+  "text": "brouillés",
+  "start": 13.355,
+  "end": 13.738
+ },
+ {
+  "id": "w32",
+  "text": "et",
+  "start": 13.773,
+  "end": 13.912
+ },
+ {
+  "id": "w33",
+  "text": "tomates",
+  "start": 13.958,
+  "end": 14.26
+ },
+ {
+  "id": "w34",
+  "text": "cerises.",
+  "start": 14.284,
+  "end": 14.667
+ },
+ {
+  "id": "w35",
+  "text": "Tous",
+  "start": 15.357,
+  "end": 15.589
+ },
+ {
+  "id": "w36",
+  "text": "végétariens,",
+  "start": 15.647,
+  "end": 16.274
+ },
+ {
+  "id": "w37",
+  "text": "tous",
+  "start": 16.425,
+  "end": 16.634
+ },
+ {
+  "id": "w38",
+  "text": "express.",
+  "start": 16.704,
+  "end": 17.191
+ },
+ {
+  "id": "w39",
+  "text": "Et",
+  "start": 17.847,
+  "end": 18.021
+ },
+ {
+  "id": "w40",
+  "text": "il",
+  "start": 18.044,
+  "end": 18.102
+ },
+ {
+  "id": "w41",
+  "text": "y",
+  "start": 18.172,
+  "end": 18.195
+ },
+ {
+  "id": "w42",
+  "text": "en",
+  "start": 18.23,
+  "end": 18.3
+ },
+ {
+  "id": "w43",
+  "text": "a",
+  "start": 18.393,
+  "end": 18.416
+ },
+ {
+  "id": "w44",
+  "text": "20",
+  "start": 18.532,
+  "end": 18.811
+ },
+ {
+  "id": "w45",
+  "text": "en",
+  "start": 18.892,
+  "end": 19.066
+ },
+ {
+  "id": "w46",
+  "text": "tout.",
+  "start": 19.136,
+  "end": 19.368
+ },
+ {
+  "id": "w47",
+  "text": "Enregistre",
+  "start": 20.011,
+  "end": 20.638
+ },
+ {
+  "id": "w48",
+  "text": "pour",
+  "start": 20.673,
+  "end": 20.789
+ },
+ {
+  "id": "w49",
+  "text": "tes",
+  "start": 20.824,
+  "end": 20.917
+ },
+ {
+  "id": "w50",
+  "text": "matins",
+  "start": 20.94,
+  "end": 21.207
+ },
+ {
+  "id": "w51",
+  "text": "pressés.",
+  "start": 21.23,
+  "end": 21.636
+ },
+ {
+  "id": "w52",
+  "text": "Commente",
+  "start": 22.455,
+  "end": 22.85
+ },
+ {
+  "id": "w53",
+  "text": "« 90 JOURS »,",
+  "start": 22.885,
+  "end": 23.732
+ },
+ {
+  "id": "w54",
+  "text": "et",
+  "start": 23.79,
+  "end": 23.86
+ },
+ {
+  "id": "w55",
+  "text": "je",
+  "start": 23.929,
+  "end": 23.999
+ },
+ {
+  "id": "w56",
+  "text": "t'envoie",
+  "start": 24.046,
+  "end": 24.324
+ },
+ {
+  "id": "w57",
+  "text": "le",
+  "start": 24.347,
+  "end": 24.417
+ },
+ {
+  "id": "w58",
+  "text": "lien",
+  "start": 24.464,
+  "end": 24.719
+ },
+ {
+  "id": "w59",
+  "text": "en",
+  "start": 24.789,
+  "end": 24.87
+ },
+ {
+  "id": "w60",
+  "text": "message",
+  "start": 24.928,
+  "end": 25.265
+ },
+ {
+  "id": "w61",
+  "text": "privé.",
+  "start": 25.288,
+  "end": 25.625
+ }
+]

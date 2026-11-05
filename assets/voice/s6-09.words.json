@@ -1,0 +1,416 @@
+[
+ {
+  "id": "w0",
+  "text": "12",
+  "start": 0.0,
+  "end": 0.464
+ },
+ {
+  "id": "w1",
+  "text": "semaines,",
+  "start": 0.488,
+  "end": 0.94
+ },
+ {
+  "id": "w2",
+  "text": "12",
+  "start": 1.138,
+  "end": 1.44
+ },
+ {
+  "id": "w3",
+  "text": "étapes.",
+  "start": 1.463,
+  "end": 1.8
+ },
+ {
+  "id": "w4",
+  "text": "Poser",
+  "start": 2.397,
+  "end": 2.769
+ },
+ {
+  "id": "w5",
+  "text": "les",
+  "start": 2.792,
+  "end": 2.885
+ },
+ {
+  "id": "w6",
+  "text": "fondations.",
+  "start": 2.919,
+  "end": 3.465
+ },
+ {
+  "id": "w7",
+  "text": "Repérer",
+  "start": 4.144,
+  "end": 4.62
+ },
+ {
+  "id": "w8",
+  "text": "les",
+  "start": 4.643,
+  "end": 4.736
+ },
+ {
+  "id": "w9",
+  "text": "sabotages",
+  "start": 4.759,
+  "end": 5.259
+ },
+ {
+  "id": "w10",
+  "text": "invisibles.",
+  "start": 5.282,
+  "end": 5.862
+ },
+ {
+  "id": "w11",
+  "text": "Construire",
+  "start": 6.401,
+  "end": 6.923
+ },
+ {
+  "id": "w12",
+  "text": "une",
+  "start": 6.947,
+  "end": 7.04
+ },
+ {
+  "id": "w13",
+  "text": "alimentation",
+  "start": 7.063,
+  "end": 7.632
+ },
+ {
+  "id": "w14",
+  "text": "qui",
+  "start": 7.678,
+  "end": 7.771
+ },
+ {
+  "id": "w15",
+  "text": "rassasie.",
+  "start": 7.817,
+  "end": 8.305
+ },
+ {
+  "id": "w16",
+  "text": "Transformer",
+  "start": 8.938,
+  "end": 9.577
+ },
+ {
+  "id": "w17",
+  "text": "les",
+  "start": 9.6,
+  "end": 9.704
+ },
+ {
+  "id": "w18",
+  "text": "actions",
+  "start": 9.774,
+  "end": 10.122
+ },
+ {
+  "id": "w19",
+  "text": "en",
+  "start": 10.157,
+  "end": 10.273
+ },
+ {
+  "id": "w20",
+  "text": "automatismes.",
+  "start": 10.354,
+  "end": 11.097
+ },
+ {
+  "id": "w21",
+  "text": "Passer",
+  "start": 11.892,
+  "end": 12.24
+ },
+ {
+  "id": "w22",
+  "text": "à",
+  "start": 12.275,
+  "end": 12.298
+ },
+ {
+  "id": "w23",
+  "text": "l'étape",
+  "start": 12.333,
+  "end": 12.612
+ },
+ {
+  "id": "w24",
+  "text": "suivante.",
+  "start": 12.635,
+  "end": 13.088
+ },
+ {
+  "id": "w25",
+  "text": "Bouger",
+  "start": 13.638,
+  "end": 13.998
+ },
+ {
+  "id": "w26",
+  "text": "plus,",
+  "start": 14.033,
+  "end": 14.381
+ },
+ {
+  "id": "w27",
+  "text": "préserver",
+  "start": 14.613,
+  "end": 15.078
+ },
+ {
+  "id": "w28",
+  "text": "ses",
+  "start": 15.101,
+  "end": 15.217
+ },
+ {
+  "id": "w29",
+  "text": "muscles.",
+  "start": 15.252,
+  "end": 15.635
+ },
+ {
+  "id": "w30",
+  "text": "Sortir",
+  "start": 16.268,
+  "end": 16.756
+ },
+ {
+  "id": "w31",
+  "text": "du",
+  "start": 16.79,
+  "end": 16.872
+ },
+ {
+  "id": "w32",
+  "text": "mode",
+  "start": 16.907,
+  "end": 17.069
+ },
+ {
+  "id": "w33",
+  "text": "régime.",
+  "start": 17.104,
+  "end": 17.51
+ },
+ {
+  "id": "w34",
+  "text": "Lever",
+  "start": 18.293,
+  "end": 18.641
+ },
+ {
+  "id": "w35",
+  "text": "les",
+  "start": 18.676,
+  "end": 18.769
+ },
+ {
+  "id": "w36",
+  "text": "derniers",
+  "start": 18.792,
+  "end": 19.071
+ },
+ {
+  "id": "w37",
+  "text": "blocages.",
+  "start": 19.094,
+  "end": 19.582
+ },
+ {
+  "id": "w38",
+  "text": "Devenir",
+  "start": 20.272,
+  "end": 20.69
+ },
+ {
+  "id": "w39",
+  "text": "la",
+  "start": 20.725,
+  "end": 20.783
+ },
+ {
+  "id": "w40",
+  "text": "personne",
+  "start": 20.829,
+  "end": 21.178
+ },
+ {
+  "id": "w41",
+  "text": "que",
+  "start": 21.212,
+  "end": 21.294
+ },
+ {
+  "id": "w42",
+  "text": "tu",
+  "start": 21.329,
+  "end": 21.421
+ },
+ {
+  "id": "w43",
+  "text": "souhaites",
+  "start": 21.468,
+  "end": 21.758
+ },
+ {
+  "id": "w44",
+  "text": "être.",
+  "start": 21.816,
+  "end": 22.118
+ },
+ {
+  "id": "w45",
+  "text": "Renforcer",
+  "start": 22.715,
+  "end": 23.168
+ },
+ {
+  "id": "w46",
+  "text": "ta",
+  "start": 23.203,
+  "end": 23.284
+ },
+ {
+  "id": "w47",
+  "text": "confiance.",
+  "start": 23.33,
+  "end": 23.911
+ },
+ {
+  "id": "w48",
+  "text": "Faire",
+  "start": 24.88,
+  "end": 25.112
+ },
+ {
+  "id": "w49",
+  "text": "face",
+  "start": 25.147,
+  "end": 25.368
+ },
+ {
+  "id": "w50",
+  "text": "aux",
+  "start": 25.391,
+  "end": 25.472
+ },
+ {
+  "id": "w51",
+  "text": "imprévus.",
+  "start": 25.542,
+  "end": 26.029
+ },
+ {
+  "id": "w52",
+  "text": "Et",
+  "start": 26.627,
+  "end": 26.778
+ },
+ {
+  "id": "w53",
+  "text": "construire",
+  "start": 26.824,
+  "end": 27.289
+ },
+ {
+  "id": "w54",
+  "text": "ton",
+  "start": 27.312,
+  "end": 27.428
+ },
+ {
+  "id": "w55",
+  "text": "plan",
+  "start": 27.475,
+  "end": 27.649
+ },
+ {
+  "id": "w56",
+  "text": "pour",
+  "start": 27.695,
+  "end": 27.8
+ },
+ {
+  "id": "w57",
+  "text": "la",
+  "start": 27.823,
+  "end": 27.881
+ },
+ {
+  "id": "w58",
+  "text": "suite.",
+  "start": 27.927,
+  "end": 28.229
+ },
+ {
+  "id": "w59",
+  "text": "Commente",
+  "start": 28.791,
+  "end": 29.174
+ },
+ {
+  "id": "w60",
+  "text": "« 90 JOURS »,",
+  "start": 29.209,
+  "end": 30.056
+ },
+ {
+  "id": "w61",
+  "text": "et",
+  "start": 30.161,
+  "end": 30.254
+ },
+ {
+  "id": "w62",
+  "text": "je",
+  "start": 30.312,
+  "end": 30.382
+ },
+ {
+  "id": "w63",
+  "text": "t'envoie",
+  "start": 30.428,
+  "end": 30.718
+ },
+ {
+  "id": "w64",
+  "text": "le",
+  "start": 30.741,
+  "end": 30.8
+ },
+ {
+  "id": "w65",
+  "text": "lien",
+  "start": 30.858,
+  "end": 31.043
+ },
+ {
+  "id": "w66",
+  "text": "en",
+  "start": 31.113,
+  "end": 31.194
+ },
+ {
+  "id": "w67",
+  "text": "message",
+  "start": 31.241,
+  "end": 31.601
+ },
+ {
+  "id": "w68",
+  "text": "privé.",
+  "start": 31.624,
+  "end": 31.972
+ }
+]

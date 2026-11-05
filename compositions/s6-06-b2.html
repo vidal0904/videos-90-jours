@@ -1,0 +1,57 @@
+<!-- Série 6 · vidéo 06 · bloc 2 (page) · 14.75–20.58 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--encre);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--vert-foret-2);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--encre);
+    }    .s2-feuille {
+      position: absolute;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .s2-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    #s6-06-b2-cam {
+      position: absolute;
+      inset: 0;
+      transform-origin: 50% 45%;
+    }
+  </style>
+  <div id="root" data-composition-id="s6-06-b2" data-width="1080" data-height="1920">
+    <p id="s6-06-b2-titre" class="s2-titre titre">Conseil, variante<br /><em>et tes notes</em></p>
+    <div id="s6-06-b2-cam" data-layout-allow-overflow><div id="s6-06-b2-f" class="s2-feuille" style="left: calc(50% - 250px); top: 470px; width: 500px"><img src="capture/pages/recette-b7-pancakes-p209.png" alt="Recette B7, pancakes banane-avoine" /></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s6-06-b2-f", { opacity: 0, y: 200, rotation: 0 }, { opacity: 1, y: 0, rotation: -2, duration: 0.45, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s6-06-b2-titre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.15);
+    window.__timelines["s6-06-b2"] = tl;
+  </script>
+</template>

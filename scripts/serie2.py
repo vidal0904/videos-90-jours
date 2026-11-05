@@ -419,6 +419,134 @@ VIDEOS.update({
                   fin=dict(m="@je#2", cta=False, textes=[("Je ferai une vidéo<br /><em>sur la plus choisie</em>", "@je#2")], pages=[], lien=0)),
 })
 
+# --------------------------------------------------------------------------------------
+# Série 6 — SCRIPTS-SERIE-6.md (index des recettes, menu et courses S1, p. 197, défi semaine 2, checklist, 12 semaines)
+# --------------------------------------------------------------------------------------
+VIDEOS.update({
+    "s6-01": dict(titre="5 petits-déjeuners express", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="5 petits-déjeuners<br /><em>en 15 minutes environ.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@un", titre="Express <em>&amp; végé</em>", compact=True, items=[
+                          ("B4", "Smoothie banane & yaourt", None, "@smoothie"), ("B6", "Fromage blanc, poire & cannelle", None, "@fromage"),
+                          ("B9", "Omelette aux épinards", None, "@omelette"), ("B10", "Bol protéiné aux amandes", None, "@bol"),
+                          ("B14", "Œufs brouillés & tomates cerises", None, "@œufs")]),
+                      dict(type="compteur", m="@et#4", t_n="@20", n=20, libelle="petits-déjeuners", sous=("dans le guide", "@tout")),
+                  ],
+                  fin=dict(m="@enregistre", textes=[("Enregistre<br /><em>pour tes matins pressés</em>", "@enregistre")],
+                           pages=[("index-recettes-p200.png", "Index des 70 recettes", "@enregistre"), COUV + ("@commente",)], lien=0)),
+    "s6-02": dict(titre="6 idées de déjeuners", fond="creme", musique="piano", mention=True, duree=0,
+                  accroche="Des idées<br /><em>de déjeuners&#8239;?</em>",
+                  blocs=[
+                      dict(type="cartes", m="@saumon", titre="Idées de <em>déjeuners</em>", compact=True, items=[
+                          ("L2", "Saumon & légumes rôtis", None, "@saumon"), ("L7", "Dinde & patate douce au four", None, "@dinde"),
+                          ("L9", "Lentilles mijotées aux légumes", None, "@lentilles"), ("L11", "Bowl méditerranéen au poulet", None, "@bowl"),
+                          ("L15", "Poulet & patate douce au paprika", None, "@poulet#2"), ("L16", "Chili aux haricots rouges", None, "@chili")]),
+                      dict(type="phrases", m="@chaque", items=[("Pour 1 personne,<br /><em>avec une variante.</em>", "@chaque")]),
+                  ],
+                  fin=dict(m="@enregistre", textes=[("Enregistre<br /><em>la liste</em>", "@enregistre")],
+                           pages=[("index-recettes-p200.png", "Index des 70 recettes", "@enregistre"), COUV + ("@commente",)], lien=0)),
+    "s6-03": dict(titre="Le vrai menu de la semaine 1", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="Le vrai menu<br /><em>de la semaine 1.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@lundi", titre="<em>Lundi</em>", compact=True, items=[
+                          ("Matin", "Yaourt grec & fruits rouges", None, "@yaourt"),
+                          ("Midi", "Poulet grillé, riz complet, légumes verts", None, "@midi"),
+                          ("Soir", "Omelette épinards & champignons", None, "@soir")]),
+                      dict(type="phrases", m="@mardi", items=[("Mardi midi&#8239;?<br /><em>Les restes de lundi.</em>", "@mardi")]),
+                      dict(type="compteur", m="@tu", t_n="@4", n=4, libelle="recettes", sous=("au lieu de 7", "@lieu")),
+                      dict(type="page", m="@ce", src="menu-s1-p94.png", alt="Menu de la semaine 1",
+                           titre="Un menu <em>indicatif</em>", t_titre="@indicatif"),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s6-04": dict(titre="La liste de courses de la semaine 1", fond="creme", musique="piano", mention=True, duree=0,
+                  accroche="La vraie liste de courses<br /><em>de la semaine 1.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@classée", titre="Classée <em>par rayon</em>", compact=True, items=[
+                          (None, "Protéines", None, "@protéines"), (None, "Légumes", None, "@légumes"), (None, "Féculents", None, "@féculents"),
+                          (None, "Fruits", None, "@fruits"), (None, "Produits laitiers", None, "@produits"), (None, "Placard", None, "@placard")]),
+                      dict(type="page", m="@les", src="courses-s1-p95.png", alt="Liste de courses de la semaine 1",
+                           titre="Quantités<br /><em>pour 1 personne</em>", t_titre="@calculées"),
+                      dict(type="compteur", m="@et#3", t_n="@12", n=12, libelle="listes de courses", sous=("une par semaine", "@une#2")),
+                  ],
+                  fin=dict(m="@enregistre", textes=[("Enregistre<br /><em>pour tes courses</em>", "@enregistre")],
+                           pages=[COUV + ("@commente",)], lien=0)),
+    "s6-05": dict(titre="3 astuces pour cuisiner sans te compliquer", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="Cuisiner<br /><em>sans te compliquer.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@un", titre="3 <em>astuces</em>", items=[
+                          ("1", "3 à 5 recettes préférées", "Par catégorie, alternées chaque semaine.", "@un"),
+                          ("2", "Des portions à ta faim réelle", None, "@deux"),
+                          ("3", "Les surgelés nature", "Légumes, poissons, fruits rouges.", "@trois")]),
+                  ],
+                  fin=dict(m="@enregistre", textes=[("Enregistre<br /><em>ces astuces</em>", "@enregistre")],
+                           pages=[("bien-utiliser-recettes-p197.png", "Bien utiliser les recettes", "@enregistre"), COUV + ("@commente",)], lien=0)),
+    "s6-06": dict(titre="Les 4 étiquettes des recettes", fond="creme", musique="piano", mention=True, duree=0,
+                  accroche="Chaque recette<br /><em>a ses étiquettes.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@express", titre="4 <em>étiquettes</em>", compact=True, items=[
+                          ("Express", "Prête en 15 min environ", None, "@express"), ("Végé", "Sans viande ni poisson", None, "@végétarien"),
+                          ("Avance", "Idéale pour le batch cooking", None, "@à"), ("Budget", "Économique", None, "@économique")]),
+                      dict(type="page", m="@et", src="recette-b7-pancakes-p209.png", alt="Recette B7, pancakes banane-avoine",
+                           titre="Conseil, variante<br /><em>et tes notes</em>", t_titre="@et"),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+    "s6-07": dict(titre="Défi : semaine 2", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="Défi motivation,<br /><em>semaine 2.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@jour 8", titre="Défi <em>semaine 2</em>", note="Adapte chaque mission à ta condition physique.",
+                           compact=True, coche=True, items=[
+                               ("8", "Marcher 30 min (en 1 ou plusieurs fois)", None, "@jour 8"), ("9", "Une portion de légumes en plus", None, "@jour 9"),
+                               ("10", "Un repas sans écran", None, "@jour 10"), ("11", "Un verre d'eau avant chaque repas", None, "@jour 11"),
+                               ("12", "10 min d'exercices simples", None, "@jour 12"), ("13", "Une collation maison", None, "@jour 13"),
+                               ("14", "3 choses dont tu es fière", None, "@jour 14")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[("outil-07-defi-30-jours-p305.png", "Défi motivation 30 jours", "@commente"),
+                                                            COUV + ("@commente",)], lien=0)),
+    "s6-08": dict(titre="Ta journée en 9 cases", fond="creme", musique="piano", mention=True, duree=0,
+                  accroche="Ta journée<br /><em>en 9 cases.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@le", titre="Le <em>matin</em>", compact=True, coche=True, items=[
+                          ("1", "Un verre d'eau au réveil", None, "@verre"), ("2", "Relire ton objectif", None, "@relire"),
+                          ("3", "Petit-déj avec une protéine (si faim)", None, "@petit-déjeuner")]),
+                      dict(type="cartes", m="@aux", titre="Aux <em>repas</em>", compact=True, coche=True, items=[
+                          ("4", "Une protéine", None, "@protéine#2"), ("5", "Des légumes à 2 repas au moins", None, "@légumes"),
+                          ("6", "Assise, sans écran, lentement", None, "@manger")]),
+                      dict(type="cartes", m="@le#2", titre="Le <em>soir</em>", compact=True, coche=True, items=[
+                          ("7", "Ton journal (2 min)", None, "@journal"), ("8", "Préparer demain", None, "@préparer"),
+                          ("9", "Ta routine de coucher", None, "@routine")]),
+                      dict(type="page", m="@c'est", src="outil-02-checklist-p296.png", alt="Checklist quotidienne",
+                           titre="Checklist <em>quotidienne</em>", t_titre="@c'est"),
+                  ],
+                  fin=dict(m="@enregistre-la", textes=[("Enregistre-la<br /><em>pour demain matin</em>", "@enregistre-la")],
+                           pages=[COUV + ("@commente",)], lien=0)),
+    "s6-09": dict(titre="12 semaines, 12 étapes", fond="vert", musique="nappe", mention=True, duree=0,
+                  accroche="12 semaines,<br /><em>12 étapes.</em>",
+                  blocs=[
+                      dict(type="cartes", m="@poser", titre="Semaines <em>1 à 6</em>", compact=True, items=[
+                          ("S1", "Poser les fondations", None, "@poser"), ("S2", "Repérer les sabotages invisibles", None, "@repérer"),
+                          ("S3", "Une alimentation qui rassasie", None, "@construire"), ("S4", "Des actions aux automatismes", None, "@transformer"),
+                          ("S5", "Passer à l'étape suivante", None, "@passer"), ("S6", "Bouger plus, préserver ses muscles", None, "@bouger")]),
+                      dict(type="cartes", m="@sortir", titre="Semaines <em>7 à 12</em>", compact=True, items=[
+                          ("S7", "Sortir du mode régime", None, "@sortir"), ("S8", "Lever les derniers blocages", None, "@lever"),
+                          ("S9", "Devenir qui tu souhaites être", None, "@devenir"), ("S10", "Renforcer ta confiance", None, "@renforcer"),
+                          ("S11", "Faire face aux imprévus", None, "@faire"), ("S12", "Construire ton plan pour la suite", None, "@construire#2")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[("ouverture-mois-1-p90.png", "Mois 1, installer les bases", "@commente"),
+                                                            COUV + ("@commente",)], lien=0)),
+    "s6-10": dict(titre="J'ai le droit aux féculents ?", fond="vert", musique="nappe", mention=True, duree=0, bulle=dict(n=7),
+                  accroche="Est-ce que j'ai le droit aux féculents&#8239;?",
+                  blocs=[
+                      dict(type="phrases", m="@oui", items=[("<em>Oui.</em>", "@oui")]),
+                      dict(type="cartes", m="@dans", titre="Un quart de <em>féculents</em>", compact=True, items=[
+                          (None, "Riz complet", None, "@riz"), (None, "Pommes de terre", None, "@pommes"),
+                          (None, "Quinoa", None, "@quinoa"), (None, "Pain complet", None, "@pain")]),
+                      dict(type="page", m="@la", src="bien-utiliser-recettes-p197.png", alt="L'assiette équilibrée, Bien utiliser les recettes",
+                           titre="L'assiette <em>du guide</em>", t_titre="@la"),
+                      dict(type="phrases", m="@et#2", items=[("Tu as faim&#8239;?<br /><em>Plus de légumes ou de féculents.</em>", "@et#2")]),
+                  ],
+                  fin=dict(m="@commente", textes=[], pages=[COUV + ("@commente",)], lien=0)),
+})
+
 
 def resout(x, mots):
     """Remplace les ancres "@mot" / "@mot#k" par l'indice du mot dans la voix."""

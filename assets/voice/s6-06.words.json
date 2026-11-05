@@ -1,0 +1,368 @@
+[
+ {
+  "id": "w0",
+  "text": "Dans",
+  "start": 0.0,
+  "end": 0.209
+ },
+ {
+  "id": "w1",
+  "text": "mon",
+  "start": 0.232,
+  "end": 0.337
+ },
+ {
+  "id": "w2",
+  "text": "guide,",
+  "start": 0.383,
+  "end": 0.708
+ },
+ {
+  "id": "w3",
+  "text": "chaque",
+  "start": 0.94,
+  "end": 1.254
+ },
+ {
+  "id": "w4",
+  "text": "recette",
+  "start": 1.277,
+  "end": 1.591
+ },
+ {
+  "id": "w5",
+  "text": "porte",
+  "start": 1.637,
+  "end": 1.939
+ },
+ {
+  "id": "w6",
+  "text": "des",
+  "start": 1.985,
+  "end": 2.09
+ },
+ {
+  "id": "w7",
+  "text": "étiquettes.",
+  "start": 2.171,
+  "end": 2.647
+ },
+ {
+  "id": "w8",
+  "text": "Express :",
+  "start": 3.279,
+  "end": 3.871
+ },
+ {
+  "id": "w9",
+  "text": "prête",
+  "start": 4.266,
+  "end": 4.533
+ },
+ {
+  "id": "w10",
+  "text": "en",
+  "start": 4.556,
+  "end": 4.603
+ },
+ {
+  "id": "w11",
+  "text": "15",
+  "start": 4.649,
+  "end": 4.846
+ },
+ {
+  "id": "w12",
+  "text": "minutes",
+  "start": 4.87,
+  "end": 5.183
+ },
+ {
+  "id": "w13",
+  "text": "environ.",
+  "start": 5.206,
+  "end": 5.589
+ },
+ {
+  "id": "w14",
+  "text": "Végétarien :",
+  "start": 6.28,
+  "end": 6.895
+ },
+ {
+  "id": "w15",
+  "text": "sans",
+  "start": 7.058,
+  "end": 7.267
+ },
+ {
+  "id": "w16",
+  "text": "viande",
+  "start": 7.29,
+  "end": 7.534
+ },
+ {
+  "id": "w17",
+  "text": "ni",
+  "start": 7.557,
+  "end": 7.65
+ },
+ {
+  "id": "w18",
+  "text": "poisson.",
+  "start": 7.696,
+  "end": 8.056
+ },
+ {
+  "id": "w19",
+  "text": "À",
+  "start": 8.584,
+  "end": 8.677
+ },
+ {
+  "id": "w20",
+  "text": "préparer",
+  "start": 8.77,
+  "end": 9.13
+ },
+ {
+  "id": "w21",
+  "text": "à",
+  "start": 9.164,
+  "end": 9.188
+ },
+ {
+  "id": "w22",
+  "text": "l'avance :",
+  "start": 9.223,
+  "end": 9.675
+ },
+ {
+  "id": "w23",
+  "text": "idéale",
+  "start": 9.977,
+  "end": 10.465
+ },
+ {
+  "id": "w24",
+  "text": "pour",
+  "start": 10.488,
+  "end": 10.604
+ },
+ {
+  "id": "w25",
+  "text": "le",
+  "start": 10.627,
+  "end": 10.685
+ },
+ {
+  "id": "w26",
+  "text": "batch",
+  "start": 10.72,
+  "end": 10.906
+ },
+ {
+  "id": "w27",
+  "text": "cooking.",
+  "start": 10.941,
+  "end": 11.336
+ },
+ {
+  "id": "w28",
+  "text": "Économique :",
+  "start": 12.095,
+  "end": 12.78
+ },
+ {
+  "id": "w29",
+  "text": "pour",
+  "start": 12.989,
+  "end": 13.128
+ },
+ {
+  "id": "w30",
+  "text": "les",
+  "start": 13.163,
+  "end": 13.244
+ },
+ {
+  "id": "w31",
+  "text": "petits",
+  "start": 13.268,
+  "end": 13.535
+ },
+ {
+  "id": "w32",
+  "text": "budgets.",
+  "start": 13.558,
+  "end": 13.883
+ },
+ {
+  "id": "w33",
+  "text": "Et",
+  "start": 14.399,
+  "end": 14.585
+ },
+ {
+  "id": "w34",
+  "text": "chaque",
+  "start": 14.631,
+  "end": 14.887
+ },
+ {
+  "id": "w35",
+  "text": "fiche",
+  "start": 14.921,
+  "end": 15.154
+ },
+ {
+  "id": "w36",
+  "text": "a",
+  "start": 15.177,
+  "end": 15.2
+ },
+ {
+  "id": "w37",
+  "text": "un",
+  "start": 15.258,
+  "end": 15.339
+ },
+ {
+  "id": "w38",
+  "text": "conseil,",
+  "start": 15.374,
+  "end": 15.839
+ },
+ {
+  "id": "w39",
+  "text": "une",
+  "start": 15.943,
+  "end": 16.082
+ },
+ {
+  "id": "w40",
+  "text": "variante,",
+  "start": 16.117,
+  "end": 16.675
+ },
+ {
+  "id": "w41",
+  "text": "et",
+  "start": 16.93,
+  "end": 17.034
+ },
+ {
+  "id": "w42",
+  "text": "une",
+  "start": 17.058,
+  "end": 17.162
+ },
+ {
+  "id": "w43",
+  "text": "place",
+  "start": 17.197,
+  "end": 17.452
+ },
+ {
+  "id": "w44",
+  "text": "pour",
+  "start": 17.476,
+  "end": 17.58
+ },
+ {
+  "id": "w45",
+  "text": "tes",
+  "start": 17.615,
+  "end": 17.719
+ },
+ {
+  "id": "w46",
+  "text": "notes,",
+  "start": 17.754,
+  "end": 18.021
+ },
+ {
+  "id": "w47",
+  "text": "pour",
+  "start": 18.23,
+  "end": 18.381
+ },
+ {
+  "id": "w48",
+  "text": "retrouver",
+  "start": 18.404,
+  "end": 18.776
+ },
+ {
+  "id": "w49",
+  "text": "tes",
+  "start": 18.811,
+  "end": 18.904
+ },
+ {
+  "id": "w50",
+  "text": "favorites.",
+  "start": 18.927,
+  "end": 19.426
+ },
+ {
+  "id": "w51",
+  "text": "Commente",
+  "start": 20.233,
+  "end": 20.663
+ },
+ {
+  "id": "w52",
+  "text": "« 90 JOURS »,",
+  "start": 20.721,
+  "end": 21.661
+ },
+ {
+  "id": "w53",
+  "text": "et",
+  "start": 21.766,
+  "end": 21.87
+ },
+ {
+  "id": "w54",
+  "text": "je",
+  "start": 21.916,
+  "end": 21.998
+ },
+ {
+  "id": "w55",
+  "text": "t'envoie",
+  "start": 22.044,
+  "end": 22.358
+ },
+ {
+  "id": "w56",
+  "text": "le",
+  "start": 22.381,
+  "end": 22.451
+ },
+ {
+  "id": "w57",
+  "text": "lien",
+  "start": 22.497,
+  "end": 22.741
+ },
+ {
+  "id": "w58",
+  "text": "en",
+  "start": 22.81,
+  "end": 22.915
+ },
+ {
+  "id": "w59",
+  "text": "message",
+  "start": 22.961,
+  "end": 23.31
+ },
+ {
+  "id": "w60",
+  "text": "privé.",
+  "start": 23.344,
+  "end": 23.681
+ }
+]

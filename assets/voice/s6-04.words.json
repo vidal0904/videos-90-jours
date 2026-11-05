@@ -1,0 +1,422 @@
+[
+ {
+  "id": "w0",
+  "text": "Voici",
+  "start": 0.0,
+  "end": 0.348
+ },
+ {
+  "id": "w1",
+  "text": "la",
+  "start": 0.418,
+  "end": 0.488
+ },
+ {
+  "id": "w2",
+  "text": "vraie",
+  "start": 0.546,
+  "end": 0.755
+ },
+ {
+  "id": "w3",
+  "text": "liste",
+  "start": 0.778,
+  "end": 1.01
+ },
+ {
+  "id": "w4",
+  "text": "de",
+  "start": 1.068,
+  "end": 1.138
+ },
+ {
+  "id": "w5",
+  "text": "courses",
+  "start": 1.184,
+  "end": 1.451
+ },
+ {
+  "id": "w6",
+  "text": "de",
+  "start": 1.474,
+  "end": 1.533
+ },
+ {
+  "id": "w7",
+  "text": "la",
+  "start": 1.579,
+  "end": 1.649
+ },
+ {
+  "id": "w8",
+  "text": "semaine 1.",
+  "start": 1.707,
+  "end": 2.264
+ },
+ {
+  "id": "w9",
+  "text": "Classée",
+  "start": 2.908,
+  "end": 3.268
+ },
+ {
+  "id": "w10",
+  "text": "par",
+  "start": 3.303,
+  "end": 3.442
+ },
+ {
+  "id": "w11",
+  "text": "rayon :",
+  "start": 3.465,
+  "end": 3.732
+ },
+ {
+  "id": "w12",
+  "text": "protéines,",
+  "start": 4.139,
+  "end": 4.719
+ },
+ {
+  "id": "w13",
+  "text": "légumes,",
+  "start": 4.87,
+  "end": 5.358
+ },
+ {
+  "id": "w14",
+  "text": "féculents,",
+  "start": 5.474,
+  "end": 6.043
+ },
+ {
+  "id": "w15",
+  "text": "fruits,",
+  "start": 6.217,
+  "end": 6.577
+ },
+ {
+  "id": "w16",
+  "text": "produits",
+  "start": 6.774,
+  "end": 7.111
+ },
+ {
+  "id": "w17",
+  "text": "laitiers",
+  "start": 7.18,
+  "end": 7.529
+ },
+ {
+  "id": "w18",
+  "text": "et",
+  "start": 7.587,
+  "end": 7.749
+ },
+ {
+  "id": "w19",
+  "text": "placard.",
+  "start": 7.784,
+  "end": 8.307
+ },
+ {
+  "id": "w20",
+  "text": "Les",
+  "start": 9.02,
+  "end": 9.159
+ },
+ {
+  "id": "w21",
+  "text": "quantités",
+  "start": 9.183,
+  "end": 9.566
+ },
+ {
+  "id": "w22",
+  "text": "sont",
+  "start": 9.589,
+  "end": 9.728
+ },
+ {
+  "id": "w23",
+  "text": "calculées",
+  "start": 9.751,
+  "end": 10.227
+ },
+ {
+  "id": "w24",
+  "text": "pour",
+  "start": 10.251,
+  "end": 10.39
+ },
+ {
+  "id": "w25",
+  "text": "une",
+  "start": 10.448,
+  "end": 10.541
+ },
+ {
+  "id": "w26",
+  "text": "personne,",
+  "start": 10.564,
+  "end": 11.075
+ },
+ {
+  "id": "w27",
+  "text": "pour",
+  "start": 11.272,
+  "end": 11.423
+ },
+ {
+  "id": "w28",
+  "text": "le",
+  "start": 11.458,
+  "end": 11.516
+ },
+ {
+  "id": "w29",
+  "text": "menu",
+  "start": 11.563,
+  "end": 11.772
+ },
+ {
+  "id": "w30",
+  "text": "de",
+  "start": 11.806,
+  "end": 11.876
+ },
+ {
+  "id": "w31",
+  "text": "la",
+  "start": 11.911,
+  "end": 11.981
+ },
+ {
+  "id": "w32",
+  "text": "semaine.",
+  "start": 12.039,
+  "end": 12.433
+ },
+ {
+  "id": "w33",
+  "text": "Tu",
+  "start": 12.996,
+  "end": 13.159
+ },
+ {
+  "id": "w34",
+  "text": "ajustes",
+  "start": 13.24,
+  "end": 13.693
+ },
+ {
+  "id": "w35",
+  "text": "selon",
+  "start": 13.739,
+  "end": 14.018
+ },
+ {
+  "id": "w36",
+  "text": "ton",
+  "start": 14.053,
+  "end": 14.145
+ },
+ {
+  "id": "w37",
+  "text": "foyer,",
+  "start": 14.192,
+  "end": 14.517
+ },
+ {
+  "id": "w38",
+  "text": "et",
+  "start": 14.645,
+  "end": 14.761
+ },
+ {
+  "id": "w39",
+  "text": "ce",
+  "start": 14.796,
+  "end": 14.865
+ },
+ {
+  "id": "w40",
+  "text": "que",
+  "start": 14.923,
+  "end": 15.005
+ },
+ {
+  "id": "w41",
+  "text": "tu",
+  "start": 15.039,
+  "end": 15.121
+ },
+ {
+  "id": "w42",
+  "text": "as",
+  "start": 15.19,
+  "end": 15.237
+ },
+ {
+  "id": "w43",
+  "text": "déjà.",
+  "start": 15.26,
+  "end": 15.573
+ },
+ {
+  "id": "w44",
+  "text": "Et",
+  "start": 16.182,
+  "end": 16.356
+ },
+ {
+  "id": "w45",
+  "text": "il",
+  "start": 16.379,
+  "end": 16.426
+ },
+ {
+  "id": "w46",
+  "text": "y",
+  "start": 16.507,
+  "end": 16.53
+ },
+ {
+  "id": "w47",
+  "text": "en",
+  "start": 16.577,
+  "end": 16.646
+ },
+ {
+  "id": "w48",
+  "text": "a",
+  "start": 16.739,
+  "end": 16.762
+ },
+ {
+  "id": "w49",
+  "text": "12",
+  "start": 16.855,
+  "end": 17.111
+ },
+ {
+  "id": "w50",
+  "text": "comme",
+  "start": 17.146,
+  "end": 17.308
+ },
+ {
+  "id": "w51",
+  "text": "ça,",
+  "start": 17.343,
+  "end": 17.552
+ },
+ {
+  "id": "w52",
+  "text": "une",
+  "start": 17.703,
+  "end": 17.842
+ },
+ {
+  "id": "w53",
+  "text": "par",
+  "start": 17.865,
+  "end": 17.993
+ },
+ {
+  "id": "w54",
+  "text": "semaine.",
+  "start": 18.051,
+  "end": 18.434
+ },
+ {
+  "id": "w55",
+  "text": "Enregistre",
+  "start": 19.043,
+  "end": 19.658
+ },
+ {
+  "id": "w56",
+  "text": "pour",
+  "start": 19.693,
+  "end": 19.809
+ },
+ {
+  "id": "w57",
+  "text": "tes",
+  "start": 19.844,
+  "end": 19.937
+ },
+ {
+  "id": "w58",
+  "text": "prochaines",
+  "start": 19.96,
+  "end": 20.308
+ },
+ {
+  "id": "w59",
+  "text": "courses.",
+  "start": 20.332,
+  "end": 20.622
+ },
+ {
+  "id": "w60",
+  "text": "Commente",
+  "start": 21.301,
+  "end": 21.696
+ },
+ {
+  "id": "w61",
+  "text": "« 90 JOURS »,",
+  "start": 21.731,
+  "end": 22.648
+ },
+ {
+  "id": "w62",
+  "text": "et",
+  "start": 22.787,
+  "end": 22.892
+ },
+ {
+  "id": "w63",
+  "text": "je",
+  "start": 22.95,
+  "end": 23.008
+ },
+ {
+  "id": "w64",
+  "text": "t'envoie",
+  "start": 23.066,
+  "end": 23.321
+ },
+ {
+  "id": "w65",
+  "text": "le",
+  "start": 23.344,
+  "end": 23.426
+ },
+ {
+  "id": "w66",
+  "text": "lien",
+  "start": 23.46,
+  "end": 23.658
+ },
+ {
+  "id": "w67",
+  "text": "en",
+  "start": 23.727,
+  "end": 23.82
+ },
+ {
+  "id": "w68",
+  "text": "message",
+  "start": 23.867,
+  "end": 24.203
+ },
+ {
+  "id": "w69",
+  "text": "privé.",
+  "start": 24.227,
+  "end": 24.563
+ }
+]

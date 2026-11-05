@@ -1,0 +1,428 @@
+[
+ {
+  "id": "w0",
+  "text": "Ta",
+  "start": 0.0,
+  "end": 0.186
+ },
+ {
+  "id": "w1",
+  "text": "journée",
+  "start": 0.255,
+  "end": 0.58
+ },
+ {
+  "id": "w2",
+  "text": "en",
+  "start": 0.604,
+  "end": 0.662
+ },
+ {
+  "id": "w3",
+  "text": "9 cases.",
+  "start": 0.685,
+  "end": 1.207
+ },
+ {
+  "id": "w4",
+  "text": "Le",
+  "start": 1.84,
+  "end": 1.968
+ },
+ {
+  "id": "w5",
+  "text": "matin :",
+  "start": 2.014,
+  "end": 2.328
+ },
+ {
+  "id": "w6",
+  "text": "un",
+  "start": 2.653,
+  "end": 2.734
+ },
+ {
+  "id": "w7",
+  "text": "verre",
+  "start": 2.792,
+  "end": 2.978
+ },
+ {
+  "id": "w8",
+  "text": "d'eau",
+  "start": 3.001,
+  "end": 3.152
+ },
+ {
+  "id": "w9",
+  "text": "au",
+  "start": 3.175,
+  "end": 3.222
+ },
+ {
+  "id": "w10",
+  "text": "réveil,",
+  "start": 3.256,
+  "end": 3.663
+ },
+ {
+  "id": "w11",
+  "text": "relire",
+  "start": 4.023,
+  "end": 4.348
+ },
+ {
+  "id": "w12",
+  "text": "ton",
+  "start": 4.371,
+  "end": 4.487
+ },
+ {
+  "id": "w13",
+  "text": "objectif,",
+  "start": 4.534,
+  "end": 5.068
+ },
+ {
+  "id": "w14",
+  "text": "et",
+  "start": 5.416,
+  "end": 5.544
+ },
+ {
+  "id": "w15",
+  "text": "un",
+  "start": 5.613,
+  "end": 5.671
+ },
+ {
+  "id": "w16",
+  "text": "petit-déjeuner",
+  "start": 5.706,
+  "end": 6.321
+ },
+ {
+  "id": "w17",
+  "text": "avec",
+  "start": 6.345,
+  "end": 6.519
+ },
+ {
+  "id": "w18",
+  "text": "une",
+  "start": 6.6,
+  "end": 6.681
+ },
+ {
+  "id": "w19",
+  "text": "protéine,",
+  "start": 6.705,
+  "end": 7.169
+ },
+ {
+  "id": "w20",
+  "text": "si",
+  "start": 7.215,
+  "end": 7.332
+ },
+ {
+  "id": "w21",
+  "text": "tu",
+  "start": 7.366,
+  "end": 7.482
+ },
+ {
+  "id": "w22",
+  "text": "as",
+  "start": 7.54,
+  "end": 7.587
+ },
+ {
+  "id": "w23",
+  "text": "faim.",
+  "start": 7.61,
+  "end": 7.808
+ },
+ {
+  "id": "w24",
+  "text": "Aux",
+  "start": 8.509,
+  "end": 8.753
+ },
+ {
+  "id": "w25",
+  "text": "repas :",
+  "start": 8.788,
+  "end": 9.124
+ },
+ {
+  "id": "w26",
+  "text": "une",
+  "start": 9.426,
+  "end": 9.566
+ },
+ {
+  "id": "w27",
+  "text": "protéine,",
+  "start": 9.589,
+  "end": 10.146
+ },
+ {
+  "id": "w28",
+  "text": "des",
+  "start": 10.343,
+  "end": 10.483
+ },
+ {
+  "id": "w29",
+  "text": "légumes",
+  "start": 10.506,
+  "end": 10.912
+ },
+ {
+  "id": "w30",
+  "text": "à",
+  "start": 10.982,
+  "end": 11.052
+ },
+ {
+  "id": "w31",
+  "text": "au",
+  "start": 11.179,
+  "end": 11.295
+ },
+ {
+  "id": "w32",
+  "text": "moins",
+  "start": 11.353,
+  "end": 11.562
+ },
+ {
+  "id": "w33",
+  "text": "2 repas,",
+  "start": 11.62,
+  "end": 12.143
+ },
+ {
+  "id": "w34",
+  "text": "et",
+  "start": 12.387,
+  "end": 12.514
+ },
+ {
+  "id": "w35",
+  "text": "manger",
+  "start": 12.561,
+  "end": 12.816
+ },
+ {
+  "id": "w36",
+  "text": "assise,",
+  "start": 12.84,
+  "end": 13.316
+ },
+ {
+  "id": "w37",
+  "text": "sans",
+  "start": 13.559,
+  "end": 13.792
+ },
+ {
+  "id": "w38",
+  "text": "écran,",
+  "start": 13.861,
+  "end": 14.175
+ },
+ {
+  "id": "w39",
+  "text": "lentement.",
+  "start": 14.43,
+  "end": 14.906
+ },
+ {
+  "id": "w40",
+  "text": "Le",
+  "start": 15.596,
+  "end": 15.759
+ },
+ {
+  "id": "w41",
+  "text": "soir :",
+  "start": 15.805,
+  "end": 16.118
+ },
+ {
+  "id": "w42",
+  "text": "ton",
+  "start": 16.536,
+  "end": 16.687
+ },
+ {
+  "id": "w43",
+  "text": "journal",
+  "start": 16.722,
+  "end": 17.001
+ },
+ {
+  "id": "w44",
+  "text": "en",
+  "start": 17.047,
+  "end": 17.094
+ },
+ {
+  "id": "w45",
+  "text": "2 minutes,",
+  "start": 17.152,
+  "end": 17.663
+ },
+ {
+  "id": "w46",
+  "text": "préparer",
+  "start": 17.802,
+  "end": 18.208
+ },
+ {
+  "id": "w47",
+  "text": "demain,",
+  "start": 18.231,
+  "end": 18.533
+ },
+ {
+  "id": "w48",
+  "text": "et",
+  "start": 18.847,
+  "end": 18.986
+ },
+ {
+  "id": "w49",
+  "text": "ta",
+  "start": 19.009,
+  "end": 19.079
+ },
+ {
+  "id": "w50",
+  "text": "routine",
+  "start": 19.137,
+  "end": 19.416
+ },
+ {
+  "id": "w51",
+  "text": "de",
+  "start": 19.439,
+  "end": 19.497
+ },
+ {
+  "id": "w52",
+  "text": "coucher.",
+  "start": 19.543,
+  "end": 19.892
+ },
+ {
+  "id": "w53",
+  "text": "C'est",
+  "start": 20.594,
+  "end": 20.826
+ },
+ {
+  "id": "w54",
+  "text": "la",
+  "start": 20.849,
+  "end": 20.931
+ },
+ {
+  "id": "w55",
+  "text": "checklist",
+  "start": 21.0,
+  "end": 21.418
+ },
+ {
+  "id": "w56",
+  "text": "quotidienne",
+  "start": 21.476,
+  "end": 21.941
+ },
+ {
+  "id": "w57",
+  "text": "de",
+  "start": 21.964,
+  "end": 22.022
+ },
+ {
+  "id": "w58",
+  "text": "mon",
+  "start": 22.057,
+  "end": 22.173
+ },
+ {
+  "id": "w59",
+  "text": "guide.",
+  "start": 22.219,
+  "end": 22.51
+ },
+ {
+  "id": "w60",
+  "text": "Enregistre-la.",
+  "start": 23.037,
+  "end": 23.815
+ },
+ {
+  "id": "w61",
+  "text": "Commente",
+  "start": 24.413,
+  "end": 24.831
+ },
+ {
+  "id": "w62",
+  "text": "« 90 JOURS »,",
+  "start": 24.866,
+  "end": 25.69
+ },
+ {
+  "id": "w63",
+  "text": "et",
+  "start": 25.899,
+  "end": 25.992
+ },
+ {
+  "id": "w64",
+  "text": "je",
+  "start": 26.038,
+  "end": 26.096
+ },
+ {
+  "id": "w65",
+  "text": "t'envoie",
+  "start": 26.143,
+  "end": 26.41
+ },
+ {
+  "id": "w66",
+  "text": "le",
+  "start": 26.433,
+  "end": 26.503
+ },
+ {
+  "id": "w67",
+  "text": "lien",
+  "start": 26.549,
+  "end": 26.758
+ },
+ {
+  "id": "w68",
+  "text": "en",
+  "start": 26.828,
+  "end": 26.909
+ },
+ {
+  "id": "w69",
+  "text": "message",
+  "start": 26.944,
+  "end": 27.257
+ },
+ {
+  "id": "w70",
+  "text": "privé.",
+  "start": 27.292,
+  "end": 27.606
+ }
+]

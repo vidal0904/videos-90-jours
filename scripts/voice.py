@@ -69,7 +69,7 @@ for token in a_dire.split(" "):
 # Écrit comme on le dit pour la voix, affiché comme on le lit dans les sous-titres
 AFFICHAGE = {"quatre-vingt-dix": "90", "quatre-vingts": "80", "soixante-dix": "70", "douze": "12", "dix": "10",
              "treize": "13", "quinze": "15", "trente": "30", "quatre-vingt-dix-neuf": "99", "vingt": "20",
-             "vingt-trois": "23", "vingt-quatre": "24", "soixante": "60", "cent": "100"}
+             "vingt-trois": "23", "vingt-quatre": "24", "soixante": "60", "cent": "100", "six": "6"}
 # Nombres en plusieurs mots : fusionnés en un seul mot affiché (horaires du premier au dernier).
 # Comparés aux mots écrits (avant AFFICHAGE), les plus longs d'abord.
 AFFICHAGE_MULTI = {("trois", "cent", "seize"): "316", ("un", "pour", "cent"): "1\u00a0%",
@@ -89,7 +89,12 @@ AFFICHAGE_MULTI = {("trois", "cent", "seize"): "316", ("un", "pour", "cent"): "1
                    ("cinq", "questions"): "5 questions", ("trois", "phrases"): "3 phrases", ("trois", "mois"): "3\u00a0mois",
                    ("mois", "un"): "mois\u00a01", ("mois", "deux"): "mois\u00a02", ("mois", "trois"): "mois\u00a03",
                    # série 5
-                   ("trois", "questions"): "3 questions"}
+                   ("trois", "questions"): "3 questions",
+                   # série 6
+                   ("cinq", "petits-déjeuners"): "5 petits-déjeuners", ("trois", "astuces"): "3 astuces", ("trois", "à", "cinq"): "3 à 5",
+                   ("semaine", "deux"): "semaine 2", ("jour", "huit"): "jour 8", ("jour", "neuf"): "jour 9", ("jour", "dix"): "jour 10",
+                   ("jour", "onze"): "jour 11", ("jour", "douze"): "jour 12", ("jour", "treize"): "jour 13", ("jour", "quatorze"): "jour 14",
+                   ("trois", "choses"): "3 choses", ("neuf", "cases"): "9 cases", ("deux", "repas"): "2 repas"}
 
 
 def affiche(mot):
@@ -241,7 +246,9 @@ for suite, chiffre in sorted(AFFICHAGE_MULTI.items(), key=lambda kv: -len(kv[0])
     i = 0
     while i <= len(out) - len(suite):
         bloc = out[i:i + len(suite)]
-        if tuple(nu(m["ecrit"]) for m in bloc) == suite:
+        # jamais par-dessus une fin de phrase (« chaque semaine. Deux : » n'est pas « semaine 2 »)
+        coupe = any(re.search(r"[.!?…]$", m["ecrit"]) for m in bloc[:-1])
+        if not coupe and tuple(nu(m["ecrit"]) for m in bloc) == suite:
             fin = bloc[-1]["ecrit"][len(bloc[-1]["ecrit"].rstrip(".,;:!?…\u00a0»")):]
             debut = chiffre[0].upper() + chiffre[1:] if bloc[0]["ecrit"][:1].isupper() else chiffre
             out[i:i + len(suite)] = [{"text": debut + fin, "ecrit": " ".join(m["ecrit"] for m in bloc),

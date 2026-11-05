@@ -1,0 +1,113 @@
+<!-- Série 6 · vidéo 01 · fin + boucle · 20.36–28 s
+     Généré par scripts/serie2.py : modifier là-bas puis relancer. -->
+<template>
+  <link rel="stylesheet" href="assets/design/tokens.css" />
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+    }
+    .s2-titre {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      top: 240px;
+      text-align: center;
+      font-size: 80px;
+      color: var(--creme);
+    }
+    .s2-titre em, .s2-texte em {
+      color: var(--dore);
+    }
+    .s2-texte {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      text-align: center;
+      color: var(--creme);
+    }    .s2-feuille {
+      position: absolute;
+      aspect-ratio: 1 / 1.4142;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: var(--ombre-page), 0 0 0 2px rgba(251, 248, 242, 0.22);
+    }
+    .s2-feuille img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .s2-fin-texte {
+      top: 260px;
+      font-size: 84px;
+    }
+    .s2-cta {
+      top: 230px;
+    }
+    .s2-cta-titre {
+      margin: 0;
+      font-size: 84px;
+      line-height: 1.15;
+    }
+    .s2-mot-cle {
+      position: relative;
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 46px 18px;
+      border-radius: 60px;
+      background: var(--creme);
+      color: var(--vert-foret);
+      font-family: var(--font-texte);
+      font-weight: 800;
+      font-size: 78px;
+      letter-spacing: 0.02em;
+    }
+    .s2-mot-cle::after {
+      content: "";
+      position: absolute;
+      left: 54px;
+      bottom: -22px;
+      border-left: 0 solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 24px solid var(--creme);
+    }
+    .s2-cta-sous {
+      margin: 34px 0 0;
+      font-family: var(--font-texte);
+      font-weight: 500;
+      font-size: 42px;
+      color: var(--dore);
+    }
+    .s2-accroche {
+      top: 560px;
+      font-size: 92px;
+    }
+    #s6-01-fin-boucle {
+      position: absolute;
+      inset: 0;
+    }
+  </style>
+  <div id="root" data-composition-id="s6-01-fin" data-width="1080" data-height="1920">
+    <div data-layout-allow-overlap>
+      <p id="s6-01-fin-t0" class="s2-texte s2-fin-texte titre">Enregistre<br /><em>pour tes matins pressés</em></p>
+      <div id="s6-01-fin-t1" class="s2-texte s2-cta"><p class="s2-cta-titre titre">Commente</p><span class="s2-mot-cle">90 JOURS</span><p class="s2-cta-sous">et reçois le lien en message privé</p></div>
+      <div id="s6-01-fin-f0" class="s2-feuille" style="left: 150px; top: 600px; width: 380px"><img src="capture/pages/index-recettes-p200.png" alt="Index des 70 recettes" /></div>
+      <div id="s6-01-fin-f1" class="s2-feuille" style="left: 530px; top: 660px; width: 380px"><img src="capture/pages/couverture.png" alt="Couverture du guide 90 jours" /></div>
+    </div>
+    <div id="s6-01-fin-boucle" aria-hidden="true" data-layout-allow-overlap>
+      <p id="s6-01-fin-rep" class="s2-texte s2-accroche titre">5 petits-déjeuners<br /><em>en 15 minutes environ.</em></p>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s6-01-fin-t0", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.15);
+    tl.to("#s6-01-fin-t0", { opacity: 0, y: -24, duration: 0.25, ease: "power2.in" }, 2.34);
+    tl.fromTo("#s6-01-fin-t1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 2.47);
+    tl.fromTo("#s6-01-fin-f0", { opacity: 0, y: 200, rotation: 0 }, { opacity: 1, y: 0, rotation: -3, duration: 0.45, ease: "power3.out" }, 0.15);
+    tl.fromTo("#s6-01-fin-f1", { opacity: 0, x: 200, rotation: 0 }, { opacity: 1, x: 0, rotation: 3, duration: 0.45, ease: "power3.out" }, 2.59);
+    tl.to(["#s6-01-fin-t1", "#s6-01-fin-f0", "#s6-01-fin-f1"], { opacity: 0, duration: 0.3, ease: "power2.in" }, 6.89);
+    tl.fromTo("#s6-01-fin-boucle", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 7.09);
+    window.__timelines["s6-01-fin"] = tl;
+  </script>
+</template>

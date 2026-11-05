@@ -1,0 +1,398 @@
+[
+ {
+  "id": "w0",
+  "text": "Tu",
+  "start": 0.0,
+  "end": 0.174
+ },
+ {
+  "id": "w1",
+  "text": "cherches",
+  "start": 0.209,
+  "end": 0.488
+ },
+ {
+  "id": "w2",
+  "text": "des",
+  "start": 0.511,
+  "end": 0.627
+ },
+ {
+  "id": "w3",
+  "text": "idées",
+  "start": 0.685,
+  "end": 0.882
+ },
+ {
+  "id": "w4",
+  "text": "de",
+  "start": 0.906,
+  "end": 0.975
+ },
+ {
+  "id": "w5",
+  "text": "déjeuners ?",
+  "start": 1.022,
+  "end": 1.451
+ },
+ {
+  "id": "w6",
+  "text": "En",
+  "start": 2.072,
+  "end": 2.235
+ },
+ {
+  "id": "w7",
+  "text": "voici",
+  "start": 2.281,
+  "end": 2.536
+ },
+ {
+  "id": "w8",
+  "text": "6,",
+  "start": 2.606,
+  "end": 2.943
+ },
+ {
+  "id": "w9",
+  "text": "tirées",
+  "start": 3.129,
+  "end": 3.442
+ },
+ {
+  "id": "w10",
+  "text": "de",
+  "start": 3.465,
+  "end": 3.535
+ },
+ {
+  "id": "w11",
+  "text": "mon",
+  "start": 3.57,
+  "end": 3.674
+ },
+ {
+  "id": "w12",
+  "text": "guide.",
+  "start": 3.709,
+  "end": 4.011
+ },
+ {
+  "id": "w13",
+  "text": "Saumon",
+  "start": 4.701,
+  "end": 5.096
+ },
+ {
+  "id": "w14",
+  "text": "et",
+  "start": 5.177,
+  "end": 5.258
+ },
+ {
+  "id": "w15",
+  "text": "légumes",
+  "start": 5.293,
+  "end": 5.63
+ },
+ {
+  "id": "w16",
+  "text": "rôtis.",
+  "start": 5.653,
+  "end": 6.036
+ },
+ {
+  "id": "w17",
+  "text": "Dinde",
+  "start": 6.726,
+  "end": 7.051
+ },
+ {
+  "id": "w18",
+  "text": "et",
+  "start": 7.121,
+  "end": 7.237
+ },
+ {
+  "id": "w19",
+  "text": "patate",
+  "start": 7.272,
+  "end": 7.574
+ },
+ {
+  "id": "w20",
+  "text": "douce",
+  "start": 7.597,
+  "end": 7.829
+ },
+ {
+  "id": "w21",
+  "text": "au",
+  "start": 7.864,
+  "end": 7.968
+ },
+ {
+  "id": "w22",
+  "text": "four.",
+  "start": 8.015,
+  "end": 8.328
+ },
+ {
+  "id": "w23",
+  "text": "Lentilles",
+  "start": 8.938,
+  "end": 9.437
+ },
+ {
+  "id": "w24",
+  "text": "mijotées",
+  "start": 9.553,
+  "end": 10.018
+ },
+ {
+  "id": "w25",
+  "text": "aux",
+  "start": 10.076,
+  "end": 10.145
+ },
+ {
+  "id": "w26",
+  "text": "légumes.",
+  "start": 10.169,
+  "end": 10.552
+ },
+ {
+  "id": "w27",
+  "text": "Bowl",
+  "start": 11.149,
+  "end": 11.428
+ },
+ {
+  "id": "w28",
+  "text": "méditerranéen",
+  "start": 11.509,
+  "end": 12.182
+ },
+ {
+  "id": "w29",
+  "text": "au",
+  "start": 12.217,
+  "end": 12.298
+ },
+ {
+  "id": "w30",
+  "text": "poulet.",
+  "start": 12.333,
+  "end": 12.67
+ },
+ {
+  "id": "w31",
+  "text": "Poulet",
+  "start": 13.546,
+  "end": 13.952
+ },
+ {
+  "id": "w32",
+  "text": "et",
+  "start": 14.022,
+  "end": 14.185
+ },
+ {
+  "id": "w33",
+  "text": "patate",
+  "start": 14.219,
+  "end": 14.556
+ },
+ {
+  "id": "w34",
+  "text": "douce",
+  "start": 14.579,
+  "end": 15.055
+ },
+ {
+  "id": "w35",
+  "text": "rôtie",
+  "start": 15.148,
+  "end": 15.531
+ },
+ {
+  "id": "w36",
+  "text": "au",
+  "start": 15.555,
+  "end": 15.613
+ },
+ {
+  "id": "w37",
+  "text": "paprika.",
+  "start": 15.659,
+  "end": 16.17
+ },
+ {
+  "id": "w38",
+  "text": "Et",
+  "start": 17.057,
+  "end": 17.231
+ },
+ {
+  "id": "w39",
+  "text": "un",
+  "start": 17.301,
+  "end": 17.359
+ },
+ {
+  "id": "w40",
+  "text": "chili",
+  "start": 17.394,
+  "end": 17.661
+ },
+ {
+  "id": "w41",
+  "text": "aux",
+  "start": 17.684,
+  "end": 17.777
+ },
+ {
+  "id": "w42",
+  "text": "haricots",
+  "start": 17.835,
+  "end": 18.172
+ },
+ {
+  "id": "w43",
+  "text": "rouges.",
+  "start": 18.195,
+  "end": 18.485
+ },
+ {
+  "id": "w44",
+  "text": "Chaque",
+  "start": 19.082,
+  "end": 19.419
+ },
+ {
+  "id": "w45",
+  "text": "recette",
+  "start": 19.442,
+  "end": 19.802
+ },
+ {
+  "id": "w46",
+  "text": "est",
+  "start": 19.871,
+  "end": 19.988
+ },
+ {
+  "id": "w47",
+  "text": "pour",
+  "start": 20.022,
+  "end": 20.15
+ },
+ {
+  "id": "w48",
+  "text": "une",
+  "start": 20.208,
+  "end": 20.301
+ },
+ {
+  "id": "w49",
+  "text": "personne,",
+  "start": 20.324,
+  "end": 20.789
+ },
+ {
+  "id": "w50",
+  "text": "avec",
+  "start": 20.882,
+  "end": 21.149
+ },
+ {
+  "id": "w51",
+  "text": "une",
+  "start": 21.218,
+  "end": 21.288
+ },
+ {
+  "id": "w52",
+  "text": "variante.",
+  "start": 21.311,
+  "end": 21.787
+ },
+ {
+  "id": "w53",
+  "text": "Enregistre",
+  "start": 22.315,
+  "end": 22.919
+ },
+ {
+  "id": "w54",
+  "text": "la",
+  "start": 22.954,
+  "end": 23.023
+ },
+ {
+  "id": "w55",
+  "text": "liste.",
+  "start": 23.07,
+  "end": 23.406
+ },
+ {
+  "id": "w56",
+  "text": "Commente",
+  "start": 23.923,
+  "end": 24.341
+ },
+ {
+  "id": "w57",
+  "text": "« 90 JOURS »,",
+  "start": 24.376,
+  "end": 25.258
+ },
+ {
+  "id": "w58",
+  "text": "et",
+  "start": 25.49,
+  "end": 25.606
+ },
+ {
+  "id": "w59",
+  "text": "je",
+  "start": 25.664,
+  "end": 25.734
+ },
+ {
+  "id": "w60",
+  "text": "t'envoie",
+  "start": 25.781,
+  "end": 26.048
+ },
+ {
+  "id": "w61",
+  "text": "le",
+  "start": 26.071,
+  "end": 26.141
+ },
+ {
+  "id": "w62",
+  "text": "lien",
+  "start": 26.187,
+  "end": 26.431
+ },
+ {
+  "id": "w63",
+  "text": "en",
+  "start": 26.489,
+  "end": 26.582
+ },
+ {
+  "id": "w64",
+  "text": "message",
+  "start": 26.64,
+  "end": 26.953
+ },
+ {
+  "id": "w65",
+  "text": "privé.",
+  "start": 26.976,
+  "end": 27.325
+ }
+]

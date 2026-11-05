@@ -1,0 +1,410 @@
+[
+ {
+  "id": "w0",
+  "text": "Est-ce",
+  "start": 0.0,
+  "end": 0.232
+ },
+ {
+  "id": "w1",
+  "text": "que",
+  "start": 0.279,
+  "end": 0.383
+ },
+ {
+  "id": "w2",
+  "text": "j'ai",
+  "start": 0.418,
+  "end": 0.511
+ },
+ {
+  "id": "w3",
+  "text": "le",
+  "start": 0.534,
+  "end": 0.604
+ },
+ {
+  "id": "w4",
+  "text": "droit",
+  "start": 0.639,
+  "end": 0.906
+ },
+ {
+  "id": "w5",
+  "text": "aux",
+  "start": 0.94,
+  "end": 1.045
+ },
+ {
+  "id": "w6",
+  "text": "féculents ?",
+  "start": 1.08,
+  "end": 1.544
+ },
+ {
+  "id": "w7",
+  "text": "Oui.",
+  "start": 2.211,
+  "end": 2.478
+ },
+ {
+  "id": "w8",
+  "text": "Dans",
+  "start": 3.029,
+  "end": 3.261
+ },
+ {
+  "id": "w9",
+  "text": "l'assiette",
+  "start": 3.284,
+  "end": 3.644
+ },
+ {
+  "id": "w10",
+  "text": "de",
+  "start": 3.668,
+  "end": 3.737
+ },
+ {
+  "id": "w11",
+  "text": "mon",
+  "start": 3.784,
+  "end": 3.9
+ },
+ {
+  "id": "w12",
+  "text": "guide,",
+  "start": 3.946,
+  "end": 4.294
+ },
+ {
+  "id": "w13",
+  "text": "il",
+  "start": 4.596,
+  "end": 4.747
+ },
+ {
+  "id": "w14",
+  "text": "y",
+  "start": 4.794,
+  "end": 4.817
+ },
+ {
+  "id": "w15",
+  "text": "a",
+  "start": 4.852,
+  "end": 4.887
+ },
+ {
+  "id": "w16",
+  "text": "un",
+  "start": 5.003,
+  "end": 5.154
+ },
+ {
+  "id": "w17",
+  "text": "quart",
+  "start": 5.223,
+  "end": 5.455
+ },
+ {
+  "id": "w18",
+  "text": "de",
+  "start": 5.479,
+  "end": 5.537
+ },
+ {
+  "id": "w19",
+  "text": "féculents :",
+  "start": 5.583,
+  "end": 6.024
+ },
+ {
+  "id": "w20",
+  "text": "riz",
+  "start": 6.628,
+  "end": 6.779
+ },
+ {
+  "id": "w21",
+  "text": "complet,",
+  "start": 6.814,
+  "end": 7.267
+ },
+ {
+  "id": "w22",
+  "text": "pommes",
+  "start": 7.661,
+  "end": 7.905
+ },
+ {
+  "id": "w23",
+  "text": "de",
+  "start": 7.928,
+  "end": 7.998
+ },
+ {
+  "id": "w24",
+  "text": "terre,",
+  "start": 8.045,
+  "end": 8.451
+ },
+ {
+  "id": "w25",
+  "text": "quinoa,",
+  "start": 8.822,
+  "end": 9.38
+ },
+ {
+  "id": "w26",
+  "text": "pain",
+  "start": 9.844,
+  "end": 10.018
+ },
+ {
+  "id": "w27",
+  "text": "complet.",
+  "start": 10.065,
+  "end": 10.459
+ },
+ {
+  "id": "w28",
+  "text": "La",
+  "start": 11.463,
+  "end": 11.602
+ },
+ {
+  "id": "w29",
+  "text": "moitié",
+  "start": 11.66,
+  "end": 11.893
+ },
+ {
+  "id": "w30",
+  "text": "de",
+  "start": 11.939,
+  "end": 11.997
+ },
+ {
+  "id": "w31",
+  "text": "légumes,",
+  "start": 12.043,
+  "end": 12.461
+ },
+ {
+  "id": "w32",
+  "text": "un",
+  "start": 12.705,
+  "end": 12.821
+ },
+ {
+  "id": "w33",
+  "text": "quart",
+  "start": 12.879,
+  "end": 13.054
+ },
+ {
+  "id": "w34",
+  "text": "de",
+  "start": 13.077,
+  "end": 13.135
+ },
+ {
+  "id": "w35",
+  "text": "protéines,",
+  "start": 13.17,
+  "end": 13.692
+ },
+ {
+  "id": "w36",
+  "text": "et",
+  "start": 13.994,
+  "end": 14.133
+ },
+ {
+  "id": "w37",
+  "text": "un",
+  "start": 14.226,
+  "end": 14.273
+ },
+ {
+  "id": "w38",
+  "text": "peu",
+  "start": 14.319,
+  "end": 14.424
+ },
+ {
+  "id": "w39",
+  "text": "de",
+  "start": 14.447,
+  "end": 14.505
+ },
+ {
+  "id": "w40",
+  "text": "bonnes",
+  "start": 14.551,
+  "end": 14.749
+ },
+ {
+  "id": "w41",
+  "text": "graisses.",
+  "start": 14.772,
+  "end": 15.085
+ },
+ {
+  "id": "w42",
+  "text": "Et",
+  "start": 15.764,
+  "end": 15.927
+ },
+ {
+  "id": "w43",
+  "text": "si",
+  "start": 15.961,
+  "end": 16.066
+ },
+ {
+  "id": "w44",
+  "text": "tu",
+  "start": 16.112,
+  "end": 16.217
+ },
+ {
+  "id": "w45",
+  "text": "as",
+  "start": 16.298,
+  "end": 16.356
+ },
+ {
+  "id": "w46",
+  "text": "faim,",
+  "start": 16.391,
+  "end": 16.6
+ },
+ {
+  "id": "w47",
+  "text": "notamment",
+  "start": 16.797,
+  "end": 17.192
+ },
+ {
+  "id": "w48",
+  "text": "les",
+  "start": 17.215,
+  "end": 17.297
+ },
+ {
+  "id": "w49",
+  "text": "jours",
+  "start": 17.32,
+  "end": 17.494
+ },
+ {
+  "id": "w50",
+  "text": "actifs,",
+  "start": 17.552,
+  "end": 18.109
+ },
+ {
+  "id": "w51",
+  "text": "tu",
+  "start": 18.272,
+  "end": 18.434
+ },
+ {
+  "id": "w52",
+  "text": "augmentes",
+  "start": 18.504,
+  "end": 19.038
+ },
+ {
+  "id": "w53",
+  "text": "les",
+  "start": 19.154,
+  "end": 19.293
+ },
+ {
+  "id": "w54",
+  "text": "légumes",
+  "start": 19.328,
+  "end": 19.735
+ },
+ {
+  "id": "w55",
+  "text": "ou",
+  "start": 19.781,
+  "end": 19.932
+ },
+ {
+  "id": "w56",
+  "text": "les",
+  "start": 19.978,
+  "end": 20.071
+ },
+ {
+  "id": "w57",
+  "text": "féculents.",
+  "start": 20.106,
+  "end": 20.547
+ },
+ {
+  "id": "w58",
+  "text": "Commente",
+  "start": 21.226,
+  "end": 21.644
+ },
+ {
+  "id": "w59",
+  "text": "« 90 JOURS »,",
+  "start": 21.714,
+  "end": 22.642
+ },
+ {
+  "id": "w60",
+  "text": "et",
+  "start": 22.712,
+  "end": 22.782
+ },
+ {
+  "id": "w61",
+  "text": "je",
+  "start": 22.84,
+  "end": 22.909
+ },
+ {
+  "id": "w62",
+  "text": "t'envoie",
+  "start": 22.956,
+  "end": 23.246
+ },
+ {
+  "id": "w63",
+  "text": "le",
+  "start": 23.269,
+  "end": 23.339
+ },
+ {
+  "id": "w64",
+  "text": "lien",
+  "start": 23.385,
+  "end": 23.629
+ },
+ {
+  "id": "w65",
+  "text": "en",
+  "start": 23.699,
+  "end": 23.78
+ },
+ {
+  "id": "w66",
+  "text": "message",
+  "start": 23.827,
+  "end": 24.152
+ },
+ {
+  "id": "w67",
+  "text": "privé.",
+  "start": 24.175,
+  "end": 24.523
+ }
+]

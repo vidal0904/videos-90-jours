@@ -1,0 +1,434 @@
+[
+ {
+  "id": "w0",
+  "text": "Le",
+  "start": 0.0,
+  "end": 0.29
+ },
+ {
+  "id": "w1",
+  "text": "défi",
+  "start": 0.325,
+  "end": 0.557
+ },
+ {
+  "id": "w2",
+  "text": "motivation,",
+  "start": 0.604,
+  "end": 1.254
+ },
+ {
+  "id": "w3",
+  "text": "semaine 2 :",
+  "start": 1.358,
+  "end": 1.95
+ },
+ {
+  "id": "w4",
+  "text": "renforcer",
+  "start": 2.229,
+  "end": 2.728
+ },
+ {
+  "id": "w5",
+  "text": "les",
+  "start": 2.763,
+  "end": 2.879
+ },
+ {
+  "id": "w6",
+  "text": "habitudes.",
+  "start": 2.914,
+  "end": 3.425
+ },
+ {
+  "id": "w7",
+  "text": "Jour 8 :",
+  "start": 4.022,
+  "end": 4.637
+ },
+ {
+  "id": "w8",
+  "text": "marcher",
+  "start": 4.835,
+  "end": 5.195
+ },
+ {
+  "id": "w9",
+  "text": "30",
+  "start": 5.229,
+  "end": 5.485
+ },
+ {
+  "id": "w10",
+  "text": "minutes,",
+  "start": 5.508,
+  "end": 5.88
+ },
+ {
+  "id": "w11",
+  "text": "en",
+  "start": 5.949,
+  "end": 6.1
+ },
+ {
+  "id": "w12",
+  "text": "une",
+  "start": 6.228,
+  "end": 6.332
+ },
+ {
+  "id": "w13",
+  "text": "ou",
+  "start": 6.356,
+  "end": 6.402
+ },
+ {
+  "id": "w14",
+  "text": "plusieurs",
+  "start": 6.437,
+  "end": 6.785
+ },
+ {
+  "id": "w15",
+  "text": "fois.",
+  "start": 6.808,
+  "end": 7.041
+ },
+ {
+  "id": "w16",
+  "text": "Jour 9 :",
+  "start": 7.859,
+  "end": 8.323
+ },
+ {
+  "id": "w17",
+  "text": "ajouter",
+  "start": 8.718,
+  "end": 9.078
+ },
+ {
+  "id": "w18",
+  "text": "une",
+  "start": 9.101,
+  "end": 9.183
+ },
+ {
+  "id": "w19",
+  "text": "portion",
+  "start": 9.206,
+  "end": 9.496
+ },
+ {
+  "id": "w20",
+  "text": "de",
+  "start": 9.531,
+  "end": 9.589
+ },
+ {
+  "id": "w21",
+  "text": "légumes.",
+  "start": 9.635,
+  "end": 10.053
+ },
+ {
+  "id": "w22",
+  "text": "Jour 10 :",
+  "start": 10.767,
+  "end": 11.313
+ },
+ {
+  "id": "w23",
+  "text": "un",
+  "start": 11.626,
+  "end": 11.719
+ },
+ {
+  "id": "w24",
+  "text": "repas",
+  "start": 11.754,
+  "end": 12.021
+ },
+ {
+  "id": "w25",
+  "text": "sans",
+  "start": 12.044,
+  "end": 12.195
+ },
+ {
+  "id": "w26",
+  "text": "écran.",
+  "start": 12.253,
+  "end": 12.543
+ },
+ {
+  "id": "w27",
+  "text": "Jour 11 :",
+  "start": 13.303,
+  "end": 14.034
+ },
+ {
+  "id": "w28",
+  "text": "un",
+  "start": 14.36,
+  "end": 14.464
+ },
+ {
+  "id": "w29",
+  "text": "verre",
+  "start": 14.51,
+  "end": 14.696
+ },
+ {
+  "id": "w30",
+  "text": "d'eau",
+  "start": 14.719,
+  "end": 14.905
+ },
+ {
+  "id": "w31",
+  "text": "avant",
+  "start": 15.021,
+  "end": 15.312
+ },
+ {
+  "id": "w32",
+  "text": "chaque",
+  "start": 15.346,
+  "end": 15.613
+ },
+ {
+  "id": "w33",
+  "text": "repas.",
+  "start": 15.637,
+  "end": 15.985
+ },
+ {
+  "id": "w34",
+  "text": "Jour 12 :",
+  "start": 16.721,
+  "end": 17.301
+ },
+ {
+  "id": "w35",
+  "text": "10",
+  "start": 17.58,
+  "end": 17.754
+ },
+ {
+  "id": "w36",
+  "text": "minutes",
+  "start": 17.778,
+  "end": 18.056
+ },
+ {
+  "id": "w37",
+  "text": "d'exercices",
+  "start": 18.079,
+  "end": 18.637
+ },
+ {
+  "id": "w38",
+  "text": "simples.",
+  "start": 18.683,
+  "end": 19.089
+ },
+ {
+  "id": "w39",
+  "text": "Jour 13 :",
+  "start": 19.769,
+  "end": 20.524
+ },
+ {
+  "id": "w40",
+  "text": "une",
+  "start": 20.756,
+  "end": 20.895
+ },
+ {
+  "id": "w41",
+  "text": "collation",
+  "start": 20.93,
+  "end": 21.348
+ },
+ {
+  "id": "w42",
+  "text": "maison",
+  "start": 21.371,
+  "end": 21.65
+ },
+ {
+  "id": "w43",
+  "text": "à",
+  "start": 21.731,
+  "end": 21.778
+ },
+ {
+  "id": "w44",
+  "text": "la",
+  "start": 21.847,
+  "end": 21.905
+ },
+ {
+  "id": "w45",
+  "text": "place",
+  "start": 21.952,
+  "end": 22.172
+ },
+ {
+  "id": "w46",
+  "text": "d'une",
+  "start": 22.195,
+  "end": 22.358
+ },
+ {
+  "id": "w47",
+  "text": "industrielle.",
+  "start": 22.381,
+  "end": 23.031
+ },
+ {
+  "id": "w48",
+  "text": "Jour 14 :",
+  "start": 23.744,
+  "end": 24.533
+ },
+ {
+  "id": "w49",
+  "text": "noter",
+  "start": 25.114,
+  "end": 25.393
+ },
+ {
+  "id": "w50",
+  "text": "3 choses",
+  "start": 25.439,
+  "end": 26.043
+ },
+ {
+  "id": "w51",
+  "text": "dont",
+  "start": 26.066,
+  "end": 26.205
+ },
+ {
+  "id": "w52",
+  "text": "tu",
+  "start": 26.229,
+  "end": 26.31
+ },
+ {
+  "id": "w53",
+  "text": "es",
+  "start": 26.391,
+  "end": 26.461
+ },
+ {
+  "id": "w54",
+  "text": "fière.",
+  "start": 26.484,
+  "end": 26.879
+ },
+ {
+  "id": "w55",
+  "text": "Adapte",
+  "start": 27.72,
+  "end": 28.196
+ },
+ {
+  "id": "w56",
+  "text": "chaque",
+  "start": 28.242,
+  "end": 28.509
+ },
+ {
+  "id": "w57",
+  "text": "mission",
+  "start": 28.533,
+  "end": 28.811
+ },
+ {
+  "id": "w58",
+  "text": "à",
+  "start": 28.858,
+  "end": 28.881
+ },
+ {
+  "id": "w59",
+  "text": "ta",
+  "start": 28.904,
+  "end": 28.985
+ },
+ {
+  "id": "w60",
+  "text": "condition",
+  "start": 29.032,
+  "end": 29.45
+ },
+ {
+  "id": "w61",
+  "text": "physique.",
+  "start": 29.473,
+  "end": 29.914
+ },
+ {
+  "id": "w62",
+  "text": "Commente",
+  "start": 30.535,
+  "end": 30.941
+ },
+ {
+  "id": "w63",
+  "text": "« 90 JOURS »,",
+  "start": 30.988,
+  "end": 32.149
+ },
+ {
+  "id": "w64",
+  "text": "et",
+  "start": 32.358,
+  "end": 32.474
+ },
+ {
+  "id": "w65",
+  "text": "je",
+  "start": 32.52,
+  "end": 32.59
+ },
+ {
+  "id": "w66",
+  "text": "t'envoie",
+  "start": 32.636,
+  "end": 32.927
+ },
+ {
+  "id": "w67",
+  "text": "le",
+  "start": 32.95,
+  "end": 33.02
+ },
+ {
+  "id": "w68",
+  "text": "lien",
+  "start": 33.066,
+  "end": 33.287
+ },
+ {
+  "id": "w69",
+  "text": "en",
+  "start": 33.345,
+  "end": 33.461
+ },
+ {
+  "id": "w70",
+  "text": "message",
+  "start": 33.507,
+  "end": 33.844
+ },
+ {
+  "id": "w71",
+  "text": "privé.",
+  "start": 33.879,
+  "end": 34.204
+ }
+]

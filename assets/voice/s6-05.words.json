@@ -1,0 +1,314 @@
+[
+ {
+  "id": "w0",
+  "text": "3 astuces",
+  "start": 0.0,
+  "end": 0.743
+ },
+ {
+  "id": "w1",
+  "text": "de",
+  "start": 0.766,
+  "end": 0.836
+ },
+ {
+  "id": "w2",
+  "text": "mon",
+  "start": 0.882,
+  "end": 0.998
+ },
+ {
+  "id": "w3",
+  "text": "guide",
+  "start": 1.045,
+  "end": 1.254
+ },
+ {
+  "id": "w4",
+  "text": "pour",
+  "start": 1.277,
+  "end": 1.393
+ },
+ {
+  "id": "w5",
+  "text": "cuisiner",
+  "start": 1.428,
+  "end": 1.881
+ },
+ {
+  "id": "w6",
+  "text": "sans",
+  "start": 1.997,
+  "end": 2.241
+ },
+ {
+  "id": "w7",
+  "text": "te",
+  "start": 2.264,
+  "end": 2.345
+ },
+ {
+  "id": "w8",
+  "text": "compliquer.",
+  "start": 2.392,
+  "end": 2.902
+ },
+ {
+  "id": "w9",
+  "text": "Un :",
+  "start": 3.697,
+  "end": 3.894
+ },
+ {
+  "id": "w10",
+  "text": "choisis",
+  "start": 4.08,
+  "end": 4.394
+ },
+ {
+  "id": "w11",
+  "text": "3 à 5",
+  "start": 4.417,
+  "end": 5.032
+ },
+ {
+  "id": "w12",
+  "text": "recettes",
+  "start": 5.079,
+  "end": 5.369
+ },
+ {
+  "id": "w13",
+  "text": "préférées",
+  "start": 5.404,
+  "end": 5.88
+ },
+ {
+  "id": "w14",
+  "text": "par",
+  "start": 5.903,
+  "end": 5.996
+ },
+ {
+  "id": "w15",
+  "text": "catégorie,",
+  "start": 6.031,
+  "end": 6.599
+ },
+ {
+  "id": "w16",
+  "text": "et",
+  "start": 6.878,
+  "end": 7.017
+ },
+ {
+  "id": "w17",
+  "text": "alterne-les",
+  "start": 7.087,
+  "end": 7.668
+ },
+ {
+  "id": "w18",
+  "text": "chaque",
+  "start": 7.691,
+  "end": 7.923
+ },
+ {
+  "id": "w19",
+  "text": "semaine.",
+  "start": 7.946,
+  "end": 8.341
+ },
+ {
+  "id": "w20",
+  "text": "Deux :",
+  "start": 9.02,
+  "end": 9.252
+ },
+ {
+  "id": "w21",
+  "text": "adapte",
+  "start": 9.589,
+  "end": 10.018
+ },
+ {
+  "id": "w22",
+  "text": "les",
+  "start": 10.065,
+  "end": 10.146
+ },
+ {
+  "id": "w23",
+  "text": "portions",
+  "start": 10.169,
+  "end": 10.553
+ },
+ {
+  "id": "w24",
+  "text": "à",
+  "start": 10.611,
+  "end": 10.669
+ },
+ {
+  "id": "w25",
+  "text": "ta",
+  "start": 10.738,
+  "end": 10.82
+ },
+ {
+  "id": "w26",
+  "text": "faim",
+  "start": 10.878,
+  "end": 11.005
+ },
+ {
+  "id": "w27",
+  "text": "réelle.",
+  "start": 11.063,
+  "end": 11.446
+ },
+ {
+  "id": "w28",
+  "text": "Trois :",
+  "start": 12.113,
+  "end": 12.45
+ },
+ {
+  "id": "w29",
+  "text": "les",
+  "start": 12.833,
+  "end": 12.949
+ },
+ {
+  "id": "w30",
+  "text": "surgelés",
+  "start": 12.972,
+  "end": 13.367
+ },
+ {
+  "id": "w31",
+  "text": "nature,",
+  "start": 13.402,
+  "end": 13.889
+ },
+ {
+  "id": "w32",
+  "text": "légumes,",
+  "start": 14.04,
+  "end": 14.551
+ },
+ {
+  "id": "w33",
+  "text": "poissons,",
+  "start": 14.69,
+  "end": 15.201
+ },
+ {
+  "id": "w34",
+  "text": "fruits",
+  "start": 15.375,
+  "end": 15.619
+ },
+ {
+  "id": "w35",
+  "text": "rouges,",
+  "start": 15.642,
+  "end": 15.944
+ },
+ {
+  "id": "w36",
+  "text": "sont",
+  "start": 16.188,
+  "end": 16.362
+ },
+ {
+  "id": "w37",
+  "text": "d'excellents",
+  "start": 16.409,
+  "end": 16.873
+ },
+ {
+  "id": "w38",
+  "text": "alliés.",
+  "start": 16.931,
+  "end": 17.233
+ },
+ {
+  "id": "w39",
+  "text": "Enregistre",
+  "start": 17.9,
+  "end": 18.539
+ },
+ {
+  "id": "w40",
+  "text": "ces",
+  "start": 18.573,
+  "end": 18.713
+ },
+ {
+  "id": "w41",
+  "text": "astuces.",
+  "start": 18.782,
+  "end": 19.189
+ },
+ {
+  "id": "w42",
+  "text": "Commente",
+  "start": 19.786,
+  "end": 20.146
+ },
+ {
+  "id": "w43",
+  "text": "« 90 JOURS »,",
+  "start": 20.181,
+  "end": 21.249
+ },
+ {
+  "id": "w44",
+  "text": "et",
+  "start": 21.365,
+  "end": 21.469
+ },
+ {
+  "id": "w45",
+  "text": "je",
+  "start": 21.516,
+  "end": 21.574
+ },
+ {
+  "id": "w46",
+  "text": "t'envoie",
+  "start": 21.632,
+  "end": 21.899
+ },
+ {
+  "id": "w47",
+  "text": "le",
+  "start": 21.922,
+  "end": 21.992
+ },
+ {
+  "id": "w48",
+  "text": "lien",
+  "start": 22.038,
+  "end": 22.247
+ },
+ {
+  "id": "w49",
+  "text": "en",
+  "start": 22.317,
+  "end": 22.398
+ },
+ {
+  "id": "w50",
+  "text": "message",
+  "start": 22.445,
+  "end": 22.793
+ },
+ {
+  "id": "w51",
+  "text": "privé.",
+  "start": 22.828,
+  "end": 23.188
+ }
+]
